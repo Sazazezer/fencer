@@ -1,0 +1,83 @@
+title: Fish
+tags: 
+colorID: 0
+position: 540,260
+---
+Fish: I am a perfectly ordinary human. None should suspect me.
+[[Should we go the next node|Fish.Next]] or [[shall we dance forever in the moonlight?|Fish.Moonlight]]
+
+
+===
+title: Fish.Next
+tags: 
+colorID: 0
+position: 871,217
+---
+Fish:Bah. How boring. Away with you, you mundane temptress.
+===
+title: Fish.Moonlight
+tags: 
+colorID: 0
+position: 237,443
+---
+An excellent choice. Take my hand, and i shall whisk us away, to a wonder of wonder without oxygen.
+
+[[ermmm|Fish.erm]]
+===
+title: Fish.erm
+tags: 
+colorID: 0
+position: 156,147
+---
+Fish: It's okay. Oxygen is merely an illusion created by Big Air corporations to delude you into thinking that you need to purchase their air to survive. You shall be fine.
+
+[[I'm pretty certain that i don't need to purchase air|Fish.purchaseair]]
+===
+title: Fish.purchaseair
+tags: 
+colorID: 0
+position: 422,-80
+---
+Fish:Ho! Are you so certain of that? Do you not toil everyday to en-
+
+[[Yes i am certain that i don't buy air. Maybe you should have gone with water. We do have to buy that.|Fish.buywater]]
+===
+title: Fish.buywater
+tags: 
+colorID: 0
+position: 828,-120
+---
+Fish:Can... can i start again?
+
+[[No|Fish.waterno]]
+[[... i guess?|Fish.wateryes]]
+===
+title: Fish.waterno
+tags: 
+colorID: 0
+position: 1175,37
+---
+Fish: Oh. I guess we're done here then.
+
+END COMMUNICATION.
+===
+title: Fish.wateryes
+tags: 
+colorID: 0
+position: 1134,-197
+---
+Fish:Thank you.
+
+Fish:I... i'm not entirely sure where i was going with all of this.
+
+[[You do seem a little flustered. Shall we take a break?|Fish.break]]
+===
+title: Fish.break
+tags: 
+colorID: 6
+position: 1497,-199
+---
+Fish: Yes. I think that would be best.
+
+END COMMUNCIATION.
+===

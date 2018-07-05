@@ -1,0 +1,22 @@
+title: Bob
+tags: 
+colorID: 0
+position: 721,130
+---
+<<if $bob_now_hates_you>>
+    [[Are we friends?|Bob.Hate]]
+<<else>>
+    Bob: Hello. I am Bob
+    Player: Hi, Ship.
+    Bob: No. Bob!
+    Bob: The hell is wrong with you?
+    <<set $bob_now_hates_you to true>>
+<<endif>>
+===
+title: Bob.Hate
+tags: 
+colorID: 0
+position: 827,439
+---
+Bob: Piss off!
+===
