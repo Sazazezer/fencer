@@ -57138,7 +57138,11 @@ MonoBehaviour:
     condition: 0
   - axisName: Fire2
     offValue: 0
-    button: 2
+    button: 6
+    condition: 0
+  - axisName: Fire3
+    offValue: 0
+    button: 7
     condition: 0
   inputState: {fileID: 1787046294}
 --- !u!4 &1125534032
@@ -83192,11 +83196,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114421853453868870, guid: 93071749b02ac404a87f52bd43cdc62c,
-        type: 2}
-      propertyPath: inputButtons.Array.data[0]
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
   m_IsPrefabParent: 0
@@ -100453,7 +100452,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1242233029094360, guid: 93071749b02ac404a87f52bd43cdc62c,
     type: 2}
   m_PrefabInternal: {fileID: 1685540280}
---- !u!114 &2028283577
+--- !u!114 &2028283578
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -100461,26 +100460,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2028283576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8db0bef19c576c14e833f2d4f971df3f, type: 3}
+  m_Script: {fileID: 11500000, guid: 936b73e4a779878409657eb509ae1eec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButtons: 06000000
-  disableScripts:
-  - {fileID: 2028283593}
-  - {fileID: 2028283589}
-  ready: 0
---- !u!114 &2028283589 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114532869285327530, guid: 93071749b02ac404a87f52bd43cdc62c,
+  inputButtons: 07000000
+  disableScripts: []
+  shootDelay: 0.5
+  swordPrefab: {fileID: 1903410472121424, guid: 93ddd5213984e04449281aa9463b9611,
     type: 2}
-  m_PrefabInternal: {fileID: 1685540280}
-  m_Script: {fileID: 11500000, guid: 0e0bd41f318d4d64ca7b3f459b69b01b, type: 3}
---- !u!114 &2028283593 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114257129254198298, guid: 93071749b02ac404a87f52bd43cdc62c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1685540280}
-  m_Script: {fileID: 11500000, guid: dc2372be4afd780489f6c0fa126634e6, type: 3}
+  firePosition: {x: 8, y: -5}
+  debugColor: {r: 0, g: 1, b: 0, a: 1}
+  debugRadius: 3
+  parrying: 0
 --- !u!1 &2036404039
 GameObject:
   m_ObjectHideFlags: 0

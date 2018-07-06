@@ -41,6 +41,8 @@ GameObject:
   - component: {fileID: 114165723948019036}
   - component: {fileID: 114811950932530524}
   - component: {fileID: 114310295516343736}
+  - component: {fileID: 114728206497057914}
+  - component: {fileID: 114663934594268874}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -55,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242233029094360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66, y: -33, z: 0}
+  m_LocalPosition: {x: 118, y: -44.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -283,6 +285,26 @@ MonoBehaviour:
   leftPosition: {x: -4, y: -5}
   collisionRadius: 3
   debugCollisionColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &114663934594268874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3f3ff21ae8a2b40aef2fa5ac1250e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputButtons: 04000000
+  disableScripts: []
+  shootDelay: 0.5
+  swordPrefab: {fileID: 1167276357570456, guid: 933f8400b385bfe48a12d8567f1c06a0,
+    type: 2}
+  firePosition: {x: 16, y: -5}
+  debugColor: {r: 0, g: 0.5598159, b: 1, a: 1}
+  debugRadius: 3
+  thurst: 0
 --- !u!114 &114668603259342602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,6 +334,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca8c16d5014fd0459d4ef37f91139b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114728206497057914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db0bef19c576c14e833f2d4f971df3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputButtons: 000000000100000006000000
+  disableScripts:
+  - {fileID: 114257129254198298}
+  - {fileID: 114532869285327530}
+  ready: 0
+  freezeDirection: 0
+  currentDirection: 0
 --- !u!114 &114811950932530524
 MonoBehaviour:
   m_ObjectHideFlags: 1

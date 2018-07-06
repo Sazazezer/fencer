@@ -10,6 +10,8 @@ public class PlayerManager : MonoBehaviour {
 	private CollisionState collisionState;
 	private Duck duckBehaviour;
     private ReadyStance readyStance;
+    private StepThurst stepThurst;
+    private Parry parry;
 
 	void Awake(){
 		inputState = GetComponent<InputState>();
@@ -18,6 +20,8 @@ public class PlayerManager : MonoBehaviour {
 		collisionState = GetComponent<CollisionState>();
 		duckBehaviour = GetComponent<Duck>();
         readyStance = GetComponent<ReadyStance>();
+        stepThurst = GetComponent<StepThurst>();
+        parry = GetComponent<Parry>();
 	}
 
 
@@ -51,6 +55,14 @@ public class PlayerManager : MonoBehaviour {
 
         if(readyStance.ready){
             ChangeAnimationState(5);
+        }
+
+        if(stepThurst.thurst){
+            ChangeAnimationState(6);
+        }
+
+        if(parry.parrying){
+            ChangeAnimationState(7);
         }
 	}
 
