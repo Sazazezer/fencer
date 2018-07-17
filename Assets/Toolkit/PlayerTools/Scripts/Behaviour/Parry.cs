@@ -56,15 +56,4 @@ public class Parry : AbstractBehaviour {
         clone.transform.Rotate(0,0,27);
     }
 
- /*   void OnDrawGizmos(){
-        Gizmos.color = debugColor;
-
-        var pos = firePosition;
-        if(inputState != null)
-        pos.x *= (float)inputState.direction;
-        pos.x += transform.position.x;
-        pos.y += transform.position.y;
-
-        Gizmos.DrawWireSphere(pos, debugRadius);
-    }*/
 }

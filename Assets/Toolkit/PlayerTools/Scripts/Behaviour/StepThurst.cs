@@ -12,7 +12,7 @@ public class StepThurst : AbstractBehaviour {
     public Color debugColor = Color.green;
     public float debugRadius = 3f;
     public bool thurst = false;
-    private float timeElapsed = 3f;
+    private float timeElapsed = 0.15f;
     private ReadyStance readyStance;
 
     void Start(){
@@ -28,7 +28,7 @@ public class StepThurst : AbstractBehaviour {
             if(canFire /*&& timeElapsed > shootDelay*/){
                 thurst = true;
                 CreateProjectile(CalculateFirePosition());
-                timeElapsed = 0.5f;
+                timeElapsed = 0.15f;//controls the pause at the end of the turst
             }
 
     

@@ -43,6 +43,10 @@ GameObject:
   - component: {fileID: 114000013850871876}
   - component: {fileID: 114204472180618354}
   - component: {fileID: 114236286050754210}
+  - component: {fileID: 114191401537883254}
+  - component: {fileID: 114320275427208838}
+  - component: {fileID: 114216863357846770}
+  - component: {fileID: 114108628234033294}
   m_Layer: 8
   m_Name: AlienA
   m_TagString: Deadly
@@ -128,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010439317530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 239.46979, y: -171.6, z: 13.5}
+  m_LocalPosition: {x: 192.12067, y: -39.1, z: 13.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4000011530693612}
@@ -208,7 +212,7 @@ Animator:
   m_GameObject: {fileID: 1000010439317530}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fc71050342dad4d808f51ab1be48ce69, type: 2}
+  m_Controller: {fileID: 9100000, guid: 365a8b8a152294d468664fb37e72db50, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -259,6 +263,43 @@ MonoBehaviour:
   sightEnd: {fileID: 4000011512345638}
   layer: Solid
   needsCollision: 0
+--- !u!114 &114108628234033294
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ce287c3af02dd4080f7f5cd7114397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableScripts: []
+  direction: 1
+  states: 0
+  absVelX: 0
+  absVelY: 0
+--- !u!114 &114191401537883254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7bc6b2ff0402944aae89c2983616748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  standing: 0
+  onWall: 0
+  bottomPosition: {x: 0, y: 0}
+  rightPosition: {x: 0, y: 0}
+  leftPosition: {x: 0, y: 0}
+  collisionRadius: 10
+  debugCollisionColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &114204472180618354
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -272,6 +313,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debris: {fileID: 114000013903872626, guid: f7832f648fb1b4c5d9c9af6b845f7c11, type: 2}
   totalDebris: 5
+--- !u!114 &114216863357846770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2280e11819f0c9949b19adb2735a8c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: -1
+  absVelX: 0
+  absVelY: 0
 --- !u!114 &114236286050754210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,6 +341,17 @@ MonoBehaviour:
   enemyHealth: 0.5
   maxEnemyHealth: 1
   touchDamage: 2
+--- !u!114 &114320275427208838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452928150d3195e4ca4aa734c9067cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212000010366397978
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -321,7 +387,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6f597b620e4404ad7a4415b0ff347c0d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be88963938c574cf79e9a7d09a16760a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

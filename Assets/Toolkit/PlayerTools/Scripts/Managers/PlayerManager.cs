@@ -12,6 +12,7 @@ public class PlayerManager : MonoBehaviour {
     private ReadyStance readyStance;
     private StepThurst stepThurst;
     private Parry parry;
+    private Parried parried;
 
 	void Awake(){
 		inputState = GetComponent<InputState>();
@@ -22,6 +23,7 @@ public class PlayerManager : MonoBehaviour {
         readyStance = GetComponent<ReadyStance>();
         stepThurst = GetComponent<StepThurst>();
         parry = GetComponent<Parry>();
+        parried = GetComponent<Parried>();
 	}
 
 
@@ -63,6 +65,10 @@ public class PlayerManager : MonoBehaviour {
 
         if(parry.parrying){
             ChangeAnimationState(7);
+        }
+
+        if(parried.isParried){
+            ChangeAnimationState(8);
         }
 	}
 

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoveForward : MonoBehaviour {
+public class MoveForward : EnemyState {
 
 	public float speed = 10f;
 
@@ -13,7 +13,7 @@ public class MoveForward : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		body2D.velocity = new Vector2 (transform.localScale.x, 0) * speed;
+	public void OnWalk () {
+		body2D.velocity = new Vector2 (transform.localScale.x * speed, body2D.velocity.y) ;
 	}
 }

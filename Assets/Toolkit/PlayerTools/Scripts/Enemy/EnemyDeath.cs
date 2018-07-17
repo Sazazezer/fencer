@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyDeath : MonoBehaviour {
+public class EnemyDeath : EnemyState {
 
 	public Debris debris;
 	public int totalDebris = 10;
 
+    private EnemyBehaviour enemyBehaviour;
+
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () {
+        enemyBehaviour = GetComponent<EnemyBehaviour>();
 	}
 	
 	// Update is called once per frame
@@ -18,13 +20,13 @@ public class EnemyDeath : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D target){
 		if (target.gameObject.tag == "PlayerWeapon") {
-			OnExplode ();
+			enemyBehaviour.states = States.Dead;//OnExplode ();
 		}
 	}
 
 	void OnCollisionEnter2D(Collision2D target){
 		if (target.gameObject.tag == "PlayerWeapon") {
-			OnExplode ();
+			enemyBehaviour.states = States.Dead;//OnExplode ();
 		}
 	}
 

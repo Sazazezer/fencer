@@ -29,19 +29,13 @@ public class PlayerStats : MonoBehaviour {
 	}
 
     public void IncreaseHealth(float healthModifier){
-        Debug.Log(playerHealth);
-        Debug.Log(maxPlayerHealth);
-        Debug.Log(healthModifier);
         playerHealth += healthModifier;
-        Debug.Log(playerHealth);
-        Debug.Log(maxPlayerHealth);
-        Debug.Log(healthModifier);
         
     }
 
     public void DecreaseHealth(float healthModifier){
 
-    playerHealth -= healthModifier;
+        playerHealth -= healthModifier;
         
     }
 }
