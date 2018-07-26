@@ -12,7 +12,7 @@ public class Parried : AbstractBehaviour {
     base.Awake ();
 }
 
-    protected virtual void OnParried(bool value){
+     protected virtual void OnParried(bool value){
         ToggleScripts (!isParried);
 
     }
@@ -20,14 +20,17 @@ public class Parried : AbstractBehaviour {
 
     
     // Update is called once per frame
-    void Update () {
-        var parriedTest = inputState.GetButtonValue(inputButtons[0]);
-
-        if(parriedTest && collisionState.standing  && !isParried){
+    public void GetParried () {
+        //var parriedTest = inputState.GetButtonValue(inputButtons[0]);
+        Debug.Log("3Egads. ou are skilled");
+        if (collisionState.standing  && !isParried){
             isParried = true;
             timeElapsed = 1.5f;
             OnParried(true);
         } 
+    }
+
+    void Update(){
 
         if(timeElapsed != 0){
             timeElapsed -= Time.deltaTime;

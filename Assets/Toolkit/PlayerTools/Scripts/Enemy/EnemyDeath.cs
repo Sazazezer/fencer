@@ -20,13 +20,13 @@ public class EnemyDeath : EnemyState {
 
 	void OnTriggerEnter2D(Collider2D target){
 		if (target.gameObject.tag == "PlayerWeapon") {
-			enemyBehaviour.states = States.Dead;//OnExplode ();
+		//	enemyBehaviour.states = States.Dead;//OnExplode ();
 		}
 	}
 
 	void OnCollisionEnter2D(Collision2D target){
 		if (target.gameObject.tag == "PlayerWeapon") {
-			enemyBehaviour.states = States.Dead;//OnExplode ();
+		//	enemyBehaviour.states = States.Dead;//OnExplode ();
 		}
 	}
 

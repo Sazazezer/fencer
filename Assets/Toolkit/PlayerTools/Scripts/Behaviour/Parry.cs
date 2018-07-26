@@ -25,7 +25,7 @@ public class Parry : AbstractBehaviour {
         if(swordPrefab != null && readyStance.ready){
             var canFire = inputState.GetButtonValue(inputButtons[0]);
 
-            if(canFire /*&& timeElapsed > shootDelay*/){
+            if(canFire){
                 parrying = true;
                 CreateProjectile(CalculateFirePosition());
                 timeElapsed = 0.5f;
@@ -54,6 +54,7 @@ public class Parry : AbstractBehaviour {
     public void CreateProjectile(Vector2 pos){
         var clone = Instantiate(swordPrefab, pos, Quaternion.identity) as GameObject;
         clone.transform.Rotate(0,0,27);
+        clone.GetComponent<SwordHitbox>().actionType = ActionType.Parrying;
     }
 
 }

@@ -10,7 +10,6 @@ public class EnemyStats : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log(touchDamage);
 	}
 	
 	// Update is called once per frame

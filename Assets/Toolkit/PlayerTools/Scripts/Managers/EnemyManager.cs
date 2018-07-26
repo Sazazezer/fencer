@@ -12,8 +12,8 @@ public class EnemyManager : MonoBehaviour {
     private Duck duckBehaviour;
     private ReadyStance readyStance;
     private StepThurst stepThurst;
-    private Parry parry;
-    private Parried parried;*/
+    private Parry parry;*/
+    private EnemyParried enemyParried;
 
     void Awake(){
         enemyBehaviour = GetComponent<EnemyBehaviour>();
@@ -24,8 +24,8 @@ public class EnemyManager : MonoBehaviour {
         duckBehaviour = GetComponent<Duck>();
         readyStance = GetComponent<ReadyStance>();
         stepThurst = GetComponent<StepThurst>();
-        parry = GetComponent<Parry>();
-        parried = GetComponent<Parried>();*/
+        parry = GetComponent<Parry>();*/
+        enemyParried = GetComponent<EnemyParried>();
     }
 
 
@@ -40,10 +40,15 @@ public class EnemyManager : MonoBehaviour {
             ChangeAnimationState(0);
         }
         if(enemyBehaviour.absVelX > 0 ){
-            ChangeAnimationState(1);
+             if (enemyBehaviour.tactics == Tactics.Flight){
+                ChangeAnimationState(2);
+                } else {
+                ChangeAnimationState(1);  
+                }
         }
 
         if(enemyBehaviour.absVelY > 1){ //was zero originally, cures jumping bug
+
             ChangeAnimationState(2);
         }
 
@@ -67,11 +72,11 @@ public class EnemyManager : MonoBehaviour {
 
         if(parry.parrying){
             ChangeAnimationState(7);
-        }
-
-        if(parried.isParried){
-            ChangeAnimationState(8);
         }*/
+
+        if(enemyParried.isParried){
+            ChangeAnimationState(8);
+        }
     }
 
     void ChangeAnimationState(int value){

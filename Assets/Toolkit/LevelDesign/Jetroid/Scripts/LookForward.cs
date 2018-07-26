@@ -17,7 +17,7 @@ public class LookForward : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if(enemyBehaviour.states == States.Walk){
+        if(enemyBehaviour.states == States.Walk ||enemyBehaviour.states == States.Fly){
 
     		collision = Physics2D.Linecast (sightStart.position, sightEnd.position, 1 << LayerMask.NameToLayer (layer));
 

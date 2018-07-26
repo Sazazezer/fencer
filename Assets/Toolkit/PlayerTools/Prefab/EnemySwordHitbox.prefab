@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 212658678703167360}
   - component: {fileID: 114359498158306922}
   - component: {fileID: 61542711444668428}
+  - component: {fileID: 50117327717384752}
   m_Layer: 0
   m_Name: EnemySwordHitbox
-  m_TagString: Untagged
+  m_TagString: PlayerWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,12 +37,32 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1599116272080898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.584, y: -57.549, z: 12.2004175}
-  m_LocalScale: {x: 4.0891547, y: 3.9239273, z: 1}
+  m_LocalPosition: {x: 228.78, y: -47.69, z: 12.2004175}
+  m_LocalScale: {x: 3.1133108, y: 3.445847, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50117327717384752
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1599116272080898}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!61 &61542711444668428
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -78,7 +99,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d892604d6b9044a84f961565e41529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilDeath: 10
+  actionType: 0
+  timeUntilDeath: 30
+  targetTag: PlayerWeapon
+  playerTag: Player
+  enemyTag: Deadly
 --- !u!212 &212658678703167360
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -115,7 +140,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6111b6bddcfbb73498e9fdd8236a8216, type: 3}
-  m_Color: {r: 0.46808982, g: 0, b: 0.7169812, a: 1}
+  m_Color: {r: 1, g: 0.7176471, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

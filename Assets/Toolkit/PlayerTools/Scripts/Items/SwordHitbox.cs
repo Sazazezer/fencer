@@ -1,30 +1,58 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+
+public enum ActionType{
+    Attacking,
+    Parrying,
+}
 
 public class SwordHitbox : MonoBehaviour {
 
-	//public Vector2 initialVelocity = new Vector2(100, -100);
+    public ActionType actionType;
 	public float timeUntilDeath = 10;
-	//private Rigidbody2D body2d;
+    private SpriteRenderer spr;
+    public string targetTag = "PlayerWeapon";
+    public string playerTag = "Player";
+    public string enemyTag = "Deadly";
 
-	// Use this for initialization
-	void Awake () {
-		//float timeUntilDeath = Time.deltaTime * 3;
+    void Start(){
+       spr  = GetComponent<SpriteRenderer>();
+    }
+
+    void OnCollisionEnter2D(Collision2D target){
+        if(target.gameObject.tag == targetTag){
+            if(actionType == ActionType.Attacking && target.gameObject.GetComponent<SwordHitbox>().actionType == ActionType.Attacking){
+                Debug.Log("Attack hits attack");
+            }
+
+            if(actionType == ActionType.Attacking && target.gameObject.GetComponent<SwordHitbox>().actionType == ActionType.Parrying){
+                Debug.Log("Attack hits parry");
+                if(transform.parent.gameObject.tag == playerTag){
+                    Debug.Log("Enemy parries player");
+                   transform.parent.gameObject.GetComponent<Parried>().GetParried(); //this version works
+                    }
+            }
+            if(actionType == ActionType.Parrying && target.gameObject.GetComponent<SwordHitbox>().actionType == ActionType.Attacking){
+              //  if(transform.parent.gameObject.tag == enemyTag){ //commented out while trying to fix target issue
+                Debug.Log("Parry hits Attack");
+                target.transform.parent.gameObject.GetComponent<EnemyParried>().GetParried();
+              //  }
+            }
+        }
+    }
 	
-		//var startVelX = initialVelocity.x * transform.localScale.x;
 
-		//body2d.velocity = new Vector2 (startVelX, initialVelocity.y);
 
-	}
-
-	void OnCollisionEnter2D(Collision2D target){
-
-	//	if (target.gameObject.transform.position.y < transform.position.y) {
-		//	timeUntilDeath --;
-	//	} I believe i'll need this for targeting enemies
-	}
 
 	void Update(){
+
+        switch (actionType){
+            case ActionType.Attacking: spr.color = Color.yellow; break;
+            case ActionType.Parrying: spr.color = Color.green; break;
+        }
+
+        
 		timeUntilDeath --;
 		if (timeUntilDeath <= 0)
 			Destroy (gameObject);

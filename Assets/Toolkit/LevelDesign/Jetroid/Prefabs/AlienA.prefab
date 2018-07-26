@@ -43,10 +43,17 @@ GameObject:
   - component: {fileID: 114000013850871876}
   - component: {fileID: 114204472180618354}
   - component: {fileID: 114236286050754210}
+  - component: {fileID: 114321726140680088}
+  - component: {fileID: 114639579189681554}
   - component: {fileID: 114191401537883254}
   - component: {fileID: 114320275427208838}
   - component: {fileID: 114216863357846770}
-  - component: {fileID: 114108628234033294}
+  - component: {fileID: 114397787674749574}
+  - component: {fileID: 114213029033075240}
+  - component: {fileID: 114794119698973498}
+  - component: {fileID: 114379176037914904}
+  - component: {fileID: 114187444940792792}
+  - component: {fileID: 114207144121006226}
   m_Layer: 8
   m_Name: AlienA
   m_TagString: Deadly
@@ -132,7 +139,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010439317530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 192.12067, y: -39.1, z: 13.5}
+  m_LocalPosition: {x: 151, y: -39.1, z: 13.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4000011530693612}
@@ -149,7 +156,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012249786454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8, y: -3.3, z: 0}
+  m_LocalPosition: {x: 6.3, y: 1.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000013362091468}
@@ -182,7 +189,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 40
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -247,6 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67a9ba27511164ca3aa7267f9ce57c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disableScripts: []
+  enemyBehaviour: {fileID: 0}
   speed: 10
 --- !u!114 &114000013850871876
 MonoBehaviour:
@@ -263,7 +272,7 @@ MonoBehaviour:
   sightEnd: {fileID: 4000011512345638}
   layer: Solid
   needsCollision: 0
---- !u!114 &114108628234033294
+--- !u!114 &114187444940792792
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -271,14 +280,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010439317530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71ce287c3af02dd4080f7f5cd7114397, type: 3}
+  m_Script: {fileID: 11500000, guid: a08cd6253a863084f90a4f8df39e19f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   disableScripts: []
-  direction: 1
-  states: 0
-  absVelX: 0
-  absVelY: 0
+  enemyBehaviour: {fileID: 114321726140680088}
+  shootDelay: 0.5
+  attackRange: 30
+  attackRangeCheck: 0
+  firePosition: {x: 10, y: -3}
+  debugColor: {r: 0.96469927, g: 1, b: 0, a: 1}
+  debugRadius: 3
+  player: {fileID: 0}
+  test: 0
 --- !u!114 &114191401537883254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -311,8 +325,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0de081a5f8db5964589ba00db97fc681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disableScripts: []
+  enemyBehaviour: {fileID: 0}
   debris: {fileID: 114000013903872626, guid: f7832f648fb1b4c5d9c9af6b845f7c11, type: 2}
   totalDebris: 5
+--- !u!114 &114207144121006226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fea37c3bb9975d04bbd5d3b5dbb7597a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114213029033075240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08999b0c230b2b446b70252879fa1b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableScripts:
+  - {fileID: 114397787674749574}
+  enemyBehaviour: {fileID: 0}
+  speed: 10
 --- !u!114 &114216863357846770
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -352,6 +394,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452928150d3195e4ca4aa734c9067cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114321726140680088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be04ed1520b3254399a56ae3091e431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 1
+  states: 0
+  absVelX: 0
+  absVelY: 0
+  weaponPrefab: {fileID: 1599116272080898, guid: 629692392003c3146a5c398ff8f2c4f5,
+    type: 2}
+  tactics: 0
+  player: {fileID: 0}
+  lineOfSightEnd: {fileID: 4000014195379816}
+  playerInRange: 0
+--- !u!114 &114379176037914904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6664e0b8cc693a4b9bf9ebe32e54a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableScripts: []
+  enemyBehaviour: {fileID: 0}
+  searchTime: 10
+--- !u!114 &114397787674749574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679db4688626efd47bf6208962ccd3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableScripts: []
+  enemyBehaviour: {fileID: 114321726140680088}
+  shootDelay: 0.5
+  attackRange: 20
+  attackRangeCheck: 0
+  firePosition: {x: 10, y: -3}
+  debugColor: {r: 0, g: 1, b: 0, a: 1}
+  debugRadius: 3
+  player: {fileID: 0}
+  test: 0
+--- !u!114 &114639579189681554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351f498cca6c4d4b91835b413799867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableScripts: []
+  enemyBehaviour: {fileID: 114321726140680088}
+--- !u!114 &114794119698973498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c06d4177c67904189768e80217fe31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableScripts: []
+  enemyBehaviour: {fileID: 0}
+  player: {fileID: 0}
+  directions: 0
+  maxDistanceFromPlayer: 10
 --- !u!212 &212000010366397978
 SpriteRenderer:
   m_ObjectHideFlags: 1

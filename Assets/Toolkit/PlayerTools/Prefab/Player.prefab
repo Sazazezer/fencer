@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 114310295516343736}
   - component: {fileID: 114728206497057914}
   - component: {fileID: 114663934594268874}
+  - component: {fileID: 114484210341370026}
+  - component: {fileID: 114019551061034626}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -129,6 +131,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputButtons: 
   disableScripts: []
+--- !u!114 &114019551061034626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 936b73e4a779878409657eb509ae1eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputButtons: 07000000
+  disableScripts: []
+  shootDelay: 0.5
+  swordPrefab: {fileID: 1599116272080898, guid: 629692392003c3146a5c398ff8f2c4f5,
+    type: 2}
+  firePosition: {x: 8, y: -5}
+  debugColor: {r: 0, g: 1, b: 0, a: 1}
+  debugRadius: 3
+  parrying: 0
 --- !u!114 &114165723948019036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,8 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6058bab33a3f99140a7dbd26d1c660b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 5
-  maxPlayerHealth: 10
+  playerHealth: 1000000
+  maxPlayerHealth: 1000000
 --- !u!114 &114421853453868870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,6 +226,27 @@ MonoBehaviour:
   - {fileID: 114421853453868870}
   - {fileID: 114858729517648434}
   interactionRadius: 20
+--- !u!114 &114484210341370026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b50b62608cc80f4a852f46c1ac9cee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputButtons: 02000000
+  disableScripts:
+  - {fileID: 114019551061034626}
+  - {fileID: 114728206497057914}
+  - {fileID: 114421853453868870}
+  - {fileID: 114532869285327530}
+  - {fileID: 114235459282316290}
+  - {fileID: 114858729517648434}
+  - {fileID: 114257129254198298}
+  isParried: 0
 --- !u!114 &114532869285327530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -302,7 +345,7 @@ MonoBehaviour:
   swordPrefab: {fileID: 1167276357570456, guid: 933f8400b385bfe48a12d8567f1c06a0,
     type: 2}
   firePosition: {x: 16, y: -5}
-  debugColor: {r: 0, g: 0.5598159, b: 1, a: 1}
+  debugColor: {r: 0, g: 1, b: 0.69907475, a: 1}
   debugRadius: 3
   thurst: 0
 --- !u!114 &114668603259342602
@@ -358,7 +401,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242233029094360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b38686106c83cb4b87c61b5172a6a71, type: 3}
   m_Name: 
