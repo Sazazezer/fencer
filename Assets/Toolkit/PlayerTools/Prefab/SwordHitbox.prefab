@@ -65,7 +65,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d892604d6b9044a84f961565e41529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilDeath: 10
+  actionType: 0
+  timeUntilDeath: 20
+  targetTag: PlayerWeapon
+  playerTag: Player
+  enemyTag: Deadly
 --- !u!212 &212475326675564358
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -79,6 +83,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:

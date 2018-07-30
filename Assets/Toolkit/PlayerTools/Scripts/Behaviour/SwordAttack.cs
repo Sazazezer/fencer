@@ -52,6 +52,7 @@ public class SwordAttack : AbstractBehaviour {
 	public void CreateProjectile(Vector2 pos){
 		var clone = Instantiate(swordPrefab, pos, Quaternion.identity, transform) as GameObject;
 		clone.GetComponent<SwordHitbox>().actionType = ActionType.Attacking;
+       //  Debug.Log(clone.transform.parent.name);
 
 	}
 

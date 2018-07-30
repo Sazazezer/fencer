@@ -6,7 +6,7 @@ public class Explode : MonoBehaviour {
 	public Debris debris;
 	public int totalDebris = 10;
 
-    public GameObject player;
+    public GameObject character;
 
 	// Use this for initialization
 	void Start () {
@@ -22,18 +22,18 @@ public class Explode : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D target){
 		if (target.gameObject.tag == "Deadly") {
-			OnDamage (target.gameObject.GetComponent<EnemyStats>().touchDamage);
+			OnDamage (target.gameObject.GetComponent<Stats>().touchDamage);
 		}
 	}
 
 	void OnCollisionEnter2D(Collision2D target){
 		if (target.gameObject.tag == "Deadly") {
-			OnDamage (target.gameObject.GetComponent<EnemyStats>().touchDamage);
+			OnDamage (target.gameObject.GetComponent<Stats>().touchDamage);
 		}
 	}
 
     public void OnDamage(float damage){
-            player.GetComponent<PlayerStats>().DecreaseHealth(damage); //abstraction needed
+            character.GetComponent<Stats>().DecreaseHealth(damage); //abstraction needed
     }
 
 	public void OnExplode(){
@@ -50,7 +50,10 @@ public class Explode : MonoBehaviour {
 		}
 		//GameObject gameControls = GameObject.Find("GameControls");
 		//GameOver gameOver = gameControls.GetComponent<GameOver>();
-		GameOver.playerDead = true;
+		
+        if(transform.gameObject.tag == "Player"){
+            GameOver.playerDead = true;
+        }
 		Destroy (gameObject);
 
 	}

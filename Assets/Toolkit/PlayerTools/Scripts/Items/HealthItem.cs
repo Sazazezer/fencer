@@ -8,7 +8,7 @@ public class HealthItem : Collectible {
     public float healthIncrease = 2f;
 
     override protected void OnCollect(GameObject target){
-        player.GetComponent<PlayerStats>().IncreaseHealth(healthIncrease); //abstraction needed
+        player.GetComponent<Stats>().IncreaseHealth(healthIncrease); //abstraction needed
         }
     
 }

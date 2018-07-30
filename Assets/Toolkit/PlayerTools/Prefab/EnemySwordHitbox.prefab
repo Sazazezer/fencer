@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionType: 0
-  timeUntilDeath: 30
+  timeUntilDeath: 20
   targetTag: PlayerWeapon
   playerTag: Player
   enemyTag: Deadly

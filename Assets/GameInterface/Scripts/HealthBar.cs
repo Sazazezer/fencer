@@ -9,17 +9,17 @@ public class HealthBar : MonoBehaviour {
     //private Player player = GameObject.FindObjectOfType<Player>();
     private Slider slider;
 
-    public GameObject player;
+    public GameObject character;
 
     public float health{
         get{
-            return player.GetComponent<PlayerStats>().playerHealth;
+            return character.GetComponent<Stats>().health;
         }
     }
 
     public float maxHealth{
         get{
-            return player.GetComponent<PlayerStats>().maxPlayerHealth;
+            return character.GetComponent<Stats>().maxHealth;
         }
     }
 
@@ -31,14 +31,14 @@ public class HealthBar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (player == null){
+        if (character == null){
             return;
         }
 
        if (health > 0){
            slider.value = health / maxHealth;
         } else {
-            var script = player.GetComponent<Explode>();
+            var script = character.GetComponent<Explode>();
             script.OnExplode();
         }
 		

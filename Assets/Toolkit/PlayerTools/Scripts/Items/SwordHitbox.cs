@@ -32,13 +32,16 @@ public class SwordHitbox : MonoBehaviour {
                     Debug.Log("Enemy parries player");
                    transform.parent.gameObject.GetComponent<Parried>().GetParried(); //this version works
                     }
+                if(transform.parent.gameObject.tag == enemyTag){
+                    Debug.Log("Player parries enemy (yay)");
+                   transform.parent.gameObject.GetComponent<EnemyParried>().GetParried(); //this version works
+                    }
             }
-            if(actionType == ActionType.Parrying && target.gameObject.GetComponent<SwordHitbox>().actionType == ActionType.Attacking){
-              //  if(transform.parent.gameObject.tag == enemyTag){ //commented out while trying to fix target issue
-                Debug.Log("Parry hits Attack");
-                target.transform.parent.gameObject.GetComponent<EnemyParried>().GetParried();
-              //  }
-            }
+        }
+
+        if(target.gameObject.tag == playerTag || target.gameObject.tag == enemyTag){
+            Debug.Log(target.gameObject);
+            target.gameObject.GetComponent<Stats>().DecreaseHealth(10);
         }
     }
 	

@@ -28,7 +28,7 @@ public class EnemyReady : EnemyState {
 	public void OnReady () {
             FacePlayer();
             SparPlayer();
-            enemyAttack.Attack();
+            //enemyAttack.Attack();
             //enemyParry.Parry();
 	}
 

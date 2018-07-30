@@ -14,6 +14,7 @@ public class EnemyParry : EnemyState {
     private float timeElapsed = 0f;
     public GameObject player;
     public float test;
+    public GameObject parryPrefab;
 
     private EnemyReady enemyReady;
 
@@ -45,7 +46,8 @@ public class EnemyParry : EnemyState {
     }
 
     public void CreateProjectile(Vector2 pos){
-        var clone = Instantiate(enemyBehaviour.weaponPrefab, pos, Quaternion.identity) as GameObject;
+        GameObject clone = Instantiate(parryPrefab, pos, Quaternion.identity);
+        clone.transform.SetParent(transform);
         clone.transform.Rotate(0,0,27);
         clone.GetComponent<SwordHitbox>().actionType = ActionType.Parrying;
         Debug.Log("Parry!");

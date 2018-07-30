@@ -14,10 +14,11 @@ public class EnemyAttack : EnemyState {
     private float timeElapsed = 0f;
     public GameObject player;
     public float test;
+    public GameObject swordPrefab;
 
     private EnemyReady enemyReady;
 
-    void Awake(){
+    void Start(){
         enemyReady = GetComponent<EnemyReady>();
     }
     
@@ -45,7 +46,7 @@ public class EnemyAttack : EnemyState {
     }
 
     public void CreateProjectile(Vector2 pos){
-        var clone = Instantiate(enemyBehaviour.weaponPrefab, pos, Quaternion.identity) as GameObject;
+        var clone = Instantiate(swordPrefab, pos, Quaternion.identity, transform) as GameObject;
         clone.GetComponent<SwordHitbox>().actionType = ActionType.Attacking;
         Debug.Log("Attack!");
 
@@ -55,7 +56,7 @@ public class EnemyAttack : EnemyState {
         Gizmos.color = debugColor;
 
         var pos = firePosition;
-        pos.x *= (int)enemyReady.directions;
+        //pos.x *= (int)enemyReady.directions;
         pos.x += transform.position.x;
         pos.y += transform.position.y;
 
