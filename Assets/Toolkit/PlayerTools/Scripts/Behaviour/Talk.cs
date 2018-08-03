@@ -8,6 +8,9 @@ public class Talk : AbstractBehaviour {
 
         public float interactionRadius = 2.0f;
         public bool toggleOptions { get; private set; } 
+        public bool isTalking = false;
+        public MonoBehaviour[] stopScripts;
+    //    private bool stopMotion = false;
 
 
         /// Draw the range at which we'll start talking to people.
@@ -28,9 +31,15 @@ public class Talk : AbstractBehaviour {
         /// Update is called once per frame
         void Update () {
             var canTalk = inputState.GetButtonValue (inputButtons[0]);
+          //  stopMotion = FindObjectOfType<DialogueRunner>().isDialogueRunning;
             // Remove all player control when we're in dialogue
             if (FindObjectOfType<DialogueRunner>().isDialogueRunning == true) {
-                ToggleScripts (!canTalk);
+                isTalking = true;
+                StopScripts (false);
+
+            } else {
+                isTalking = false;
+                StopScripts (true);
             }
 
             // Move the player, clamping them to within the boundaries 
@@ -40,12 +49,13 @@ public class Talk : AbstractBehaviour {
 
 
             // Detect if we want to start a conversation
-            if (canTalk) {
+            if (canTalk && !isTalking) {
                 toggleOptions = true;
                 CheckForNearbyNPC ();
+
             }
 
-            if(!canTalk){
+            if(FindObjectOfType<DialogueRunner>().isDialogueRunning == false){
                 toggleOptions = false;
             }
         }
@@ -65,6 +75,12 @@ public class Talk : AbstractBehaviour {
             if (target != null) {
                 // Kick off the dialogue at this node.
                 FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);
+            }
+        }
+
+        protected virtual void StopScripts(bool value){
+            foreach(var script in stopScripts){
+                script.enabled = value;
             }
         }
     }

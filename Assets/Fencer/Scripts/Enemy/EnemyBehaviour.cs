@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EnemyRank{
+    Civilian,
+    Soldier,
+    Boss
+}
+
 public enum States{
     Idle,
     Walk,
@@ -36,6 +42,7 @@ public class EnemyBehaviour : MonoBehaviour {
     private float detectTimer = 1f;
     public GameObject weaponPrefab;
     public Tactics tactics;
+    public EnemyRank enemyRank;
     public GameObject player;
     
     [SerializeField]

@@ -20,7 +20,7 @@ public class EnemyParried : EnemyState {
         if (value == false){
            // Debug.Log("Ha!");
             } else {
-                Debug.Log("Gah!");
+             //   Debug.Log("Gah!");
             }
     }
 
@@ -29,7 +29,7 @@ public class EnemyParried : EnemyState {
     // Update is called once per frame
     public void GetParried () {
         
-        Debug.Log("1Egads. ou are skilled");
+     //   Debug.Log("1Egads. ou are skilled");
         if (!isParried){
             isParried = true;
             timeElapsed = 1.5f;

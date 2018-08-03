@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 114207144121006226}
   - component: {fileID: 114332181809933950}
   - component: {fileID: 114740395299929742}
+  - component: {fileID: 114913522948724562}
   m_Layer: 8
   m_Name: AlienA
   m_TagString: Deadly
@@ -185,7 +186,7 @@ GameObject:
   - component: {fileID: 114612452689280432}
   - component: {fileID: 114937796653773654}
   m_Layer: 5
-  m_Name: HealthBar (1)
+  m_Name: EnemyHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,6 +732,18 @@ MonoBehaviour:
   player: {fileID: 0}
   directions: 0
   maxDistanceFromPlayer: 10
+--- !u!114 &114913522948724562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010439317530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca567e3f9d248c641a93e1277d77e98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 114612452689280432}
 --- !u!114 &114937796653773654
 MonoBehaviour:
   m_ObjectHideFlags: 1

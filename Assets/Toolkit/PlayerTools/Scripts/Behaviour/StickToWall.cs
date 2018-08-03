@@ -22,7 +22,8 @@ public class StickToWall : AbstractBehaviour {
 	
 	// Update is called once per frame
 	protected virtual void Update () {
-		if(collisionState.onWall && unlockManager.wallStick == 10){
+
+		if(collisionState.onWall){
 				if(!onWallDetected ){
 					OnStick();
 					ToggleScripts(false);

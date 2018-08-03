@@ -41,6 +41,6 @@ public class HealthBar : MonoBehaviour {
             var script = character.GetComponent<Explode>();
             script.OnExplode();
         }
-		
+
 	}
 }

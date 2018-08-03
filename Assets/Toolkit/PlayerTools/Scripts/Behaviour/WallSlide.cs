@@ -22,6 +22,8 @@ public class WallSlide : StickToWall {
 
 			body2d.velocity = new Vector2(body2d.velocity.x, velY);
 
+
+
 			if(timeElapsed > dustSpawnDelay){
 
 				var dust = Instantiate(dustPrefab);

@@ -5,8 +5,8 @@ using UnityEngine;
 public class Jump : AbstractBehaviour {
 
 	public float jumpSpeed = 200f;
-	public float jumpDelay = .1f;
-	public int jumpCount = 2;
+	public float jumpDelay = .1f; //.1f
+	public int jumpCount = 0; //2 remeber to check the instance!
 	public GameObject dustEffectPrefab;
 
 	protected float lastJumpTime = 0;

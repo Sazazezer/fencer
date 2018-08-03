@@ -7,6 +7,7 @@ public class Walk : AbstractBehaviour {
 	public float speed = 50f;
 	public float runMultiplier = 2f;
 	public bool running;
+    public bool isSwinging;
 
 	// Use this for initialization
 	void Start () {
