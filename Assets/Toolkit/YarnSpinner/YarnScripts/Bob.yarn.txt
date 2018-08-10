@@ -1,0 +1,85 @@
+title: Bob
+tags: 
+colorID: 0
+position: 540,260
+---
+Bob: Yargh. IT seems you have caught me as i attempt to enact my fiendishly devilishly plan.
+[[↑  Ermmmm what?|Bob.Next]]  [[↓  That's right... Fiend!|Bob.Fiend]]
+
+
+===
+title: Bob.Next
+tags: 
+colorID: 0
+position: 871,217
+---
+Bob:Yar. I refuse to accept yopur denial. Now. I strike.
+===
+title: Bob.Fiend
+tags: 
+colorID: 0
+position: 237,443
+---
+Well, you will not stop me. I will stop you, before you find my teddy bears.
+
+[[ ↑ ermmm|Bob.erm]]
+===
+title: Bob.erm
+tags: 
+colorID: 0
+position: 156,147
+---
+Bob: What? You dare mock my teddy plan plan?
+
+[[↑ I don't even know what the plan is.|Bob.whatplan]]
+===
+title: Bob.whatplan
+tags: 
+colorID: 0
+position: 422,-80
+---
+Bob:Ha. It is simple. I will simply take all the teddy bears and-
+
+[[↑ No you misunderstand. I don't know what your plan is. That does not mean that i care what your plan is.|Bob.questionplan]]
+===
+title: Bob.questionplan
+tags: 
+colorID: 0
+position: 828,-120
+---
+Bob:Oh, so you don't want to hear my amazing plan? :(
+
+[[↑ No|Bob.amazingno]]
+[[↓ ... oh... go on then?|Bob.amazingyes]]
+===
+title: Bob.amazingno
+tags: 
+colorID: 0
+position: 1175,37
+---
+Bob: Oh. Okay...
+
+I GUESS WE FIGHT TO THE DEATH THEN
+===
+title: Bob.amazingyes
+tags: 
+colorID: 0
+position: 1134,-197
+---
+Bob:*sniff* Thank you.
+
+Bob:You see, i get all the teddy bears and then... and then i.
+
+Bob: Well, you see.
+
+[[↑ Are you okay?|Bob.break]]
+===
+title: Bob.break
+tags: 
+colorID: 6
+position: 1497,-199
+---
+Bob: Bah. You are to dub to understand my brilliance.
+
+WE FIGHT TO THE DEATH NOW.
+===

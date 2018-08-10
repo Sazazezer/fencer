@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Deadly
   - PlayerWeapon
+  - SavePoint
   layers:
   - Default
   - TransparentFX
