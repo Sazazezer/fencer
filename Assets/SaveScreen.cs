@@ -19,7 +19,7 @@ public class SaveScreen : MonoBehaviour {
     void Update () {
 
 
-        if(Input.GetButtonDown("Submit")){
+        if(Input.GetButtonDown("Fire1")){//this is activating straight away after saving!
             foreach(GameObject savePoint in savePoints){
                 float dist = Vector3.Distance(player.transform.position, savePoint.transform.position);
                 if(dist < savePointRange){

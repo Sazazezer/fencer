@@ -16,11 +16,11 @@ public class CharacterActivation : AbstractBehaviour {
 	void Update () {
 
         if(characterIsActive==false){
-            Debug.Log("Spots on");
+//            Debug.Log("Spots on");
             ToggleScripts(false);
         } else {
              ToggleScripts(true);
-             Debug.Log("Spots off");
+           //  Debug.Log("Spots off");
         }
 		
 	}

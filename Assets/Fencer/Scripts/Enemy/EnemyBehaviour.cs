@@ -99,7 +99,7 @@ public class EnemyBehaviour : MonoBehaviour {
     }
 
     void EnemyFall(){
-         Debug.Log("AAAAAAAAAAAAHHHHHHHHHHHHH");
+      //   Debug.Log("AAAAAAAAAAAAHHHHHHHHHHHHH");
          CheckFall();
     }
 

@@ -7,6 +7,7 @@ TagManager:
   - Deadly
   - PlayerWeapon
   - SavePoint
+  - Door
   layers:
   - Default
   - TransparentFX
