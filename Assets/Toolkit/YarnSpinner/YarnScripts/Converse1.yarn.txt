@@ -1,0 +1,28 @@
+title: SallyAnn
+tags: 
+colorID: 0
+position: 540,260
+---
+Sally: Not even moments.
+
+<<explode Sally>>
+
+
+===
+title: SallyAnn.Next
+tags: 
+colorID: 0
+position: 871,217
+---
+Sally: Yes. If you are lucky, you will at best be allowed to be in a relationship with me.
+
+Sally: If you are really lucky, it will be heralded by critics as being progressive.
+
+Ann: But most like i will simply cease to be moments after this scene has finished.
+
+Sally: Not even moments.
+
+Sally: Boy i sure do like being a protagonist. I am so glad i have personal motivations and a backstory. Unlike you, Ann.
+
+Ann: Lol yeah. I am an empty meaingless character with no clearly defined goals except for helping or hindering you in some way. I exist solely to be used.
+

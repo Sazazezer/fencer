@@ -3,8 +3,8 @@ tags:
 colorID: 0
 position: 540,260
 ---
-Fish: I am a perfectly ordinary human. None should suspect me. Shall we go to the next node or dance forever in the moonlight?
-[[↑  Next node|Fish.Next]]  [[↓  Dance please|Fish.Moonlight]]
+Fish: I am 
+<<npcmovenpc Fish Ann>>
 
 
 ===
@@ -21,7 +21,8 @@ colorID: 0
 position: 237,443
 ---
 An excellent choice. Take my hand, and i shall whisk us away, to a wonder of wonder without oxygen.
-
+I am a perfectly ordinary human. None should suspect me. Shall we go to the next node or dance forever in the moonlight?
+[[↑  Next node|Fish.Next]]  [[↓  Dance please|Fish.Moonlight]]
 [[ ↑ ermmm|Fish.erm]]
 ===
 title: Fish.erm
