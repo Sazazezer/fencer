@@ -4,7 +4,8 @@ colorID: 0
 position: 540,260
 ---
 Fish: I am 
-<<npcmovenpc Fish Ann>>
+<<npcmovenpc Fish Ann 10>>
+Fish: Still talking here!
 
 
 ===

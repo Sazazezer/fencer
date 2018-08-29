@@ -3,9 +3,9 @@ tags:
 colorID: 0
 position: 540,260
 ---
-Bob: Yargh. IT seems you have caught me as i attempt to enact my fiendishly devilishly plan.
-[[↑  Ermmmm what?|Bob.Next]]  [[↓  That's right... Fiend!|Bob.Fiend]]
-
+Bob: Yargh.
+<<bossfightnow BossEnemy>> 
+<<nomoretalk BossEnemy 1>>
 
 ===
 title: Bob.Next
@@ -13,7 +13,10 @@ tags:
 colorID: 0
 position: 871,217
 ---
-Bob:Yar. I refuse to accept yopur denial. Now. I strike.
+Bob:IT seems you have caught me as i attempt to enact my fiendishly devilishly plan.
+[[↑  Ermmmm what?|Bob.Next]]  [[↓  That's right... Fiend!|Bob.Fiend]]
+
+Yar. I refuse to accept yopur denial. Now. I strike.
 ===
 title: Bob.Fiend
 tags: 

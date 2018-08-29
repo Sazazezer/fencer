@@ -21,13 +21,13 @@ public class Explode : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D target){
-		if (target.gameObject.tag == "Deadly") {
+		if (target.gameObject.tag == "Deadly" || target.gameObject.tag == "Boss") {
 			OnDamage (target.gameObject.GetComponent<Stats>().touchDamage);
 		}
 	}
 
 	void OnCollisionEnter2D(Collision2D target){
-		if (target.gameObject.tag == "Deadly") {
+		if (target.gameObject.tag == "Deadly" || target.gameObject.tag == "Boss") {
 			OnDamage (target.gameObject.GetComponent<Stats>().touchDamage);
 		}
 	}
@@ -53,6 +53,11 @@ public class Explode : MonoBehaviour {
 		
         if(transform.gameObject.tag == "Player"){
             GameOver.playerDead = true;
+        }
+
+        if (transform.gameObject.tag == "Boss"){
+            GameObject player = GameObject.Find("Player");
+            player.GetComponent<Talk>().preventTalk --;
         }
 		Destroy (gameObject);
 

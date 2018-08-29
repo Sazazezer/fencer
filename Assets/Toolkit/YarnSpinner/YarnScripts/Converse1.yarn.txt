@@ -3,9 +3,10 @@ tags:
 colorID: 0
 position: 540,260
 ---
-Sally: Not even moments.
-
+Sally: Boy i
 <<explode Sally>>
+Sally: Not 
+
 
 
 ===

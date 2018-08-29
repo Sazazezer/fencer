@@ -16,6 +16,7 @@ public class SwordHitbox : MonoBehaviour {
     public string targetTag = "PlayerWeapon";
     public string playerTag = "Player";
     public string enemyTag = "Deadly";
+    public string bossTag = "Boss";
     private int weaponInt;
 
     void Start(){
@@ -42,17 +43,17 @@ public class SwordHitbox : MonoBehaviour {
                     Debug.Log("Enemy parries player");
                    transform.parent.gameObject.GetComponent<Parried>().GetParried(); //this version works
                     }
-                if(transform.parent.gameObject.tag == enemyTag){
+                if(transform.parent.gameObject.tag == enemyTag || transform.parent.gameObject.tag == bossTag){
                     Debug.Log("Player parries enemy (yay)");
                    transform.parent.gameObject.GetComponent<EnemyParried>().GetParried(); //this version works
                     }
             }
         }
 
-        if(target.gameObject.tag == playerTag || target.gameObject.tag == enemyTag){
+        if(target.gameObject.tag == playerTag || target.gameObject.tag == enemyTag || target.gameObject.tag == bossTag){
             Debug.Log(target.gameObject);
             target.gameObject.GetComponent<Stats>().DecreaseHealth(weaponInt);
-            if(target.gameObject.tag == enemyTag){
+            if(target.gameObject.tag == enemyTag || target.gameObject.tag == bossTag){
                  target.gameObject.GetComponent<HideHealthBar>().FlashHealth();
             }
         }

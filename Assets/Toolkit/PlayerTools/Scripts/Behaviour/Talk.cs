@@ -9,7 +9,9 @@ public class Talk : AbstractBehaviour {
         public float interactionRadius = 2.0f;
         public bool toggleOptions { get; private set; } 
         public bool isTalking = false;
+        public bool canTalk = false;
         public MonoBehaviour[] stopScripts;
+        public int preventTalk = 0;
     //    private bool stopMotion = false;
 
 
@@ -30,7 +32,10 @@ public class Talk : AbstractBehaviour {
 
         /// Update is called once per frame
         void Update () {
-            var canTalk = inputState.GetButtonValue (inputButtons[0]);
+            if (preventTalk <= 0){
+                canTalk = inputState.GetButtonValue (inputButtons[0]);
+                preventTalk = 0;
+            }
           //  stopMotion = FindObjectOfType<DialogueRunner>().isDialogueRunning;
             // Remove all player control when we're in dialogue
             if (FindObjectOfType<DialogueRunner>().isDialogueRunning == true) {

@@ -14,7 +14,7 @@ public class CameraFollow : MonoBehaviour {
 	}
 
 	// Use this for initialization
-	void Start () {
+	public void Start () {
 		t = target.transform;
 	}
 	

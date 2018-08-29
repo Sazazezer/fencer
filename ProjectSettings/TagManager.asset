@@ -8,6 +8,7 @@ TagManager:
   - PlayerWeapon
   - SavePoint
   - Door
+  - Boss
   layers:
   - Default
   - TransparentFX

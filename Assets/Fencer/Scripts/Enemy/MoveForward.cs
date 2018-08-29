@@ -5,7 +5,7 @@ public class MoveForward : EnemyState {
 
 	public float speed = 10f;
 
-	private Rigidbody2D body2D;
+	public Rigidbody2D body2D;
 
 	// Use this for initialization
 	void Start () {

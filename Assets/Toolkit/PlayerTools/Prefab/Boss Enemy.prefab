@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 222103253763378242}
   - component: {fileID: 114080744214955938}
   m_Layer: 8
-  m_Name: Text
+  m_Name: BossName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,8 +216,9 @@ GameObject:
   - component: {fileID: 114505602869574906}
   - component: {fileID: 114767500120755950}
   - component: {fileID: 114274632332921534}
-  - component: {fileID: 114826756975632158}
   - component: {fileID: 114069385936699972}
+  - component: {fileID: 114037841088898208}
+  - component: {fileID: 114999489321540310}
   m_Layer: 8
   m_Name: Boss Enemy
   m_TagString: Deadly
@@ -232,7 +233,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1994891409256766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 143, y: -365, z: 13.5}
+  m_LocalPosition: {x: 149, y: -362, z: 13.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4305608938317712}
@@ -362,6 +363,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114037841088898208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1994891409256766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Bob
+  talkToNode: Bob
+  scriptToLoad: {fileID: 0}
 --- !u!114 &114069385936699972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -378,8 +393,8 @@ MonoBehaviour:
   - {fileID: 114304809749479336}
   - {fileID: 114262050590755396}
   - {fileID: 114561253233436468}
-  bossIsActive: 0
-  bossCharacter: {fileID: 1994891409256766}
+  characterIsActive: 0
+  character: {fileID: 1994891409256766}
 --- !u!114 &114080744214955938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -584,6 +599,7 @@ MonoBehaviour:
   disableScripts: []
   enemyBehaviour: {fileID: 0}
   speed: 10
+  body2D: {fileID: 0}
 --- !u!114 &114357743513761306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -731,6 +747,7 @@ MonoBehaviour:
   weaponPrefab: {fileID: 1599116272080898, guid: 629692392003c3146a5c398ff8f2c4f5,
     type: 2}
   tactics: 0
+  enemyRank: 2
   player: {fileID: 0}
   lineOfSightEnd: {fileID: 4121976400427658}
   playerInRange: 0
@@ -827,18 +844,6 @@ MonoBehaviour:
   maxHealth: 100
   touchDamage: 0
   weapon: 20
---- !u!114 &114826756975632158
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1994891409256766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca567e3f9d248c641a93e1277d77e98c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 114445917676037962}
 --- !u!114 &114899153069869938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -854,6 +859,20 @@ MonoBehaviour:
   - {fileID: 114716659742024720}
   enemyBehaviour: {fileID: 0}
   speed: 10
+--- !u!114 &114999489321540310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1994891409256766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3550cd31f4121a346a5ec91be3f51621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 114445917676037962}
+  text: {fileID: 114080744214955938}
+  bossName: Bob, King of Generics
 --- !u!212 &212637758185840754
 SpriteRenderer:
   m_ObjectHideFlags: 1

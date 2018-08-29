@@ -163,7 +163,7 @@ public class EnemyBehaviour : MonoBehaviour {
         foreach (RaycastHit2D hit in hits)
         {           
             // ignore the enemy's own colliders (and other enemies)
-            if (hit.transform.tag == "Deadly")
+            if (hit.transform.tag == "Deadly" || hit.transform.tag == "Boss")
                 continue;
             
             // if anything other than the player is hit then it must be between the player and the enemy's eyes (since the player can only see as far as the player)
