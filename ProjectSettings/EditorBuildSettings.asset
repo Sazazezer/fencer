@@ -14,4 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Fencer/Scenes/TestScene 1.unity
     guid: dd6bd47e7dc77784eafff29a73da67d1
+  - enabled: 1
+    path: Assets/Fencer/Scenes/Room201.unity
+    guid: 369c01cf0c719cd459d1903ddf409921
+  - enabled: 1
+    path: Assets/Fencer/Scenes/Room202.unity
+    guid: 3ed04464eb66edd40afc86acf6d40799
+  - enabled: 1
+    path: Assets/Fencer/Scenes/Room203.unity
+    guid: b34566903b5a7264a887d4117c372bcb
+  - enabled: 1
+    path: Assets/Fencer/Scenes/Room204.unity
+    guid: 9ba8fe0edb6da6a48ad9ed419deb16af
+  - enabled: 1
+    path: Assets/Fencer/Scenes/Room205.unity
+    guid: da26ef44d10b2444a99b86400726a6d0
   m_configObjects: {}

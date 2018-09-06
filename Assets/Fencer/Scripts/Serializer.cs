@@ -44,7 +44,13 @@ public class Serializer : MonoBehaviour {
                         int doorID = newDoor.GetComponent<DoorTransition>().door;
                         if (doorID == roomData.iLeadTo){
                             Debug.Log("Within the Start room stuff");
-                            player.transform.position = new Vector3(newDoor.transform.position.x+50, newDoor.transform.position.y, 0);
+                            int doorSideInt = (int)newDoor.GetComponent<DoorTransition>().doorSide;
+                            Debug.Log(newDoor.GetComponent<DoorTransition>().doorSide);
+                            if (newDoor.GetComponent<DoorTransition>().doorDir == DoorDir.horizontal){
+                                player.transform.position = new Vector3(newDoor.transform.position.x+doorSideInt, newDoor.transform.position.y, 0);
+                            } else {
+                                player.transform.position = new Vector3(newDoor.transform.position.x, newDoor.transform.position.y + doorSideInt, 0);
+                            }
                         }
                     }
                     File.Delete(roomFilename);

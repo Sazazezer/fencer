@@ -4,6 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
 
+public enum DoorSide {
+    leftdown = -50,
+    rightup = 50,
+}
+public enum DoorDir{
+    horizontal,
+    vertical
+}
+
 public class DoorTransition : MonoBehaviour {
  
     public string goToScene;
@@ -14,6 +23,8 @@ public class DoorTransition : MonoBehaviour {
     private NextRoom room;
     private string json;
     private string filename;
+    public DoorSide doorSide;
+    public DoorDir doorDir;
     static readonly string ROOM_MOVE = "room.json";
  
      void OnCollisionEnter2D(Collision2D target){

@@ -105,7 +105,7 @@ public class YarnActions : MonoBehaviour {
         script.talkToNode = "aBobe";
         script.enabled = false;*/
         GameObject player = GameObject.Find("Player");
-        player.GetComponent<Talk>().preventTalk += numberOfBosses;
+        player.GetComponent<Talk>().preventTalk += int.Parse(numberOfBosses);
         player.GetComponent<Talk>().canTalk = false; //prevents holding up glitch that causes player to start talking to everyone
         player.GetComponent<Talk>().isTalking = false;
     }

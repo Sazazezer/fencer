@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 232760544430988306}
   - component: {fileID: 120500780542055320}
   - component: {fileID: 114148875251782562}
+  - component: {fileID: 114505602688809422}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -205,7 +206,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242233029094360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 118, y: -44.4, z: 0}
+  m_LocalPosition: {x: 389, y: -873, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224681713545168542}
@@ -432,7 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -454,7 +455,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 224686228872077332}
   m_HandleRect: {fileID: 0}
@@ -506,14 +507,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baa75d9bea2d57440b899bb8b9dc0ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButtons: 05000000
-  disableScripts:
+  inputButtons: 02000000
+  disableScripts: []
+  interactionRadius: 20
+  isTalking: 0
+  canTalk: 0
+  stopScripts:
   - {fileID: 114550585519539730}
   - {fileID: 114532869285327530}
   - {fileID: 114235459282316290}
-  - {fileID: 114421853453868870}
   - {fileID: 114858729517648434}
-  interactionRadius: 20
+  - {fileID: 114728206497057914}
+  preventTalk: 0
 --- !u!114 &114484210341370026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -525,7 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b50b62608cc80f4a852f46c1ac9cee7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButtons: 02000000
+  inputButtons: 
   disableScripts:
   - {fileID: 114019551061034626}
   - {fileID: 114728206497057914}
@@ -535,6 +540,23 @@ MonoBehaviour:
   - {fileID: 114858729517648434}
   - {fileID: 114257129254198298}
   isParried: 0
+--- !u!114 &114505602688809422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baef4a67aa650b54e8ea8d96f71579c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputButtons: 
+  disableScripts:
+  - {fileID: 114421853453868870}
+  interactionRadius: 100
+  isTalking: 0
+  stopScripts: []
 --- !u!114 &114532869285327530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -554,7 +576,7 @@ MonoBehaviour:
   dustEffectPrefab: {fileID: 1898540516239760, guid: 32246a7f2b4b0f64d9b076f5b7ff4658,
     type: 2}
   longJumpDelay: 0.15
-  longJumpMultiplier: 1.5
+  longJumpMultiplier: 2
   canLongJump: 0
   isLongJumping: 0
 --- !u!114 &114550585519539730
@@ -586,7 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460165482f04db14ca78c156c89e237d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButtons: 03000000
+  inputButtons: 
   disableScripts:
   - {fileID: 114532869285327530}
   onWallDetected: 0
@@ -705,7 +727,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242233029094360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b38686106c83cb4b87c61b5172a6a71, type: 3}
   m_Name: 
@@ -749,7 +771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputButtons: 05000000
   disableScripts: []
-  shootDelay: 0.5
+  shootDelay: 1
   swordPrefab: {fileID: 1167276357570456, guid: 933f8400b385bfe48a12d8567f1c06a0,
     type: 2}
   firePosition: {x: 8, y: -5}
@@ -771,7 +793,7 @@ MonoBehaviour:
   - {fileID: 114235459282316290}
   - {fileID: 114532869285327530}
   - {fileID: 114550585519539730}
-  - {fileID: 114421853453868870}
+  - {fileID: 0}
   - {fileID: 114858729517648434}
 --- !u!114 &114913973314795982
 MonoBehaviour:
@@ -1166,7 +1188,7 @@ RectTransform:
   m_GameObject: {fileID: 1650288230338308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.45001128, z: 1}
   m_Children:
   - {fileID: 224611336128301364}
   - {fileID: 224861171051595270}
@@ -1175,7 +1197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -10}
+  m_AnchoredPosition: {x: 90, y: -6.100006}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224861171051595270
