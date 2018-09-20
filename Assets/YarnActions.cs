@@ -119,4 +119,14 @@ public class YarnActions : MonoBehaviour {
         getCamera.GetComponent<CameraFollow>().Start();
         Debug.Log(getCamera.GetComponent<CameraFollow>().target);
     }
+
+    [YarnCommand("stopmoving")]
+    public void StopMovement(){
+        Time.timeScale = 0f;
+    }
+
+    [YarnCommand("startmoving")]
+    public void StartMovement(){
+        Time.timeScale = 1f;
+    }
 }

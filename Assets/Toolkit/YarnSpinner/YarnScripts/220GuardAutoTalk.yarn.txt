@@ -1,0 +1,56 @@
+title: 220GuardAutoTalk
+tags: AutoConverse
+colorID: 0
+position: 540,260
+---
+
+<<changecamerato 220GuardAutoTalk TalkingGuard>>
+GuardA: Oh boy. Guard duty in the prison. What fun. What fun we have today, ey Sebastian?
+GuardB: You're telling me. I have been waiting for guard duty all day yesterday.
+GuardA: Which is strange as we were doing guard duty then as well.
+GuardB: I know, right? It feels like every day we are doing guard duty, and every day we are excited.
+GuardA: Well that is because we are together. And guard duty is best when it is with friends.
+GuardB: Indeed, i would die for you, my friend.
+GuardA: And i you.
+Both: Now that we would ever need to. 
+Both: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA
+GuardA: It is indeed a sweet gig.
+GuardB: Indeed. We would be wrong to complain about the easiness of our lives.
+GuardA: We should still do so though, on occasion.
+GuardB: Yes, that way the the Captain-Commander will give us extra benefits to add onto our easy life 
+of watching over a prison that only contains one prisoner.
+GuardA: And of course, protecting the Kings.
+GuardB: Almost goes without saying.
+GuardA: It is a shame i said it then.
+Both: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA
+GuardA: By the way, Sebastian?
+GuardB: What is it, Keith?
+GuardA: Did you ever find your key?
+GuardB: You mean the key to that door over there?
+<<changecamerato GuardAutoTalk Door222>>
+GuardA: Yes, the one to which you are pointing to now.
+GuardB: No i did not.
+<<changecamerato GuardAutoTalk TalkingGuard>>
+GuardA: Ah. A shame.
+GuardB: Such a shame, but ultimately meaningless.
+GuardA: As meaningless as our pointless existence in this deary forgotten lair, where the futility of our 
+GuardA:lives tick away, every second dripping with self-loathing and despair?
+GuardB:...what?
+GuardA: I mean... as meaningless as it would be to keep hold of it, seeing as even with the key the only 
+GuardA:prisoner we have to watch over would be unable to escape his pit, so even if he had it there would be nothing he could do with it.
+GuardB: ...yes. Exactly that.
+Both: ...
+Both: ...
+GuardB: Well, i'm going to go over here now.
+GuardA: Very well. I shall stay here.
+GuardB: You know... i'm here if you need to talk, Keith. We need to stick together here.
+GuardA: Thanks, Sebastian. I appreciate that.
+<<changecamerato 220GuardAutoTalk Player>>
+
+<<explode TalkingGuard>>
+<<explode 220GuardAutoTalk>>
+
+
+
+
+

@@ -43,7 +43,6 @@ public class Serializer : MonoBehaviour {
 
                         int doorID = newDoor.GetComponent<DoorTransition>().door;
                         if (doorID == roomData.iLeadTo){
-                            Debug.Log("Within the Start room stuff");
                             int doorSideInt = (int)newDoor.GetComponent<DoorTransition>().doorSide;
                             Debug.Log(newDoor.GetComponent<DoorTransition>().doorSide);
                             if (newDoor.GetComponent<DoorTransition>().doorDir == DoorDir.horizontal){
@@ -65,7 +64,6 @@ public class Serializer : MonoBehaviour {
                 SaveData copy = JsonUtility.FromJson<SaveData>(jsonFromFile); 
                 //Don't touch the stuff above. Variables go here.
                  player.transform.position = copy.playerPosition;
-                 Debug.Log("Deep within Start");
                 //Don't touch the stuff below
 
                 saveScreen.GetComponent<SaveScreen>().Resume();
@@ -100,9 +98,6 @@ public class Serializer : MonoBehaviour {
         saveScreen.GetComponent<SaveScreen>().Resume();
         textBox.gameObject.SetActive(true);
         textBox.text = "Game Saved.";
-        Debug.Log("Hello from Save");
-
-
     }
 
     public void Load(){
@@ -116,7 +111,6 @@ public class Serializer : MonoBehaviour {
 
         //Don't touch the stuff above. Variables go here.
         if (File.Exists(filename)){
-            Debug.Log("I do stuff");
             SceneManager.LoadScene(copy.sceneID);
         } else {
 

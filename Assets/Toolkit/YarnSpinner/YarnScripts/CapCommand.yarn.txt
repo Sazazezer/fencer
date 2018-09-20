@@ -1,0 +1,25 @@
+title: UselessRock
+tags: QuestItem
+colorID: 0
+position: 540,260
+---
+<<if $go_get_rock is true>>
+Huh. Who would have ever suspected that this rock would actually be useful?
+You got ActuallyUsefulRock.
+<<set $got_rock to true>>
+<<explode UselessRock>>
+This world is full of suprises.
+Not very good suprises, but suprises none the less.
+<<endif>>
+
+<<if visited ("UselessRock") is false>>
+This appears to be a useless rock.
+I am sure that it will remain so forever onwards.
+<<endif>>
+
+<<if $go_get_rock to false>>
+Yup. No need to return here ever again.
+To this Useless Rock.
+<<endif>>
+
+
