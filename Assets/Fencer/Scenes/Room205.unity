@@ -42163,6 +42163,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24f146f1ecaea6c4ab63a78cceb555c8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1667980990 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1166605526972472, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1667980989}
 --- !u!1 &1674429951
 GameObject:
   m_ObjectHideFlags: 0
@@ -42570,6 +42575,11 @@ Prefab:
       propertyPath: shootDelay
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114421853453868870, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 1667980990}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
   m_IsPrefabParent: 0

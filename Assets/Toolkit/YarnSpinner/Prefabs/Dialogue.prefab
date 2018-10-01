@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4869277040329092}
   - component: {fileID: 114220356356522288}
   - component: {fileID: 114328683927447286}
-  - component: {fileID: 114926822256936640}
   m_Layer: 0
   m_Name: Dialogue
   m_TagString: Untagged
@@ -35,8 +34,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166605526972472}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.37, y: -3.92, z: -0.58298093}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -47.62547, y: 24.549835, z: 13.200346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,12 +53,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sourceText:
-  - {fileID: 4900000, guid: 8b6ae1e8d32e840f0b3fd0b033e52253, type: 3}
-  - {fileID: 4900000, guid: 24f22b038d584445ba4f43344cc5733d, type: 3}
+  - {fileID: 4900000, guid: 7895534b7ac87684b9e8af5a24babac0, type: 3}
+  - {fileID: 4900000, guid: a49067e9d55e8764089a6b7ff397824a, type: 3}
+  - {fileID: 4900000, guid: 0d036d7b5eeec3145aaa8ecd6e689e22, type: 3}
+  - {fileID: 4900000, guid: e8c533d0c2c7bd74a81d0b8f59d1093b, type: 3}
   stringGroups: []
   shouldOverrideLanguage: 0
   overrideLanguage: 10
-  variableStorage: {fileID: 114926822256936640}
+  variableStorage: {fileID: 0}
   dialogueUI: {fileID: 114328683927447286}
   startNode: 
   startAutomatically: 0
@@ -85,16 +86,3 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   gameControlsContainer: {fileID: 0}
---- !u!114 &114926822256936640
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1166605526972472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultVariables: []
-  debugTextView: {fileID: 0}

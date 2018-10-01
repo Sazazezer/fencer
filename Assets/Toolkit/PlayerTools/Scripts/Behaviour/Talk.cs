@@ -12,6 +12,8 @@ public class Talk : AbstractBehaviour {
         public bool canTalk = false;
         public MonoBehaviour[] stopScripts;
         public int preventTalk = 0;
+        public bool speedUpTalk = false;
+        public GameObject gameControl;
     //    private bool stopMotion = false;
 
 
@@ -32,6 +34,9 @@ public class Talk : AbstractBehaviour {
 
         /// Update is called once per frame
         void Update () {
+
+            speedUpTalk = inputState.GetButtonValue (inputButtons[0]);
+
             if (preventTalk <= 0){
                 canTalk = inputState.GetButtonValue (inputButtons[0]);
                 preventTalk = 0;
@@ -49,8 +54,12 @@ public class Talk : AbstractBehaviour {
 
             // Move the player, clamping them to within the boundaries 
             // of the level.
-
-
+            
+            if (speedUpTalk){
+                gameControl.GetComponent<ExampleDialogueUI>().textSpeed = 0f;
+            } else {
+                gameControl.GetComponent<ExampleDialogueUI>().textSpeed = 0.025f;
+            }
 
 
             // Detect if we want to start a conversation

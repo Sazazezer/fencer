@@ -60887,6 +60887,54 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1632095701
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4383832174907200, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 611.1156
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383832174907200, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -498.04462
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383832174907200, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 75.55058
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383832174907200, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383832174907200, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383832174907200, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383832174907200, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383832174907200, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &1632095702 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114942146435752122, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1632095701}
+  m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
 --- !u!1 &1636580674
 GameObject:
   m_ObjectHideFlags: 0
@@ -61797,7 +61845,7 @@ Prefab:
     - target: {fileID: 114220356356522288, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
         type: 2}
       propertyPath: sourceText.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114926822256936640, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
         type: 2}
@@ -61885,12 +61933,12 @@ Prefab:
         type: 2}
       propertyPath: sourceText.Array.data[1]
       value: 
-      objectReference: {fileID: 4900000, guid: a49067e9d55e8764089a6b7ff397824a, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114220356356522288, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
         type: 2}
       propertyPath: sourceText.Array.data[0]
       value: 
-      objectReference: {fileID: 4900000, guid: 7895534b7ac87684b9e8af5a24babac0, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114328683927447286, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
         type: 2}
       propertyPath: lineText
@@ -61900,10 +61948,20 @@ Prefab:
         type: 2}
       propertyPath: sourceText.Array.data[2]
       value: 
-      objectReference: {fileID: 4900000, guid: 0d036d7b5eeec3145aaa8ecd6e689e22, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 114220356356522288, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
+        type: 2}
+      propertyPath: variableStorage
+      value: 
+      objectReference: {fileID: 1632095702}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24f146f1ecaea6c4ab63a78cceb555c8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1667980990 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1166605526972472, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1667980989}
 --- !u!1 &1668458294
 GameObject:
   m_ObjectHideFlags: 0
@@ -63211,6 +63269,11 @@ Prefab:
       propertyPath: shootDelay
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114421853453868870, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 1667980990}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
   m_IsPrefabParent: 0
