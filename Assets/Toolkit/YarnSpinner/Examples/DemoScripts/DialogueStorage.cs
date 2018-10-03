@@ -33,7 +33,6 @@ using Yarn.Unity;
 /// just stores everything in a Dictionary.
 public class DialogueStorage : VariableStorageBehaviour
 {
-    public int Value;
 
 private static DialogueStorage _instance;
 
@@ -54,7 +53,7 @@ private static DialogueStorage _instance;
 
 
     /// Where we actually keeping our variables
-    Dictionary<string, Yarn.Value> variables = new Dictionary<string, Yarn.Value> ();
+    public Dictionary<string, Yarn.Value> variables = new Dictionary<string, Yarn.Value> ();
 
     /// A default value to apply when the object wakes up, or
     /// when ResetToDefaults is called
@@ -155,7 +154,8 @@ private static DialogueStorage _instance;
     /// Erase all variables
     public override void Clear ()
     {
-        variables.Clear ();
+        Debug.Log("I just got ran");
+       // variables.Clear ();
     }
 
     /// If we have a debug view, show the list of all variables in it
@@ -169,12 +169,8 @@ private static DialogueStorage _instance;
                                                          item.Value));
             }
            // debugTextView.text = stringBuilder.ToString ();
-            Debug.Log(stringBuilder.ToString ());
+            Debug.Log(stringBuilder.ToString ()); //uncomment to get log of dialoguedata
         //}
-
-
-        Value++;
-        Debug.Log(Value);
     }
 
 }

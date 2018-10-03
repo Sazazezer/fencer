@@ -11,5 +11,6 @@ public class SaveData {
     public int kills;
 
     public Vector3 playerPosition;
-    public int sceneID; 
+    public int sceneID;
+    public Dictionary<string, Yarn.Value> dialogue;
 }

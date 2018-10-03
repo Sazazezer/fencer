@@ -64,6 +64,7 @@ public class Serializer : MonoBehaviour {
                 SaveData copy = JsonUtility.FromJson<SaveData>(jsonFromFile); 
                 //Don't touch the stuff above. Variables go here.
                  player.transform.position = copy.playerPosition;
+                 //GameObject.FindObjectOfType<DialogueStorage>().variables = copy.dialogue;
                 //Don't touch the stuff below
 
                 saveScreen.GetComponent<SaveScreen>().Resume();
@@ -80,7 +81,8 @@ public class Serializer : MonoBehaviour {
             name = "Zam", 
             kills = 0,
             playerPosition = player.transform.position,
-            sceneID = SceneManager.GetActiveScene().buildIndex
+            sceneID = SceneManager.GetActiveScene().buildIndex,
+            dialogue = GameObject.FindObjectOfType<DialogueStorage>().variables
         };
 
         jsonData = JsonUtility.ToJson(data);
@@ -94,7 +96,7 @@ public class Serializer : MonoBehaviour {
             File.WriteAllText(filename, jsonData);
 
         Debug.Log(data.playerPosition);
-        Debug.Log(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log(data.dialogue);
         saveScreen.GetComponent<SaveScreen>().Resume();
         textBox.gameObject.SetActive(true);
         textBox.text = "Game Saved.";
@@ -132,7 +134,7 @@ public class Serializer : MonoBehaviour {
 
     void Update(){
 
-         if (Input.GetKeyDown(KeyCode.F5)){
+         if (Input.GetKeyDown(KeyCode.F5)){ //!!
             Save();
          }
          if (Input.GetKeyDown(KeyCode.F6)){

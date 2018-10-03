@@ -4,6 +4,13 @@ colorID: 0
 position: 540,260
 ---
 
+<<if $220conversecomplete is true>>
+<<explode TalkingGuard>>
+<<explode 220GuardAutoTalk>>
+<<stop>>
+<<endif>>
+
+<<if visited ("220GuardAutoTalk") is false>>
 <<changecamerato 220GuardAutoTalk TalkingGuard>>
 GuardA: Oh boy. Guard duty in the prison. What fun. What fun we have today, ey Sebastian?
 GuardB: You're telling me. I have been waiting for guard duty all day yesterday.
@@ -46,9 +53,10 @@ GuardA: Very well. I shall stay here.
 GuardB: You know... i'm here if you need to talk, Keith. We need to stick together here.
 GuardA: Thanks, Sebastian. I appreciate that.
 <<changecamerato 220GuardAutoTalk Player>>
-<<set $testToRemove to true>>
+<<set $220conversecomplete to true>>
 <<explode TalkingGuard>>
 <<explode 220GuardAutoTalk>>
+<<endif>>
 
 
 
