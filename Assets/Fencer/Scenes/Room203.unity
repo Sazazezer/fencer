@@ -5176,6 +5176,7 @@ Transform:
   - {fileID: 1392302256}
   - {fileID: 2054097256}
   - {fileID: 667804006}
+  - {fileID: 1282452410}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46635,6 +46636,49 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1282452409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1282452410}
+  - component: {fileID: 1282452411}
+  m_Layer: 0
+  m_Name: 220GuardAutoTalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282452410
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282452409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 102.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 112165997}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1282452411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282452409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48fd598351135342ab473cbfd36056e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: 220GuardAutoTalk
+  talkToNode: 220GuardAutoTalk
+  scriptToLoad: {fileID: 0}
 --- !u!1 &1283438935
 GameObject:
   m_ObjectHideFlags: 0
@@ -57534,11 +57578,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000013362091468, guid: 84e86fb25a98746fe9d5422fc0b249fe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 517.9613
+      value: 262
       objectReference: {fileID: 0}
     - target: {fileID: 4000013362091468, guid: 84e86fb25a98746fe9d5422fc0b249fe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -846.45154
+      value: -752.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000013362091468, guid: 84e86fb25a98746fe9d5422fc0b249fe, type: 2}
       propertyPath: m_LocalPosition.z
@@ -57566,7 +57610,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010439317530, guid: 84e86fb25a98746fe9d5422fc0b249fe, type: 2}
       propertyPath: m_Name
-      value: Guard (3)
+      value: TalkingGuard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84e86fb25a98746fe9d5422fc0b249fe, type: 2}
@@ -61510,7 +61554,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1485056767942644, guid: 447dbe3eb2738154c92fb7170abf67d0, type: 2}
       propertyPath: m_Name
-      value: Door (4)
+      value: Door222
       objectReference: {fileID: 0}
     - target: {fileID: 114236202870384930, guid: 447dbe3eb2738154c92fb7170abf67d0,
         type: 2}
@@ -61535,6 +61579,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 447dbe3eb2738154c92fb7170abf67d0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1659661394 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1485056767942644, guid: 447dbe3eb2738154c92fb7170abf67d0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1659661393}
+--- !u!114 &1659661395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659661394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Door222
+  talkToNode: Door222
+  scriptToLoad: {fileID: 0}
 --- !u!1 &1665057940
 GameObject:
   m_ObjectHideFlags: 0
@@ -61845,7 +61908,7 @@ Prefab:
     - target: {fileID: 114220356356522288, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
         type: 2}
       propertyPath: sourceText.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114926822256936640, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
         type: 2}
@@ -61938,7 +62001,7 @@ Prefab:
         type: 2}
       propertyPath: sourceText.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4900000, guid: 653cf8001d7b2374685d192d4a14e64b, type: 3}
     - target: {fileID: 114328683927447286, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
         type: 2}
       propertyPath: lineText

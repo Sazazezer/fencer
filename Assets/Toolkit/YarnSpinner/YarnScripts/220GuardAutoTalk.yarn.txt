@@ -4,7 +4,7 @@ colorID: 0
 position: 540,260
 ---
 
-<<if $220conversecomplete is true>>
+<<if $220auto is true>>
 <<explode TalkingGuard>>
 <<explode 220GuardAutoTalk>>
 <<stop>>
@@ -34,10 +34,10 @@ GuardA: By the way, Sebastian?
 GuardB: What is it, Keith?
 GuardA: Did you ever find your key?
 GuardB: You mean the key to that door over there?
-<<changecamerato GuardAutoTalk Door222>>
+<<changecamerato 220GuardAutoTalk Door222>>
 GuardA: Yes, the one to which you are pointing to now.
 GuardB: No i did not.
-<<changecamerato GuardAutoTalk TalkingGuard>>
+<<changecamerato 220GuardAutoTalk TalkingGuard>>
 GuardA: Ah. A shame.
 GuardB: Such a shame, but ultimately meaningless.
 GuardA: As meaningless as our pointless existence in this deary forgotten lair, where the futility of our 
@@ -53,7 +53,7 @@ GuardA: Very well. I shall stay here.
 GuardB: You know... i'm here if you need to talk, Keith. We need to stick together here.
 GuardA: Thanks, Sebastian. I appreciate that.
 <<changecamerato 220GuardAutoTalk Player>>
-<<set $220conversecomplete to true>>
+<<set $220auto to true>>
 <<explode TalkingGuard>>
 <<explode 220GuardAutoTalk>>
 <<endif>>

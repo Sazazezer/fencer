@@ -1,0 +1,117 @@
+title: Tester
+tags: TestNPC
+colorID: 0
+position: 540,260
+---
+<<if $rant1 is true and $got_rock is false>>
+...
+Fencer:...
+Oh, Brave warrior, you have returned to-
+Fencer: Still not got it.
+Well... please hurry up.
+<<endif>>
+
+<<if $got_rock is true>>
+...
+Fencer:...
+...
+Fencer: Yeah i got the rock.
+Oh, Brave Warrior. Thank you kindly. A thousand gratitudes i place upon you.
+Fencer: So, you want me to smash the shackle then?
+Oh no no no.
+Fencer: No?
+Nooooo. I shall do it... later.
+Fencer: Later? Why not right now?
+No no. I have a few things i need to do first. A couple of items on the To Do list. Just some things to tick off before i can escape.
+Fencer: Like what?
+Oh nothing of importance to you, oh brave warrior. Just leave the rock with me. On the floor there.
+Fencer: Here?
+Yes. There!
+ACTION: Fencer places rock down
+Excellent. Now. Your reward.
+Fencer: Oh, thank you. That wasn't necessary, but i appreciate it-
+The key to the exit of this place.
+Fencer: I-
+Fencer: Thanks. But won't you need that? To escape?
+Oh no, i shall be quite all right.
+Fencer: You do actually plan on escaping right?
+Of course. Is that not what a prisoner that is not a fish would do?
+Fencer: I- I don't think the fish part is relevant.
+And it should not be.
+Now go. Leave me and this now Actually Useful Rock that has fulfilled its destiny to my To Do List.
+Brave Warrior. I thank you once again.
+Fencer: O-okay. Thank you for the key.
+You are most welcome.
+Fencer got the Dungeon Exit key thing!
+<<set $rant2 to true>>
+<<endif>>
+
+<<if $got_rock is true and $rant2 is true>>
+...
+Fencer:...
+...
+Fencer:...
+...
+Fencer:...
+What? What is it?
+Fencer: (sighs) Nothing. I guess.
+Well, run along then. No offence but you're a little too weird for me to be seen hanging around you.
+Fencer:!!!!
+<<endif>>
+
+<<if visited ("Prisoner") is false>>
+Hello, i am a humble prisoner and not a fish.
+Oh. Boo Hoo. Woe is me. I am So very Sad.
+The reason, i am sad, you ask?
+Fencer: I said nothing.
+Why, it is because i am trapped here, doomed to an eternity in this pit.
+(Note: NPC yet to be placed in pit)
+If only i had a rock, one that may have been considered useless.
+In order to free myself, from this shackle.
+(Note: Shackle has yet to be drawn)
+Then i could be free from this place.
+...
+...
+Fencer: Well. Goodbye the-
+Oh brave warrior. A thousand thanks for accepting my quest.
+I shall expect you back shortly. Holding a rock.
+One that may have once been considered useless.
+Fencer: There's a weird focus on this rock here.
+It is a beautiful rock. One that has not yet realised its potential in life.
+Right now, it believes itself utterly meaningless, but it is unaware of its true destiny.
+Have i mentioned that i am not a fish?
+Fencer: Several times.
+Yes i- wait no.
+I only mentioned it once before just now. Have you not been paying attention?
+I shall begin again.
+Oh brave warrior. A thou-
+Fencer: Okay, i'll get your stupid stone. Geez.
+I specifically requested a rock.
+Fencer: I'm going now!
+Thank you.
+<<set $go_get_rock to true>>
+<<stop>>
+<<endif>>
+
+<<if $rant1 is false>>
+Ah, you have returned. Salutations, noble warrior.
+I see you have brought the once thought useless rock to me. Pass it to me, and i shall free myself forthwith.
+fortwit? fourthwidth? Never mind. Now, the roc-
+Fencer: I haven't got it yet.
+Fencer: Hell i haven't even left the room. Couldn't you tell?
+Oh...
+Well, though i am not a fish, i confess that my eyes are on the side of my head. It makes it a bit tricky to see you.
+Fencer: You do realise that i don't care that you're a fish, right?
+Fencer: If anything, it makes you more impressive.
+Fencer: What with the whole being on land thing.
+...
+Don't know what you're talking about.
+Anyway, please bring me the rock, so that it may realise its destiny.
+Fencer: Yeah yeah. I'll be back soon.
+<<set $rant1 to true>>
+<<stop>>
+<<endif>>
+
+
+
+
