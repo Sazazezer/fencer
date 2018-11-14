@@ -1,0 +1,21 @@
+title: 205bossfight
+tags: bossfight
+colorID: 0
+position: 540,260
+---
+
+
+<<if visited ("205bossfight") is false>>
+<<changecamerato 205bossfight BossEnemy>>
+I guess i am the boss fight.
+I would like you to know that i am very serious.
+A very serious boss.
+Now. Let us Boss Fight.
+For i am a Boss!
+<<bossfightnow BossEnemy>>
+<<changecamerato 205bossfight Player>>
+<<explode 205bossfight>>
+<<endif>>
+
+
+

@@ -1,25 +1,20 @@
-title: UselessRock
-tags: QuestItem
+title: 205bossfight
+tags: bossfight
 colorID: 0
 position: 540,260
 ---
-<<if $go_get_rock is true>>
-Huh. Who would have ever suspected that this rock would actually be useful?
-You got ActuallyUsefulRock.
-<<set $got_rock to true>>
-<<explode UselessRock>>
-This world is full of suprises.
-Not very good suprises, but suprises none the less.
+
+
+<<if visited ("205bossfight") is false>>
+<<changecamerato 205bossfight BossEnemy>>
+I guess i am the boss fight.
+I would like you to know that i am very serious.
+A very serious boss.
+Now. Let us Boss Fight.
+For i am a Boss!
+<<bossfightnow 205bossfight BossEnemy>>
+<<changecamerato 205bossfight Player>>
 <<endif>>
 
-<<if visited ("UselessRock") is false>>
-This appears to be a useless rock.
-I am sure that it will remain so forever onwards.
-<<endif>>
-
-<<if $go_get_rock to false>>
-Yup. No need to return here ever again.
-To this Useless Rock.
-<<endif>>
 
 

@@ -44,6 +44,7 @@ Fencer: O-okay. Thank you for the key.
 You are most welcome.
 Fencer got the Dungeon Exit key thing!
 <<set $rant2 to true>>
+<<set $dungeon_key to true>>
 <<endif>>
 
 <<if $got_rock is true and $rant2 is true>>

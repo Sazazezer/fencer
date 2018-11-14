@@ -37,6 +37,7 @@ a248b5ca26db1c9f6f31cb4ec5107f9f Assembly-CSharp.dll:.Duck
 99bb3038b89691f299da4862f2ca1f17 Assembly-CSharp.dll:.BossHealthBar
 ab3b63beaccd05269033de7def043af2 Assembly-CSharp.dll:.EnemyReady
 9414df643a2f10ab431e480d8986bdfe Assembly-CSharp.dll:.Climb
+c058a97c714791c74dc0842df1b10828 Assembly-CSharp.dll:RotaryHeart.Lib.DataBaseExample
 7cd2a4fa9e58e4f359bec2305698ebe7 Assembly-CSharp.dll:.TalkOptions
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Continue
 6475363be976890852dd22042c9cfa27 Assembly-CSharp.dll:.EnemyBehaviour
@@ -173,7 +174,7 @@ d1357dd087e0eb0c495b4b9b7d66d8e4 Assembly-CSharp.dll:.HealthItem
 13f0c8b81194d7a37ec23d07f4f36312 Assembly-CSharp.dll:.AutoTalk
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AlienB
 9d0f21b81ae09bc4e4aa3af23665b161 Assembly-CSharp.dll:Yarn.Unity.Example.SpriteSwitcher
-1b4c97007d3f8a81e843c636d8dd4e81 Assembly-CSharp.dll:.Explode
+49037f28b9ee3069a3a2de49873ee546 Assembly-CSharp.dll:.Explode
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HappyToSeeYou
 16ca9ea4817e5ea64c4d98885a66bc90 Assembly-CSharp.dll:.InputState
 c7d89081f5f31c102f7974c33df38f4d Assembly-CSharp.dll:.Serializer
@@ -203,6 +204,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 eb761633fd75db2bc5fa9674836b4664 Assembly-CSharp.dll:.SwordAttack
+bca02934800a185f00f1357fa15e4c66 Assembly-CSharp.dll:RotaryHeart.Lib.NestedDB
 1f5e5d32a397a14ea2238e622327a549 Assembly-CSharp.dll:.Pause
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 f02726adeff0a3ec5905565234b372da UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
@@ -226,6 +228,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+3f0746186c504a48f23a05eaae8b59b0 Assembly-CSharp.dll:RotaryHeart.Lib.SerializableDictionary.RequiredReferences
 2bb9814bc1ec74e314174a561674c433 Assembly-CSharp.dll:.EnemyFly
 41e62c0952c27d14f9fee0593f2843c1 Assembly-CSharp.dll:.FireBall
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Projectile

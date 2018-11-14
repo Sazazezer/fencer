@@ -1,0 +1,18 @@
+title: 205bossdefeated
+tags: bossfight
+colorID: 0
+position: 540,260
+---
+
+
+Ah, the main bad guy is defeated.
+I guess now it is time to end.
+Hopefully i'll have changed this flavour text to something a bit more satisfying by the time of the demo release
+...
+But probably not.
+Return to Title Screen Action here.
+<<changesceneto 205bossdefeated GameWindows>>
+
+
+
+

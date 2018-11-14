@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using Yarn.Unity;
 using Yarn.Unity.Example;
+using UnityEngine.SceneManagement;
 
 /*Yarn actions
 To be used on NPC and other talking object characters to make them do stuff
@@ -118,6 +119,11 @@ public class YarnActions : MonoBehaviour {
         getCamera.GetComponent<CameraFollow>().target = focusOn;
         getCamera.GetComponent<CameraFollow>().Start();
         Debug.Log(getCamera.GetComponent<CameraFollow>().target);
+    }
+
+    [YarnCommand("changesceneto")]
+    public void ChangeScene(string newScene){
+          SceneManager.LoadScene(newScene);
     }
 
     [YarnCommand("stopmoving")]

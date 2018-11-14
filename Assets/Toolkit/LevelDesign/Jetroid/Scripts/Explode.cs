@@ -7,6 +7,7 @@ public class Explode : MonoBehaviour {
 	public int totalDebris = 10;
 
     public GameObject character;
+    public GameObject activateObject;
 
 	// Use this for initialization
 	void Start () {
@@ -59,6 +60,7 @@ public class Explode : MonoBehaviour {
             GameObject player = GameObject.Find("Player");
             player.GetComponent<Talk>().preventTalk --;
         }
+        activateObject.gameObject.SetActive(true);
 		Destroy (gameObject);
 
 	}
