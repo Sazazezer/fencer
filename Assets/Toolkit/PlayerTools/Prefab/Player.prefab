@@ -365,6 +365,7 @@ MonoBehaviour:
   debris: {fileID: 114000013903872626, guid: f7832f648fb1b4c5d9c9af6b845f7c11, type: 2}
   totalDebris: 10
   character: {fileID: 0}
+  activateObject: {fileID: 0}
 --- !u!114 &114195492447473468
 MonoBehaviour:
   m_ObjectHideFlags: 1

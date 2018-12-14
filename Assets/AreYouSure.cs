@@ -30,7 +30,7 @@ public class AreYouSure : MonoBehaviour {
 
         filename = Path.Combine(Application.persistentDataPath, SAVE_FILE);
         File.Delete(filename);
-        SceneManager.LoadScene("Room201");
+        SceneManager.LoadScene("OpeningScene");
     }
 
 }

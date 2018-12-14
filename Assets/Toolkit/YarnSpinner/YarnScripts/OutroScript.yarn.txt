@@ -1,0 +1,85 @@
+title: OutroScript
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+Ok then. I guess we're done.
+
+Congratulations on wasting your time doing something no one cares about.
+
+This finally puts you on the same level as everyone else.
+
+Your parents would be so proud, were they actually real.
+
+Anyway. Who did you think the killer was?
+
+[[John|OutroScript.John]]
+[[Paul|OutroScript.Paul]]
+[[The Third One|OutroScript.ThirdOne]]
+[[Ringo|OutroScript.Ringo]]
+
+===
+title: OutroScript.John
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+
+Okay. And what do you think was the murder weapon was?
+
+[[John's Rock|OutroScript.EndingWords]]
+[[John's Rocket Launcher|OutroScript.EndingWords]]
+[[A knife that was not John's but John got it anyway|OutroScript.EndingWords]]
+
+===
+title: OutroScript.Paul
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+
+Okay. And what do you think was the murder weapon was?
+
+[[Paul's Rock|OutroScript.EndingWords]]
+[[Paul's Rocket Launcher|OutroScript.EndingWords]]
+[[A knife that was not Paul's but Paul got it anyway|OutroScript.EndingWords]]
+
+===
+title: OutroScript.ThirdOne
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+
+Okay. And what do you think was the murder weapon was?
+
+[[ThirdOne's Rock|OutroScript.EndingWords]]
+[[ThirdOne's Rocket Launcher|OutroScript.EndingWords]]
+[[A knife that was not ThirdOne's but ThirdOne got it anyway|OutroScript.EndingWords]]
+
+===
+title: OutroScript.Ringo
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+
+Okay. And what do you think was the murder weapon was?
+
+[[Ringo's Rock|OutroScript.EndingWords]]
+[[Ringo's Rocket Launcher|OutroScript.EndingWords]]
+[[A knife that was not Ringo's but Ringo got it anyway|OutroScript.EndingWords]]
+
+===
+title: OutroScript.EndingWords
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+
+Great. Glad to hear it. Thank you for taking the time to do this.
+If it has meant anything, it has meant something to someone.
+That is what the word 'meant' means by its very defintion.
+Anyway. Game go away now.
+Don't forget your inevitable death!
+<<changesceneto OutroScript GameWindows>>

@@ -173,4 +173,8 @@ private static DialogueStorage _instance;
         //}
     }
 
+public Dictionary<string, Yarn.Value> Variables {
+        get { return variables; }
+}
+
 }

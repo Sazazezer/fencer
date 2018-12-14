@@ -60990,6 +60990,7 @@ GameObject:
   - component: {fileID: 1636580676}
   - component: {fileID: 1636580677}
   - component: {fileID: 1636580678}
+  - component: {fileID: 1636580679}
   m_Layer: 0
   m_Name: GameControls
   m_TagString: Untagged
@@ -61055,6 +61056,20 @@ MonoBehaviour:
   player: {fileID: 2028283576}
   saveScreen: {fileID: 2130780673}
   textBox: {fileID: 304891240}
+--- !u!114 &1636580679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1636580674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a1e4f50ac3ff44c8e497c3d0a22d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableStorage: {fileID: 0}
+  dialogueRunner: {fileID: 1667980991}
+  externalJson: 
 --- !u!1 &1640534540
 GameObject:
   m_ObjectHideFlags: 0
@@ -62025,6 +62040,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1166605526972472, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
     type: 2}
   m_PrefabInternal: {fileID: 1667980989}
+--- !u!114 &1667980991 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114220356356522288, guid: 24f146f1ecaea6c4ab63a78cceb555c8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1667980989}
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
 --- !u!1 &1668458294
 GameObject:
   m_ObjectHideFlags: 0

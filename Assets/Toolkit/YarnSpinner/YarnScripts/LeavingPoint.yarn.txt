@@ -1,0 +1,37 @@
+title: LeavingPoint
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+I suppose you think you are done.
+
+This is incorrect.
+
+You will never be done.
+
+You will keep going, until one day you stop.
+
+That is your fate.
+
+As it is mine.
+
+Anyway, enough of that, are you ready to end your quest?
+[[Yeah, i think i'm done.|LeavingPoint.Finished]]
+[[Actually, i think there's still more to find.|LeavingPoint.Continue]]
+
+===
+title:LeavingPoint.Finished
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+Come on then. Let's get out of here.
+<<changesceneto LeavingPoint FinalScene>>
+
+===
+title:LeavingPoint.Continue
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+You're so indecisive...

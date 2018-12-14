@@ -3,6 +3,7 @@ PlayerPath?
 C:/Users/itms2/Desktop/PlatformTest/PlatformTest.exe
 SceneListBegin?
 Assets/Toolkit/UITemplate/Scenes/GameWindows.unity
+Assets/Fencer/Scenes/OpeningScene.unity
 Assets/Fencer/Scenes/Room201.unity
 Assets/Fencer/Scenes/Room202.unity
 Assets/Fencer/Scenes/Room203.unity
@@ -161,6 +162,7 @@ e8110f86fc959b4fa4f78a10baca3e38 Assembly-CSharp.dll:.SimpleMovement
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RestartButton
 4476a2ed974f749447404d5e42c8fde7 Assembly-CSharp.dll:.EnemyDeath
 2c33de98085eeda3ce4afa07f9f706a4 Assembly-CSharp.dll:.DoorTrigger
+314d63fdfcc6074a176ab0fc951df165 Assembly-CSharp.dll:.SaveDialogue
 4e8b8d9a7429b3b91e26e0cde6f779df Assembly-CSharp.dll:.Parried
 a5803f9447cd15da3878aa9e0a78eb58 Assembly-CSharp.dll:.FireProjectile
 3f4409c67ceba2f6a5fd0766e55e62d6 Assembly-CSharp.dll:.UniqueVariables
