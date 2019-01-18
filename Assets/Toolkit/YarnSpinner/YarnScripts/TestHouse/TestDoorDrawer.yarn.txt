@@ -1,0 +1,9 @@
+title: TestDoorDrawer
+tags: 
+colorID: 0
+position: 540,260
+---
+Just a standard Door Drawer.
+All doors have one of these, right?
+It would be weird if every door in the universe didn't also come with a drawer.
+It's locked though.

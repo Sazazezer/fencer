@@ -1,0 +1,7 @@
+title: TestLivingRoomChest
+tags: 
+colorID: 0
+position: 540,260
+---
+A single book remains inside
+REMOVE ONCE JOURNAL OPTION IS AVAILABLE

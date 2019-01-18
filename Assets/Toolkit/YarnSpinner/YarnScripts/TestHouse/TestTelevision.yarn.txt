@@ -1,0 +1,10 @@
+title: TestTelevision
+tags: 
+colorID: 0
+position: 540,260
+---
+Whoa, this is old.
+Would this even work nowadays?
+There are four buttons for four channels.
+Someone actually made a tv thinking there would only ever be four channels.
+Past people are dumb at future proofing.
