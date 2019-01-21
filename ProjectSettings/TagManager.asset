@@ -9,6 +9,9 @@ TagManager:
   - SavePoint
   - Door
   - Boss
+  - PuzzleScreen
+  - Undefined
+  - JournalButton
   layers:
   - Default
   - TransparentFX

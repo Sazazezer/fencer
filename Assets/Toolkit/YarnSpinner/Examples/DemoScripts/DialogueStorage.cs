@@ -154,7 +154,7 @@ private static DialogueStorage _instance;
     /// Erase all variables
     public override void Clear ()
     {
-        Debug.Log("I just got ran");
+
        // variables.Clear ();
     }
 

@@ -15,14 +15,14 @@ public class Player : MonoBehaviour {
 
 	private Rigidbody2D body2D; //!!
 	private SpriteRenderer renderer2D;
-	private PlayerController controller;
+	private oldPlayerController controller;
 	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
 		body2D = GetComponent<Rigidbody2D> ();
 		renderer2D = GetComponent<SpriteRenderer> ();
-		controller = GetComponent<PlayerController> ();
+		controller = GetComponent<oldPlayerController> ();
 		animator = GetComponent<Animator> ();
 	}
 	

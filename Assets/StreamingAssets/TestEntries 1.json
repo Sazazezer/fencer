@@ -1,0 +1,10 @@
+{"items" : 
+        [
+            {"index":0,"lockedAway":0,"content":"Day One","journal":"It was a dark and stormy night."}, 
+            {"index":1,"lockedAway":0,"content":"Day Two","journal":"Still dark and stormy."},
+            {"index":2,"lockedAway":0,"content":"Day Three","journal":"Geez it's amazing just how dark and stomry it can be."},
+            {"index":3,"lockedAway":0,"content":"Day Four","journal":"Sunshine? No wait, more dark storms."},
+            {"index":4,"lockedAway":0,"content":"Day Five","journal":"How could i even mix those up?"}
+            {"index":9999,"lockedAway":0,"content":"sigh...","journal":"You forgot to set an entry..."}
+        ]
+}

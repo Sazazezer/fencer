@@ -5,6 +5,7 @@ using UnityEngine;
 using Yarn.Unity;
 using Yarn.Unity.Example;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /*Yarn actions
 To be used on NPC and other talking object characters to make them do stuff
@@ -134,5 +135,25 @@ public class YarnActions : MonoBehaviour {
     [YarnCommand("startmoving")]
     public void StartMovement(){
         Time.timeScale = 1f;
+    }
+
+    [YarnCommand("addnewjournal")]
+    public void YarnAddJournal(string newJournalIndex) {
+        int stringIndex = int.Parse(newJournalIndex);
+        GameObject.FindObjectOfType<JournalList>().AddNewJournal(stringIndex);
+    }
+
+    [YarnCommand("gointojournal")]
+    public void GoToJournalEntry(string goToJournalEntry) {
+        int stringEntry = int.Parse(goToJournalEntry);
+        GameObject[] journalButtons;
+        journalButtons = GameObject.FindGameObjectsWithTag("JournalButton");
+        foreach (GameObject journalButton in journalButtons){
+            if (journalButton.GetComponent<ButtonClick>().index == stringEntry){
+                GameObject.Find("JournalText").GetComponent<Text>().text = journalButton.GetComponent<ButtonClick>().journal;
+            }
+        }
+        GameObject.FindObjectOfType<PlayerUIManager>().GoToJournal();
+
     }
 }
