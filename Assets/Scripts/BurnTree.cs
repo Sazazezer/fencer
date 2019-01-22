@@ -19,7 +19,7 @@ public class BurnTree : MonoBehaviour {
     void Update(){
         if(canBurn > 0){
             canBurn--;
-            Debug.Log(itemSlotNumber);
+            Debug.Log(canBurn);
         }
     }
 

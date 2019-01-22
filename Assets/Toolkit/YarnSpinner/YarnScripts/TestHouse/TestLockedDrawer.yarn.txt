@@ -1,0 +1,10 @@
+title: TestLockedDrawer
+tags: 
+colorID: 0
+position: 540,260
+---
+
+Well, i got into the drawer.
+
+It's empty, but the feeling of accomplishment drives me to ever dizzying and greater heights.
+

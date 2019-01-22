@@ -8,6 +8,7 @@ public class TreeBurn : MonoBehaviour {
     public GameObject player;
     public int lockNumber;
     public GameObject itemKill;
+    public GameObject linkedItem;
 
 
 	// Use this for initialization
@@ -20,14 +21,16 @@ public class TreeBurn : MonoBehaviour {
 
         if (isBurning==true){
             Debug.Log("Noooo");
+            linkedItem.SetActive(true);
             Destroy(gameObject);
         }
 		
 	}
 
-     private void OnTriggerEnter2D(Collider2D other){
+     private void OnTriggerStay2D(Collider2D other){
 
         if (other.tag == "Player" && player.GetComponent<BurnTree>().canBurn > 0){  
+            Debug.Log("This happens");
             if (player.GetComponent<BurnTree>().keyInHand == lockNumber){ 
                 isBurning=true;
                 Debug.Log(player.GetComponent<BurnTree>().itemSlotNumber);

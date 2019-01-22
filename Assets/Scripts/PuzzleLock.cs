@@ -12,6 +12,7 @@ public class PuzzleLock : MonoBehaviour {
     public GameObject puzzlePrefab;
     public GameObject puzzle;
     public GameObject canvas;
+    public GameObject unlockedItem;
 
     public void OnTriggerStay2D(Collider2D other){
         if (Input.GetButtonUp("Up") && other.tag == "Player"){
@@ -31,6 +32,7 @@ public class PuzzleLock : MonoBehaviour {
     public void PuzzleUnlock () {
         puzzle.GetComponent<PuzzleCanvas>().Deactivate();
         this.GetComponent<PuzzleLockList>().UnlockPuzzleSave(puzzleLockIndex);
+        unlockedItem.SetActive(true);
         Destroy(gameObject);
     }
 }

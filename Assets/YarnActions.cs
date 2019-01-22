@@ -156,4 +156,10 @@ public class YarnActions : MonoBehaviour {
         GameObject.FindObjectOfType<PlayerUIManager>().GoToJournal();
 
     }
+
+    [YarnCommand("checkItemExists")]
+    public void CheckItemExists(string itemCheck) {
+       // int stringIndex = int.Parse(newJournalIndex);
+      //  GameObject.FindObjectOfType<JournalList>().AddNewJournal(stringIndex);
+    }
 }

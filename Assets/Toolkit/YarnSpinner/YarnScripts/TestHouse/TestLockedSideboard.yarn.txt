@@ -1,0 +1,26 @@
+title: TestLockedSideboard
+tags: 
+colorID: 0
+position: 540,260
+---
+
+
+<<checkItemExists TestLockedSideboard LockedSideboard>>
+<<if $TestSideboardLocked is true>>
+Locked.
+There's an image of a sun by the lock.
+An intricatelly detailed image of a sun, carved perfectly into the wood.
+Someone went to great lengths to associate this lock with the image of a sun.
+It seems unnecessary for day to day life, yet i feel this extreme effort is of immense value to me personally.
+...
+Maybe there is a connection between the lock and the image of a sun?
+Perhaps?
+I don't know.
+<<endif>>
+
+<<if $TestSideboardLocked is false>>
+Welp. It's open.
+Let's see what's inside, shall we?
+...
+Yes. Yes we shall.
+<<endif>>
