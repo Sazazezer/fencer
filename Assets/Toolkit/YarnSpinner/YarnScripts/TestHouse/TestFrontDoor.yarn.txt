@@ -7,3 +7,4 @@ The way out.
 Normally anyway.
 This is a test, which means i'm trapped in here.
 I have accepted my fate.
+<<set $door to true>>

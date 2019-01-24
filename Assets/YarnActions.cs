@@ -157,9 +157,13 @@ public class YarnActions : MonoBehaviour {
 
     }
 
-    [YarnCommand("checkItemExists")]
-    public void CheckItemExists(string itemCheck) {
-       // int stringIndex = int.Parse(newJournalIndex);
-      //  GameObject.FindObjectOfType<JournalList>().AddNewJournal(stringIndex);
+    [YarnCommand("checkLock")]
+    public bool CheckItemExists(string itemCheck) {
+        GameObject lockedItem = GameObject.Find(itemCheck);
+        if( lockedItem.GetComponent<TreeBurn>().locked == true){
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -9,6 +9,7 @@ public class TreeBurn : MonoBehaviour {
     public int lockNumber;
     public GameObject itemKill;
     public GameObject linkedItem;
+    public bool locked = true;
 
 
 	// Use this for initialization
@@ -22,7 +23,8 @@ public class TreeBurn : MonoBehaviour {
         if (isBurning==true){
             Debug.Log("Noooo");
             linkedItem.SetActive(true);
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            locked = false;
         }
 		
 	}

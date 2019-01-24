@@ -4,9 +4,7 @@ colorID: 0
 position: 540,260
 ---
 
-
-<<checkItemExists TestLockedSideboard LockedSideboard>>
-<<if $TestSideboardLocked is true>>
+<<if check_lock("LockedSideboard")>>
 Locked.
 There's an image of a sun by the lock.
 An intricatelly detailed image of a sun, carved perfectly into the wood.
@@ -16,11 +14,11 @@ It seems unnecessary for day to day life, yet i feel this extreme effort is of i
 Maybe there is a connection between the lock and the image of a sun?
 Perhaps?
 I don't know.
-<<endif>>
-
-<<if $TestSideboardLocked is false>>
+<<else>>
 Welp. It's open.
 Let's see what's inside, shall we?
 ...
 Yes. Yes we shall.
+Oh Look. A meat.
+<<add_item("Food")>>
 <<endif>>

@@ -100,6 +100,26 @@ namespace Yarn.Unity
             //Matt code
             variableStorage = GameObject.FindObjectOfType<DialogueStorage>();
 
+            //newer matt code
+            //dialogue = new Dialogue(variableStorage);
+
+            // RegisterFunction(name, parameterCount, implementation) still new matt code
+            dialogue.library.RegisterFunction ("is_even", 1, delegate(Value[] parameters) {
+                return (int)parameters[0].AsNumber % 2 == 0;
+            });
+
+            dialogue.library.RegisterFunction ("check_lock", 1, delegate(Value[] parameters) {
+                return GameObject.Find((string)parameters[0].AsString).GetComponent<TreeBurn>().locked;
+            });
+
+            dialogue.library.RegisterFunction ("add_journal", 1, delegate(Value[] parameters) {
+                GameObject.Find("JournalListPanel").GetComponent<JournalList>().AddNewJournal((int)parameters[0].AsNumber);
+            });
+
+            dialogue.library.RegisterFunction ("add_item", 1, delegate(Value[] parameters) {
+                GameObject instance = Instantiate(Resources.Load((string)parameters[0].AsString, typeof(GameObject)), GameObject.Find("Player").transform) as GameObject;
+                instance.transform.parent = null;
+            });
 
             // Ensure that we have our Implementation object
             if (dialogueUI == null) {

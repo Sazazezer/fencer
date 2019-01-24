@@ -40,13 +40,21 @@ public class SaveDialogue : MonoBehaviour {
     void LoadFromJson () {   
 
         string jsonFromFile = File.ReadAllText(filename);
-
+        Debug.Log(jsonFromFile);
+        Debug.Log(filename);
         YarnSaveState yss = Newtonsoft.Json.JsonConvert.DeserializeObject<YarnSaveState>(jsonFromFile);
+        Debug.Log(yss);
+        Debug.Log(yss.values);
         foreach(var v in yss.values) {
             variableStorage.SetValue(v.Key, v.Value);
+            Debug.Log(v);
+            Debug.Log(yss.values);
+            Debug.Log(v.Key);
+            Debug.Log(v.Value);
         }
-
+        Debug.Log(dialogueRunner.dialogue.visitedNodeCount);
         dialogueRunner.dialogue.visitedNodeCount = yss.visitedNodes;
+        Debug.Log(yss.visitedNodes);
     }
         
 
@@ -58,4 +66,5 @@ public class SaveDialogue : MonoBehaviour {
             visitedNodes = _visitedNodes;
         }
     }
+
 }
