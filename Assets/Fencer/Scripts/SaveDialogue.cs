@@ -6,7 +6,7 @@ using Yarn;
 using Yarn.Unity;
 using Newtonsoft.Json.Linq;
 using System.IO;
-
+//NONE OF THIS SHIT IS NEEDED. IT CAN GO! YAY! BE HAPPY FUTURE SELF! PAST YOU FOUND A BETTER WAY!
 public class SaveDialogue : MonoBehaviour {
     public DialogueStorage variableStorage;
     public DialogueRunner dialogueRunner;
@@ -20,12 +20,12 @@ public class SaveDialogue : MonoBehaviour {
     }
 
     void Update () {
-        if (Input.GetKeyDown(KeyCode.K)) {
+       /* if (Input.GetKeyDown(KeyCode.K)) {
             Save();
         }
         if (Input.GetKeyDown(KeyCode.L)) {
             LoadFromJson();
-        }
+        }*/
     }
     
     void Save () {

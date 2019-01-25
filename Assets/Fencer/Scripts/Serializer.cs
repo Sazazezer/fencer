@@ -29,7 +29,7 @@ public class Serializer : MonoBehaviour {
     public void Start(){
             //check for room transition and move player accordingly
             jsonRoom = JsonUtility.ToJson(room);
-            roomFilename = Path.Combine(Application.persistentDataPath, ROOM_MOVE);
+            roomFilename = Path.Combine(Application.streamingAssetsPath, ROOM_MOVE);
 
             //Don't touch the stuff above. Variables go here.
 
@@ -57,7 +57,7 @@ public class Serializer : MonoBehaviour {
             }else{
                 jsonData = JsonUtility.ToJson(data);
 
-                filename = Path.Combine(Application.persistentDataPath, SAVE_FILE);
+                filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
 
                 string jsonFromFile = File.ReadAllText(filename);
 
@@ -78,7 +78,7 @@ public class Serializer : MonoBehaviour {
 
         data = new SaveData() { 
             //Saved Variables go here. Don't forget to add them to SaveData.cs too
-            name = "Zam", 
+            name = "Tiona", 
             kills = 0,
             playerPosition = player.transform.position,
             sceneID = SceneManager.GetActiveScene().buildIndex,
@@ -87,7 +87,7 @@ public class Serializer : MonoBehaviour {
 
         jsonData = JsonUtility.ToJson(data);
 
-        filename = Path.Combine(Application.persistentDataPath, SAVE_FILE);
+        filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
 
             if (File.Exists(filename)){
                 File.Delete(filename);
@@ -105,7 +105,7 @@ public class Serializer : MonoBehaviour {
     public void Load(){
         jsonData = JsonUtility.ToJson(data);
 
-        filename = Path.Combine(Application.persistentDataPath, SAVE_FILE);
+        filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
 
         string jsonFromFile = File.ReadAllText(filename);
 
@@ -124,6 +124,28 @@ public class Serializer : MonoBehaviour {
 
     }
 
+    public void ResetGameData(){
+
+        data = new SaveData() { 
+            //Saved Variables go here. Don't forget to add them to SaveData.cs too
+            name = "Tiona", 
+            kills = 0,
+            playerPosition = GameObject.Find("TestFrontDoor").transform.position,
+            sceneID = 8,
+            dialogue = GameObject.FindObjectOfType<DialogueStorage>().variables
+        };
+
+        jsonData = JsonUtility.ToJson(data);
+
+        filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
+
+            if (File.Exists(filename)){
+                File.Delete(filename);
+            }
+
+            File.WriteAllText(filename, jsonData);
+    }
+
     public void Cancel(){
         saveScreen.GetComponent<SaveScreen>().Resume();
     }
@@ -134,12 +156,12 @@ public class Serializer : MonoBehaviour {
 
     void Update(){
 
-         if (Input.GetKeyDown(KeyCode.F5)){ //!!
+      /*   if (Input.GetKeyDown(KeyCode.F5)){ //!!
             Save();
          }
          if (Input.GetKeyDown(KeyCode.F6)){
             Load();
-         }
+         }*/
 
     }
 }

@@ -8,24 +8,17 @@ public class PlayerUIManager : MonoBehaviour {
 
     public float health;
     public Text healthDisplay;
-
- //   public float speed;
-  //  private Rigidbody2D rb;
-   // private Animator anim;
-//    private Vector2 moveVelocity;
     public Canvas bag;
     public Canvas journal;
     public bool inJournal = false;
     public bool inBag = false;
-//   public Canvas puzzle;
     public GameObject puzzle;
     public bool inPuzzle = false;
 
 
     private void Start()
     {
-    //    anim = GetComponent<Animator>();
-     //   rb = GetComponent<Rigidbody2D>();
+
         bag.GetComponent<Canvas> ().enabled = false;
         journal.GetComponent<Canvas> ().enabled = false;
         puzzle.GetComponent<Canvas> ().enabled = false;
@@ -36,16 +29,6 @@ public class PlayerUIManager : MonoBehaviour {
 
         healthDisplay.text = health.ToString();
 
-      /*  Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVelocity = moveInput.normalized * speed;
-
-        if (moveInput != Vector2.zero)
-        {
-            anim.SetBool("isRunning", true);
-        }
-        else {
-            anim.SetBool("isRunning", false);
-        }*/
         if (Input.GetButtonDown("Fire2")){
                 GoToJournal();                    
         }
@@ -56,17 +39,21 @@ public class PlayerUIManager : MonoBehaviour {
         if (Input.GetButtonDown("Cancel")){
             BackToGame();
         }
-        if (Input.GetButtonDown("Submit")){
-            GameObject.FindObjectOfType<JournalList>().ResetJournals();
-        //    GameObject.FindObjectOfType<PuzzleUnlockList>().ResetDoors(); REPLACE THIS
-            GameObject.FindObjectOfType<ItemList>().ResetItems();
+
+        //ultimate save,load,reset area
+        //save
+        if (Input.GetKeyDown(KeyCode.F9)){
+            SaveGameData();
+        }
+        //load
+        if (Input.GetKeyDown(KeyCode.F10)){
+            LoadGameData();
+        }
+        //reset
+        if (Input.GetKeyDown(KeyCode.F12)){
+            ResetGameData();
         }
     }
-
-   /* private void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
-    }*/
 
     public void GoToJournal() {
         if (inJournal == false){
@@ -121,7 +108,26 @@ public class PlayerUIManager : MonoBehaviour {
         Time.timeScale = 1f; 
     }
 
-   /* public void SetPuzzleCanvas(){
-        puzzle = GameObject.FindObjectOfType<Canvas>();
-    }*/
+    public void SaveGameData(){
+        GameObject.FindObjectOfType<Serializer>().Save();
+        GameObject.FindObjectOfType<InventoryList>().SaveInventory();
+        //do items lists needs saving? No, each item gets saved as picked up.
+    }
+
+    public void LoadGameData(){
+        GameObject.FindObjectOfType<Serializer>().Load();
+        GameObject.FindObjectOfType<InventoryList>().LoadInventory();
+        GameObject.FindObjectOfType<ItemList>().ItemCompile();
+        GameObject.FindObjectOfType<JournalList>().JournalCompile();
+    //    GameObject.FindObjectOfType<PuzzleUnlockList>().PuzzleLockCompile();
+
+    }
+
+    public void ResetGameData(){
+        GameObject.FindObjectOfType<Serializer>().ResetGameData();
+        GameObject.FindObjectOfType<InventoryList>().ResetInventory();
+        GameObject.FindObjectOfType<ItemList>().ResetItems(); 
+        GameObject.FindObjectOfType<JournalList>().ResetJournals(); 
+     //   GameObject.FindObjectOfType<PuzzleUnlockList>().ResetDoors();
+    }
 }

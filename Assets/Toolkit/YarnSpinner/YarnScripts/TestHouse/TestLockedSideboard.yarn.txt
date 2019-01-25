@@ -5,6 +5,12 @@ position: 540,260
 ---
 
 <<if check_lock("LockedSideboard")>>
+<<if checkvariable("testVariable") is 0>>
+Yay. Success
+<<setvariable("testVariable",1)>>
+<<else>>
+Still Successful.
+<<endif>>
 Locked.
 There's an image of a sun by the lock.
 An intricatelly detailed image of a sun, carved perfectly into the wood.

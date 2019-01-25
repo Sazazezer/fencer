@@ -121,6 +121,14 @@ namespace Yarn.Unity
                 instance.transform.parent = null;
             });
 
+            dialogue.library.RegisterFunction ("checkvariable", 1, delegate(Value[] parameters) {
+                Debug.Log("I ran");
+                return GameObject.Find("GameControls").GetComponent<UniqueVariablesList>().GetUniqueVariable(parameters[0].AsString);
+            });
+            dialogue.library.RegisterFunction ("setvariable", 2, delegate(Value[] parameters) {
+                Debug.Log("I also ran");
+                GameObject.Find("GameControls").GetComponent<UniqueVariablesList>().SetUniqueVariable(parameters[0].AsString, (int)parameters[1].AsNumber);
+            });
             // Ensure that we have our Implementation object
             if (dialogueUI == null) {
                 Debug.LogError ("Implementation was not set! Can't run the dialogue!");

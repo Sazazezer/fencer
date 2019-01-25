@@ -37,7 +37,7 @@ public class DoorTransition : MonoBehaviour {
             roomTransition = true
             };
             json = JsonUtility.ToJson(room);
-            filename = Path.Combine(Application.persistentDataPath, ROOM_MOVE);
+            filename = Path.Combine(Application.streamingAssetsPath, ROOM_MOVE);
             if (File.Exists(filename)){
                 File.Delete(filename);
             }
