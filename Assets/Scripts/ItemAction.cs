@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,6 +25,13 @@ public class ItemAction : MonoBehaviour {
         }
         if(_item == "Sword"){
            Debug.Log("Sword has been used"); 
+        }
+
+        if(_item == "GoldenBox"){
+            GameObject instance = Instantiate(Resources.Load("House207DoorKey"), GameObject.Find("Player").transform) as GameObject;
+            instance.transform.parent = null;
+            instance.transform.position = GameObject.Find("Player").transform.position;
+            //this.GetComponent<Item>().DestroyItem(this.GetComponent<Item>().slotNumber);
         }
 		
 	}

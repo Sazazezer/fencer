@@ -18,10 +18,9 @@ public class Item : MonoBehaviour {
     }
 
     public void Use(string _use, int _unique) {
-        Debug.Log("Boop");
-        Instantiate(explosionEffect, player.transform.position, Quaternion.identity);
         actionObject.GetComponent<ItemAction>().Use(_use, _unique, slotNumber);
         if (inventory.slots[slotNumber].itemIndestructible == false){
+            Instantiate(explosionEffect, player.transform.position, Quaternion.identity); //Game Design, do i need this?
             DestroyItem(slotNumber);
         }
 
@@ -36,7 +35,5 @@ public class Item : MonoBehaviour {
             inventory.slots[number].prefabName = "";
             Destroy(gameObject);
     }
-
-
 
 }

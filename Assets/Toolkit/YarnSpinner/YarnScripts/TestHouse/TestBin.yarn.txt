@@ -1,0 +1,10 @@
+title: TestBin
+tags: 
+colorID: 0
+position: 540,260
+---
+It's just a dustbin. 
+Nothing to get excited over.
+Inside is a golden box.
+Tiona got the golden box.
+<<add_item("GoldenBox")>>

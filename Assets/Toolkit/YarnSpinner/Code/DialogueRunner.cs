@@ -119,6 +119,7 @@ namespace Yarn.Unity
             dialogue.library.RegisterFunction ("add_item", 1, delegate(Value[] parameters) {
                 GameObject instance = Instantiate(Resources.Load((string)parameters[0].AsString, typeof(GameObject)), GameObject.Find("Player").transform) as GameObject;
                 instance.transform.parent = null;
+                instance.transform.position = GameObject.Find("Player").transform.position;
             });
 
             dialogue.library.RegisterFunction ("checkvariable", 1, delegate(Value[] parameters) {

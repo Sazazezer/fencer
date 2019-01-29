@@ -43,13 +43,13 @@ public class Serializer : MonoBehaviour {
 
                         int doorID = newDoor.GetComponent<DoorTransition>().door;
                         if (doorID == roomData.iLeadTo){
-                            int doorSideInt = (int)newDoor.GetComponent<DoorTransition>().doorSide;
+                            //int doorSideInt = (int)newDoor.GetComponent<DoorTransition>().doorSide;
                             Debug.Log(newDoor.GetComponent<DoorTransition>().doorSide);
-                            if (newDoor.GetComponent<DoorTransition>().doorDir == DoorDir.horizontal){
-                                player.transform.position = new Vector3(newDoor.transform.position.x+doorSideInt, newDoor.transform.position.y, 0);
-                            } else {
-                                player.transform.position = new Vector3(newDoor.transform.position.x, newDoor.transform.position.y + doorSideInt, 0);
-                            }
+                          //  if (newDoor.GetComponent<DoorTransition>().doorDir == DoorDir.horizontal){
+                                player.transform.position = new Vector3(newDoor.transform.position.x/*+doorSideInt*/, newDoor.transform.position.y, 0);
+                          //  } else {
+                         //       player.transform.position = new Vector3(newDoor.transform.position.x, newDoor.transform.position.y + doorSideInt, 0);
+                          //  }
                         }
                     }
                     File.Delete(roomFilename);
@@ -130,7 +130,7 @@ public class Serializer : MonoBehaviour {
             //Saved Variables go here. Don't forget to add them to SaveData.cs too
             name = "Tiona", 
             kills = 0,
-            playerPosition = GameObject.Find("TestFrontDoor").transform.position,
+            playerPosition = new Vector3(-164.37689208984376f,-807.9430541992188f,0.0f),
             sceneID = 8,
             dialogue = GameObject.FindObjectOfType<DialogueStorage>().variables
         };

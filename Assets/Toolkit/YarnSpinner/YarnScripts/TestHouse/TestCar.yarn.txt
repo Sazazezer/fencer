@@ -1,0 +1,11 @@
+title: TestCar
+tags: 
+colorID: 0
+position: 540,260
+---
+My Car. This is what i arrived in.
+It looks fancy now, but this is only a piece of placeholder art.
+I'll be getting a dingy piece of crap in the full release.
+The idea will be that i'm supposed to love it because it's so clunky and well worn, and that together we've had many adventures.
+But i tell you now that's a lie.
+I wanna keep the flashy one.

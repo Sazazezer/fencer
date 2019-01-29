@@ -39,7 +39,7 @@ public void Load(){
             areYouSure.gameObject.SetActive(true);
             eventSystem.SetSelectedGameObject (selectNo); 
         } else {
-            SceneManager.LoadScene("Room201");
+            SceneManager.LoadScene("OpeningScene");
 
             //JUST DO NEW GAME AUTOMATICALLY
         //    saveScreen.GetComponent<SaveScreen>().Resume();

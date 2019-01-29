@@ -12,20 +12,17 @@ EditorBuildSettings:
     path: Assets/Fencer/Scenes/OpeningScene.unity
     guid: 961d52f85f5288c4b81423fd10c44b80
   - enabled: 1
-    path: Assets/Fencer/Scenes/Room201.unity
-    guid: 369c01cf0c719cd459d1903ddf409921
+    path: Assets/Fencer/Scenes/Room207.unity
+    guid: 707e5711efd131f40a594f861e48d20d
   - enabled: 1
-    path: Assets/Fencer/Scenes/Room202.unity
-    guid: 19cecd2fba9ae9440b43ccf8504372f9
+    path: Assets/Fencer/Scenes/Room208.unity
+    guid: 806eca04e2fa2704ca9b24b70ae71189
   - enabled: 1
-    path: Assets/Fencer/Scenes/Room203.unity
-    guid: b34566903b5a7264a887d4117c372bcb
+    path: Assets/Fencer/Scenes/Room209.unity
+    guid: e57cc5a6f14b6a34e9537b08eeea86fd
   - enabled: 1
-    path: Assets/Fencer/Scenes/Room204.unity
-    guid: 9ba8fe0edb6da6a48ad9ed419deb16af
-  - enabled: 1
-    path: Assets/Fencer/Scenes/Room205.unity
-    guid: da26ef44d10b2444a99b86400726a6d0
+    path: Assets/Fencer/Scenes/EndingScene.unity
+    guid: 3c59b579c13587449aded411dceff80c
   - enabled: 1
     path: Assets/Fencer/Scenes/FinalScene.unity
     guid: 2ef3242a817833c4eb75f2416cc91a1a
