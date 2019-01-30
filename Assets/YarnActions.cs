@@ -160,7 +160,7 @@ public class YarnActions : MonoBehaviour {
     [YarnCommand("checkLock")]
     public bool CheckItemExists(string itemCheck) {
         GameObject lockedItem = GameObject.Find(itemCheck);
-        if( lockedItem.GetComponent<TreeBurn>().locked == true){
+        if( lockedItem.GetComponent<DoorLock>().locked == true){
             return true;
         } else {
             return false;

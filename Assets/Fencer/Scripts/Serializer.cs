@@ -20,7 +20,6 @@ public class Serializer : MonoBehaviour {
     private SaveData data;
     private NextRoom room;
     private bool roomTransition = false;
-    //private GameObject currentDoor;
     GameObject[] doors; 
 
 
@@ -43,13 +42,8 @@ public class Serializer : MonoBehaviour {
 
                         int doorID = newDoor.GetComponent<DoorTransition>().door;
                         if (doorID == roomData.iLeadTo){
-                            //int doorSideInt = (int)newDoor.GetComponent<DoorTransition>().doorSide;
                             Debug.Log(newDoor.GetComponent<DoorTransition>().doorSide);
-                          //  if (newDoor.GetComponent<DoorTransition>().doorDir == DoorDir.horizontal){
-                                player.transform.position = new Vector3(newDoor.transform.position.x/*+doorSideInt*/, newDoor.transform.position.y, 0);
-                          //  } else {
-                         //       player.transform.position = new Vector3(newDoor.transform.position.x, newDoor.transform.position.y + doorSideInt, 0);
-                          //  }
+                                player.transform.position = new Vector3(newDoor.transform.position.x, newDoor.transform.position.y, 0);
                         }
                     }
                     File.Delete(roomFilename);
@@ -78,8 +72,6 @@ public class Serializer : MonoBehaviour {
 
         data = new SaveData() { 
             //Saved Variables go here. Don't forget to add them to SaveData.cs too
-            name = "Tiona", 
-            kills = 0,
             playerPosition = player.transform.position,
             sceneID = SceneManager.GetActiveScene().buildIndex,
             dialogue = GameObject.FindObjectOfType<DialogueStorage>().variables
@@ -88,15 +80,10 @@ public class Serializer : MonoBehaviour {
         jsonData = JsonUtility.ToJson(data);
 
         filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
-
             if (File.Exists(filename)){
                 File.Delete(filename);
             }
-
             File.WriteAllText(filename, jsonData);
-
-        Debug.Log(data.playerPosition);
-        Debug.Log(data.dialogue);
         saveScreen.GetComponent<SaveScreen>().Resume();
         textBox.gameObject.SetActive(true);
         textBox.text = "Game Saved.";
@@ -115,8 +102,6 @@ public class Serializer : MonoBehaviour {
         if (File.Exists(filename)){
             SceneManager.LoadScene(copy.sceneID);
         } else {
-
-
             saveScreen.GetComponent<SaveScreen>().Resume();
             textBox.gameObject.SetActive(true);
             textBox.text = "No Save File.";
@@ -128,10 +113,8 @@ public class Serializer : MonoBehaviour {
 
         data = new SaveData() { 
             //Saved Variables go here. Don't forget to add them to SaveData.cs too
-            name = "Tiona", 
-            kills = 0,
             playerPosition = new Vector3(-164.37689208984376f,-807.9430541992188f,0.0f),
-            sceneID = 8,
+            sceneID = 3,
             dialogue = GameObject.FindObjectOfType<DialogueStorage>().variables
         };
 
@@ -152,16 +135,5 @@ public class Serializer : MonoBehaviour {
 
     public void RoomMove(){
         roomTransition = true;
-    }
-
-    void Update(){
-
-      /*   if (Input.GetKeyDown(KeyCode.F5)){ //!!
-            Save();
-         }
-         if (Input.GetKeyDown(KeyCode.F6)){
-            Load();
-         }*/
-
     }
 }

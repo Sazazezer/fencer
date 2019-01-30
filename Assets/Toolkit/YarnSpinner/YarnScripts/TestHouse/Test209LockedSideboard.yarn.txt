@@ -1,0 +1,12 @@
+title: Test209LockedSideboard
+tags: 
+colorID: 0
+position: 540,260
+---
+
+Who the hell puts a combination safe into a sideboard.
+Man, no one would have blamed me if i had just smashed this thing up with an axe.
+Oh hey, a clue.
+A vital one at that.
+<<addnewjournal Test209LockedSideboard 2>>
+<<gointojournal Test209LockedSideboard 2>>

@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 64741076}
   - component: {fileID: 64741077}
   m_Layer: 0
-  m_Name: TestArmchair
+  m_Name: Test209Armchair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,7 +200,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 64741075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 150.4, y: -68, z: 0}
+  m_LocalPosition: {x: -72.3, y: -68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
@@ -217,8 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: TestArmchair
-  talkToNode: TestArmchair
+  characterName: Test209Armchair
+  talkToNode: Test209Armchair
   scriptToLoad: {fileID: 0}
 --- !u!1001 &68555001
 Prefab:
@@ -1203,7 +1203,7 @@ GameObject:
   - component: {fileID: 338960912}
   - component: {fileID: 338960913}
   m_Layer: 0
-  m_Name: TestTelevision
+  m_Name: Test209Television
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1216,7 +1216,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 338960911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 105, y: -68, z: 0}
+  m_LocalPosition: {x: -29.2, y: -68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
@@ -1233,8 +1233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: TestTelevision
-  talkToNode: TestTelevision
+  characterName: Test209Television
+  talkToNode: Test209Television
   scriptToLoad: {fileID: 0}
 --- !u!1001 &351175092
 Prefab:
@@ -2605,7 +2605,7 @@ GameObject:
   - component: {fileID: 731509542}
   - component: {fileID: 731509543}
   m_Layer: 0
-  m_Name: TestFrontDoor
+  m_Name: Test209FrontDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2618,7 +2618,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 731509541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.5, y: -68, z: 0}
+  m_LocalPosition: {x: 85.2, y: -68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
@@ -2635,8 +2635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: TestFrontDoor
-  talkToNode: TestFrontDoor
+  characterName: Test209FrontDoor
+  talkToNode: Test209FrontDoor
   scriptToLoad: {fileID: 0}
 --- !u!1001 &735523801
 Prefab:
@@ -3682,7 +3682,7 @@ GameObject:
   - component: {fileID: 1262529784}
   - component: {fileID: 1262529785}
   m_Layer: 0
-  m_Name: TestLockedDrawer
+  m_Name: Test209LockedDrawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3695,7 +3695,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1262529783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63.3, y: -7.5, z: 0}
+  m_LocalPosition: {x: 18.7, y: -7.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
@@ -3712,8 +3712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: TestLockedDrawer
-  talkToNode: TestLockedDrawer
+  characterName: Test209LockedDrawer
+  talkToNode: Test209LockedDrawer
   scriptToLoad: {fileID: 0}
 --- !u!114 &1285606550 stripped
 MonoBehaviour:
@@ -4574,13 +4574,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sourceText:
-  - {fileID: 4900000, guid: 6ab6c1f90f97e604fa4bd18d124ee1b7, type: 3}
-  - {fileID: 4900000, guid: bb3820d7dc3dc9048b4e54d4fc7cfaaf, type: 3}
-  - {fileID: 4900000, guid: 5285806c2f3b25141a60bbccdd284645, type: 3}
-  - {fileID: 4900000, guid: 22fab3dc4fc18a84bb1898a3d2e61591, type: 3}
-  - {fileID: 4900000, guid: 9848e30782b5bf848b065fd9d1959e8c, type: 3}
-  - {fileID: 4900000, guid: 066051e9de9692d4fa4194fed2f60490, type: 3}
-  - {fileID: 4900000, guid: 383038cc67821964d81e8692dee26d98, type: 3}
+  - {fileID: 4900000, guid: 54385cd3f4ac7014ca74691fb3b443ea, type: 3}
+  - {fileID: 4900000, guid: a97dc50b2f7da704da032f3ffdc734f5, type: 3}
+  - {fileID: 4900000, guid: ed805d9f949544745bb2e194a43eeda5, type: 3}
+  - {fileID: 4900000, guid: f7604a3adb055ff4bbb18d9fbd5faa4e, type: 3}
+  - {fileID: 4900000, guid: 809dc21b99308e143b4c42ed02aa8477, type: 3}
+  - {fileID: 4900000, guid: 141bd0be2ee22bc42bee1c70b46861e1, type: 3}
+  - {fileID: 4900000, guid: 51eedb74ed84fb4488db9ed1c083d82c, type: 3}
   stringGroups: []
   shouldOverrideLanguage: 0
   overrideLanguage: 10
@@ -4957,7 +4957,7 @@ GameObject:
   - component: {fileID: 1444062958}
   - component: {fileID: 1444062959}
   m_Layer: 0
-  m_Name: TestLockedSideboard
+  m_Name: Test209LockedSideboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4970,7 +4970,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1444062957}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 169.1, y: -7.7, z: 0}
+  m_LocalPosition: {x: -97.8, y: -7.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
@@ -4987,8 +4987,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: TestLockedSideboard
-  talkToNode: TestLockedSideboard
+  characterName: Test209LockedSideboard
+  talkToNode: Test209LockedSideboard
   scriptToLoad: {fileID: 0}
 --- !u!1 &1451946255
 GameObject:
@@ -5473,6 +5473,11 @@ Prefab:
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 224441342947077080, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
   m_IsPrefabParent: 0
@@ -5507,7 +5512,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4298168840886962, guid: 1496305b5a6ce7448840cc8d8bdeeb3e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 384.8
+      value: 341.7
       objectReference: {fileID: 0}
     - target: {fileID: 4298168840886962, guid: 1496305b5a6ce7448840cc8d8bdeeb3e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5540,7 +5545,7 @@ Prefab:
     - target: {fileID: 114150924385875786, guid: 1496305b5a6ce7448840cc8d8bdeeb3e,
         type: 2}
       propertyPath: puzzleLockAnswer
-      value: 123
+      value: 4321
       objectReference: {fileID: 0}
     - target: {fileID: 114150924385875786, guid: 1496305b5a6ce7448840cc8d8bdeeb3e,
         type: 2}
@@ -5583,6 +5588,16 @@ Prefab:
       propertyPath: unlockedItem
       value: 
       objectReference: {fileID: 1262529783}
+    - target: {fileID: 114150924385875786, guid: 1496305b5a6ce7448840cc8d8bdeeb3e,
+        type: 2}
+      propertyPath: puzzleLockMaxDigitedSet
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150924385875786, guid: 1496305b5a6ce7448840cc8d8bdeeb3e,
+        type: 2}
+      propertyPath: puzzleLockIndex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1496305b5a6ce7448840cc8d8bdeeb3e, type: 2}
   m_IsPrefabParent: 0
@@ -5735,7 +5750,7 @@ GameObject:
   - component: {fileID: 1737689062}
   - component: {fileID: 1737689063}
   m_Layer: 0
-  m_Name: TestDoorDrawer
+  m_Name: Test209DoorDrawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5748,7 +5763,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1737689061}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.1, y: -68, z: 0}
+  m_LocalPosition: {x: 118.3, y: -68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
@@ -5765,8 +5780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: TestDoorDrawer
-  talkToNode: TestDoorDrawer
+  characterName: Test209DoorDrawer
+  talkToNode: Test209DoorDrawer
   scriptToLoad: {fileID: 0}
 --- !u!4 &1737912372 stripped
 Transform:
@@ -5973,9 +5988,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecbf62cfce48f640885e0047c9e7650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBurning: 0
+  isUnlockable: 0
   player: {fileID: 2028283576}
   lockNumber: 1
+  doorName: 
   itemKill: {fileID: 0}
   linkedItem: {fileID: 1444062957}
   locked: 1
@@ -6674,7 +6690,7 @@ GameObject:
   - component: {fileID: 1897928794}
   - component: {fileID: 1897928795}
   m_Layer: 0
-  m_Name: TestLivingRoomChest
+  m_Name: Test209LivingRoomChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6687,7 +6703,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1897928793}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.6, y: -68, z: 0}
+  m_LocalPosition: {x: 15.8, y: -68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
@@ -6704,8 +6720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: TestLivingRoomChest
-  talkToNode: TestLivingRoomChest
+  characterName: Test209LivingRoomChest
+  talkToNode: Test209LivingRoomChest
   scriptToLoad: {fileID: 0}
 --- !u!1001 &1935194873
 Prefab:
@@ -6897,11 +6913,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f31ad9231cfbed419c3064b4642e23c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBurn: 0
-  treeInQuestion: {fileID: 0}
+  canBeUnlocked: 0
+  lockInQuestion: {fileID: 0}
   keyInHand: 0
   itemSlotNumber: 0
-  sunButton: {fileID: 0}
+  keyButton: {fileID: 0}
 --- !u!114 &2028283580
 MonoBehaviour:
   m_ObjectHideFlags: 0

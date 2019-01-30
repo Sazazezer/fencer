@@ -25,6 +25,8 @@ Welp. It's open.
 Let's see what's inside, shall we?
 ...
 Yes. Yes we shall.
-Oh Look. A meat.
+Oh Look. Another vital clue.
+<<addnewjournal TestLockedSideboard 7>>
+<<gointojournal TestLockedSideboard 7>>
 <<add_item("Food")>>
 <<endif>>

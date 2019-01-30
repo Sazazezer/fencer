@@ -1,0 +1,15 @@
+title: Test209LockedDrawer
+tags: 
+colorID: 0
+position: 540,260
+---
+
+I unlocked the drawer.
+I am indeed a master.
+Not of unlocking, that would be dumb.
+Man, i love references to other games.
+Hey, another journal.
+I wonder if it will be relevant.
+<<addnewjournal Test209LockedDrawer 3>>
+<<gointojournal Test209LockedDrawer 3>>
+

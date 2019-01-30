@@ -109,7 +109,7 @@ namespace Yarn.Unity
             });
 
             dialogue.library.RegisterFunction ("check_lock", 1, delegate(Value[] parameters) {
-                return GameObject.Find((string)parameters[0].AsString).GetComponent<TreeBurn>().locked;
+                return GameObject.Find((string)parameters[0].AsString).GetComponent<DoorLock>().locked;
             });
 
             dialogue.library.RegisterFunction ("add_journal", 1, delegate(Value[] parameters) {

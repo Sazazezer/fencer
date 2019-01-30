@@ -5473,6 +5473,11 @@ Prefab:
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 224441342947077080, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
   m_IsPrefabParent: 0
@@ -5540,7 +5545,7 @@ Prefab:
     - target: {fileID: 114150924385875786, guid: 1496305b5a6ce7448840cc8d8bdeeb3e,
         type: 2}
       propertyPath: puzzleLockAnswer
-      value: 123
+      value: 1234
       objectReference: {fileID: 0}
     - target: {fileID: 114150924385875786, guid: 1496305b5a6ce7448840cc8d8bdeeb3e,
         type: 2}
@@ -5973,9 +5978,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecbf62cfce48f640885e0047c9e7650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBurning: 0
+  isUnlockable: 0
   player: {fileID: 2028283576}
   lockNumber: 1
+  doorName: 
   itemKill: {fileID: 0}
   linkedItem: {fileID: 1444062957}
   locked: 1
@@ -6897,11 +6903,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f31ad9231cfbed419c3064b4642e23c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBurn: 0
-  treeInQuestion: {fileID: 0}
+  canBeUnlocked: 0
+  lockInQuestion: {fileID: 0}
   keyInHand: 0
   itemSlotNumber: 0
-  sunButton: {fileID: 0}
+  keyButton: {fileID: 0}
 --- !u!114 &2028283580
 MonoBehaviour:
   m_ObjectHideFlags: 0

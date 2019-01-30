@@ -112,7 +112,7 @@ MonoBehaviour:
   itemButton: {fileID: 1210040499704410, guid: 1d36cfee0284bed438346e2a3cb074bf, type: 2}
   effect: {fileID: 1320962406381760, guid: 06168afec4da0964ea6fd6f69f7c8b90, type: 2}
   instance: {fileID: 0}
-  quickDescription: Door Key
+  quickDescription: House207DoorKey
   description: The numbers 207 are on this key. WHAT COULD IT MEAN?
   itemIndex: 1
   indestructable: 1

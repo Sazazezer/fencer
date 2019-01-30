@@ -28,23 +28,27 @@ public class DoorTransition : MonoBehaviour {
     static readonly string ROOM_MOVE = "room.json";
  
      void OnTriggerStay2D(Collider2D other){
-       if (Input.GetButtonUp("Up") && other.tag == "Player"){
-            Debug.Log("Boop");
-                //   target.transform.position = new Vector3(xPosition, yPosition, 0);
-                room = new NextRoom() { 
-                //Saved Variables go here. Don't forget to add them to SaveData.cs too
-                iLeadTo = leadsTo,
-                roomTransition = true
-                };
-                json = JsonUtility.ToJson(room);
-                filename = Path.Combine(Application.streamingAssetsPath, ROOM_MOVE);
-                if (File.Exists(filename)){
-                    File.Delete(filename);
-                }
-                File.WriteAllText(filename, json);
-                Debug.Log("Is it me?");
-                Application.LoadLevel(goToScene);
+       if (Input.GetButtonUp("Up") && other.tag == "Player" ){
+            if (this.GetComponent<DoorLock>().locked == false){
+                Debug.Log("Boop");
+                    //   target.transform.position = new Vector3(xPosition, yPosition, 0);
+                    room = new NextRoom() { 
+                    //Saved Variables go here. Don't forget to add them to SaveData.cs too
+                    iLeadTo = leadsTo,
+                    roomTransition = true
+                    };
+                    json = JsonUtility.ToJson(room);
+                    filename = Path.Combine(Application.streamingAssetsPath, ROOM_MOVE);
+                    if (File.Exists(filename)){
+                        File.Delete(filename);
+                    }
+                    File.WriteAllText(filename, json);
+                    Debug.Log("Is it me?");
+                    Application.LoadLevel(goToScene);
+            } else {
+             Debug.Log("bkj!");
+                GameObject.Find("GameControls").GetComponent<TextBoxManager>().UpdateTextBox("The door is locked. Sucks to be you.");
+            }
+            }
         }
-    }
 }
-
