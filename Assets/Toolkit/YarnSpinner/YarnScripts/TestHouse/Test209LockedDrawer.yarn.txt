@@ -10,6 +10,6 @@ Not of unlocking, that would be dumb.
 Man, i love references to other games.
 Hey, another journal.
 I wonder if it will be relevant.
-<<addnewjournal Test209LockedDrawer 3>>
-<<gointojournal Test209LockedDrawer 3>>
+<<addnewjournal Test209LockedDrawer 2>>
+<<gointojournal Test209LockedDrawer 2>>
 

@@ -8,5 +8,7 @@ Who the hell puts a combination safe into a sideboard.
 Man, no one would have blamed me if i had just smashed this thing up with an axe.
 Oh hey, a clue.
 A vital one at that.
-<<addnewjournal Test209LockedSideboard 2>>
-<<gointojournal Test209LockedSideboard 2>>
+Oh, and a key!
+<<add_item("House207DoorKey")>>
+<<addnewjournal Test209LockedSideboard 3>>
+<<gointojournal Test209LockedSideboard 3>>

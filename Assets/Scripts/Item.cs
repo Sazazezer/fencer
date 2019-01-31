@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ItemType {
+    Key,
+    Box
+}
+
 public class Item : MonoBehaviour {
 
     private Transform player;
     private Inventory inventory;
     public GameObject explosionEffect;
     public int slotNumber;
+    public ItemType itemType;
 
     public GameObject actionObject;
 
@@ -18,7 +24,7 @@ public class Item : MonoBehaviour {
     }
 
     public void Use(string _use, int _unique) {
-        actionObject.GetComponent<ItemAction>().Use(_use, _unique, slotNumber);
+        actionObject.GetComponent<ItemAction>().Use(_use, _unique, slotNumber, itemType);
         if (inventory.slots[slotNumber].itemIndestructible == false){
             Instantiate(explosionEffect, player.transform.position, Quaternion.identity); //Game Design, do i need this?
             DestroyItem(slotNumber);

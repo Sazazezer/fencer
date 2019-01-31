@@ -13,18 +13,18 @@ public class ItemAction : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	public void Use (string _item, int _unique, int _slotNumber) {
-        Debug.Log(_item);
-        if(_item == "House207DoorKey"){   
-           TryKeyInLock(_item, _unique, _slotNumber);
-        }
-        if(_item == "House209DoorKey"){   
+	public void Use (string _item, int _unique, int _slotNumber, ItemType _itemType) {
+        Debug.Log(_itemType);
+        if(_itemType == ItemType.Key){   
            TryKeyInLock(_item, _unique, _slotNumber);
         }
         if(_item == "GoldenBox"){
             GameObject instance = Instantiate(Resources.Load("House209DoorKey"), GameObject.Find("Player").transform) as GameObject;
             instance.transform.parent = null;
             instance.transform.position = GameObject.Find("Player").transform.position;
+            GameObject instance2 = Instantiate(Resources.Load("House207LockedSideboardKey"), GameObject.Find("Player").transform) as GameObject;
+            instance2.transform.parent = null;
+            instance2.transform.position = GameObject.Find("Player").transform.position;
             //this.GetComponent<Item>().DestroyItem(this.GetComponent<Item>().slotNumber);
         }
 		

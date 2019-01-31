@@ -50,6 +50,10 @@ GameObject:
   - component: {fileID: 114148875251782562}
   - component: {fileID: 114505602688809422}
   - component: {fileID: 114905051227777374}
+  - component: {fileID: 114125769598570380}
+  - component: {fileID: 114667556610966548}
+  - component: {fileID: 114967764311962088}
+  - component: {fileID: 114753275034001824}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -207,7 +211,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242233029094360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 347, y: -518, z: 0}
+  m_LocalPosition: {x: 347, y: -673, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224681713545168542}
@@ -322,6 +326,25 @@ MonoBehaviour:
   debugColor: {r: 0, g: 1, b: 0, a: 1}
   debugRadius: 3
   parrying: 0
+--- !u!114 &114125769598570380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015d7abb7eb5b044e8d7e9c1adc14861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  healthDisplay: {fileID: 0}
+  bag: {fileID: 0}
+  journal: {fileID: 0}
+  inJournal: 0
+  inBag: 0
+  puzzle: {fileID: 0}
+  inPuzzle: 0
 --- !u!114 &114148875251782562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -662,6 +685,21 @@ MonoBehaviour:
   debugColor: {r: 0, g: 1, b: 0.69907475, a: 1}
   debugRadius: 3
   thurst: 0
+--- !u!114 &114667556610966548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784735748d060b1468787b33cadb5b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemDescription: 
+  KeyID: 
+  itemIndestructible: 
 --- !u!114 &114668603259342602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -725,6 +763,43 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114753275034001824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964aba927b8ca954eb85303a3102bdf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  slots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  highlightedItem: {fileID: 0}
+  highlightedSlot: 0
+  bag: {fileID: 0}
+  itemTitlePanel: {fileID: 0}
+  itemDescriptionPanel: {fileID: 0}
+  itemHeld: {fileID: 0}
+  itemItem: 
+  itemUnique: 0
 --- !u!114 &114811950932530524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -873,6 +948,22 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114967764311962088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f31ad9231cfbed419c3064b4642e23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBeUnlocked: 0
+  lockInQuestion: {fileID: 0}
+  keyInHand: 0
+  itemSlotNumber: 0
+  keyButton: {fileID: 0}
 --- !u!114 &114992883563453624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1014,7 +1105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 53e4e1c90b51e7d48aa41aa40a85c965, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a638bdcb1c54a07468fc383b8dc3f32b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
