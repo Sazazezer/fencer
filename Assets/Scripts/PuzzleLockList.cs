@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class PuzzleLockList : MonoBehaviour {
 
@@ -17,7 +18,9 @@ public class PuzzleLockList : MonoBehaviour {
     // Use this for initialization
     void Start () {
         filename = Path.Combine(Application.streamingAssetsPath, PuzzleLock_DATA);
-        PuzzleLockCompile();
+        if (SceneManager.GetActiveScene().buildIndex != 1){
+            PuzzleLockCompile();
+        }
     }
 
     public void PuzzleLockCompile(){
@@ -52,6 +55,7 @@ public class PuzzleLockList : MonoBehaviour {
     }
 
     public void ResetPuzzleLocks(){
+        filename = Path.Combine(Application.streamingAssetsPath, PuzzleLock_DATA);
         string jsonFromFile = File.ReadAllText(filename);
         PuzzleLockDataList list = PuzzleLockDataList.CreateFromJSON(jsonFromFile);
         if (File.Exists(filename)){
@@ -68,7 +72,7 @@ public class PuzzleLockList : MonoBehaviour {
             }
 
             File.WriteAllText(filename, jsonData);
-            PuzzleLockCompile();
+          //  PuzzleLockCompile();
     }        
     
 }

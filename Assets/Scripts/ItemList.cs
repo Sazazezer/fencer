@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class ItemList : MonoBehaviour {
 
@@ -17,7 +18,9 @@ public class ItemList : MonoBehaviour {
     // Use this for initialization
     void Start () {
         filename = Path.Combine(Application.streamingAssetsPath, Item_DATA);
-        ItemCompile();
+        if (SceneManager.GetActiveScene().buildIndex != 1){
+            ItemCompile();
+        }
     }
 
     public void ItemCompile(){
@@ -52,6 +55,7 @@ public class ItemList : MonoBehaviour {
     }
 
     public void ResetItems(){
+        filename = Path.Combine(Application.streamingAssetsPath, Item_DATA);
         string jsonFromFile = File.ReadAllText(filename);
         ItemDataList list = ItemDataList.CreateFromJSON(jsonFromFile);
         if (File.Exists(filename)){
@@ -68,7 +72,7 @@ public class ItemList : MonoBehaviour {
             }
 
             File.WriteAllText(filename, jsonData);
-            ItemCompile();
+           // ItemCompile();
     }        
     
 }

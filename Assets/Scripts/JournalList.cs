@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class JournalList : MonoBehaviour {
 
@@ -22,7 +23,9 @@ public class JournalList : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
-        JournalCompile();
+        if (SceneManager.GetActiveScene().buildIndex != 1){
+            JournalCompile();
+        }
 	}
 
     public void JournalCompile(){
@@ -66,6 +69,7 @@ public class JournalList : MonoBehaviour {
     }
 
     public void ResetJournals(){
+        filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
         string jsonFromFile = File.ReadAllText(filename);
         JournalDataList list = JournalDataList.CreateFromJSON(jsonFromFile);
         if (File.Exists(filename)){
@@ -82,7 +86,6 @@ public class JournalList : MonoBehaviour {
             }
 
             File.WriteAllText(filename, jsonData);
-            JournalCompile();
     }        
     
 }

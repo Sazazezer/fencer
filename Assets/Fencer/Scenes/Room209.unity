@@ -5616,7 +5616,9 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: a638bdcb1c54a07468fc383b8dc3f32b,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114753275034001824, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
+    - {fileID: 114125769598570380, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &1696281201 stripped
@@ -6836,37 +6838,6 @@ MonoBehaviour:
   inBag: 0
   puzzle: {fileID: 0}
   inPuzzle: 0
---- !u!114 &2028283578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2028283576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 784735748d060b1468787b33cadb5b42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: 
-  itemDescription: 
-  KeyID: 
-  itemIndestructible: 
---- !u!114 &2028283579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2028283576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f31ad9231cfbed419c3064b4642e23c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canBeUnlocked: 0
-  lockInQuestion: {fileID: 0}
-  keyInHand: 0
-  itemSlotNumber: 0
-  keyButton: {fileID: 0}
 --- !u!114 &2028283580
 MonoBehaviour:
   m_ObjectHideFlags: 0

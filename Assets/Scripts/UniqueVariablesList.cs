@@ -16,7 +16,6 @@ public class UniqueVariablesList : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         filename = Path.Combine(Application.streamingAssetsPath, UNIQUE_VARIABLES_DATA);
-      //  JournalCompile();
 	}
 
     public int GetUniqueVariable(string _parameters){
@@ -60,6 +59,7 @@ public class UniqueVariablesList : MonoBehaviour {
     }
 
     public void ResetUniqueVariables(){
+        filename = Path.Combine(Application.streamingAssetsPath, UNIQUE_VARIABLES_DATA);
         string jsonFromFile = File.ReadAllText(filename);
         UniqueVariablesDataList list = UniqueVariablesDataList.CreateFromJSON(jsonFromFile);
         if (File.Exists(filename)){

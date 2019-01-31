@@ -4,7 +4,7 @@ using System.Collections;
 
 public class RestartButton : MonoBehaviour {
 
-    private Serializer serializer;
+ /*   private Serializer serializer;
 
     void Start(){
         serializer = GetComponent<Serializer>();
@@ -19,5 +19,5 @@ public class RestartButton : MonoBehaviour {
                 serializer.Load();
              //SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
          	}
-         }
+         }*/
     }

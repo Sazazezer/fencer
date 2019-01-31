@@ -9,5 +9,5 @@ public class SaveData {
 
     public Vector3 playerPosition;
     public int sceneID;
-    public Dictionary<string, Yarn.Value> dialogue;
+ //   public Dictionary<string, Yarn.Value> dialogue;
 }
