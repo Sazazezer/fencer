@@ -74,6 +74,11 @@ public class Inventory : MonoBehaviour {
                 itemHeld.GetComponent<Item>().Use(itemItem, itemUnique);
             }
         }
+
+        //test to see what the hell is happening with inventory
+        for (int i = 0; i < 15; i++){
+            Debug.Log(slots[i].itemName);
+        }
     }
 
     }

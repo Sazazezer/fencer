@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 public class ItemList : MonoBehaviour {
 
-
+//remember, this is for items existing in the game world, not the inventory
     private string jsonData;
     private string filename;
     private int countDammit = 0;
@@ -39,12 +39,13 @@ public class ItemList : MonoBehaviour {
         }
     }
 
-    public void SavePickup(int _newIndex){
+    public void SavePickup(int _newIndex, string _insertName){
         string jsonFromFile = File.ReadAllText(filename);
         ItemDataList list = ItemDataList.CreateFromJSON(jsonFromFile);
         int newIndex = _newIndex;
         list.items[newIndex].itemPicked = 1;
-        jsonData = JsonUtility.ToJson(list);
+        list.items[newIndex].itemName = _insertName;
+        jsonData = JsonUtility.ToJson(list, true);
 
             if (File.Exists(filename)){
                 File.Delete(filename);
@@ -66,7 +67,7 @@ public class ItemList : MonoBehaviour {
                 Debug.Log("Deleted" + i + "Entires");
                 }
             }
-        jsonData = JsonUtility.ToJson(list);
+        jsonData = JsonUtility.ToJson(list,true);
             if (File.Exists(filename)){
                 File.Delete(filename);
             }

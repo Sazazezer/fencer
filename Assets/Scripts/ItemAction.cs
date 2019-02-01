@@ -25,6 +25,7 @@ public class ItemAction : MonoBehaviour {
             GameObject instance2 = Instantiate(Resources.Load("House207LockedSideboardKey"), GameObject.Find("Player").transform) as GameObject;
             instance2.transform.parent = null;
             instance2.transform.position = GameObject.Find("Player").transform.position;
+            GameObject.FindObjectOfType<InventoryList>().SaveInventory();
             //this.GetComponent<Item>().DestroyItem(this.GetComponent<Item>().slotNumber);
         }
 		

@@ -44,7 +44,7 @@ public class PuzzleLockList : MonoBehaviour {
         PuzzleLockDataList list = PuzzleLockDataList.CreateFromJSON(jsonFromFile);
         int newIndex = _newIndex;
         list.items[newIndex].puzzleSolved = 1;
-        jsonData = JsonUtility.ToJson(list);
+        jsonData = JsonUtility.ToJson(list, true);
 
             if (File.Exists(filename)){
                 File.Delete(filename);
@@ -66,7 +66,7 @@ public class PuzzleLockList : MonoBehaviour {
                 Debug.Log("Deleted" + i + "Entires");
                 }
             }
-        jsonData = JsonUtility.ToJson(list);
+        jsonData = JsonUtility.ToJson(list, true);
             if (File.Exists(filename)){
                 File.Delete(filename);
             }

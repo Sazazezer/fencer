@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/Room207.unity
+- path: Assets/Toolkit/UITemplate/Scenes/GameWindows.unity
   isLoaded: 1
   isActive: 1

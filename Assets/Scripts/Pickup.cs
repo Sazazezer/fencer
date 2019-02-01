@@ -30,7 +30,7 @@ public class Pickup : MonoBehaviour {
     }
 
     public void ItemPicked(){
-        this.GetComponent<ItemList>().SavePickup(itemIndex);
+        this.GetComponent<ItemList>().SavePickup(itemIndex, prefabName);
     }
 
     public void AddToInventory(){
@@ -47,6 +47,7 @@ public class Pickup : MonoBehaviour {
                     inventory.slots[i].itemIndestructible = indestructable;
                     inventory.slots[i].prefabName = prefabName;
                     instance.GetComponent<Item>().slotNumber = i;
+                    GameObject.FindObjectOfType<InventoryList>().SaveInventory();
                     Destroy(gameObject);
                     break;
                 }

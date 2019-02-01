@@ -21,7 +21,7 @@ public class PlayerUIManager : MonoBehaviour {
     {
         bag.GetComponent<Canvas> ().enabled = false;
         journal.GetComponent<Canvas> ().enabled = false;
-        puzzle.GetComponent<Canvas> ().enabled = false;
+       // puzzle.GetComponent<Canvas> ().enabled = false;
 
         if (SceneManager.GetActiveScene().buildIndex != 1){
             LoadGameData(); //time to get this working in some way!
@@ -126,7 +126,7 @@ public class PlayerUIManager : MonoBehaviour {
 
     public void LoadGameData(){
         Debug.Log("Game Data Loading"); //Loaded on Continue, when the player starts in the current room. Should only need to be loaded once.
-        GameObject.FindObjectOfType<LocationList>().Load();
+      //  GameObject.FindObjectOfType<LocationList>().Load();
                 Debug.Log("Location Data Loaded");
         GameObject.FindObjectOfType<InventoryList>().LoadInventory();
                 Debug.Log("Inventory Data Loaded");

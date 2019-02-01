@@ -8,6 +8,7 @@ using UnityEngine;
     public class ItemData
     {
         public int index;
+        public string itemName;
         public int itemPicked;
 
  

@@ -15,7 +15,8 @@ public class PuzzleLock : MonoBehaviour {
     public GameObject unlockedItem;
 
     public void OnTriggerStay2D(Collider2D other){
-        if (Input.GetButtonUp("Up") && other.tag == "Player"){
+        if (Input.GetButtonUp("Jump") && other.tag == "Player"){
+
             UsePuzzleLock();
         }
     }

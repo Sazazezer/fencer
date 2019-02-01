@@ -47,7 +47,7 @@ public class UniqueVariablesList : MonoBehaviour {
             for (int i = 0; i < countDammit; i++){
                 if (list.items[i].variableName == _parameters){
                     list.items[i].currentValue = _newValue;
-                    jsonData = JsonUtility.ToJson(list);
+                    jsonData = JsonUtility.ToJson(list, true);
                     if (File.Exists(filename)){
                         File.Delete(filename);
                     }
@@ -69,7 +69,7 @@ public class UniqueVariablesList : MonoBehaviour {
                 list.items[i].currentValue = 0;
                 }
             }
-        jsonData = JsonUtility.ToJson(list);
+        jsonData = JsonUtility.ToJson(list, true);
             if (File.Exists(filename)){
                 File.Delete(filename);
             }

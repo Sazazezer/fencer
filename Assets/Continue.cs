@@ -22,9 +22,9 @@ public class Continue : MonoBehaviour {
     GameObject[] doors; 
 
 public void Load(){
-        jsonData = JsonUtility.ToJson(data);
+        jsonData = JsonUtility.ToJson(data, true);
 
-        filename = Path.Combine(Application.persistentDataPath, SAVE_FILE);
+        filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
 
         string jsonFromFile = File.ReadAllText(filename);
 

@@ -58,7 +58,7 @@ public class JournalList : MonoBehaviour {
         int newIndex = _newIndex;
         Debug.Log(newIndex);
         list.items[newIndex].lockedAway = 1;
-        jsonData = JsonUtility.ToJson(list);
+        jsonData = JsonUtility.ToJson(list, true);
 
             if (File.Exists(filename)){
                 File.Delete(filename);
@@ -80,7 +80,7 @@ public class JournalList : MonoBehaviour {
                 Debug.Log("Deleted" + i + "Entires");
                 }
             }
-        jsonData = JsonUtility.ToJson(list);
+        jsonData = JsonUtility.ToJson(list,true);
             if (File.Exists(filename)){
                 File.Delete(filename);
             }

@@ -30,20 +30,6 @@ public class InventoryList : MonoBehaviour {
        // JournalCompile();
 	}
 
-    public void Update(){
-
-     /*   if (Input.GetKeyDown(KeyCode.F1)){
-            SaveInventory();
-        }
-
-        if (Input.GetKeyDown(KeyCode.F2)){
-            LoadInventory();
-        }
-        if (Input.GetKeyDown(KeyCode.F3)){
-            ResetInventory();
-        }*/
-    }
-
     public void SaveInventory(){
             Debug.Log("hi there;lk;l");
         string jsonFromFile = File.ReadAllText(filename);
@@ -59,7 +45,7 @@ public class InventoryList : MonoBehaviour {
 
         }
 
-        jsonData = JsonUtility.ToJson(list);
+        jsonData = JsonUtility.ToJson(list, true);
         Debug.Log(jsonData);
 
             if (File.Exists(filename)){
@@ -110,7 +96,7 @@ public class InventoryList : MonoBehaviour {
             inventory.slots[i].itemIndestructible = false;
         }
 
-        jsonData = JsonUtility.ToJson(list);
+        jsonData = JsonUtility.ToJson(list, true);
         Debug.Log(jsonData);
 
             if (File.Exists(filename)){

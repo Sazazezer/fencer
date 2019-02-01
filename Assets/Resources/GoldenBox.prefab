@@ -114,7 +114,7 @@ MonoBehaviour:
   instance: {fileID: 0}
   quickDescription: GoldenBox
   description: A Wonderful Golden Box. Maybe i should Use it to look inside it.
-  itemIndex: 0
+  itemIndex: 5
   indestructable: 0
   prefabName: GoldenBoxButton
 --- !u!114 &114968340585468058

@@ -3027,12 +3027,12 @@ Prefab:
     - target: {fileID: 114236202870384930, guid: 447dbe3eb2738154c92fb7170abf67d0,
         type: 2}
       propertyPath: door
-      value: 999
+      value: 208999
       objectReference: {fileID: 0}
     - target: {fileID: 114236202870384930, guid: 447dbe3eb2738154c92fb7170abf67d0,
         type: 2}
       propertyPath: leadsTo
-      value: 999
+      value: 208999
       objectReference: {fileID: 0}
     - target: {fileID: 114236202870384930, guid: 447dbe3eb2738154c92fb7170abf67d0,
         type: 2}
@@ -3521,7 +3521,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4611230671897490, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114421853453868870, guid: 93071749b02ac404a87f52bd43cdc62c,
         type: 2}
@@ -4416,7 +4416,7 @@ RectTransform:
   m_Children:
   - {fileID: 172359209}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

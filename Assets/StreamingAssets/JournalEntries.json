@@ -1,1 +1,52 @@
-{"items":[{"index":0,"lockedAway":0,"content":"Clue Journal One","journal":"Oh no. There was a murder. That sucks. There are three suspects. Mary, Sue and Evil Rod."},{"index":1,"lockedAway":0,"content":"Casual Journal One","journal":"Oh boy i sure do like my mundane life. I hope to keep living it forever. Oh look, here comes my best friend, EvilRod. I do wonder what that item is he is holding as he approaches me menacingly."},{"index":2,"lockedAway":0,"content":"Puzzle Lock One Answer Journal","journal":"I set the code as 1234. No one will ever suspect."},{"index":3,"lockedAway":0,"content":"Vital Clue Journal One","journal":"We concluded that looking up the knife that was covered in blood that it was possibly the knife that was the murder weapon. Also, it was sticking out of her gut, and the doctor told us that it was the murder weapon, so this is definitely a factor in the grand scheme of the whole murder."},{"index":4,"lockedAway":0,"content":"Clue Journal Two","journal":"Wait, why was the Police report left inside the murder victim's house? That doesn't sound like proper police protocol."},{"index":5,"lockedAway":0,"content":"Casual Journal Two","journal":"Man i sure hope no test sprite steals my armchair in the future. That would be very much against my wishes."},{"index":6,"lockedAway":0,"content":"Vital Clue Journal Two","journal":"Egads. It turns out that the murder was actually Sue. What a twist. A cop out for certain, but also technically a twist."},{"index":7,"lockedAway":0,"content":"Puzzle Lock Two Answer Journal","journal":"Ha, I am more devious thaan that other puzzle lock. My code is 4321. Suck on that, expectations!"}]}
+{
+    "items": [
+        {
+            "index": 0,
+            "lockedAway": 0,
+            "content": "Clue Journal One",
+            "journal": "Oh no. There was a murder. That sucks. There are three suspects. Mary, Sue and Evil Rod."
+        },
+        {
+            "index": 1,
+            "lockedAway": 0,
+            "content": "Casual Journal One",
+            "journal": "Oh boy i sure do like my mundane life. I hope to keep living it forever. Oh look, here comes my best friend, EvilRod. I do wonder what that item is he is holding as he approaches me menacingly."
+        },
+        {
+            "index": 2,
+            "lockedAway": 0,
+            "content": "Puzzle Lock One Answer Journal",
+            "journal": "I set the code as 1234. No one will ever suspect."
+        },
+        {
+            "index": 3,
+            "lockedAway": 0,
+            "content": "Vital Clue Journal One",
+            "journal": "We concluded that looking up the knife that was covered in blood that it was possibly the knife that was the murder weapon. Also, it was sticking out of her gut, and the doctor told us that it was the murder weapon, so this is definitely a factor in the grand scheme of the whole murder."
+        },
+        {
+            "index": 4,
+            "lockedAway": 0,
+            "content": "Clue Journal Two",
+            "journal": "Wait, why was the Police report left inside the murder victim's house? That doesn't sound like proper police protocol."
+        },
+        {
+            "index": 5,
+            "lockedAway": 0,
+            "content": "Casual Journal Two",
+            "journal": "Man i sure hope no test sprite steals my armchair in the future. That would be very much against my wishes."
+        },
+        {
+            "index": 6,
+            "lockedAway": 0,
+            "content": "Vital Clue Journal Two",
+            "journal": "Egads. It turns out that the murder was actually Sue. What a twist. A cop out for certain, but also technically a twist."
+        },
+        {
+            "index": 7,
+            "lockedAway": 0,
+            "content": "Puzzle Lock Two Answer Journal",
+            "journal": "Ha, I am more devious thaan that other puzzle lock. My code is 4321. Suck on that, expectations!"
+        }
+    ]
+}

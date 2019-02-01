@@ -43,7 +43,7 @@ public class LocationList : MonoBehaviour {
             sceneID = SceneManager.GetActiveScene().buildIndex,
            // dialogue = GameObject.FindObjectOfType<DialogueStorage>().variables
         };
-        jsonData = JsonUtility.ToJson(data);
+        jsonData = JsonUtility.ToJson(data, true);
         filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
             if (File.Exists(filename)){
                 File.Delete(filename);
@@ -55,7 +55,7 @@ public class LocationList : MonoBehaviour {
     }
 
     public void Load(){
-        jsonData = JsonUtility.ToJson(data);
+        jsonData = JsonUtility.ToJson(data, true);
         filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
         string jsonFromFile = File.ReadAllText(filename);
         SaveData copy = JsonUtility.FromJson<SaveData>(jsonFromFile);
@@ -78,7 +78,7 @@ public class LocationList : MonoBehaviour {
             sceneID = 3,
             //dialogue = GameObject.FindObjectOfType<DialogueStorage>().variables
         };
-        jsonData = JsonUtility.ToJson(data);
+        jsonData = JsonUtility.ToJson(data, true);
         filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
             if (File.Exists(filename)){
                 File.Delete(filename);
@@ -114,7 +114,7 @@ public class LocationList : MonoBehaviour {
                 File.Delete(roomFilename);
             }
         }else{
-            jsonData = JsonUtility.ToJson(data);
+            jsonData = JsonUtility.ToJson(data, true);
             filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
             string jsonFromFile = File.ReadAllText(filename);
             SaveData copy = JsonUtility.FromJson<SaveData>(jsonFromFile); 
