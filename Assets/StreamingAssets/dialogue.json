@@ -1,1 +1,1 @@
-{"values":{"$Yarn.ShuffleOptions":{"numberValue":0.0,"variableName":null,"stringValue":null,"boolValue":false},"$BigTestTime":{"numberValue":1.0,"variableName":null,"stringValue":null,"boolValue":false}},"visitedNodes":{}}
+{"values":{"$Yarn.ShuffleOptions":{"type":2,"numberValue":0.0,"variableName":null,"stringValue":null,"boolValue":false},"$openingRan":{"type":0,"numberValue":1.0,"variableName":null,"stringValue":null,"boolValue":false}},"visitedNodes":{"TestBin":2,"Test209FrontDoor":2}}

@@ -46,7 +46,6 @@ public class DoorTransition : MonoBehaviour {
                     Debug.Log("Is it me?");
                     Application.LoadLevel(goToScene);
             } else {
-             Debug.Log("bkj!");
                 GameObject.Find("GameControls").GetComponent<TextBoxManager>().UpdateTextBox("The door is locked. Sucks to be you.");
             }
             }

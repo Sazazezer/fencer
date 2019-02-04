@@ -75,10 +75,6 @@ public class Inventory : MonoBehaviour {
             }
         }
 
-        //test to see what the hell is happening with inventory
-        for (int i = 0; i < 15; i++){
-            Debug.Log(slots[i].itemName);
-        }
     }
 
     }

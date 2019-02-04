@@ -183,4 +183,8 @@ public class YarnActions : MonoBehaviour {
             return false;
         }
     }
+    [YarnCommand("forceSave")]
+    public void ForceSave() {
+        GameObject.FindObjectOfType<DialogueList>().Save();
+    }
 }

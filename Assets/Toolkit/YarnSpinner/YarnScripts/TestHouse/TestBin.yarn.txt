@@ -3,8 +3,21 @@ tags:
 colorID: 0
 position: 540,260
 ---
+
+<<if $got_GoldenBox is true>>
+Without the insanely valuable Golden Box that i'm just going to throw away as soon as i look inside it the bin is back to being a normal bin.
+Well, it was always a normal bin.
+It should not have had ideas above its station.
+<<endif>>
+
+<<if $got_GoldenBox is false>>
 It's just a dustbin. 
 Nothing to get excited over.
-Inside is a golden box.
+Inside is a golden box worth millions.
 Tiona got the golden box.
+<<set $got_GoldenBox to true>>
 <<add_item("GoldenBox")>>
+<<endif>>
+
+
+

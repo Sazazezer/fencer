@@ -198,6 +198,7 @@ namespace Yarn.Unity.Example {
         public override IEnumerator DialogueComplete ()
         {
             Debug.Log ("Complete!");
+            GameObject.FindObjectOfType<DialogueList>().Save();
 
             // Hide the dialogue interface.
             if (dialogueContainer != null)

@@ -51,7 +51,7 @@ public class AutoTalk : AbstractBehaviour {
             // Detect if we want to start a conversation
             if (!isTalking) {
                 toggleOptions = true;
-                CheckForNearbyCutScene ();
+                CheckForNearbyAutoPlayNPC ();
 
             }
 
@@ -64,11 +64,12 @@ public class AutoTalk : AbstractBehaviour {
         /** Filter them to those that have a Yarn start node and are in range; 
          * then start a conversation with the first one
          */
-        public void CheckForNearbyCutScene ()
+        public void CheckForNearbyAutoPlayNPC ()
         {
-            var allParticipants = new List<CutScene> (FindObjectsOfType<CutScene> ());
-            var target = allParticipants.Find (delegate (CutScene p) {
+            var allParticipants = new List<NPC> (FindObjectsOfType<NPC> ());
+            var target = allParticipants.Find (delegate (NPC p) {
                 return string.IsNullOrEmpty (p.talkToNode) == false &&// has a conversation node?
+                p.autoPlay == true &&
                 (p.transform.position - this.transform.position) // is in range?
                 .magnitude <= interactionRadius;
             });

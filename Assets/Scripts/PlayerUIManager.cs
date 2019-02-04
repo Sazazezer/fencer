@@ -138,6 +138,8 @@ public class PlayerUIManager : MonoBehaviour {
                 Debug.Log("Puzzle Data Loaded");
    //     GameObject.FindObjectOfType<UniqueVariablesList>().ResetUniqueVariables(); Need to make save and load things
                 Debug.Log("Unique Data Loaded");
+        GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
+                Debug.Log("Dialogue Data Loaded");
 
         Debug.Log("Game Data Loaded");
     }
@@ -157,6 +159,8 @@ public class PlayerUIManager : MonoBehaviour {
                 Debug.Log("Puzzle Data Reset");
         GameObject.FindObjectOfType<UniqueVariablesList>().ResetUniqueVariables();
                 Debug.Log("Unique Data Reset");
+       // GameObject.FindObjectOfType<DialogueList>().ResetDialogue();
+                Debug.Log("Dialogue Data Reset");                
     //ResetUniques
     }
 }

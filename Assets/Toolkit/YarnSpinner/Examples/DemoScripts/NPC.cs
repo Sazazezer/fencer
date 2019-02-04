@@ -33,6 +33,7 @@ namespace Yarn.Unity.Example {
     public class NPC : YarnActions {
 
         public string characterName = "";
+        public bool autoPlay;
 
         [FormerlySerializedAs("startNode")]
         public string talkToNode = "";
