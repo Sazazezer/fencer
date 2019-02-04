@@ -157,6 +157,23 @@ public class YarnActions : MonoBehaviour {
 
     }
 
+    [YarnCommand("gointopuzzle")]
+    public void GoToPuzzleScreen() {
+            Debug.Log("Hi there");    
+            var allPuzzles = new List<PuzzleLock> (FindObjectsOfType<PuzzleLock> ());
+            Debug.Log(allPuzzles);
+            var target = allPuzzles.Find (delegate (PuzzleLock p) {
+                return (p.transform.position - this.transform.position)// is in range?
+                .magnitude <= 20;
+            });
+                Debug.Log(target);
+            if (target != null) {
+
+                // Kick off the dialogue at this node.
+                target.GetComponent<PuzzleLock>().UsePuzzleLock();
+            }
+    }
+
     [YarnCommand("checkLock")]
     public bool CheckItemExists(string itemCheck) {
         GameObject lockedItem = GameObject.Find(itemCheck);
