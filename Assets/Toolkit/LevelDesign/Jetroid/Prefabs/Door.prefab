@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114236202870384930}
   - component: {fileID: 61887461371632634}
   - component: {fileID: 114510673892253494}
+  - component: {fileID: 114661503263468634}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -67,9 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca962a4310e694428df40b768e290e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goToScene: Room209
-  door: 2082
-  leadsTo: 2091
+  goToScene: Room207
+  door: 2081
+  leadsTo: 2071
   doorSide: -50
   doorDir: 0
 --- !u!114 &114510673892253494
@@ -85,11 +86,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlockable: 0
   player: {fileID: 0}
-  lockNumber: 0
-  doorName: House209
+  lockNumber: 1
+  doorName: House207
   itemKill: {fileID: 0}
-  linkedItem: {fileID: 0}
+  linkedItem: {fileID: 1972283162918958, guid: 321108b54aff2f94e867c6c8bb1dfdac, type: 2}
   locked: 1
+--- !u!114 &114661503263468634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485056767942644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 033d0ea0c3029b74ca13cab986db7d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212031680502079022
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -156,6 +168,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 828.8, y: -766.8}
+  m_AnchoredPosition: {x: 281.04376, y: -766.8}
   m_SizeDelta: {x: 3.805, y: 2.573}
   m_Pivot: {x: 0.5, y: 0.5}

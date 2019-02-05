@@ -519,6 +519,26 @@ Prefab:
       value: 
       objectReference: {fileID: 1972283162918958, guid: de9a09d681073ed4cb5879769a4385b7,
         type: 2}
+    - target: {fileID: 114236202870384930, guid: 447dbe3eb2738154c92fb7170abf67d0,
+        type: 2}
+      propertyPath: goToScene
+      value: Room209
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236202870384930, guid: 447dbe3eb2738154c92fb7170abf67d0,
+        type: 2}
+      propertyPath: door
+      value: 2082
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236202870384930, guid: 447dbe3eb2738154c92fb7170abf67d0,
+        type: 2}
+      propertyPath: leadsTo
+      value: 2091
+      objectReference: {fileID: 0}
+    - target: {fileID: 114510673892253494, guid: 447dbe3eb2738154c92fb7170abf67d0,
+        type: 2}
+      propertyPath: doorName
+      value: House209
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 447dbe3eb2738154c92fb7170abf67d0, type: 2}
   m_IsPrefabParent: 0
@@ -1473,6 +1493,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114961479283815098, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: variableStorage
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba84ffc04dfd4440a94549607c9c795, type: 2}
   m_IsPrefabParent: 0
@@ -1739,6 +1764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestCar
+  autoPlay: 0
   talkToNode: TestCar
   scriptToLoad: {fileID: 0}
 --- !u!114 &1063165188
@@ -2066,32 +2092,6 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 2028283576}
-    - target: {fileID: 114510673892253494, guid: 447dbe3eb2738154c92fb7170abf67d0,
-        type: 2}
-      propertyPath: lockNumber
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114510673892253494, guid: 447dbe3eb2738154c92fb7170abf67d0,
-        type: 2}
-      propertyPath: doorName
-      value: House207
-      objectReference: {fileID: 0}
-    - target: {fileID: 114510673892253494, guid: 447dbe3eb2738154c92fb7170abf67d0,
-        type: 2}
-      propertyPath: linkedItem
-      value: 
-      objectReference: {fileID: 1972283162918958, guid: 321108b54aff2f94e867c6c8bb1dfdac,
-        type: 2}
-    - target: {fileID: 114510673892253494, guid: 447dbe3eb2738154c92fb7170abf67d0,
-        type: 2}
-      propertyPath: isUnlockable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114236202870384930, guid: 447dbe3eb2738154c92fb7170abf67d0,
-        type: 2}
-      propertyPath: goToScene
-      value: Room207
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 447dbe3eb2738154c92fb7170abf67d0, type: 2}
   m_IsPrefabParent: 0
@@ -2158,22 +2158,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4732812396727580, guid: 9a4530dc0438d8940b2874efe82097b0,
     type: 2}
   m_PrefabInternal: {fileID: 1363814025}
---- !u!1 &1364674747 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1214544097885434, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2,
-    type: 2}
-  m_PrefabInternal: {fileID: 182409568}
---- !u!114 &1364674748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1364674747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c5731717a1699a4695d106cf9017045, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1385079570 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1472342651455006, guid: aba84ffc04dfd4440a94549607c9c795,
@@ -2476,17 +2460,17 @@ Prefab:
     - target: {fileID: 224344494915192644, guid: adaba2e54b91a79439aeb6658a152988,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224441342947077080, guid: adaba2e54b91a79439aeb6658a152988,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224800790591495136, guid: adaba2e54b91a79439aeb6658a152988,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
@@ -3017,6 +3001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestAmazingBin
+  autoPlay: 0
   talkToNode: TestAmazingBin
   scriptToLoad: {fileID: 0}
 --- !u!1 &1856671363
@@ -3060,6 +3045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestBin
+  autoPlay: 0
   talkToNode: TestBin
   scriptToLoad: {fileID: 0}
 --- !u!1001 &1868311893

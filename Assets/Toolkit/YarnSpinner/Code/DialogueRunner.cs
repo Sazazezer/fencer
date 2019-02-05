@@ -98,8 +98,9 @@ namespace Yarn.Unity
         void Start ()
         {
             //Matt code
-            variableStorage = GameObject.FindObjectOfType<DialogueStorage>();
 
+            variableStorage = GameObject.FindObjectOfType<DialogueStorage>(); 
+                    
             //newer matt code
             //dialogue = new Dialogue(variableStorage);
 
@@ -168,6 +169,15 @@ namespace Yarn.Unity
                         this.AddStringTable(table.text);
                     }
                 }
+            }
+
+        }
+
+        void Update(){
+
+            if(variableStorage==null){
+               variableStorage = GameObject.FindObjectOfType<DialogueStorage>(); //!!Might become a performance issue
+             //Debug.Log("DialogueRunner"+variableStorage.variables);
             }
 
         }

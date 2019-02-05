@@ -159,8 +159,15 @@ public class PlayerUIManager : MonoBehaviour {
                 Debug.Log("Puzzle Data Reset");
         GameObject.FindObjectOfType<UniqueVariablesList>().ResetUniqueVariables();
                 Debug.Log("Unique Data Reset");
-       // GameObject.FindObjectOfType<DialogueList>().ResetDialogue();
-                Debug.Log("Dialogue Data Reset");                
+        GameObject.FindObjectOfType<DoorLockList>().ResetDoorLocks(); 
+                Debug.Log("Dialogue Data Reset"); 
+        GameObject.FindObjectOfType<DialogueList>().ResetDialogue();
+                Debug.Log("Dialogue Data Reset");
+
     //ResetUniques
+    }
+
+    public void SaveDialogue(){
+        GameObject.FindObjectOfType<DialogueList>().Save();
     }
 }

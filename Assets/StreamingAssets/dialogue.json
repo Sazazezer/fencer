@@ -1,1 +1,1 @@
-{"values":{"$Yarn.ShuffleOptions":{"type":2,"numberValue":0.0,"variableName":null,"stringValue":null,"boolValue":false},"$openingRan":{"type":0,"numberValue":1.0,"variableName":null,"stringValue":null,"boolValue":false}},"visitedNodes":{"TestBin":2,"Test209FrontDoor":2}}
+{"values":{"$Yarn.ShuffleOptions":{"type":2,"numberValue":0.0,"variableName":null,"stringValue":null,"boolValue":false},"$got_GoldenBox":{"type":2,"numberValue":0.0,"variableName":null,"stringValue":null,"boolValue":true}},"visitedNodes":{"TestBin":1}}

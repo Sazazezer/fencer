@@ -112,7 +112,6 @@ GameObject:
   - component: {fileID: 114893080129472144}
   - component: {fileID: 114754088357779320}
   - component: {fileID: 114513649384580184}
-  - component: {fileID: 114886094346319258}
   m_Layer: 0
   m_Name: GameControls
   m_TagString: Untagged
@@ -2060,17 +2059,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToLive: 5
   textBox: {fileID: 114458943235300290}
---- !u!114 &114886094346319258
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1220048801299774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114887269462005572
 MonoBehaviour:
   m_ObjectHideFlags: 1

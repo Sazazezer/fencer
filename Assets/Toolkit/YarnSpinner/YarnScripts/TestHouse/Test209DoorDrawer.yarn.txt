@@ -3,9 +3,16 @@ tags:
 colorID: 0
 position: 540,260
 ---
+<<if $209DoorDrawer is true>>
+Just a standard Door Drawer.
+<<endif>>
+
+<<if $209DoorDrawer is false>>
 Just a standard Door Drawer.
 All doors have one of these, right?
 It would be weird if every door in the universe didn't also come with a drawer.
 There's a key on top of it.
 Tiona got the Cupboard key.
+<<set $209DoorDrawer to true>>
 <<add_item("House209LockedSideboardKey")>>
+<<endif>>

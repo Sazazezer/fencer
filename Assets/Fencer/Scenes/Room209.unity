@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Test209Armchair
+  autoPlay: 0
   talkToNode: Test209Armchair
   scriptToLoad: {fileID: 0}
 --- !u!1 &78096181
@@ -614,7 +615,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4383832174907200, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2, type: 2}
@@ -1003,6 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Test209Television
+  autoPlay: 0
   talkToNode: Test209Television
   scriptToLoad: {fileID: 0}
 --- !u!1001 &351175092
@@ -2331,6 +2333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Test209FrontDoor
+  autoPlay: 0
   talkToNode: Test209FrontDoor
   scriptToLoad: {fileID: 0}
 --- !u!1001 &735523801
@@ -3408,6 +3411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Test209LockedDrawer
+  autoPlay: 0
   talkToNode: Test209LockedDrawer
   scriptToLoad: {fileID: 0}
 --- !u!114 &1285606550 stripped
@@ -3847,7 +3851,7 @@ Prefab:
     - target: {fileID: 224789627367252102, guid: 447dbe3eb2738154c92fb7170abf67d0,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224789627367252102, guid: 447dbe3eb2738154c92fb7170abf67d0,
         type: 2}
@@ -4131,22 +4135,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1364674747 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1214544097885434, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2,
-    type: 2}
-  m_PrefabInternal: {fileID: 182409568}
---- !u!114 &1364674748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1364674747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c5731717a1699a4695d106cf9017045, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1369804237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4348,6 +4336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: LeavingPoint
+  autoPlay: 0
   talkToNode: LeavingPoint
   scriptToLoad: {fileID: 0}
 --- !u!212 &1392302255
@@ -4693,6 +4682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Test209LockedSideboard
+  autoPlay: 0
   talkToNode: Test209LockedSideboard
   scriptToLoad: {fileID: 0}
 --- !u!1 &1451946255
@@ -5149,6 +5139,21 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
   m_IsPrefabParent: 0
@@ -5194,7 +5199,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4298168840886962, guid: 1496305b5a6ce7448840cc8d8bdeeb3e, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114150924385875786, guid: 1496305b5a6ce7448840cc8d8bdeeb3e,
         type: 2}
@@ -5298,7 +5303,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4611230671897490, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114421853453868870, guid: 93071749b02ac404a87f52bd43cdc62c,
         type: 2}
@@ -5437,6 +5442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Test209DoorDrawer
+  autoPlay: 0
   talkToNode: Test209DoorDrawer
   scriptToLoad: {fileID: 0}
 --- !u!4 &1737912372 stripped
@@ -5550,6 +5556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: UselessRock
+  autoPlay: 0
   talkToNode: UselessRock
   scriptToLoad: {fileID: 0}
 --- !u!212 &1785625116
@@ -6377,6 +6384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Test209LivingRoomChest
+  autoPlay: 0
   talkToNode: Test209LivingRoomChest
   scriptToLoad: {fileID: 0}
 --- !u!1001 &1935194873

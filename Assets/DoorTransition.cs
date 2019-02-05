@@ -30,6 +30,7 @@ public class DoorTransition : MonoBehaviour {
      void OnTriggerStay2D(Collider2D other){
        if (Input.GetButtonUp("Up") && other.tag == "Player" ){
             if (this.GetComponent<DoorLock>().locked == false){
+                GameObject.FindObjectOfType<DialogueList>().Save();
                 Debug.Log("Boop");
                     //   target.transform.position = new Vector3(xPosition, yPosition, 0);
                     room = new NextRoom() { 

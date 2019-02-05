@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "lockNumber": 0,
+            "doorName": "",
+            "doorUnlocked": 0
+        },
+        {
+            "lockNumber": 1,
+            "doorName": "",
+            "doorUnlocked": 0
+        },
+        {
+            "lockNumber": 2,
+            "doorName": "House207",
+            "doorUnlocked": 1
+        },
+        {
+            "lockNumber": 3,
+            "doorName": "",
+            "doorUnlocked": 0
+        },
+        {
+            "lockNumber": 4,
+            "doorName": "",
+            "doorUnlocked": 0
+        }
+    ]
+}

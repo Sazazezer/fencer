@@ -13,6 +13,7 @@ public class Talk : AbstractBehaviour {
         public MonoBehaviour[] stopScripts;
         public int preventTalk = 0;
         public bool speedUpTalk = false;
+        public bool choicesGiven = false;
         public GameObject gameControl;
     //    private bool stopMotion = false;
 

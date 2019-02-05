@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestArmchair
+  autoPlay: 0
   talkToNode: TestArmchair
   scriptToLoad: {fileID: 0}
 --- !u!1001 &68555001
@@ -1054,6 +1055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestTelevision
+  autoPlay: 0
   talkToNode: TestTelevision
   scriptToLoad: {fileID: 0}
 --- !u!1001 &351175092
@@ -2382,6 +2384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestFrontDoor
+  autoPlay: 0
   talkToNode: TestFrontDoor
   scriptToLoad: {fileID: 0}
 --- !u!1001 &735523801
@@ -3459,6 +3462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestLockedDrawer
+  autoPlay: 0
   talkToNode: TestLockedDrawer
   scriptToLoad: {fileID: 0}
 --- !u!114 &1285606550 stripped
@@ -4052,22 +4056,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1364674747 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1214544097885434, guid: 1d0de7ccf45cbfd4b916c5b8995f85e2,
-    type: 2}
-  m_PrefabInternal: {fileID: 182409568}
---- !u!114 &1364674748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1364674747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c5731717a1699a4695d106cf9017045, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1369804237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4269,6 +4257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: LeavingPoint
+  autoPlay: 0
   talkToNode: LeavingPoint
   scriptToLoad: {fileID: 0}
 --- !u!212 &1392302255
@@ -4614,6 +4603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestLockedSideboard
+  autoPlay: 0
   talkToNode: TestLockedSideboard
   scriptToLoad: {fileID: 0}
 --- !u!1 &1451946255
@@ -5606,6 +5596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestDoorDrawer
+  autoPlay: 0
   talkToNode: TestDoorDrawer
   scriptToLoad: {fileID: 0}
 --- !u!4 &1737912372 stripped
@@ -5719,6 +5710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: UselessRock
+  autoPlay: 0
   talkToNode: UselessRock
   scriptToLoad: {fileID: 0}
 --- !u!212 &1785625116
@@ -6546,6 +6538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: TestLivingRoomChest
+  autoPlay: 0
   talkToNode: TestLivingRoomChest
   scriptToLoad: {fileID: 0}
 --- !u!1001 &1935194873

@@ -26,6 +26,7 @@ public class DoorLock : MonoBehaviour {
             linkedItem.SetActive(true);
             //Destroy(gameObject);
             locked = false;
+            this.GetComponent<DoorLockList>().UnlockDoorSave(lockNumber);
         }
 		
 	}
