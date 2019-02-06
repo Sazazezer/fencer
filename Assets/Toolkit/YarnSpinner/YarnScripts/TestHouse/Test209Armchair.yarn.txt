@@ -4,8 +4,16 @@ colorID: 0
 position: 540,260
 ---
 
+<<if $Test209Armchair is 1>>
+Pfft. The armchair remains terrible.
+<<endif>>
+
+<<if $Test209Armchair is 0>>
 Bleh. This is a terrible armchair. 
-It's perfectly clean, but it's a terribler colour.
+It's perfectly clean, but it's a terrible colour.
 There is a journal on it though.
 <<addnewjournal Test209Armchair 0>>
 <<gointojournal Test209Armchair 0>>
+<<set $Test209Armchair to 1>>
+<<endif>>
+

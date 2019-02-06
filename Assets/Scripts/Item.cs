@@ -26,7 +26,10 @@ public class Item : MonoBehaviour {
     public void Use(string _use, int _unique) {
         actionObject.GetComponent<ItemAction>().Use(_use, _unique, slotNumber, itemType);
         if (inventory.slots[slotNumber].itemIndestructible == false){
+            Debug.Log(inventory.slots[slotNumber]);            
+            Debug.Log(inventory.slots[slotNumber].itemIndestructible);
             Instantiate(explosionEffect, player.transform.position, Quaternion.identity); //Game Design, do i need this?
+            Debug.Log("Destroying key");
             DestroyItem(slotNumber);
         }
 
@@ -39,6 +42,7 @@ public class Item : MonoBehaviour {
             inventory.slots[number].KeyID = 0;
             inventory.slots[number].itemIndestructible = false;
             inventory.slots[number].prefabName = "";
+            Debug.Log("Destroying key");
             Destroy(gameObject);
     }
 

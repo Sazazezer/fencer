@@ -204,7 +204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &64741077
 MonoBehaviour:
@@ -911,7 +911,6 @@ Transform:
   m_LocalPosition: {x: 325.7447, y: -621.6934, z: 7.40625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 731509542}
   - {fileID: 1737689062}
   - {fileID: 338960912}
   - {fileID: 1897928794}
@@ -990,7 +989,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &338960913
 MonoBehaviour:
@@ -2292,50 +2291,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4732812396727580, guid: 9a4530dc0438d8940b2874efe82097b0,
     type: 2}
   m_PrefabInternal: {fileID: 1336612926}
---- !u!1 &731509541
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 731509542}
-  - component: {fileID: 731509543}
-  m_Layer: 0
-  m_Name: Test209FrontDoor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &731509542
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 731509541}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 85.2, y: -68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 324282034}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &731509543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 731509541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Test209FrontDoor
-  autoPlay: 0
-  talkToNode: Test209FrontDoor
-  scriptToLoad: {fileID: 0}
 --- !u!1001 &735523801
 Prefab:
   m_ObjectHideFlags: 0
@@ -3397,7 +3352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1262529785
 MonoBehaviour:
@@ -4668,7 +4623,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1444062959
 MonoBehaviour:
@@ -5257,6 +5212,10 @@ Prefab:
       propertyPath: puzzleLockIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1204652107896732, guid: 1496305b5a6ce7448840cc8d8bdeeb3e, type: 2}
+      propertyPath: m_Name
+      value: PuzzleLock209Sideboard
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1496305b5a6ce7448840cc8d8bdeeb3e, type: 2}
   m_IsPrefabParent: 0
@@ -5428,7 +5387,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1737689063
 MonoBehaviour:
@@ -5620,6 +5579,7 @@ GameObject:
   - component: {fileID: 1792821016}
   - component: {fileID: 1792821017}
   - component: {fileID: 1792821018}
+  - component: {fileID: 1792821019}
   m_Layer: 0
   m_Name: Locked209Drawer
   m_TagString: Tree
@@ -5683,6 +5643,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.8721, y: 17.237854}
   m_EdgeRadius: 0
+--- !u!114 &1792821019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1792821015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85736d153d03b541ac2cc873d744878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueVariable: 
+  uniqueVariablesCurrentValue: 0
 --- !u!4 &1796241759 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4032878194002742, guid: d8bf6753bc4ae62488f9edbe1f28e187,
@@ -6370,7 +6343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324282034}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1897928795
 MonoBehaviour:

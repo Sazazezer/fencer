@@ -27,15 +27,10 @@ public class NewGame : MonoBehaviour {
 public void Load(){
         jsonData = JsonUtility.ToJson(data);
 
-        filename = Path.Combine(Application.persistentDataPath, SAVE_FILE);
-
-        //string jsonFromFile = File.ReadAllText(filename);
-
-        //SaveData copy = JsonUtility.FromJson<SaveData>(jsonFromFile);
+        filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
 
         //Don't touch the stuff above. Variables go here.
         if (File.Exists(filename)){
-          //  oldButtons.gameObject.SetActive(false);
             areYouSure.gameObject.SetActive(true);
             eventSystem.SetSelectedGameObject (selectNo); 
         } else {

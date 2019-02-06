@@ -32,6 +32,10 @@ public class Inventory : MonoBehaviour {
 
     void Update(){
 
+  /*      for(int i = 0; i <5; i++){
+            Debug.Log("Slot " + i + "is " + slots[i].itemIndestructible);
+        }*/
+
         highlightedItem.transform.position =  slots[highlightedSlot].transform.position;
         itemTitlePanel.GetComponentInChildren<Text>().text = slots[highlightedSlot].itemName;
         itemDescriptionPanel.GetComponentInChildren<Text>().text = slots[highlightedSlot].itemDescription;
@@ -76,6 +80,8 @@ public class Inventory : MonoBehaviour {
         }
 
     }
+
+
 
     }
 

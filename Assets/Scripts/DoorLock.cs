@@ -37,6 +37,7 @@ public class DoorLock : MonoBehaviour {
             if (player.GetComponent<UnlockDoor>().keyInHand == lockNumber){ 
                 isUnlockable=true;
                 itemKill = player.GetComponent<UnlockDoor>().keyButton;
+                Debug.Log("Destroying key");
                 itemKill.GetComponent<Item>().DestroyItem(player.GetComponent<UnlockDoor>().itemSlotNumber);
                 GameObject.FindObjectOfType<InventoryList>().SaveInventory();
             }

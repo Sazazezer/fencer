@@ -4,13 +4,23 @@ colorID: 0
 position: 540,260
 ---
 
-<<if check_lock("LockedSideboard")>>
-<<if checkvariable("testVariable") is 0>>
-Yay. Success
-<<setvariable("testVariable",1)>>
-<<else>>
-Still Successful.
+<<if check_lock("LockedSideboard") is false>>
+<<if $UnlockedSideboard is 1>>
+Welp. It's open.
+Let's see what's inside, shall we?
+...
+Yes. Yes we shall.
+Oh Look. Another vital clue.
+<<addnewjournal TestLockedSideboard 5>>
+<<gointojournal TestLockedSideboard 5>>
+<<set $UnlockedSideboard to 2>>
 <<endif>>
+Drawer's empty now.
+I think i may be done here.
+<<endif>>
+
+<<if check_lock("LockedSideboard") is true>>
+<<if $UnlockedSideboard is 0>>
 Locked.
 There's an image of a sun by the lock.
 An intricatelly detailed image of a sun, carved perfectly into the wood.
@@ -20,13 +30,11 @@ It seems unnecessary for day to day life, yet i feel this extreme effort is of i
 Maybe there is a connection between the lock and the image of a sun?
 Perhaps?
 I don't know.
-<<else>>
-Welp. It's open.
-Let's see what's inside, shall we?
-...
-Yes. Yes we shall.
-Oh Look. Another vital clue.
-<<addnewjournal TestLockedSideboard 5>>
-<<gointojournal TestLockedSideboard 5>>
-<<add_item("Food")>>
+<<set $UnlockedSideboard to 1>>
+<<endif>>
+<<if $UnlockedSideboard is 0>>
+I guess i should go find something that has a connection with the ball of fire that hangs in the sky.
+Maybe a key that represents it.
+Or something...
+<<endif>>
 <<endif>>

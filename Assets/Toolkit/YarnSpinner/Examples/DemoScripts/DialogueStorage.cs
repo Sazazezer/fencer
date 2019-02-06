@@ -169,7 +169,7 @@ private static DialogueStorage _instance;
                                                          item.Value));
             }
            // debugTextView.text = stringBuilder.ToString ();
-            Debug.Log(stringBuilder.ToString ()); //uncomment to get log of dialoguedata
+         //   Debug.Log(stringBuilder.ToString ()); //uncomment to get log of dialoguedata
         //}
     }
 

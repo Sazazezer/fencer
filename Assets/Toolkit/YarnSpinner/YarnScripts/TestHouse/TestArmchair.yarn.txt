@@ -3,9 +3,15 @@ tags:
 colorID: 0
 position: 540,260
 ---
+<<if $TestArmChair is true>>
+...burning with the orphans.
+<<endif>>
+<<if $TestArmChair is false>>
 Oh, i have to find a way to take this home with me.
 It is everything i have ever wanted in an armchair.
 ...
 It's going to be manky as hell though, isn't it?
 Guess i'll leave it to burn.
 Like all those orphans.
+<<set $TestArmChair to true>>
+<<endif>>

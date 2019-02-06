@@ -28,7 +28,7 @@ public class AreYouSure : MonoBehaviour {
     public void Yes(){
        // jsonData = JsonUtility.ToJson(data);
 
-        filename = Path.Combine(Application.persistentDataPath, SAVE_FILE);
+        filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
         File.Delete(filename);
         SceneManager.LoadScene("OpeningScene");
     }

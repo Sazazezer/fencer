@@ -32,7 +32,7 @@ public class PuzzleLockList : MonoBehaviour {
             for (int i = 0; i < countDammit; i++){
                 if(list.items[i].index == this.GetComponent<PuzzleLock>().puzzleLockIndex){
                     if (list.items[i].puzzleSolved == 1){
-                        Destroy(this.gameObject);
+                        this.gameObject.GetComponent<PuzzleLock>().locked=false;
                     }
                 }
             }

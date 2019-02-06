@@ -4,6 +4,11 @@ colorID: 0
 position: 540,260
 ---
 
+<<if $TestAmazingBin is true>>
+Still empty.
+<<endif>>
+
+<<if $TestAmazingBin is false>>
 Oh my god.
 I can't believe it.
 This bin...
@@ -17,5 +22,5 @@ I hesitate to reach forwards, to lift a lid that i, an unworthy mere mortal, am 
 Even the rustle as i pull it up is a din my pitiful ears are fit to hear.
 I look inside, eager to see its contents.
 Oh. It's empty.
-
-Still empty.
+<<set $TestAmazingBin to true>>
+<<endif>>

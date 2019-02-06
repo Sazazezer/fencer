@@ -3,6 +3,8 @@ tags:
 colorID: 0
 position: 540,260
 ---
+
+<<if $TestDoorDrawer is false>>
 This confirms the door drawer theory.
 I only need two positive examples to confirm my hypothesis, right?
 Oh, look. Another journal. 
@@ -10,3 +12,11 @@ How repetitive.
 Kind of like this house.
 <<addnewjournal TestDoorDrawer 4>>
 <<gointojournal TestDoorDrawer 4>>
+<<set $TestDoorDrawer true>>
+<<endif>>
+
+<<if $TestDoorDrawer is true>>
+Yeah, the house has definitely just been flipped.
+er... in the way houses are flipped to sell a profit.
+Yeah... definitely just that meaning.
+<<endif>>

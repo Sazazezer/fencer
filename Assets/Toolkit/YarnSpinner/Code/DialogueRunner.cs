@@ -113,6 +113,10 @@ namespace Yarn.Unity
                 return GameObject.Find((string)parameters[0].AsString).GetComponent<DoorLock>().locked;
             });
 
+            dialogue.library.RegisterFunction ("check_puzzlelock", 1, delegate(Value[] parameters) {
+                return GameObject.Find((string)parameters[0].AsString).GetComponent<PuzzleLock>().locked;
+            });
+
             dialogue.library.RegisterFunction ("add_journal", 1, delegate(Value[] parameters) {
                 GameObject.Find("JournalListPanel").GetComponent<JournalList>().AddNewJournal((int)parameters[0].AsNumber);
             });

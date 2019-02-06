@@ -31,7 +31,6 @@ public class InventoryList : MonoBehaviour {
 	}
 
     public void SaveInventory(){
-            Debug.Log("hi there;lk;l");
         string jsonFromFile = File.ReadAllText(filename);
         Debug.Log(jsonFromFile);
         InventoryDataList list = InventoryDataList.CreateFromJSON(jsonFromFile);
@@ -68,11 +67,10 @@ public class InventoryList : MonoBehaviour {
                 inventory.slots[j].itemDescription = list.items[j].itemDescription;
                 GameObject instance = Instantiate(Resources.Load(list.items[j].prefabName, typeof(GameObject)), inventory.slots[j].transform, false) as GameObject;
                 inventory.slots[j].itemObject = instance;
-            //    inventory.slots[i].itemObject = list.instance[i];
                 inventory.slots[j].KeyID = list.items[j].KeyID;
                 inventory.slots[j].itemIndestructible = list.items[j].itemIndestructible;
                 inventory.slots[j].prefabName = list.items[j].prefabName;
-             //   instance.GetComponent<Item>().slotNumber = i;
+                instance.GetComponent<Item>().slotNumber = j;
                 }               
             }
         }    

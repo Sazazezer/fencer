@@ -25,6 +25,8 @@ public class PlayerUIManager : MonoBehaviour {
 
         if (SceneManager.GetActiveScene().buildIndex != 1){
             LoadGameData(); //time to get this working in some way!
+            Debug.Log("I loaded Game Data.");
+            GameObject.FindObjectOfType<LocationList>().Save();
         }
     }
 

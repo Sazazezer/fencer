@@ -4,6 +4,8 @@ colorID: 0
 position: 540,260
 ---
 
+<<if check_lock("Locked209Drawer") is false>>
+<<if $Unlocked209Drawer is 0>>
 I unlocked the drawer.
 I am indeed a master.
 Not of unlocking, that would be dumb.
@@ -12,4 +14,11 @@ Hey, another journal.
 I wonder if it will be relevant.
 <<addnewjournal Test209LockedDrawer 2>>
 <<gointojournal Test209LockedDrawer 2>>
+<<set $Unlocked209Drawer to 1>>
+<<endif>>
+Drawer's empty now.
+<<endif>>
 
+<<if check_lock("Locked209Drawer") is true>>
+The drawer's locked.
+<<endif>>

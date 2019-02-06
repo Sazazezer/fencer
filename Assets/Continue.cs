@@ -34,11 +34,7 @@ public void Load(){
         if (File.Exists(filename)){
             SceneManager.LoadScene(copy.sceneID);
         } else {
-
-            //JUST DO NEW GAME AUTOMATICALLY
-        //    saveScreen.GetComponent<SaveScreen>().Resume();
-           // textBox.gameObject.SetActive(true);
-           // textBox.text = "No Save File.";
+            SceneManager.LoadScene("OpeningScene");
         }
 
     }

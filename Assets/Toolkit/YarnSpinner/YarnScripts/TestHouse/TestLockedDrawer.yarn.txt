@@ -3,16 +3,25 @@ tags:
 colorID: 0
 position: 540,260
 ---
-
+<<if check_puzzlelock("207PuzzleLock") is false>>
+<<if $207PuzzleLock is 1>>
 Well, i got into the drawer.
-<<gointopuzzle TestLockedDrawer>>
-
-
-
-
 It's empty, but the feeling of accomplishment drives me to ever dizzying and greater heights.
 Instinctively i now know the contents of another journal.
 Don't ask questions. You won't get answers.
-<<gointopuzzle TestLockedDrawer>>
 <<addnewjournal TestLockedDrawer 6>>
 <<gointojournal TestLockedDrawer 6>>
+<<set $207PuzzleLock to 2>>
+<<endif>>
+Hurray forever.
+<<endif>>
+
+<<if check_puzzlelock("207PuzzleLock") is true>>
+<<if $207PuzzleLock is 0>>
+Yay, another code.
+This threatens to be a trend.
+<<set $207PuzzleLock to 1>>
+<<endif>>
+Let's have a look.
+<<gointopuzzle TestLockedDrawer>>
+<<endif>>

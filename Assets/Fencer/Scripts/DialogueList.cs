@@ -27,7 +27,6 @@ public class DialogueList : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.L)) {
             LoadFromJson();
         }
-        Debug.Log("DialogueList"+variableStorage.Variables);
     }
     
     public void Save () {

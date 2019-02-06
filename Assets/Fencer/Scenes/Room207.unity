@@ -5299,6 +5299,10 @@ Prefab:
       propertyPath: unlockedItem
       value: 
       objectReference: {fileID: 1262529783}
+    - target: {fileID: 1204652107896732, guid: 1496305b5a6ce7448840cc8d8bdeeb3e, type: 2}
+      propertyPath: m_Name
+      value: 207PuzzleLock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1496305b5a6ce7448840cc8d8bdeeb3e, type: 2}
   m_IsPrefabParent: 0

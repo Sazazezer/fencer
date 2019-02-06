@@ -14,7 +14,6 @@ public class ItemAction : MonoBehaviour {
 	
 	// Update is called once per frame
 	public void Use (string _item, int _unique, int _slotNumber, ItemType _itemType) {
-        Debug.Log(_itemType);
         if(_itemType == ItemType.Key){   
            TryKeyInLock(_item, _unique, _slotNumber);
         }

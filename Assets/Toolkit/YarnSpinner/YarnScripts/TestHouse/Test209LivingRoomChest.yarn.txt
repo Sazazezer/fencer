@@ -4,11 +4,18 @@ colorID: 0
 position: 540,260
 ---
 
+<<if $Test209LivingRoomChest is 1>>
+Just a bunch of boxes left now.
+<<endif>>
+
+<<if $Test209LivingRoomChest is 0>>
 Hhhhmmm.
 Man, it's weird that they just left all the moving boxes here.
 Guess that evac order was pretty strict. 
 They even left a perfectly good clue.
 <<addnewjournal Test209LivingRoomChest 1>>
 <<gointojournal Test209LivingRoomChest 1>>
+<<set $Test209LivingRoomChest to 1>>
+<<endif>>
 
 

@@ -2137,6 +2137,19 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114323403025336222, guid: 2303164e686ca1f4c872cfc13da1ec5b,
+        type: 2}
+      propertyPath: m_Text
+      value: '
+
+        Matt Staples - workHate Inc 2019'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114038249359958430, guid: 2303164e686ca1f4c872cfc13da1ec5b,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1973296038830cf43ac0972df9334300,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2303164e686ca1f4c872cfc13da1ec5b, type: 2}
   m_IsPrefabParent: 0

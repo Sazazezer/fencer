@@ -3,9 +3,39 @@ tags:
 colorID: 0
 position: 540,260
 ---
+
+<<if $myCar is 3>>
+...
+...
+Guess i better get back to it.
+<<endif>>
+
+<<if $myCar is 2>>
+My phone charger is here.
+Plenty of battery so it shouldn't be an issue.
+But if it runs out i can always sneak back here.
+Spend a few hours bumming in the car.
+Got snacks too. I'm good in general.
+I like to be prepared.
+<<set $myCar to 3>>
+<<endif>>
+
+<<if $myCar is 1>>
+I can leave anytime, i suppose.
+Just need to head back here.
+There's always a weird feeling on these trips.
+That i have to end on some big, high note.
+The truth is i just leave because i start feeling self-conscious.
+Reality doesn't care either way.
+<<set $myCar to 2>>
+<<endif>>
+
+<<if $myCar is 0>>
 My Car. This is what i arrived in.
 It looks fancy now, but this is only a piece of placeholder art.
 I'll be getting a dingy piece of crap in the full release.
 The idea will be that i'm supposed to love it because it's so clunky and well worn, and that together we've had many adventures.
 But i tell you now that's a lie.
 I wanna keep the flashy one.
+<<set $myCar to 1>>
+<<endif>>

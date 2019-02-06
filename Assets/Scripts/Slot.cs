@@ -33,6 +33,7 @@ public class Slot : MonoBehaviour {
 
         foreach (Transform child in transform) {
             child.GetComponent<Spawn>().SpawnItem();
+                            Debug.Log("Destroying key");
             GameObject.Destroy(child.gameObject);
         }
     }

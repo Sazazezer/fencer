@@ -1,11 +1,11 @@
 {
     "items": [
         {
-            "itemName": "",
-            "itemDescription": "",
-            "KeyID": 0,
-            "itemIndestructible": false,
-            "prefabName": ""
+            "itemName": "House207DoorKey",
+            "itemDescription": "The numbers 207 are on this key. WHAT COULD IT MEAN?",
+            "KeyID": 1,
+            "itemIndestructible": true,
+            "prefabName": "House207DoorKeyButton"
         },
         {
             "itemName": "House207LockedSideboardKey",
