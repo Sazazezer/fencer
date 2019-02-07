@@ -199,6 +199,7 @@ namespace Yarn.Unity.Example {
         {
             Debug.Log ("Complete!");
             GameObject.FindObjectOfType<DialogueList>().Save();
+        GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
 
             // Hide the dialogue interface.
             if (dialogueContainer != null)

@@ -24,7 +24,7 @@ public class PuzzleLockList : MonoBehaviour {
     }
 
     public void PuzzleLockCompile(){
-        
+        filename = Path.Combine(Application.streamingAssetsPath, PuzzleLock_DATA);
         string jsonFromFile = File.ReadAllText(filename);
         PuzzleLockDataList list = PuzzleLockDataList.CreateFromJSON(jsonFromFile);
         countDammit = list.items.Count();

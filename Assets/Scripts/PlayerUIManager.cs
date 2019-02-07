@@ -33,32 +33,9 @@ public class PlayerUIManager : MonoBehaviour {
     private void Update()
     {
 
-        healthDisplay.text = health.ToString();
+     //   healthDisplay.text = health.ToString();
 
-        if (Input.GetButtonDown("Fire2")){
-                GoToJournal();                    
-        }
 
-        if (Input.GetButtonDown("Fire3")){
-                GoToBag();            
-        }
-        if (Input.GetButtonDown("Cancel")){
-            BackToGame();
-        }
-
-        //ultimate save,load,reset area
-        //save
-        if (Input.GetKeyDown(KeyCode.F9)){
-            SaveGameData();
-        }
-        //load
-        if (Input.GetKeyDown(KeyCode.F10)){
-            LoadGameData();
-        }
-        //reset
-        if (Input.GetKeyDown(KeyCode.F12)){
-            ResetGameData();
-        }
     }
 
     public void GoToJournal() {
@@ -159,8 +136,8 @@ public class PlayerUIManager : MonoBehaviour {
                 Debug.Log("Journal Data Reset");
         GameObject.FindObjectOfType<PuzzleLockList>().ResetPuzzleLocks();
                 Debug.Log("Puzzle Data Reset");
-        GameObject.FindObjectOfType<UniqueVariablesList>().ResetUniqueVariables();
-                Debug.Log("Unique Data Reset");
+      //  GameObject.FindObjectOfType<UniqueVariablesList>().ResetUniqueVariables();
+                Debug.Log("Unique Data Reset");//i don't need this at the moment
         GameObject.FindObjectOfType<DoorLockList>().ResetDoorLocks(); 
                 Debug.Log("Dialogue Data Reset"); 
         GameObject.FindObjectOfType<DialogueList>().ResetDialogue();

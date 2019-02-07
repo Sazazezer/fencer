@@ -11,6 +11,7 @@ public class SwordAttack : AbstractBehaviour {
 	public float debugRadius = 3f;
 	private float timeElapsed = 0f;
     private ReadyStance readyStance;
+    private bool disableSword = true; //remove this to reactivate sword
 
     void Start(){
         readyStance = GetComponent<ReadyStance>();
@@ -19,7 +20,7 @@ public class SwordAttack : AbstractBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(swordPrefab != null){
+		if(swordPrefab != null && disableSword == false){
 			var canFire = inputState.GetButtonValue(inputButtons[0]);
 
 			if(canFire && timeElapsed > shootDelay){

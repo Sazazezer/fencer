@@ -8,27 +8,27 @@
         {
             "index": 1,
             "itemName": "House207DoorKeyButton",
-            "itemPicked": 1
+            "itemPicked": 0
         },
         {
             "index": 2,
             "itemName": "House209DoorKeyButton",
-            "itemPicked": 1
+            "itemPicked": 0
         },
         {
             "index": 3,
             "itemName": "House207DoorKeyButton",
-            "itemPicked": 1
+            "itemPicked": 0
         },
         {
             "index": 4,
             "itemName": "House209DoorKeyButton",
-            "itemPicked": 1
+            "itemPicked": 0
         },
         {
             "index": 5,
             "itemName": "GoldenBoxButton",
-            "itemPicked": 1
+            "itemPicked": 0
         }
     ]
 }

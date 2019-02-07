@@ -135,6 +135,11 @@ namespace Yarn.Unity
                 Debug.Log("I also ran");
                 GameObject.Find("GameControls").GetComponent<UniqueVariablesList>().SetUniqueVariable(parameters[0].AsString, (int)parameters[1].AsNumber);
             });
+
+            dialogue.library.RegisterFunction ("enableUI", 0, delegate(Value[] parameters) {
+                Debug.Log("I also ran");
+                GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
+            });
             // Ensure that we have our Implementation object
             if (dialogueUI == null) {
                 Debug.LogError ("Implementation was not set! Can't run the dialogue!");
@@ -257,7 +262,7 @@ namespace Yarn.Unity
         {
             // Mark that we're in conversation.
             isDialogueRunning = true;
-
+            GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToTrue();
             // Signal that we're starting up.
             yield return StartCoroutine(this.dialogueUI.DialogueStarted());
 

@@ -14,13 +14,13 @@
         },
         {
             "index": 2,
-            "lockedAway": 1,
+            "lockedAway": 0,
             "content": "Puzzle Lock One Answer Journal",
             "journal": "I set the code as 1234. No one will ever suspect."
         },
         {
             "index": 3,
-            "lockedAway": 1,
+            "lockedAway": 0,
             "content": "Vital Clue Journal One",
             "journal": "We concluded that looking up the knife that was covered in blood that it was possibly the knife that was the murder weapon. Also, it was sticking out of her gut, and the doctor told us that it was the murder weapon, so this is definitely a factor in the grand scheme of the whole murder."
         },

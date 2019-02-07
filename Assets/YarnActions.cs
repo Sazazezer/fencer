@@ -145,6 +145,7 @@ public class YarnActions : MonoBehaviour {
 
     [YarnCommand("gointojournal")]
     public void GoToJournalEntry(string goToJournalEntry) {
+        GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
         int stringEntry = int.Parse(goToJournalEntry);
         GameObject[] journalButtons;
         journalButtons = GameObject.FindGameObjectsWithTag("JournalButton");
@@ -159,6 +160,7 @@ public class YarnActions : MonoBehaviour {
 
     [YarnCommand("gointopuzzle")]
     public void GoToPuzzleScreen() {
+            GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
             Debug.Log("Hi there");    
             var allPuzzles = new List<PuzzleLock> (FindObjectsOfType<PuzzleLock> ());
             Debug.Log(allPuzzles);
@@ -186,5 +188,10 @@ public class YarnActions : MonoBehaviour {
     [YarnCommand("forceSave")]
     public void ForceSave() {
         GameObject.FindObjectOfType<DialogueList>().Save();
+    }
+
+    [YarnCommand("enableUI")]
+    public void EnableUI() {
+        GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
     }
 }

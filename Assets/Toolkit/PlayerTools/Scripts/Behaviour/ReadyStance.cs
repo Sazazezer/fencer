@@ -7,6 +7,7 @@ public class ReadyStance : AbstractBehaviour {
     public bool ready;
     public bool freezeDirection = false;
     public int currentDirection;
+    private bool disableStance = true; //remove this to reactivate stance ability
 
     protected override void Awake(){
     base.Awake ();
@@ -33,7 +34,7 @@ public class ReadyStance : AbstractBehaviour {
     // Update is called once per frame
     void Update () {
         var isReady = inputState.GetButtonValue (inputButtons[2]);
-        if(isReady && collisionState.standing){
+        if(isReady && collisionState.standing && disableStance == false){
             OnReady(true);
             if (!freezeDirection){
                 if(inputState.direction == Directions.Left){

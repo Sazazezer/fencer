@@ -12,7 +12,7 @@ How repetitive.
 Kind of like this house.
 <<addnewjournal TestDoorDrawer 4>>
 <<gointojournal TestDoorDrawer 4>>
-<<set $TestDoorDrawer true>>
+<<set $TestDoorDrawer to true>>
 <<endif>>
 
 <<if $TestDoorDrawer is true>>

@@ -13,6 +13,7 @@ TagManager:
   - Undefined
   - JournalButton
   - Tree
+  - PlayerPos
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4113815131
+    locked: 0
+  - name: Midground
+    uniqueID: 3014339829
+    locked: 0
+  - name: Playerground
+    uniqueID: 864861709
+    locked: 0
+  - name: Foreground
+    uniqueID: 435566493
     locked: 0

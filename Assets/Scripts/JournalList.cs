@@ -33,7 +33,7 @@ public class JournalList : MonoBehaviour {
             GameObject.Destroy(child.gameObject);
         }
 
-        
+        filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
         string jsonFromFile = File.ReadAllText(filename);
         JournalDataList list = JournalDataList.CreateFromJSON(jsonFromFile);
         countDammit = list.items.Count();
