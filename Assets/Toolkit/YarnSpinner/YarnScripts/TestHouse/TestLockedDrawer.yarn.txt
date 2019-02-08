@@ -3,6 +3,10 @@ tags:
 colorID: 0
 position: 540,260
 ---
+<<if $207PuzzleLock is 2>>
+Hurray forever.
+<<endif>>
+
 <<if check_puzzlelock("207PuzzleLock") is false>>
 <<if $207PuzzleLock is 1>>
 Well, i got into the drawer.
@@ -12,8 +16,6 @@ Don't ask questions. You won't get answers.
 <<addnewjournal TestLockedDrawer 6>>
 <<gointojournal TestLockedDrawer 6>>
 <<set $207PuzzleLock to 2>>
-<<endif>>
-Hurray forever.
 <<endif>>
 
 <<if check_puzzlelock("207PuzzleLock") is true>>

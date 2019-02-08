@@ -7,7 +7,7 @@ position: 540,260
 ...burning with the orphans.
 <<endif>>
 <<if $TestArmChair is false>>
-Oh, i have to find a way to take this home with me.
+Oh man, i have to find a way to take this home with me.
 It is everything i have ever wanted in an armchair.
 ...
 It's going to be manky as hell though, isn't it?

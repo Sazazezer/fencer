@@ -19,7 +19,7 @@ Truly, this is a bin for the ages.
 I can only imagine what's in this bin.
 I shudder in anticipation, perhaps even in arousal, over what this bin may contain.
 I hesitate to reach forwards, to lift a lid that i, an unworthy mere mortal, am not fit to lift.
-Even the rustle as i pull it up is a din my pitiful ears are fit to hear.
+Even the rustle as i pull it up is a din my pitiful ears are not fit to hear.
 I look inside, eager to see its contents.
 Oh. It's empty.
 <<set $TestAmazingBin to true>>

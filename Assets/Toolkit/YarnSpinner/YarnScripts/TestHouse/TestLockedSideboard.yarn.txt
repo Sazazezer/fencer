@@ -20,6 +20,12 @@ I think i may be done here.
 <<endif>>
 
 <<if check_lock("LockedSideboard") is true>>
+<<if $UnlockedSideboard is 1>>
+I guess i should go find something that has a connection with the ball of fire that hangs in the sky.
+Maybe a key that represents it.
+Or something...
+<<endif>>
+
 <<if $UnlockedSideboard is 0>>
 Locked.
 There's an image of a sun by the lock.
@@ -32,9 +38,7 @@ Perhaps?
 I don't know.
 <<set $UnlockedSideboard to 1>>
 <<endif>>
-<<if $UnlockedSideboard is 0>>
-I guess i should go find something that has a connection with the ball of fire that hangs in the sky.
-Maybe a key that represents it.
-Or something...
 <<endif>>
-<<endif>>
+
+
+

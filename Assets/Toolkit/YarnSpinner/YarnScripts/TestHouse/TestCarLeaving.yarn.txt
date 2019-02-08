@@ -1,0 +1,22 @@
+title: TestCarLeaving
+tags: 
+colorID: 0
+position: 540,260
+---
+So... I suppose i'm done.
+Time to hit the road and report back.
+To that guy i know from the internet.
+For no reward whatsoever...
+Leave
+[[No, not just yet.|Stay]]
+[[Yeah, let's get out of here.|Leave]]
+===
+title: TestCarLeaving.Stay
+---
+Still more to do...
+===
+title: TestCarLeaving.Leave
+---
+Cool. That's cool.
+<<changesceneto TestCarLeaving EndingScene>>
+===

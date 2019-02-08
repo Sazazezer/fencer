@@ -30,7 +30,7 @@ public class DialogueList : MonoBehaviour {
     }
     
     public void Save () {
-      //  variableStorage = GameObject.FindObjectOfType<DialogueStorage>();
+        variableStorage = GameObject.FindObjectOfType<DialogueStorage>();
         filename = Path.Combine(Application.streamingAssetsPath, DIALOGUE_FILE);
         YarnSaveState yss = new YarnSaveState(variableStorage.Variables, dialogueRunner.dialogue.visitedNodeCount);
         //Save to JSON here
@@ -41,7 +41,7 @@ public class DialogueList : MonoBehaviour {
     }
         
     public void LoadFromJson () {   
-       // variableStorage = GameObject.FindObjectOfType<DialogueStorage>();
+        variableStorage = GameObject.FindObjectOfType<DialogueStorage>();
         filename = Path.Combine(Application.streamingAssetsPath, DIALOGUE_FILE);
         string jsonFromFile = File.ReadAllText(filename);
         YarnSaveState yss = Newtonsoft.Json.JsonConvert.DeserializeObject<YarnSaveState>(jsonFromFile);
@@ -64,6 +64,8 @@ public class DialogueList : MonoBehaviour {
         filename = Path.Combine(Application.streamingAssetsPath, DIALOGUE_FILE);
             if (File.Exists(filename)){
                 File.Delete(filename);
+                YarnSaveState yss = new YarnSaveState(variableStorage.Variables, dialogueRunner.dialogue.visitedNodeCount);
+                File.WriteAllText(filename, Newtonsoft.Json.JsonConvert.SerializeObject(yss));
             }
 
        //     File.WriteAllText(filename, jsonData);

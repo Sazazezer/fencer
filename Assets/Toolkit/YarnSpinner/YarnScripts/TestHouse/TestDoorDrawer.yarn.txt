@@ -3,6 +3,11 @@ tags:
 colorID: 0
 position: 540,260
 ---
+<<if $TestDoorDrawer is true>>
+Yeah, the house has definitely just been flipped.
+er... in the way houses are flipped to sell a profit.
+Yeah... definitely just that meaning.
+<<endif>>
 
 <<if $TestDoorDrawer is false>>
 This confirms the door drawer theory.
@@ -15,8 +20,3 @@ Kind of like this house.
 <<set $TestDoorDrawer to true>>
 <<endif>>
 
-<<if $TestDoorDrawer is true>>
-Yeah, the house has definitely just been flipped.
-er... in the way houses are flipped to sell a profit.
-Yeah... definitely just that meaning.
-<<endif>>
