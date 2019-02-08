@@ -64,7 +64,7 @@ public class DoorLockList : MonoBehaviour {
             Debug.Log("Deleting Doors");
             for (int i = 0; i < countDammit; i++){
                 list.items[i].doorUnlocked = 0;
-                Debug.Log("Deleted" + i + "Doors");
+             //   Debug.Log("Deleted" + i + "Doors");
                 }
             }
         jsonData = JsonUtility.ToJson(list, true);

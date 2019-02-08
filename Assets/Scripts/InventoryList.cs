@@ -34,7 +34,7 @@ public class InventoryList : MonoBehaviour {
         string jsonFromFile = File.ReadAllText(filename);
         Debug.Log(jsonFromFile);
         InventoryDataList list = InventoryDataList.CreateFromJSON(jsonFromFile);
-        Debug.Log(list);
+       // Debug.Log(list);
         for (int i = 0; i < inventory.slots.Count(); i++){
             list.items[i].itemName = inventory.slots[i].itemName;
             list.items[i].itemDescription = inventory.slots[i].itemDescription;
@@ -45,7 +45,7 @@ public class InventoryList : MonoBehaviour {
         }
 
         jsonData = JsonUtility.ToJson(list, true);
-        Debug.Log(jsonData);
+        //Debug.Log(jsonData);
 
             if (File.Exists(filename)){
                 File.Delete(filename);
@@ -60,7 +60,7 @@ public class InventoryList : MonoBehaviour {
         if (File.Exists(filename)){
             for (int j = 0; j < inventory.slots.Count(); j++){
              if (list.items[j].KeyID != 0){
-                Debug.Log("Assigning items to slot " + j);
+           //     Debug.Log("Assigning items to slot " + j);
                 inventory.items[j] = 1; // makes sure that the slot is now considered FULL
              //   instance = Instantiate(itemButton, inventory.slots[i].transform, false); // spawn the button so that the player can interact with it
                 inventory.slots[j].itemName = list.items[j].itemName;
@@ -95,7 +95,7 @@ public class InventoryList : MonoBehaviour {
         }
 
         jsonData = JsonUtility.ToJson(list, true);
-        Debug.Log(jsonData);
+      //  Debug.Log(jsonData);
 
             if (File.Exists(filename)){
                 File.Delete(filename);

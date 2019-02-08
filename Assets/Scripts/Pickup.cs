@@ -48,7 +48,7 @@ public class Pickup : MonoBehaviour {
                     inventory.slots[i].prefabName = prefabName;
                     instance.GetComponent<Item>().slotNumber = i;
                     GameObject.FindObjectOfType<InventoryList>().SaveInventory();
-                    Debug.Log("Destroying key");
+                  //  Debug.Log("Destroying key");
                     Destroy(gameObject);
                     break;
                 }

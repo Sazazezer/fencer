@@ -75,7 +75,10 @@ public class Inventory : MonoBehaviour {
             }
 
             if(Input.GetButtonDown("Fire1")){
-                itemHeld.GetComponent<Item>().Use(itemItem, itemUnique);
+                if(itemHeld!=null){
+                    itemHeld.GetComponent<Item>().Use(itemItem, itemUnique);                    
+                }
+
             }
         }
 
