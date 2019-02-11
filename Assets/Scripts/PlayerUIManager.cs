@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,7 +28,7 @@ public class PlayerUIManager : MonoBehaviour {
         if (SceneManager.GetActiveScene().buildIndex != 1){
             LoadGameData(); //time to get this working in some way!
             Debug.Log("I loaded Game Data.");
-            //GameObject.FindObjectOfType<LocationList>().Save();
+            GameObject.FindObjectOfType<LocationList>().Save();
         }
     }
 
@@ -110,7 +111,7 @@ public class PlayerUIManager : MonoBehaviour {
 
     public void LoadGameData(){
         Debug.Log("Game Data Loading"); //Loaded on Continue, when the player starts in the current room. Should only need to be loaded once.
-      //  GameObject.FindObjectOfType<LocationList>().Load();
+     //  GameObject.FindObjectOfType<LocationList>().Load();
                 Debug.Log("Location Data Loaded");
         GameObject.FindObjectOfType<InventoryList>().LoadInventory();
                 Debug.Log("Inventory Data Loaded");
@@ -122,8 +123,7 @@ public class PlayerUIManager : MonoBehaviour {
                 Debug.Log("Puzzle Data Loaded");
    //     GameObject.FindObjectOfType<UniqueVariablesList>().ResetUniqueVariables(); Need to make save and load things
                 Debug.Log("Unique Data Loaded");
-   //     GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
-                Debug.Log("Dialogue Data Loaded");
+                Debug.Log("Dialogue Data Loaded");// Never put dialogue save here. Loads through Update.
 
         Debug.Log("Game Data Loaded");
     }

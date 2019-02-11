@@ -6,8 +6,6 @@ position: 540,260
 We want to prove our importance to the universe by finding out who killers are.
 
 Go to the town. Find out who the killer was. Leave when you think you have everything. Come back and report your findings.
-
-This will never be appreciated, and it is your fault for ever assuming otherwise.
 <<set $openingRan to 1>>
 <<forceSave>>
-<<changesceneto IntroScript Room208>>
+This will never be appreciated, and it is your fault for ever assuming otherwise. <<changesceneto IntroScript Room208>>

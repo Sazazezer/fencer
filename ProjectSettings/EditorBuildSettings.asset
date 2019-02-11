@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: d07e54d39e4b9b948b170b31207c9fe3
   - enabled: 1
     path: Assets/Fencer/Scenes/OpeningScene.unity
-    guid: 961d52f85f5288c4b81423fd10c44b80
+    guid: 321d7389be8219244983ca8f8914c183
   - enabled: 1
     path: Assets/Fencer/Scenes/Room207.unity
     guid: 707e5711efd131f40a594f861e48d20d

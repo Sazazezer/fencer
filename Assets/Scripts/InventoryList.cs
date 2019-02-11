@@ -48,7 +48,7 @@ public class InventoryList : MonoBehaviour {
         //Debug.Log(jsonData);
 
             if (File.Exists(filename)){
-                File.Delete(filename);
+          //      File.Delete(filename);
             }
 
             File.WriteAllText(filename, jsonData);
@@ -98,7 +98,7 @@ public class InventoryList : MonoBehaviour {
       //  Debug.Log(jsonData);
 
             if (File.Exists(filename)){
-                File.Delete(filename);
+           //     File.Delete(filename);
             }
 
             File.WriteAllText(filename, jsonData);

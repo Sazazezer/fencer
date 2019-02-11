@@ -11,8 +11,8 @@ Let's see what's inside, shall we?
 ...
 Yes. Yes we shall.
 Oh Look. Another vital clue.
-<<addnewjournal TestLockedSideboard 5>>
-<<gointojournal TestLockedSideboard 5>>
+<<addnewjournal TestLockedSideboard 7>>
+<<gointojournal TestLockedSideboard 7>>
 <<set $UnlockedSideboard to 2>>
 <<endif>>
 Drawer's empty now.
@@ -24,6 +24,7 @@ I think i may be done here.
 I guess i should go find something that has a connection with the ball of fire that hangs in the sky.
 Maybe a key that represents it.
 Or something...
+<<endif>>
 <<endif>>
 
 <<if $UnlockedSideboard is 0>>
@@ -38,7 +39,3 @@ Perhaps?
 I don't know.
 <<set $UnlockedSideboard to 1>>
 <<endif>>
-<<endif>>
-
-
-

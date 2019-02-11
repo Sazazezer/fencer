@@ -18,6 +18,3 @@ Tiona got the golden box.
 <<set $got_GoldenBox to true>>
 <<add_item("GoldenBox")>>
 <<endif>>
-
-I show up above all else.
-

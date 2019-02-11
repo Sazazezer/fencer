@@ -32,6 +32,7 @@ public void Load(){
 
         //Don't touch the stuff above. Variables go here.
         if (File.Exists(filename)){
+            Debug.Log(copy.sceneID);
             SceneManager.LoadScene(copy.sceneID);
         } else {
             SceneManager.LoadScene("OpeningScene");

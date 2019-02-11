@@ -17,6 +17,7 @@ Don't ask questions. You won't get answers.
 <<gointojournal TestLockedDrawer 6>>
 <<set $207PuzzleLock to 2>>
 <<endif>>
+<<endif>>
 
 <<if check_puzzlelock("207PuzzleLock") is true>>
 <<if $207PuzzleLock is 0>>
