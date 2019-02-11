@@ -30,8 +30,8 @@ public class DoorTransition : MonoBehaviour {
      void OnTriggerStay2D(Collider2D other){
        if (Input.GetButtonUp("Up") && other.tag == "Player" ){
             if (this.GetComponent<DoorLock>().locked == false){
-                GameObject.FindObjectOfType<DialogueList>().Save();
-                Debug.Log("Boop");
+             //   GameObject.FindObjectOfType<DialogueList>().Save();
+                Debug.Log(room  + " " + door);
                     //   target.transform.position = new Vector3(xPosition, yPosition, 0);
                     room = new NextRoom() { 
                     //Saved Variables go here. Don't forget to add them to SaveData.cs too
@@ -44,7 +44,7 @@ public class DoorTransition : MonoBehaviour {
                         File.Delete(filename);
                     }
                     File.WriteAllText(filename, json);
-                    Debug.Log("Is it me?");
+                 //   Debug.Log("Is it me?");
                     Application.LoadLevel(goToScene);
             } else {
                 GameObject.Find("GameControls").GetComponent<TextBoxManager>().UpdateTextBox("The door is locked. Sucks to be you.");

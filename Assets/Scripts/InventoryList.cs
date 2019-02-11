@@ -32,7 +32,7 @@ public class InventoryList : MonoBehaviour {
 
     public void SaveInventory(){
         string jsonFromFile = File.ReadAllText(filename);
-        Debug.Log(jsonFromFile);
+     //   Debug.Log(jsonFromFile);
         InventoryDataList list = InventoryDataList.CreateFromJSON(jsonFromFile);
        // Debug.Log(list);
         for (int i = 0; i < inventory.slots.Count(); i++){

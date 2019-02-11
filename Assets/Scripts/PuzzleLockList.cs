@@ -60,10 +60,10 @@ public class PuzzleLockList : MonoBehaviour {
         PuzzleLockDataList list = PuzzleLockDataList.CreateFromJSON(jsonFromFile);
         if (File.Exists(filename)){
             countDammit = list.items.Count();
-            Debug.Log("Deleting Entires");
+           // Debug.Log("Deleting Entires");
             for (int i = 0; i < countDammit; i++){
                 list.items[i].puzzleSolved = 0;
-                Debug.Log("Deleted" + i + "Entires");
+             //   Debug.Log("Deleted" + i + "Entires");
                 }
             }
         jsonData = JsonUtility.ToJson(list, true);

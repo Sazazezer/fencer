@@ -187,7 +187,8 @@ public class YarnActions : MonoBehaviour {
     }
     [YarnCommand("forceSave")]
     public void ForceSave() {
-        GameObject.FindObjectOfType<DialogueList>().Save();
+        Debug.Log("ForceSave");
+    //    GameObject.FindObjectOfType<DialogueList>().Save();
     }
 
     [YarnCommand("enableUI")]

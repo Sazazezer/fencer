@@ -64,7 +64,7 @@ public class ItemList : MonoBehaviour {
             Debug.Log("Deleting Entires");
             for (int i = 0; i < countDammit; i++){
                 list.items[i].itemPicked = 0;
-                Debug.Log("Deleted" + i + "Entires");
+            //    Debug.Log("Deleted" + i + "Entires");
                 }
             }
         jsonData = JsonUtility.ToJson(list,true);

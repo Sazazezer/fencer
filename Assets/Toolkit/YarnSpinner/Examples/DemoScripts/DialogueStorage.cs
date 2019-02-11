@@ -38,7 +38,6 @@ private static DialogueStorage _instance;
 
     public static DialogueStorage Instance { get { return _instance; } }
 
-
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -169,7 +168,7 @@ private static DialogueStorage _instance;
                                                          item.Value));
             }
            // debugTextView.text = stringBuilder.ToString ();
-         //   Debug.Log(stringBuilder.ToString ()); //uncomment to get log of dialoguedata
+       //     Debug.Log(stringBuilder.ToString ()); //uncomment to get log of dialoguedata
         //}
     }
 

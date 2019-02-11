@@ -15,6 +15,7 @@ public class PlayerUIManager : MonoBehaviour {
     public bool inBag = false;
     public GameObject puzzle;
     public bool inPuzzle = false;
+    public bool loadDialogueData = false;
 
 
     private void Start()
@@ -26,13 +27,17 @@ public class PlayerUIManager : MonoBehaviour {
         if (SceneManager.GetActiveScene().buildIndex != 1){
             LoadGameData(); //time to get this working in some way!
             Debug.Log("I loaded Game Data.");
-            GameObject.FindObjectOfType<LocationList>().Save();
+            //GameObject.FindObjectOfType<LocationList>().Save();
         }
     }
 
     private void Update()
     {
-
+        if (loadDialogueData ==false){ //because things break?
+            GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
+            loadDialogueData = true;
+            Debug.Log("sigh...");
+        }
      //   healthDisplay.text = health.ToString();
 
 
@@ -117,7 +122,7 @@ public class PlayerUIManager : MonoBehaviour {
                 Debug.Log("Puzzle Data Loaded");
    //     GameObject.FindObjectOfType<UniqueVariablesList>().ResetUniqueVariables(); Need to make save and load things
                 Debug.Log("Unique Data Loaded");
-        GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
+   //     GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
                 Debug.Log("Dialogue Data Loaded");
 
         Debug.Log("Game Data Loaded");
@@ -139,7 +144,7 @@ public class PlayerUIManager : MonoBehaviour {
       //  GameObject.FindObjectOfType<UniqueVariablesList>().ResetUniqueVariables();
                 Debug.Log("Unique Data Reset");//i don't need this at the moment
         GameObject.FindObjectOfType<DoorLockList>().ResetDoorLocks(); 
-                Debug.Log("Dialogue Data Reset"); 
+                Debug.Log("Door Data Reset"); 
         GameObject.FindObjectOfType<DialogueList>().ResetDialogue();
                 Debug.Log("Dialogue Data Reset");
 

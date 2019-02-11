@@ -29,6 +29,14 @@ public class PlayerUIAccess : MonoBehaviour {
 
             //ultimate save,load,reset area
             //save
+            if (Input.GetKeyDown(KeyCode.F8)){
+                playerUIManager.SaveDialogue();
+            }
+
+            if (Input.GetKeyDown(KeyCode.F7)){
+                playerUIManager.SaveDialogue();
+            }
+
             if (Input.GetKeyDown(KeyCode.F9)){
                 playerUIManager.SaveGameData();
             }

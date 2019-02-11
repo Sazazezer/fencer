@@ -26,7 +26,10 @@ public class DialogueList : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.L)) {
             LoadFromJson();
+            Debug.Log("woop");
         }
+
+      //  Debug.Log(variableStorage.Variables);
     }
     
     public void Save () {
@@ -34,11 +37,10 @@ public class DialogueList : MonoBehaviour {
        // filename = Path.Combine(Application.streamingAssetsPath, DIALOGUE_FILE);
         YarnSaveState yss = new YarnSaveState(variableStorage.Variables, dialogueRunner.dialogue.visitedNodeCount);
         //Save to JSON here
-
         File.WriteAllText(filename, Newtonsoft.Json.JsonConvert.SerializeObject(yss));
        // string json = Newtonsoft.Json.JsonConvert.SerializeObject(yss);
       //  Debug.Log(yss.values);
-        Debug.Log("I save");
+       Debug.Log("I save");
     }
         
     public void LoadFromJson () {   
@@ -46,10 +48,7 @@ public class DialogueList : MonoBehaviour {
       //  filename = Path.Combine(Application.streamingAssetsPath, DIALOGUE_FILE);
         string jsonFromFile = File.ReadAllText(filename);
         YarnSaveState yss = Newtonsoft.Json.JsonConvert.DeserializeObject<YarnSaveState>(jsonFromFile);
-        Debug.Log(filename);
-        Debug.Log(jsonFromFile);
-        Debug.Log(yss);
-        Debug.Log(yss.values);
+
         foreach(var v in yss.values) {
             variableStorage.SetValue(v.Key, v.Value);
 
@@ -60,21 +59,12 @@ public class DialogueList : MonoBehaviour {
 
     public void ResetDialogue(){
 
-     /*   data = new SaveData() { 
-            //Saved Variables go here. Don't forget to add them to SaveData.cs too
-            playerPosition = new Vector3(-164.37689208984376f,-807.9430541992188f,0.0f),
-            sceneID = 3,
-            //dialogue = GameObject.FindObjectOfType<DialogueStorage>().variables
-        };
-        jsonData = JsonUtility.ToJson(data, true);*/
+
         filename = Path.Combine(Application.streamingAssetsPath, DIALOGUE_FILE);
             if (File.Exists(filename)){
                 File.Delete(filename);
-               // YarnSaveState yss = new YarnSaveState(variableStorage.Variables, dialogueRunner.dialogue.visitedNodeCount);
-               // File.WriteAllText(filename, Newtonsoft.Json.JsonConvert.SerializeObject(yss));
-            }
 
-            //File.WriteAllText(filename, "");
+            }
         Debug.Log("I reset");
     }
         
