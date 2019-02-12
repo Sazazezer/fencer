@@ -12,5 +12,6 @@ public class ButtonClick : MonoBehaviour {
 	// Use this for initialization
 	public void SendToJournalTextPanel () {
 		GameObject.Find("JournalText").GetComponent<Text>().text = journal;
+       // GameObject.Find("JournalHeader").GetComponent<Text>().text = content;
 	}
 }

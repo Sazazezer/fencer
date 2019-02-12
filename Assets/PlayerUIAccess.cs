@@ -21,7 +21,12 @@ public class PlayerUIAccess : MonoBehaviour {
             }
 
             if (Input.GetButtonDown("Fire3")){
-                    playerUIManager.GoToBag();            
+                if (playerUIManager.inPuzzle == true){
+                    playerUIManager.BackToGame();
+                    } else {
+                    playerUIManager.GoToBag();     
+                    }
+                             
             }
             if (Input.GetButtonDown("Cancel")){
                 playerUIManager.BackToGame();

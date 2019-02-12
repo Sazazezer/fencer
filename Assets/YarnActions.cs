@@ -160,6 +160,7 @@ public class YarnActions : MonoBehaviour {
 
     [YarnCommand("gointopuzzle")]
     public void GoToPuzzleScreen() {
+            GameObject.Find("Player").GetComponent<PlayerUIManager>().inPuzzle = true;
             GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
             Debug.Log("Hi there");    
             var allPuzzles = new List<PuzzleLock> (FindObjectsOfType<PuzzleLock> ());

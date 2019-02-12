@@ -14,10 +14,15 @@ public class JournalList : MonoBehaviour {
  Look to list of journal entries, determine which has been found, and add them to the list.
  When button is clicked, displays the journal
 */
+    public Canvas journal;
     public Button button;
     public GameObject panel;
+    public GameObject highlightIcon;
+    public GameObject textPanel;
+    public int highlightSlot;
     private string jsonData;
     private string filename;
+    public List<Button> buttons = new List<Button>();
     private int countDammit = 0;
     static readonly string JOURNAL_DATA = "JournalEntries.json";
 	// Use this for initialization
@@ -26,7 +31,64 @@ public class JournalList : MonoBehaviour {
         if (SceneManager.GetActiveScene().buildIndex != 1){
             JournalCompile();
         }
+        highlightSlot = 0;
+
 	}
+
+    void Update(){
+        if(journal.GetComponent<JournalCanvas>().panelSelected == 0){
+            if (buttons[highlightSlot]!= null){
+            highlightIcon.transform.position =  buttons[highlightSlot].transform.position;
+            textPanel.GetComponent<Image>().enabled = false;                
+            }
+
+          } else if(journal.GetComponent<JournalCanvas>().panelSelected == 1){
+             //   highlightIcon.transform.position =  textPanel.transform.position;
+                textPanel.GetComponent<Image>().enabled = true;
+         }
+
+
+        if (journal.GetComponent<Canvas> ().enabled == true){
+            buttons[highlightSlot].GetComponent<ButtonClick>().SendToJournalTextPanel();
+
+            if(journal.GetComponent<JournalCanvas>().panelSelected == 0){
+
+                if (Input.GetButtonDown("Right")){
+                    journal.GetComponent<JournalCanvas>().panelSelected = 1;
+                   // Debug.Log("Text selected");
+
+                }
+            }
+            if(journal.GetComponent<JournalCanvas>().panelSelected == 1){
+
+                if (Input.GetButtonDown("Left")){
+                    journal.GetComponent<JournalCanvas>().panelSelected = 0;
+                  //  Debug.Log("List selected");
+                }
+            }
+            if(highlightSlot != 0 && journal.GetComponent<JournalCanvas>().panelSelected == 0){
+                if (Input.GetButtonDown("Up")){
+                    highlightSlot--;
+                //    Debug.Log(highlightSlot);
+                //    buttons[highlightSlot].GetComponent<ButtonClick>().SendToJournalTextPanel();
+                }
+            }
+            if(highlightSlot != buttons.Count()-1 && journal.GetComponent<JournalCanvas>().panelSelected == 0){
+                if (Input.GetButtonDown("Down")){
+                    highlightSlot++;
+               //     Debug.Log(highlightSlot);
+                //    Debug.Log(buttons.Count()-1);
+                 //   buttons[highlightSlot].GetComponent<ButtonClick>().SendToJournalTextPanel();
+                }
+            }
+
+        }
+    }
+
+
+
+
+
 
     public void JournalCompile(){
         foreach (Transform child in transform) {
@@ -45,7 +107,9 @@ public class JournalList : MonoBehaviour {
                     button.GetComponentInChildren<ButtonClick>().index = list.items[i].index;
                     button.GetComponentInChildren<ButtonClick>().content = list.items[i].content;
                     button.GetComponentInChildren<ButtonClick>().journal = list.items[i].journal;
-                    Instantiate(button, panel.transform);
+                    var newButton = Instantiate(button, panel.transform);
+                    buttons.Add(newButton);
+                    Debug.Log("Journal Button " + i + " is " + buttons[i]);
                 }
             }
         }

@@ -39,7 +39,7 @@ public class PlayerUIManager : MonoBehaviour {
             loadDialogueData = true;
             Debug.Log("sigh...");
         }
-     //   healthDisplay.text = health.ToString();
+Debug.Log(inPuzzle);
 
 
     }
@@ -93,6 +93,11 @@ public class PlayerUIManager : MonoBehaviour {
         GameObject.FindObjectOfType<Bag>().Deactivate();
         inJournal = false;
         GameObject.FindObjectOfType<JournalCanvas>().Deactivate();
+        if(inPuzzle==true){
+        GameObject.FindObjectOfType<PuzzleCanvas>().Deactivate();          
+        }
+
+        inPuzzle = false;
         inBag = false;
         Time.timeScale = 1f; 
     }
