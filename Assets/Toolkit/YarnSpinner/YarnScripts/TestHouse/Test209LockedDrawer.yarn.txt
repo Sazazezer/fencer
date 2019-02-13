@@ -4,6 +4,10 @@ colorID: 0
 position: 540,260
 ---
 
+<<if $Unlocked209Drawer is 1>>
+Drawer's empty now.
+<<endif>>
+
 <<if check_lock("Locked209Drawer") is false>>
 <<if $Unlocked209Drawer is 0>>
 I unlocked the drawer.
@@ -16,7 +20,6 @@ I wonder if it will be relevant.
 <<gointojournal Test209LockedDrawer 2>>
 <<set $Unlocked209Drawer to 1>>
 <<endif>>
-Drawer's empty now.
 <<endif>>
 
 <<if check_lock("Locked209Drawer") is true>>

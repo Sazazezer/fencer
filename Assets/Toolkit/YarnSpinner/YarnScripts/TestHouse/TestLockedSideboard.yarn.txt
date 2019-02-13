@@ -4,6 +4,11 @@ colorID: 0
 position: 540,260
 ---
 
+<<if $UnlockedSideboard is 2>>
+Drawer's empty now.
+I think i may be done here.
+<<endif>>
+
 <<if check_lock("LockedSideboard") is false>>
 <<if $UnlockedSideboard is 1>>
 Welp. It's open.
@@ -15,8 +20,6 @@ Oh Look. Another vital clue.
 <<gointojournal TestLockedSideboard 7>>
 <<set $UnlockedSideboard to 2>>
 <<endif>>
-Drawer's empty now.
-I think i may be done here.
 <<endif>>
 
 <<if check_lock("LockedSideboard") is true>>

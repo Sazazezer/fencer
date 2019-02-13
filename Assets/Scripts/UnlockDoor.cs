@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UnlockDoor : MonoBehaviour {
 
-    public int canBeUnlocked = 0;
+    public bool canBeUnlocked = false;
     public GameObject lockInQuestion;
     public int keyInHand;
     public int itemSlotNumber;
@@ -17,10 +17,10 @@ public class UnlockDoor : MonoBehaviour {
     
     // Update is called once per frame
     void Update(){
-        if(canBeUnlocked > 0){
-            canBeUnlocked--;
+        //if(canBeUnlocked > 0){
+          //  canBeUnlocked--;
           //  Debug.Log(canBeUnlocked);
-        }
+     //   }
     }
 
 }

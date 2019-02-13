@@ -17,8 +17,12 @@ public class Inventory : MonoBehaviour {
     public GameObject itemHeld;
     public string itemItem;
     public int itemUnique;
+    public AudioClip itemMoveSound;
+    private float itemMoveVolume = 0.1f;
 
-        private string jsonData;
+    private AudioSource source;
+
+    private string jsonData;
     
     public static Inventory CreateFromJSON(string jsonString)
         {
@@ -27,15 +31,10 @@ public class Inventory : MonoBehaviour {
 
     void Start(){
         highlightedSlot = 0;
-        
+        source = GetComponent<AudioSource>();        
     }
 
     void Update(){
-
-  /*      for(int i = 0; i <5; i++){
-            Debug.Log("Slot " + i + "is " + slots[i].itemIndestructible);
-        }*/
-
         highlightedItem.transform.position =  slots[highlightedSlot].transform.position;
         itemTitlePanel.GetComponentInChildren<Text>().text = slots[highlightedSlot].itemName;
         itemDescriptionPanel.GetComponentInChildren<Text>().text = slots[highlightedSlot].itemDescription;
@@ -50,6 +49,7 @@ public class Inventory : MonoBehaviour {
 
                 if (Input.GetButtonDown("Right")){
                     highlightedSlot++;
+                    source.PlayOneShot(itemMoveSound,itemMoveVolume);
 
                 }
             }
@@ -58,6 +58,7 @@ public class Inventory : MonoBehaviour {
 
                 if (Input.GetButtonDown("Left")){
                     highlightedSlot--;
+                        source.PlayOneShot(itemMoveSound,itemMoveVolume);
 
                 }
             }
@@ -65,12 +66,14 @@ public class Inventory : MonoBehaviour {
             if(highlightedSlot > 7 ){
                 if (Input.GetButtonDown("Up")){
                     highlightedSlot -= 8;
+                    source.PlayOneShot(itemMoveSound,itemMoveVolume);
                 }
             }
 
             if(highlightedSlot <= 7  ){
                 if (Input.GetButtonDown("Down")){
                     highlightedSlot += 8;
+                    source.PlayOneShot(itemMoveSound,itemMoveVolume);
                 }
             }
 

@@ -8,6 +8,14 @@ public class LongJump : Jump {
 	public float longJumpMultiplier = 1.5f;
 	public bool canLongJump;
 	public bool isLongJumping;
+    public AudioClip jumpSound;
+    private float jumpVolume = 0.1f;
+
+    private AudioSource source;
+
+    void Start () {
+        source = GetComponent<AudioSource>();
+    }
 
 	protected override void Update(){
 		
@@ -32,5 +40,6 @@ public class LongJump : Jump {
 	protected override void OnJump(){
 		base.OnJump();
 		canLongJump = true;
+        source.PlayOneShot(jumpSound,jumpVolume);
 	}
 }

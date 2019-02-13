@@ -37,7 +37,7 @@ public class JournalList : MonoBehaviour {
 
     void Update(){
         if(journal.GetComponent<JournalCanvas>().panelSelected == 0){
-            if (buttons[highlightSlot]!= null){
+            if (buttons.Count() > 0){
             highlightIcon.transform.position =  buttons[highlightSlot].transform.position;
             textPanel.GetComponent<Image>().enabled = false;                
             }
@@ -68,17 +68,15 @@ public class JournalList : MonoBehaviour {
             }
             if(highlightSlot != 0 && journal.GetComponent<JournalCanvas>().panelSelected == 0){
                 if (Input.GetButtonDown("Up")){
+                    GameObject.Find("JournalTextScrollbar").GetComponent<ScrollMovement>().ResetScrollbar();
                     highlightSlot--;
-                //    Debug.Log(highlightSlot);
-                //    buttons[highlightSlot].GetComponent<ButtonClick>().SendToJournalTextPanel();
                 }
             }
             if(highlightSlot != buttons.Count()-1 && journal.GetComponent<JournalCanvas>().panelSelected == 0){
                 if (Input.GetButtonDown("Down")){
+                    GameObject.Find("JournalTextScrollbar").GetComponent<ScrollMovement>().ResetScrollbar();
                     highlightSlot++;
-               //     Debug.Log(highlightSlot);
-                //    Debug.Log(buttons.Count()-1);
-                 //   buttons[highlightSlot].GetComponent<ButtonClick>().SendToJournalTextPanel();
+
                 }
             }
 
@@ -109,7 +107,6 @@ public class JournalList : MonoBehaviour {
                     button.GetComponentInChildren<ButtonClick>().journal = list.items[i].journal;
                     var newButton = Instantiate(button, panel.transform);
                     buttons.Add(newButton);
-                    Debug.Log("Journal Button " + i + " is " + buttons[i]);
                 }
             }
         }

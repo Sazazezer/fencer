@@ -11,20 +11,22 @@ public class ScrollMovement : MonoBehaviour {
  
     public IEnumerator Start()
     {
-        Debug.Log("Now its called");
         yield return null; // Waiting just one frame is probably good enough, yield return null does that
         bar = GetComponentInChildren<Scrollbar>();
         bar.value = 1;
-        Debug.Log("Now its setted");
     }
 
     void Update() {
     if (journalCanvas.GetComponent<JournalCanvas>().panelSelected == 1){
-         if (Input.GetKeyDown(KeyCode.DownArrow)) {
-             bar.value += 0.1f;
-         } else if (Input.GetKeyDown(KeyCode.UpArrow)) {
-             bar.value -= 0.1f;
-         }
+             if (Input.GetKeyDown(KeyCode.DownArrow)) {
+                 bar.value += 0.1f;
+             } else if (Input.GetKeyDown(KeyCode.UpArrow)) {
+                 bar.value -= 0.1f;
+             }
+        }
     }
- }
+
+    public void ResetScrollbar(){
+        bar.value = 1;
+    }
 }

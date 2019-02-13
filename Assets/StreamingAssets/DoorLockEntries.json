@@ -8,11 +8,11 @@
         {
             "lockNumber": 1,
             "doorName": "House207",
-            "doorUnlocked": 1
+            "doorUnlocked": 0
         },
         {
             "lockNumber": 2,
-            "doorName": "House209",
+            "doorName": "House207",
             "doorUnlocked": 1
         },
         {

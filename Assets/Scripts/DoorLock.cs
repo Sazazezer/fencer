@@ -5,44 +5,60 @@ using UnityEngine;
 public class DoorLock : MonoBehaviour {
 
     public bool isUnlockable = false;
+    public bool failedToUnlock = false;
     public GameObject player;
     public int lockNumber;
     public string doorName;
     public GameObject itemKill;
     public GameObject linkedItem;
     public bool locked = true;
+    public AudioClip doorUnlockSound;
+    private float doorUnlockVolume = 0.5f;
+    public AudioClip doorStillLockedSound;
+
+    private AudioSource source;
 
 
 	// Use this for initialization
 	void Start () {
-		
+		source = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
         if (isUnlockable==true){
-        //    Debug.Log("Noooo");
             linkedItem.SetActive(true);
-            //Destroy(gameObject);
             locked = false;
-            this.GetComponent<DoorLockList>().UnlockDoorSave(lockNumber);
+            source.PlayOneShot(doorUnlockSound,doorUnlockVolume);
+            GameObject.FindObjectOfType<DoorLockList>().UnlockDoorSave(lockNumber);
+            isUnlockable = false;
+            player.GetComponent<UnlockDoor>().canBeUnlocked = false;
+        }
+
+        if(failedToUnlock==true){
+            source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
+            failedToUnlock = false;
+            player.GetComponent<UnlockDoor>().canBeUnlocked = false;
         }
 		
 	}
 
      private void OnTriggerStay2D(Collider2D other){
 
-        if (other.tag == "Player" && player.GetComponent<UnlockDoor>().canBeUnlocked > 0){  
+        if (other.tag == "Player" && player.GetComponent<UnlockDoor>().canBeUnlocked == true){  
             if (player.GetComponent<UnlockDoor>().keyInHand == lockNumber){ 
                 isUnlockable=true;
                 itemKill = player.GetComponent<UnlockDoor>().keyButton;
-                Debug.Log("Destroying key");
+               // Debug.Log("Destroying key");
                 if(itemKill != null){
                     itemKill.GetComponent<Item>().DestroyItem(player.GetComponent<UnlockDoor>().itemSlotNumber);                    
                 }
 
                 GameObject.FindObjectOfType<InventoryList>().SaveInventory();
+            } else {
+                failedToUnlock = true;
+                source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
             }
         }
     }

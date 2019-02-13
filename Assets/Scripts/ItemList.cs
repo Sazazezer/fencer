@@ -24,7 +24,7 @@ public class ItemList : MonoBehaviour {
     }
 
     public void ItemCompile(){
-        
+        filename = Path.Combine(Application.streamingAssetsPath, Item_DATA);
         string jsonFromFile = File.ReadAllText(filename);
         ItemDataList list = ItemDataList.CreateFromJSON(jsonFromFile);
         countDammit = list.items.Count();
@@ -40,6 +40,7 @@ public class ItemList : MonoBehaviour {
     }
 
     public void SavePickup(int _newIndex, string _insertName){
+        filename = Path.Combine(Application.streamingAssetsPath, Item_DATA);
         string jsonFromFile = File.ReadAllText(filename);
         ItemDataList list = ItemDataList.CreateFromJSON(jsonFromFile);
         int newIndex = _newIndex;

@@ -26,11 +26,20 @@ public class DoorTransition : MonoBehaviour {
     public DoorSide doorSide;
     public DoorDir doorDir;
     static readonly string ROOM_MOVE = "room.json";
+
+    public AudioClip doorOpenSound;
+    private float doorOpenVolume = 0.1f;
+
+    private AudioSource source;
+
+    void Start(){
+        source = GetComponent<AudioSource>();
+    }
  
      void OnTriggerStay2D(Collider2D other){
        if (Input.GetButtonUp("Up") && other.tag == "Player" ){
             if (this.GetComponent<DoorLock>().locked == false){
-             //   GameObject.FindObjectOfType<DialogueList>().Save();
+             source.PlayOneShot(doorOpenSound,doorOpenVolume);
                 Debug.Log(room  + " " + door);
                     //   target.transform.position = new Vector3(xPosition, yPosition, 0);
                     room = new NextRoom() { 
