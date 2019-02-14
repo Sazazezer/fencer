@@ -30,7 +30,7 @@ public class LocationList : MonoBehaviour {
             jsonRoom = JsonUtility.ToJson(room);
             roomFilename = Path.Combine(Application.streamingAssetsPath, ROOM_MOVE);
 
-        if (SceneManager.GetActiveScene().buildIndex != 1){
+        if (SceneManager.GetActiveScene().buildIndex != 1 || SceneManager.GetActiveScene().buildIndex != 7 || SceneManager.GetActiveScene().buildIndex != 5){
             LoadUpRoom();     
         }
     }

@@ -7,6 +7,7 @@ So... I suppose i'm done.
 Time to hit the road and report back.
 To that guy i know from the internet.
 For no reward whatsoever...
+<<changesceneto TestCarLeaving FinalScene>>
 Leave
 [[No, not just yet.|Stay]]
 [[Yeah, let's get out of here.|Leave]]

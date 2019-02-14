@@ -1,0 +1,46 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using System.IO;
+
+public class ConfirmChoices : MonoBehaviour {
+
+    //static readonly string SAVE_FILE = "player.json";
+   // static readonly string ROOM_MOVE = "room.json";
+
+   // public GameObject areYouSure;
+  //  public GameObject oldButtons;
+  //  public GameObject selectNo;
+  //  private string filename;
+  //  private string roomFilename;
+  //  private string jsonData;
+  //  private SaveData data;
+
+
+    protected EventSystem eventSystem{
+        get { return GameObject.Find ("EventSystem").GetComponent<EventSystem> (); }
+    }
+
+public void Load(){
+     //   jsonData = JsonUtility.ToJson(data);
+
+     //   filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
+
+        //Don't touch the stuff above. Variables go here.
+     //   if (File.Exists(filename)){
+    //        areYouSure.gameObject.SetActive(true);
+    //        eventSystem.SetSelectedGameObject (selectNo); 
+     //   } else {
+            SceneManager.LoadScene("OpeningScene"); //Was OpeningScene
+
+            //JUST DO NEW GAME AUTOMATICALLY
+        //    saveScreen.GetComponent<SaveScreen>().Resume();
+           // textBox.gameObject.SetActive(true);
+           // textBox.text = "No Save File.";
+        }
+
+    }
+

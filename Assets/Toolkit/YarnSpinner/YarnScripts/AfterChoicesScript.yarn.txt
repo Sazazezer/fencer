@@ -1,0 +1,22 @@
+title: AfterChoicesScript
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+Congratulations. You have made your choices.
+Let's have a look. shall we?
+...
+...
+Uh huh.
+...
+Oh, i see.
+...
+...
+Hhhhmmmm.
+Well, it's probably right.
+We're not an official investigation in any way, nor do we have any authorative power.
+Still, i guess the guys in the internet forum will think this is interesting.
+Good work, peon.
+You can go now.
+We're done here.
+<<changesceneto AfterChoicesScript GameWindows>>

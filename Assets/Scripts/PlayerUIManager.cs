@@ -25,7 +25,7 @@ public class PlayerUIManager : MonoBehaviour {
         journal.GetComponent<Canvas> ().enabled = false;
        // puzzle.GetComponent<Canvas> ().enabled = false;
 
-        if (SceneManager.GetActiveScene().buildIndex != 1){
+        if (SceneManager.GetActiveScene().buildIndex != 1 || SceneManager.GetActiveScene().buildIndex != 7 || SceneManager.GetActiveScene().buildIndex != 5){
             LoadGameData(); //time to get this working in some way!
             Debug.Log("I loaded Game Data.");
             GameObject.FindObjectOfType<LocationList>().Save();

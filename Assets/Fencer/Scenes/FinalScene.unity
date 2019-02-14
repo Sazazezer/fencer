@@ -2715,7 +2715,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1636580678}
+      - m_Target: {fileID: 0}
         m_MethodName: Load
         m_Mode: 1
         m_Arguments:
@@ -2777,7 +2777,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1636580678}
+        - m_Target: {fileID: 0}
           m_MethodName: Load
           m_Mode: 1
           m_Arguments:
@@ -2794,7 +2794,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1636580678}
+        - m_Target: {fileID: 0}
           m_MethodName: Cancel
           m_Mode: 1
           m_Arguments:
@@ -8039,7 +8039,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1636580678}
+      - m_Target: {fileID: 0}
         m_MethodName: Save
         m_Mode: 1
         m_Arguments:
@@ -8101,7 +8101,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1636580678}
+        - m_Target: {fileID: 0}
           m_MethodName: Save
           m_Mode: 1
           m_Arguments:
@@ -8118,7 +8118,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1636580678}
+        - m_Target: {fileID: 0}
           m_MethodName: Cancel
           m_Mode: 1
           m_Arguments:
@@ -11513,6 +11513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: OutroScript
+  autoPlay: 0
   talkToNode: OutroScript
   scriptToLoad: {fileID: 0}
 --- !u!212 &1392302255
@@ -14702,7 +14703,6 @@ GameObject:
   - component: {fileID: 1636580675}
   - component: {fileID: 1636580676}
   - component: {fileID: 1636580677}
-  - component: {fileID: 1636580678}
   - component: {fileID: 1636580679}
   m_Layer: 0
   m_Name: GameControls
@@ -14755,20 +14755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d31b9589d671a40ab8eaebf048a68d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1636580678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1636580674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bc086188b5c5e044b342d31056e729e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 2028283576}
-  saveScreen: {fileID: 2130780673}
-  textBox: {fileID: 304891240}
 --- !u!114 &1636580679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15775,7 +15761,10 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114676255171080472, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
+    - {fileID: 114046137974090076, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
+    - {fileID: 114667614085427062, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1687837631
@@ -19202,6 +19191,60 @@ GameObject:
   m_PrefabParentObject: {fileID: 1242233029094360, guid: 93071749b02ac404a87f52bd43cdc62c,
     type: 2}
   m_PrefabInternal: {fileID: 1685540280}
+--- !u!114 &2028283577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2028283576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964aba927b8ca954eb85303a3102bdf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: 
+  slots: []
+  highlightedItem: {fileID: 0}
+  highlightedSlot: 0
+  bag: {fileID: 0}
+  itemTitlePanel: {fileID: 0}
+  itemDescriptionPanel: {fileID: 0}
+  itemHeld: {fileID: 0}
+  itemItem: 
+  itemUnique: 0
+  itemMoveSound: {fileID: 0}
+--- !u!114 &2028283578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2028283576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015d7abb7eb5b044e8d7e9c1adc14861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  healthDisplay: {fileID: 0}
+  bag: {fileID: 0}
+  journal: {fileID: 0}
+  inJournal: 0
+  inBag: 0
+  puzzle: {fileID: 0}
+  inPuzzle: 0
+  loadDialogueData: 0
+--- !u!114 &2028283579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2028283576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1401c46d186f2f4c8ea1067f764eaec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIAccessRestricted: 0
 --- !u!1 &2052477114
 GameObject:
   m_ObjectHideFlags: 0
