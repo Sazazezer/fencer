@@ -2153,3 +2153,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2303164e686ca1f4c872cfc13da1ec5b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1606427112 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1493005804514774, guid: 2303164e686ca1f4c872cfc13da1ec5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1606427111}
+--- !u!114 &1606427113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606427112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a33d3e87b71d3a4791a40fc51583652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManagerPrefab: {fileID: 1769830754685894, guid: 2b0d8d7fd5a89ac41ac8ecee0c041b1a,
+    type: 2}
+--- !u!114 &1606427114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606427112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267ab21ec46eeb74ea86377ebc84f339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomMusic:
+  - {fileID: 8300000, guid: cfd103960d5eb194aab4baa428e30713, type: 3}

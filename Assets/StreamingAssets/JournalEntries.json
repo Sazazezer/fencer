@@ -8,7 +8,7 @@
         },
         {
             "index": 1,
-            "lockedAway": 0,
+            "lockedAway": 1,
             "content": "Casual Journal One",
             "journal": "Oh boy i sure do like my mundane life. I hope to keep living it forever. Oh look, here comes my best friend, EvilRod. I do wonder what that item is he is holding as he approaches me menacingly."
         },
@@ -20,7 +20,7 @@
         },
         {
             "index": 3,
-            "lockedAway": 0,
+            "lockedAway": 1,
             "content": "Vital Clue Journal One",
             "journal": "We concluded that looking up the knife that was covered in blood that it was possibly the knife that was the murder weapon. Also, it was sticking out of her gut, and the doctor told us that it was the murder weapon, so this is definitely a factor in the grand scheme of the whole murder."
         },
@@ -46,7 +46,7 @@
             "index": 7,
             "lockedAway": 0,
             "content": "Puzzle Lock Two Answer Journal",
-            "journal": "Ha, I am more devious thaan that other puzzle lock. My code is 4321. Suck on that, expectations!"
+            "journal": "Ha, I am more devious than that other puzzle lock. My code is 4321. Suck on that, expectations!"
         }
     ]
 }

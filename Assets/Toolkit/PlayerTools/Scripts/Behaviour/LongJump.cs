@@ -40,6 +40,9 @@ public class LongJump : Jump {
 	protected override void OnJump(){
 		base.OnJump();
 		canLongJump = true;
-        source.PlayOneShot(jumpSound,jumpVolume);
+        if(!source.isPlaying && this.GetComponent<PlayerUIManager>().inJournal == false && this.GetComponent<PlayerUIManager>().inBag == false && this.GetComponent<PlayerUIManager>().inPuzzle == false){
+            source.PlayOneShot(jumpSound,jumpVolume);            
+        }
+
 	}
 }

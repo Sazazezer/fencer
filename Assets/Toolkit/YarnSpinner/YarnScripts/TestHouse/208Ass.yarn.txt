@@ -1,0 +1,18 @@
+title: 208Ass
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $208Ass is 1>>
+Still classy.
+So very very clASSy.
+<<endif>>
+
+<<if $208Ass is 0>>
+Classy!
+I guess that means others have wandered in since the evac.
+Whether they've stayed around with the volcano days from blowing...
+Well, i guess i'll find out.
+<<set $208Ass to 1>>
+<<endif>>

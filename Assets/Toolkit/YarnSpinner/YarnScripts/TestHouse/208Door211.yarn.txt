@@ -1,0 +1,25 @@
+title: 208Door211
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $208Door211 is 2>>
+Quit it!
+<<endif>>
+
+<<if $208Door211 is 1>>
+Still locked.
+Because the inside of the house doesn't exist yet.
+<<endif>>
+
+<<if $208Door211 is 0>>
+Locked.
+And it'll stay that way.
+Yeah, this is still just a demo area.
+They're gonna be limits.
+Good luck walking to the right of this area.
+Climbing might work though.
+Though only for fun.
+<<set $208Door211 to 1>>
+<<endif>>

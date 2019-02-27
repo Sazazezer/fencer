@@ -62,8 +62,9 @@ public class DialogueList : MonoBehaviour {
 
         filename = Path.Combine(Application.streamingAssetsPath, DIALOGUE_FILE);
             if (File.Exists(filename)){
-                File.Delete(filename);
-
+           //     File.Delete(filename);
+             //   string json = "";
+                File.WriteAllText(filename,"");
             }
         Debug.Log("I reset");
     }

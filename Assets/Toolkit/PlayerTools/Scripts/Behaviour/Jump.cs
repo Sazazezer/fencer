@@ -11,6 +11,7 @@ public class Jump : AbstractBehaviour {
 
 	protected float lastJumpTime = 0;
 	protected int jumpsRemaining = 0;
+    public bool isJumping;
 
 	// Use this for initialization
 	void Start () {

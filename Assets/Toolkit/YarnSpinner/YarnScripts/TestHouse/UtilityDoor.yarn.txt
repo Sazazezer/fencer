@@ -1,0 +1,18 @@
+title: UtilityDoor
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $208UtilityDoor is 1>>
+Still locked.
+And probably will be forever more.
+<<endif>>
+
+<<if $208UtilityDoor is 0>>
+Looks like a public maintenance building of some kind.
+Not sure what could still be in here, but i doubt it's useful to the investigation.
+Locked.
+That bodes well for all future doors in my life.
+<<set $208UtilityDoor to 1>>
+<<endif>>

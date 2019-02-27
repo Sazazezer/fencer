@@ -238,6 +238,19 @@ GameObject:
   m_PrefabParentObject: {fileID: 1220048801299774, guid: aba84ffc04dfd4440a94549607c9c795,
     type: 2}
   m_PrefabInternal: {fileID: 781521636}
+--- !u!114 &180969962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 180969961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267ab21ec46eeb74ea86377ebc84f339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomMusic:
+  - {fileID: 8300000, guid: f7f7e6e7354f6b4429cf55c0f0d78960, type: 3}
 --- !u!114 &180969969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +554,60 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114626047905861074, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114597158461677270, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114413494195803040, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114767323440970698, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114072513852313100, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114640195660110462, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114471139177464538, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114799625982232470, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114916535203934558, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 114886094346319258, guid: aba84ffc04dfd4440a94549607c9c795, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: aba84ffc04dfd4440a94549607c9c795, type: 2}
@@ -848,8 +915,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d3c3f73e76b4cb49b675fc7d64b90f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  journal: {fileID: 0}
   button: {fileID: 0}
   panel: {fileID: 0}
+  highlightIcon: {fileID: 0}
+  textPanel: {fileID: 0}
+  highlightSlot: 0
+  buttons: []
 --- !u!114 &1395938336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,6 +1141,57 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 224333167578098046, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224333167578098046, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224333167578098046, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114674783705796636, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114919731075565134, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114419721190656062, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114849972237564322, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114964155557642850, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
+    - target: {fileID: 114313907815010014, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
   m_IsPrefabParent: 0
@@ -1469,7 +1592,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0

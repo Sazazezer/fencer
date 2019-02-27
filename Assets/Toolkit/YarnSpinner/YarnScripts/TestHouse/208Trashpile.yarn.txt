@@ -1,0 +1,21 @@
+title: 208Trashpile
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $208Trashpile is 2>>
+Quit it!
+<<endif>>
+
+<<if $208Trashpile is 1>>
+I said i'm not looking!
+<<set $208Trashpile to 2>>
+<<endif>>
+
+<<if $208Trashpile is 0>>
+Eeewww.
+I guess the trash guys stopped coming round before the village admitted what was happening to it.
+This stuff is rancid. I'm not poking through there.
+<<set $208Trashpile to 1>>
+<<endif>>

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/AfterChoicesScene.unity
+- path: Assets/Fencer/Scenes/Room209.unity
   isLoaded: 1
   isActive: 1
