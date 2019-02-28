@@ -1,11 +1,11 @@
 {
     "items": [
         {
-            "itemName": "House209LockedSideboardKey",
-            "itemDescription": "A small key. Looks like it would work in a cupboard. GASP, OR PERHAPS A SIDEBOARD!",
-            "KeyID": 4,
-            "itemIndestructible": true,
-            "prefabName": "House209DoorKeyButton"
+            "itemName": "",
+            "itemDescription": "",
+            "KeyID": 0,
+            "itemIndestructible": false,
+            "prefabName": ""
         },
         {
             "itemName": "House207LockedSideboardKey",
@@ -15,11 +15,11 @@
             "prefabName": "House207DoorKeyButton"
         },
         {
-            "itemName": "House207DoorKey",
-            "itemDescription": "The numbers 207 are on this key. WHAT COULD IT MEAN?",
-            "KeyID": 1,
-            "itemIndestructible": true,
-            "prefabName": "House207DoorKeyButton"
+            "itemName": "",
+            "itemDescription": "",
+            "KeyID": 0,
+            "itemIndestructible": false,
+            "prefabName": ""
         },
         {
             "itemName": "",

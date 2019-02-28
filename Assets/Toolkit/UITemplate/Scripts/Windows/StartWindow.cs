@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class StartWindow : GenericWindow {
 
 	public Button continueButton;
+    public GameObject areYouSureExit;
 
 	public override void Open ()
 	{
@@ -31,6 +32,10 @@ public class StartWindow : GenericWindow {
 	public void Options(){
 		Debug.Log ("Options Pressed");
 	}
+
+    public void ExitGame(){
+        Debug.Log ("Exit Pressed");
+    }
 
 
 }

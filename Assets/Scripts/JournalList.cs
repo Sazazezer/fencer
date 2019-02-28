@@ -25,19 +25,19 @@ public class JournalList : MonoBehaviour {
     public List<Button> buttons = new List<Button>();
     private int countDammit = 0;
     static readonly string JOURNAL_DATA = "JournalEntries.json";
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
         if (SceneManager.GetActiveScene().buildIndex != 1){
             JournalCompile();
         }
         highlightSlot = 0;
 
-	}
+    }
 
     void Update(){
         if(journal.GetComponent<JournalCanvas>().panelSelected == 0){
-            if (buttons.Count() > 0){
+            if (buttons[highlightSlot]!= null){ //buttons.Count() > 0
             highlightIcon.transform.position =  buttons[highlightSlot].transform.position;
             textPanel.GetComponent<Image>().enabled = false;                
             }
@@ -150,5 +150,3 @@ public class JournalList : MonoBehaviour {
     }        
     
 }
-
-

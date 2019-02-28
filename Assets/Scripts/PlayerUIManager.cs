@@ -37,9 +37,8 @@ public class PlayerUIManager : MonoBehaviour {
         if (loadDialogueData ==false){ //because things break?
             GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
             loadDialogueData = true;
-            Debug.Log("sigh...");
         }
-Debug.Log(inPuzzle);
+
 
 
     }

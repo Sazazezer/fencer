@@ -16,6 +16,8 @@ Oh, and a key!
 
 <<if check_puzzlelock("PuzzleLock209Sideboard") is true>>
 <<if $PuzzleLock209Sideboard is false>>
+A locked sideboard.
+Oh wait, there's a combination lock.
 Who the hell puts a combination safe into a sideboard?
 Man, no one would have blamed me if i had just smashed this thing up with an axe.
 Guess i gotta go find a code.
