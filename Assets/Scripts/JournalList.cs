@@ -36,6 +36,11 @@ public class JournalList : MonoBehaviour {
     }
 
     void Update(){
+
+        for(var k = 0 ; k < buttons.Count(); k++){
+            Debug.Log("Button " + k + "is " + buttons[k]);
+        }
+
         if(journal.GetComponent<JournalCanvas>().panelSelected == 0){
             if (buttons[highlightSlot]!= null){ //buttons.Count() > 0
             highlightIcon.transform.position =  buttons[highlightSlot].transform.position;
@@ -76,6 +81,7 @@ public class JournalList : MonoBehaviour {
                 if (Input.GetButtonDown("Down")){
                     GameObject.Find("JournalTextScrollbar").GetComponent<ScrollMovement>().ResetScrollbar();
                     highlightSlot++;
+                    Debug.Log("Hi");
 
                 }
             }
@@ -84,15 +90,12 @@ public class JournalList : MonoBehaviour {
     }
 
 
-
-
-
-
     public void JournalCompile(){
         foreach (Transform child in transform) {
             GameObject.Destroy(child.gameObject);
-        }
 
+        }
+        buttons.Clear();
         filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
         string jsonFromFile = File.ReadAllText(filename);
         JournalDataList list = JournalDataList.CreateFromJSON(jsonFromFile);
