@@ -1295,9 +1295,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-    Matt Staples - workHate Inc 2019'
+  m_Text: 
 --- !u!222 &383492562
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2197,6 +2195,7 @@ MonoBehaviour:
   previousWindow: 3
   firstSelected: {fileID: 1803243410}
   continueButton: {fileID: 1143104727}
+  areYouSureExit: {fileID: 0}
 --- !u!114 &847795615
 MonoBehaviour:
   m_ObjectHideFlags: 0

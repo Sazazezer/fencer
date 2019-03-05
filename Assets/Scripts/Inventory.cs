@@ -35,7 +35,8 @@ public class Inventory : MonoBehaviour {
     }
 
     void Update(){
-        highlightedItem.transform.position =  slots[highlightedSlot].transform.position;
+        //highlightedItem.transform.position =  slots[highlightedSlot].transform.position;
+        highlightedItem.transform.position =  new Vector3( slots[highlightedSlot].transform.position.x, slots[highlightedSlot].transform.position.y+20, slots[highlightedSlot].transform.position.z);
         itemTitlePanel.GetComponentInChildren<Text>().text = slots[highlightedSlot].itemName;
         itemDescriptionPanel.GetComponentInChildren<Text>().text = slots[highlightedSlot].itemDescription;
         itemHeld = slots[highlightedSlot].itemObject;

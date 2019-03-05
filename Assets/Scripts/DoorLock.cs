@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoorLock : MonoBehaviour {
 
@@ -15,6 +16,7 @@ public class DoorLock : MonoBehaviour {
     public AudioClip doorUnlockSound;
     private float doorUnlockVolume = 0.5f;
     public AudioClip doorStillLockedSound;
+    private Text textBoxManager;
 
     private AudioSource source;
 
@@ -59,7 +61,11 @@ public class DoorLock : MonoBehaviour {
             } else {
                 failedToUnlock = true;
                 source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
+                FindObjectOfType<TextBoxManager>().UpdateTextBox("This key isn't for that lock.");
             }
+        } else if (other.tag == "Player" && Input.GetButtonUp("Up")){
+            source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
+            FindObjectOfType<TextBoxManager>().UpdateTextBox("Locked.");
         }
     }
 }

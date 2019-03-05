@@ -25,5 +25,6 @@ public class TextBoxManager : MonoBehaviour {
     public void UpdateTextBox(string _message){
         textBox.text = _message;
         timeToLive = 3f;
+        Debug.Log(_message);
     }
 }
