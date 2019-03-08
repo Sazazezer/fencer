@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Fencer/Scenes/AfterChoicesScene.unity
     guid: 9410fca20e6787a41bf1a2b20d681dfd
+  - enabled: 1
+    path: Assets/Fencer/Scenes/EndingScene.unity
+    guid: 3c59b579c13587449aded411dceff80c
   m_configObjects: {}

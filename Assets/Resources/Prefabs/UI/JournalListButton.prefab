@@ -131,7 +131,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Secret Message
+  m_Text: Puzzle Lock Two Answer Journal
 --- !u!114 &114687359094712636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,10 +143,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a21f1213950c10428d7124340fc86c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 5
-  content: Secret Message
-  journal: Man i sure hope no test sprite steals my armchair in the future. That would
-    be very much against my wishes.
+  index: 7
+  content: Puzzle Lock Two Answer Journal
+  journal: Ha, I am more devious than that other puzzle lock. My code is 4321. Suck
+    on that, expectations!
 --- !u!114 &114878429633204762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,8 +166,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 848ab094954d0304e9996fcf91571cac, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

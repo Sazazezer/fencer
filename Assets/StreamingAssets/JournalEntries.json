@@ -15,7 +15,7 @@
         {
             "index": 2,
             "lockedAway": 1,
-            "content": "Puzzle Lock One Answer Journal",
+            "content": "Puzzle Lock One Answer",
             "journal": "I set the code as 1234. No one will ever suspect."
         },
         {
@@ -45,7 +45,7 @@
         {
             "index": 7,
             "lockedAway": 1,
-            "content": "Puzzle Lock Two Answer Journal",
+            "content": "Puzzle Lock Two Answer",
             "journal": "Ha, I am more devious than that other puzzle lock. My code is 4321. Suck on that, expectations!"
         }
     ]

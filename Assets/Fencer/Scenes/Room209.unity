@@ -5688,103 +5688,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114674783705796636, guid: adaba2e54b91a79439aeb6658a152988,
+    - target: {fileID: 114220322098186784, guid: adaba2e54b91a79439aeb6658a152988,
         type: 2}
-      propertyPath: m_FontData.m_Font
+      propertyPath: m_Text
       value: 
-      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
-        type: 3}
-    - target: {fileID: 114919731075565134, guid: adaba2e54b91a79439aeb6658a152988,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
-        type: 3}
-    - target: {fileID: 114419721190656062, guid: adaba2e54b91a79439aeb6658a152988,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
-        type: 3}
-    - target: {fileID: 114849972237564322, guid: adaba2e54b91a79439aeb6658a152988,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
-        type: 3}
-    - target: {fileID: 114964155557642850, guid: adaba2e54b91a79439aeb6658a152988,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2,
-        type: 3}
-    - target: {fileID: 1789111564535100, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905833373501032, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1469599041089470, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1225859472558120, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1900032805156274, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646836369162046, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1099579410786638, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937031266662500, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1167114028511380, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901727555528172, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1876788976799594, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1844322617354874, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1572686997194760, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1342566795585542, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1696400891888872, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1978702364667860, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1464303587202120, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adaba2e54b91a79439aeb6658a152988, type: 2}

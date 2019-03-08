@@ -19,8 +19,7 @@ public class TalkOptions : AbstractBehaviour {
 	void Update () {
 
 
-		if(talk.toggleOptions == true && talk.choicesGiven == true){
-			
+		if(talk.toggleOptions == true /*&& talk.choicesGiven == true*/){
 			var optOne = inputState.GetButtonValue (inputButtons[0]);
 			var optTwo = inputState.GetButtonValue (inputButtons[1]);
 			var optThree = inputState.GetButtonValue (inputButtons[2]);

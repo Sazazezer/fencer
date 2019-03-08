@@ -3799,6 +3799,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 620033518}
     m_Modifications:
+    - target: {fileID: 114046137974090076, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: inputButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4611230671897490, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
       propertyPath: m_LocalPosition.x
       value: -524.30774
@@ -3981,6 +3986,21 @@ Prefab:
       propertyPath: itemMoveSound
       value: 
       objectReference: {fileID: 8300000, guid: bf070efe859339c42ac56dbe5a878031, type: 3}
+    - target: {fileID: 114046137974090076, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: inputButtons.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114046137974090076, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: inputButtons.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114046137974090076, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: inputButtons.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
   m_IsPrefabParent: 0
@@ -4683,6 +4703,24 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224329623400049470, guid: 00ccd1d814a36bf429f7e981c667a4d9,
     type: 2}
   m_PrefabInternal: {fileID: 1963533359}
+--- !u!1 &1967811608 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1755398582179626, guid: aba84ffc04dfd4440a94549607c9c795,
+    type: 2}
+  m_PrefabInternal: {fileID: 781521636}
+--- !u!114 &1967811610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967811608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
+  delegates: []
 --- !u!114 &2025794541 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114220322098186784, guid: adaba2e54b91a79439aeb6658a152988,
