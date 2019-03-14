@@ -28,12 +28,13 @@ public class DoorTransition : MonoBehaviour {
     static readonly string ROOM_MOVE = "room.json";
 
     public AudioClip doorOpenSound;
-    private float doorOpenVolume = 0.1f;
+    private float doorOpenVolume = 0.5f;
 
     private AudioSource source;
 
     void Start(){
         source = GetComponent<AudioSource>();
+        doorOpenVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);
     }
  
      void OnTriggerStay2D(Collider2D other){

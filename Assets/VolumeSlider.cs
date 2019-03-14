@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class VolumeSlider : MonoBehaviour {
 
     public string buttonSelected;
-    public Text volumeSliderSelected;
+  //  public Text volumeSliderSelected;
     public Slider volumeSlider;
 
     public void Start()
@@ -18,8 +18,9 @@ public class VolumeSlider : MonoBehaviour {
     // Invoked when the value of the slider changes.
     public void ValueChangeCheck()
     {
-        volumeSliderSelected.text = volumeSlider.value.ToString();
+      //  volumeSliderSelected.text = volumeSlider.value.ToString();
         PlayerPrefs.SetFloat("GameVolume", volumeSlider.value);
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("GameVolume",0.5f); 
         Debug.Log(volumeSlider.value);
     }
 }

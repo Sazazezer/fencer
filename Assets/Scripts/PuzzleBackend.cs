@@ -14,7 +14,7 @@ public class PuzzleBackend : MonoBehaviour {
     public Text text;
     public AudioClip successSound;
     public AudioClip failureSound;
-    private float puzzleVolume = 1f;
+    private float puzzleVolume = 0.5f;
 
     private AudioSource source;
     
@@ -23,6 +23,7 @@ public class PuzzleBackend : MonoBehaviour {
     void Start () {
         GetMaxDigits();
         source = GetComponent<AudioSource>();
+        puzzleVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);
     }
     
     // Update is called once per frame

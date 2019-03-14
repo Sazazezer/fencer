@@ -18,10 +18,10 @@ public class TextSpeed : MonoBehaviour {
 
     public void SetTextSpeed(string _speedGiven){
         switch(_speedGiven){
-            case "slow": PlayerPrefs.SetFloat("TextSpeed", 5.0F); break;
-            case "normal": PlayerPrefs.SetFloat("TextSpeed", 10.5F); break;
-            case "fast": PlayerPrefs.SetFloat("TextSpeed", 50.0F); break;
-            default:PlayerPrefs.SetFloat("TextSpeed", 10.5F); break;
+            case "slow": PlayerPrefs.SetFloat("TextSpeed", 0.1F); break;
+            case "normal": PlayerPrefs.SetFloat("TextSpeed", 0.025F); break;
+            case "fast": PlayerPrefs.SetFloat("TextSpeed", 0.05F); break;
+            default:PlayerPrefs.SetFloat("TextSpeed", 0.025F); break;
         }
     }
 }

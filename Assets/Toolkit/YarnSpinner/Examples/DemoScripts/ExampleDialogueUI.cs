@@ -61,7 +61,8 @@ namespace Yarn.Unity.Example {
 
         /// How quickly to show the text, in seconds per character
         [Tooltip("How quickly to show the text, in seconds per character")]
-        public float textSpeed = 0.025f;
+        public float textSpeed = 0.025F;
+
 
         /// The buttons that let the user choose an option
         public List<Button> optionButtons;
@@ -71,7 +72,9 @@ namespace Yarn.Unity.Example {
         public RectTransform gameControlsContainer;
 
         void Awake ()
-        {
+        {        
+            textSpeed = PlayerPrefs.GetFloat("TextSpeed",0.025F);
+            Debug.Log(textSpeed);
             // Start by hiding the container, line and option buttons
             if (dialogueContainer != null)
                 dialogueContainer.SetActive(false);

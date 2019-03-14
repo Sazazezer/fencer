@@ -24,7 +24,6 @@ public class AreYouSureExit : MonoBehaviour {
     }
 
     public void Yes(){
-        Debug.Log("I should go now. I've done enough damage");
         Application.Quit();
     }
 

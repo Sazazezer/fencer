@@ -9,12 +9,14 @@ public class LongJump : Jump {
 	public bool canLongJump;
 	public bool isLongJumping;
     public AudioClip jumpSound;
-    private float jumpVolume = 0.1f;
+    private float jumpVolume = 0.5f;
 
     private AudioSource source;
 
     void Start () {
         source = GetComponent<AudioSource>();
+        jumpVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);
+
     }
 
 	protected override void Update(){

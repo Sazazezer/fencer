@@ -10,7 +10,8 @@ public class RoomMusic : MonoBehaviour {
 	void Start () {
 
         if(GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>().clip != roomMusic[0]){
-            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>().clip = roomMusic[0];            
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>().clip = roomMusic[0];
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("GameVolume",0.5f);         
             GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>().Play();
         }
 

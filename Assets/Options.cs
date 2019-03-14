@@ -10,6 +10,8 @@ public class Options : MonoBehaviour {
 
     public GameObject optionsMenu;
     public GameObject selectNormal;
+    public GameObject oldButtons;
+    public GameObject optionsButton;
 
     protected EventSystem eventSystem{
         get { return GameObject.Find ("EventSystem").GetComponent<EventSystem> (); }
@@ -19,5 +21,14 @@ public class Options : MonoBehaviour {
             optionsMenu.gameObject.SetActive(true);
             eventSystem.SetSelectedGameObject (selectNormal); 
         }
+
+    void Update(){
+        if(Input.GetButtonUp("Cancel")){
+            optionsMenu.gameObject.SetActive(false);
+            oldButtons.gameObject.SetActive(true);
+            eventSystem.SetSelectedGameObject (optionsButton); 
+
+        }
+    }
 }
 

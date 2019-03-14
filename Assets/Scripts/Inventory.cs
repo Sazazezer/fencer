@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour {
     public string itemItem;
     public int itemUnique;
     public AudioClip itemMoveSound;
-    private float itemMoveVolume = 0.1f;
+    private float itemMoveVolume = 0.5f;
 
     private AudioSource source;
 
@@ -31,7 +31,8 @@ public class Inventory : MonoBehaviour {
 
     void Start(){
         highlightedSlot = 0;
-        source = GetComponent<AudioSource>();        
+        source = GetComponent<AudioSource>(); 
+        itemMoveVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);       
     }
 
     void Update(){
