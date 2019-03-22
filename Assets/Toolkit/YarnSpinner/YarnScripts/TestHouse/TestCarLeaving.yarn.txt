@@ -8,8 +8,8 @@ Time to hit the road and report back.
 To that guy i know from the internet.
 For no reward whatsoever...
 Leave?
-[[No, not just yet.|Stay]]
-[[Yeah, let's get out of here.|Leave]]
+[[↑ No, not just yet.|Stay]]
+[[↓ Yeah, let's get out of here.|Leave]]
 ===
 title: Stay
 ---
@@ -18,8 +18,8 @@ Still more to do...
 title: Leave
 ---
 Are you sure? This will end the gam- I mean, this adventure.
-[[Well when you put it that way i guess i need to stay.|Stay]]
-[[I said we're leaving.|TrueLeave]]
+[[↑ Well when you put it that way i guess i need to stay.|Stay]]
+[[↓ I said we're leaving.|TrueLeave]]
 ===
 title: TrueLeave
 ---

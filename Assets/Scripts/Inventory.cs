@@ -20,6 +20,7 @@ public class Inventory : MonoBehaviour {
     public AudioClip itemMoveSound;
     private float itemMoveVolume = 0.5f;
 
+
     private AudioSource source;
 
     private string jsonData;
@@ -32,12 +33,14 @@ public class Inventory : MonoBehaviour {
     void Start(){
         highlightedSlot = 0;
         source = GetComponent<AudioSource>(); 
-        itemMoveVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);       
+        itemMoveVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);
+       // highlightedItemRender = highlightedItem.GetComponent<Renderer>().bounds.center;
+
     }
 
     void Update(){
         //highlightedItem.transform.position =  slots[highlightedSlot].transform.position;
-        highlightedItem.transform.position =  new Vector3( slots[highlightedSlot].transform.position.x, slots[highlightedSlot].transform.position.y+20, slots[highlightedSlot].transform.position.z);
+        highlightedItem.transform.position =  new Vector3( slots[highlightedSlot].transform.position.x, slots[highlightedSlot].transform.position.y + (highlightedItem.GetComponent<RectTransform>().rect.height/5), slots[highlightedSlot].transform.position.z);
         itemTitlePanel.GetComponentInChildren<Text>().text = slots[highlightedSlot].itemName;
         itemDescriptionPanel.GetComponentInChildren<Text>().text = slots[highlightedSlot].itemDescription;
         itemHeld = slots[highlightedSlot].itemObject;
