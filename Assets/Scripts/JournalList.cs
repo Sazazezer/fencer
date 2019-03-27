@@ -125,7 +125,7 @@ public class JournalList : MonoBehaviour {
         jsonData = JsonUtility.ToJson(list, true);
 
             if (File.Exists(filename)){
-                File.Delete(filename);
+            //    File.Delete(filename);
             }
 
             File.WriteAllText(filename, jsonData);
@@ -146,7 +146,7 @@ public class JournalList : MonoBehaviour {
             }
         jsonData = JsonUtility.ToJson(list,true);
             if (File.Exists(filename)){
-                File.Delete(filename);
+              //  File.Delete(filename);
             }
 
             File.WriteAllText(filename, jsonData);

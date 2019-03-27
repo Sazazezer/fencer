@@ -151,6 +151,7 @@ public class PlayerUIManager : MonoBehaviour {
                 Debug.Log("Door Data Reset"); 
         GameObject.FindObjectOfType<DialogueList>().ResetDialogue();
                 Debug.Log("Dialogue Data Reset");
+            PlayerPrefs.SetInt("GameHasStarted",0);
 
     //ResetUniques
     }

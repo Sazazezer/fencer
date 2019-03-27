@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 10}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 481, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 64
+  controlID: 13
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 411
     height: 495
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_MinSize: {x: 481, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 63
+  controlID: 78
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 112
+  controlID: 125
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 62
+  controlID: 77
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,7 +241,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &11
 MonoBehaviour:
@@ -475,7 +475,7 @@ MonoBehaviour:
     height: 431
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: playerui
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -486,20 +486,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Music
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Music
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\itms2\OneDrive - Loughborough University\Platform2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 060d0000
-    m_LastClickedID: 3334
-    m_ExpandedIDs: 00000000920a0000300b0000420b0000b00c0000640e0000be0e0000de0e0000e60e0000360f0000ac0f00002a100000b41000003411000080110000aa1100002a120000461200009a1200001e130000a613000076140000921400005c3f000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000920a0000300b0000420b0000b20c0000660e0000c00e0000e20e0000ea0e00003a0f0000b00f00002e100000b81000003811000084110000ae1100002e1200004a1200009e12000022130000aa1300007a14000096140000663f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -527,7 +527,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000920a0000300b0000420b0000b00c0000640e0000be0e0000de0e0000e60e0000360f0000ac0f00002a100000b41000003411000080110000aa1100002a120000461200009a1200001e130000a613000076140000921400005c3f0000
+    m_ExpandedIDs: 00000000920a0000300b0000420b0000b20c0000660e0000c00e0000e20e0000ea0e00003a0f0000b00f00002e100000b81000003811000084110000ae1100002e1200004a1200009e12000022130000aa1300007a14000096140000663f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -554,22 +554,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: ec210000eaf4fffff8230000caf6ffff9eeeffff4aeeffff5236000070d9ffff30290000140b0000320b0000160b0000d65c0200b2090000200d0000460a0000c40900006c100000ac0e0000a20b00004c0f0000fe110000cc0f0000da0f0000160d0000b8100000e00a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: EnterDoor
-      m_OriginalName: EnterDoor
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 3818
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -643,9 +643,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c29c0000
-    m_LastClickedID: 40130
-    m_ExpandedIDs: 587bfdff6a0afefff0fbfffff4ffffff00000000c6160000ee1600000a1700003a1700001a9d0000369d0000669d0000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: f0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -695,14 +695,14 @@ MonoBehaviour:
     height: 461
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1992.9665182580945
+  lastFramingTime: 1026.7231064418586
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 398.1603, y: -677.80774, z: -2.1875}
+    m_Target: {x: 182.43796, y: -793.29114, z: 7.685951}
     speed: 2
-    m_Value: {x: 398.1603, y: -677.80774, z: -2.1875}
+    m_Value: {x: 182.43796, y: -793.29114, z: 7.685951}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -734,9 +734,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 332.64532
+    m_Target: 399.63852
     speed: 2
-    m_Value: 332.64532
+    m_Value: 399.63852
   m_Ortho:
     m_Target: 1
     speed: 2

@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/itms2/Desktop/PlatformTest0100/PlatformTest0100.exe
+C:/Users/itms2/Desktop/DormantMurder0100/DormantMurder0100.exe
 SceneListBegin?
 Assets/Toolkit/UITemplate/Scenes/GameWindows.unity
 Assets/Fencer/Scenes/OpeningScene.unity
@@ -182,6 +182,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 58dae197f6290d05f0d7b3d8494fae60 Assembly-CSharp.dll:.EnemyParry
 e8110f86fc959b4fa4f78a10baca3e38 Assembly-CSharp.dll:.SimpleMovement
 44c4e78daaa6fb9c628f03063bf1e5e2 Assembly-CSharp.dll:.PickupJournal
+9c87910c6b97fe1effd9df5400ae4288 Assembly-CSharp.dll:.GameStartIntro
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlayerManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RestartButton
 4476a2ed974f749447404d5e42c8fde7 Assembly-CSharp.dll:.EnemyDeath
@@ -208,6 +209,7 @@ d1357dd087e0eb0c495b4b9b7d66d8e4 Assembly-CSharp.dll:.oldHealthItem
 13f0c8b81194d7a37ec23d07f4f36312 Assembly-CSharp.dll:.AutoTalk
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AlienB
 9d0f21b81ae09bc4e4aa3af23665b161 Assembly-CSharp.dll:Yarn.Unity.Example.SpriteSwitcher
+70677729c8de58379920739c126f2a9f Assembly-CSharp.dll:.QuitGame
 e55b3dcc6e602faac83907fd8c18132b Assembly-CSharp.dll:.Pickup
 49037f28b9ee3069a3a2de49873ee546 Assembly-CSharp.dll:.Explode
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HappyToSeeYou
@@ -247,7 +249,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 eb761633fd75db2bc5fa9674836b4664 Assembly-CSharp.dll:.SwordAttack
 27e672e7a1ad92c878b84a493b7a32ab Assembly-CSharp.dll:.Options
 8bd01f3c106f76949814ea681e74f343 Assembly-CSharp.dll:.HealthItem
-1f5e5d32a397a14ea2238e622327a549 Assembly-CSharp.dll:.Pause
+09579709e337655cd34d1341e38b2e97 Assembly-CSharp.dll:.Pause
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 f02726adeff0a3ec5905565234b372da UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -299,6 +301,7 @@ d09c7cf893c901597f882648e272cd2e Assembly-CSharp.dll:.RandomSprite
 524a585e703b5897a16e09f69a51ea98 Assembly-CSharp.dll:.WeaponItem
 ba617d7d279fec91cf4e0e5b1ac4899a Assembly-CSharp.dll:Yarn.Unity.Example.NPC
 7cd2a4fa9e58e4f359bec2305698ebe7 Assembly-CSharp.dll:.FaceDirection
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Fade
 606b1c7016dff0f7b3e58313760a786b Assembly-CSharp.dll:.InputManager
 2fb89717f554c0beeb7f1050f23e8b1c Assembly-CSharp.dll:Yarn.Unity.Example.ExampleDialogueUI
 1a1d936c7ae360f297f86c89b0362f7f Assembly-CSharp.dll:.ClickToContinue

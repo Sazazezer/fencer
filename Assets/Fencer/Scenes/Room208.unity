@@ -2640,6 +2640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeCanvas: {fileID: 11773407}
   audio: {fileID: 8300000, guid: 7c9a6279a5a8a6746838ff680870313c, type: 3}
+  gameHasStarted: 0
+  fadePanelKill: {fileID: 766659365}
 --- !u!82 &1063165191
 AudioSource:
   m_ObjectHideFlags: 0
