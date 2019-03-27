@@ -16,9 +16,11 @@ public class PuzzleLockList : MonoBehaviour {
     private int countDammit = 0;
     static readonly string PuzzleLock_DATA = "PuzzleLockEntries.json";
     // Use this for initialization
-    void Start () {
+    void Awake () {
         filename = Path.Combine(Application.streamingAssetsPath, PuzzleLock_DATA);
-        if (SceneManager.GetActiveScene().buildIndex != 1){
+        Scene currentScene = SceneManager.GetActiveScene ();
+        string sceneName = currentScene.name;
+        if (sceneName != "OpeningScene"){
             PuzzleLockCompile();
         }
     }

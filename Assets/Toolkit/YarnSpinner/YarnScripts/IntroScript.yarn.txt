@@ -3,6 +3,7 @@ tags: CutScene
 colorID: 0
 position: 540,260
 ---
+<<set $openingRan to 1>>
 We want to prove our importance to the universe by finding out who killers are.
 
 Go to the town. Find out who the killer was. Leave when you think you have everything. Come back and report your findings.

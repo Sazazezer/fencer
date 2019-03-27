@@ -35,8 +35,9 @@ public class PlayerUIManager : MonoBehaviour {
     private void Update()
     {
         if (loadDialogueData ==false){ //because things break?
-            GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
             loadDialogueData = true;
+          //  GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
+
         }
 
 

@@ -24,7 +24,7 @@ public class InventoryList : MonoBehaviour {
 
     static readonly string INVENTORY_DATA = "InventoryEntries.json";
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         filename = Path.Combine(Application.streamingAssetsPath, INVENTORY_DATA);
        // JournalCompile();
@@ -77,6 +77,7 @@ public class InventoryList : MonoBehaviour {
     }
 
     public void ResetInventory(){
+        Debug.Log(filename);
         string jsonFromFile = File.ReadAllText(filename);
         InventoryDataList list = InventoryDataList.CreateFromJSON(jsonFromFile);
         for (int i = 0; i < inventory.slots.Count(); i++){

@@ -2,13 +2,13 @@
     "items": [
         {
             "index": 0,
-            "lockedAway": 0,
+            "lockedAway": 1,
             "content": "Clue Journal One",
             "journal": "Oh no. There was a murder. That sucks. There are three suspects. Mary, Sue and Evil Rod."
         },
         {
             "index": 1,
-            "lockedAway": 1,
+            "lockedAway": 0,
             "content": "Casual Journal One",
             "journal": "Oh boy i sure do like my mundane life. I hope to keep living it forever. Oh look, here comes my best friend, EvilRod. I do wonder what that item is he is holding as he approaches me menacingly."
         },

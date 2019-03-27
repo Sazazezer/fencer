@@ -91,10 +91,10 @@ MonoBehaviour:
     y: 0
     width: 965
     height: 947
-  m_MinSize: {x: 481, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 481, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 78
+  controlID: 12
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -113,14 +113,14 @@ MonoBehaviour:
     y: 495
     width: 965
     height: 452
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 16}
   - {fileID: 21}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,10 +191,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 683, y: 442}
+  m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
-  controlID: 77
+  controlID: 11
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 5958
+  m_LastSelectedObjectID: -256580
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -475,7 +475,7 @@ MonoBehaviour:
     height: 431
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: playerui
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -486,19 +486,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Toolkit/UITemplate/Scenes
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Toolkit/UITemplate/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\itms2\OneDrive - Loughborough University\Platform2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
+    scrollPos: {x: 0, y: 775.8864}
+    m_SelectedIDs: 360b0000
+    m_LastClickedID: 2870
     m_ExpandedIDs: 00000000920a0000300b0000420b0000b20c0000660e0000c00e0000e20e0000ea0e00003a0f0000b00f00002e100000b81000003811000084110000ae1100002e1200004a1200009e12000022130000aa1300007a14000096140000663f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -552,24 +552,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 860d0000
+    m_LastClickedInstanceID: 3462
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: ec210000eaf4fffff8230000caf6ffff9eeeffff4aeeffff5236000070d9ffff30290000140b0000320b0000160b0000d65c0200b2090000200d0000460a0000c40900006c100000ac0e0000a20b00004c0f0000fe110000cc0f0000da0f0000160d0000b8100000e00a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: PlayerUIManager
+      m_OriginalName: PlayerUIManager
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 2408
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -645,26 +645,26 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: f0fbffff00000000
+    m_ExpandedIDs: 1ae8f2fffae8f2ff28ebf2ff7ceff2ffeef3f2ff24f5f2ff60f9f2ff7cfef2ffa202f3ff7a08f3ff8208f3ffb42af3ffa838f3ffec7cf3ff047ef3ff2e80f3ff7e84f3ffec88f3ff1e8af3ff568ef3ff6e93f3ff9097f3ff9897f3ff109cf3ff42bcf3ff8cd4f3ff90d5f3ffbed7f3ff12dcf3ff84e0f3ffbae1f3fff6e5f3ff12ebf3ff38eff3ff10f5f3ff18f5f3ff3c1cf5ff4224f5ff3225f5ff6027f5ffb42bf5ff2630f5ff5c31f5ff9835f5ffb43af5ffda3ef5ffb244f5ffba44f5ffd2c3f5ffa6caf5ffa60cf6ff420df6fffa0ef6ff004cf6ff9c4cf6ff864ef6ff1c7af6ffacf5f7ff0896f8ffa0b4f8ff625bf9ff3c64f9ff5465f9ff8267f9ffd66bf9ff4870f9ff7e71f9ffba75f9ffd67af9fffc7ef9ff087ff9ff8483f9ff7048faff4c51faff4452faff6e54faffbe58faff2c5dfaff5e5efaff9662faffb667faffde6bfaffe26bfaff5c70faff86d9faff22dafaff28dafaff84dbfaff3236fbff5c73fbff4c83fbff4484fbff7286fbffc68afbff388ffbff6e90fbffaa94fbffce99fbfffa9dfbffeca2fbfff4a2fbff18eefbff6016fcfffc16fcff0217fcff4818fcff6266fcff0067fcffb868fcffdc2affff782bffff7e2bfffff62cffff5c36ffffd652ffff5083ffff4684ffff7086ffffc08affff2e8fffff6090ffff9894ffffb899ffffe09dffffcea2ffffd2a2ffff4eadffff44aeffff72b0ffffc6b4ffff38b9ffff6ebaffffaabeffffcec3fffffac7ffffecccfffff4ccffffacd0ffff28e5fffff0fbffff0000000044b800003cc10000d8c10000f4c1000058c2000016180100dc200100a0450100c2450100a846010054f40100120b0200ae0c0200dcd2020004d3020018d3020050d3020084d302000ad4020030f602008cf70200daf7020018fa0200c0fb0200ce0f0300ea0f0300
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Panel
+      m_OriginalName: Panel
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 83514
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 4
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 3}
     m_SearchString: 
   m_ExpandedScenes:
-  - Room208
+  - GameWindows
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -695,14 +695,14 @@ MonoBehaviour:
     height: 461
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1026.7231064418586
+  lastFramingTime: 7802.195896236418
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 182.43796, y: -793.29114, z: 7.685951}
+    m_Target: {x: -186.79268, y: -816.27167, z: -0.24896532}
     speed: 2
-    m_Value: {x: 182.43796, y: -793.29114, z: 7.685951}
+    m_Value: {x: -186.79268, y: -816.27167, z: -0.24896532}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -734,9 +734,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 399.63852
+    m_Target: 114.75292
     speed: 2
-    m_Value: 399.63852
+    m_Value: 114.75292
   m_Ortho:
     m_Target: 1
     speed: 2

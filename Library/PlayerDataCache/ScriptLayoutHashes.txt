@@ -143,7 +143,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 ee3c4f188dd0540e572b83270d99dece Assembly-CSharp.dll:.ScrollPanel
-badc68b397f22d0cf7de05d020c1c98f Assembly-CSharp.dll:.JournalList
+eaddc992355d023cd22013aecce95b45 Assembly-CSharp.dll:.JournalList
 b2a3d182529f2724e9a744ddf053af78 Assembly-CSharp.dll:.Parallax
 ff652dd5e824562f0fb5cdd88a5f3759 Assembly-CSharp.dll:.Player
 c4e62f0de1a28769c671f33524aad80a Assembly-CSharp.dll:.Stats

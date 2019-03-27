@@ -20,72 +20,75 @@ public class JournalList : MonoBehaviour {
     public GameObject highlightIcon;
     public GameObject textPanel;
     public int highlightSlot;
-    private string jsonData;
-    private string filename;
+    public string jsonData;
+    public string filename;
     public List<Button> buttons = new List<Button>();
     private int countDammit = 0;
     static readonly string JOURNAL_DATA = "JournalEntries.json";
     // Use this for initialization
-    void Start () {
+    void Awake(){
         filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
-        if (SceneManager.GetActiveScene().buildIndex != 1){
+      //  if (SceneManager.GetActiveScene().buildIndex != 1){
             JournalCompile();
-        }
+      //  }
         highlightSlot = 0;
 
     }
 
     void Update(){
 
-        for(var k = 0 ; k < buttons.Count(); k++){
-            Debug.Log("Button " + k + "is " + buttons[k]);
-        }
+        if (journal != null){
 
-        if(journal.GetComponent<JournalCanvas>().panelSelected == 0){
-            if (buttons[highlightSlot]!= null){ //buttons.Count() > 0
-            highlightIcon.transform.position =  buttons[highlightSlot].transform.position;
-            textPanel.GetComponent<Image>().enabled = false;                
+            for(var k = 0 ; k < buttons.Count(); k++){
+                Debug.Log("Button " + k + "is " + buttons[k]);
             }
-
-          } else if(journal.GetComponent<JournalCanvas>().panelSelected == 1){
-             //   highlightIcon.transform.position =  textPanel.transform.position;
-                textPanel.GetComponent<Image>().enabled = true;
-         }
-
-
-        if (journal.GetComponent<Canvas> ().enabled == true){
-            buttons[highlightSlot].GetComponent<ButtonClick>().SendToJournalTextPanel();
 
             if(journal.GetComponent<JournalCanvas>().panelSelected == 0){
-
-                if (Input.GetButtonDown("Right")){
-                    journal.GetComponent<JournalCanvas>().panelSelected = 1;
-                   // Debug.Log("Text selected");
-
+                if (buttons[highlightSlot]!= null){ //buttons.Count() > 0
+                highlightIcon.transform.position =  buttons[highlightSlot].transform.position;
+                textPanel.GetComponent<Image>().enabled = false;                
                 }
-            }
-            if(journal.GetComponent<JournalCanvas>().panelSelected == 1){
 
-                if (Input.GetButtonDown("Left")){
-                    journal.GetComponent<JournalCanvas>().panelSelected = 0;
-                  //  Debug.Log("List selected");
-                }
-            }
-            if(highlightSlot != 0 && journal.GetComponent<JournalCanvas>().panelSelected == 0){
-                if (Input.GetButtonDown("Up")){
-                    GameObject.Find("JournalTextScrollbar").GetComponent<ScrollMovement>().ResetScrollbar();
-                    highlightSlot--;
-                }
-            }
-            if(highlightSlot != buttons.Count()-1 && journal.GetComponent<JournalCanvas>().panelSelected == 0){
-                if (Input.GetButtonDown("Down")){
-                    GameObject.Find("JournalTextScrollbar").GetComponent<ScrollMovement>().ResetScrollbar();
-                    highlightSlot++;
-                    Debug.Log("Hi");
+              } else if(journal.GetComponent<JournalCanvas>().panelSelected == 1){
+                 //   highlightIcon.transform.position =  textPanel.transform.position;
+                    textPanel.GetComponent<Image>().enabled = true;
+             }
 
-                }
-            }
 
+            if (journal.GetComponent<Canvas> ().enabled == true){
+                buttons[highlightSlot].GetComponent<ButtonClick>().SendToJournalTextPanel();
+
+                if(journal.GetComponent<JournalCanvas>().panelSelected == 0){
+
+                    if (Input.GetButtonDown("Right")){
+                        journal.GetComponent<JournalCanvas>().panelSelected = 1;
+                       // Debug.Log("Text selected");
+
+                    }
+                }
+                if(journal.GetComponent<JournalCanvas>().panelSelected == 1){
+
+                    if (Input.GetButtonDown("Left")){
+                        journal.GetComponent<JournalCanvas>().panelSelected = 0;
+                      //  Debug.Log("List selected");
+                    }
+                }
+                if(highlightSlot != 0 && journal.GetComponent<JournalCanvas>().panelSelected == 0){
+                    if (Input.GetButtonDown("Up")){
+                        GameObject.Find("JournalTextScrollbar").GetComponent<ScrollMovement>().ResetScrollbar();
+                        highlightSlot--;
+                    }
+                }
+                if(highlightSlot != buttons.Count()-1 && journal.GetComponent<JournalCanvas>().panelSelected == 0){
+                    if (Input.GetButtonDown("Down")){
+                        GameObject.Find("JournalTextScrollbar").GetComponent<ScrollMovement>().ResetScrollbar();
+                        highlightSlot++;
+                        Debug.Log("Hi");
+
+                    }
+                }
+
+            }
         }
     }
 
@@ -116,7 +119,7 @@ public class JournalList : MonoBehaviour {
     }
 
     public void AddNewJournal(int _newIndex){
-        Debug.Log("Adding journal" + _newIndex);
+
         string jsonFromFile = File.ReadAllText(filename);
         JournalDataList list = JournalDataList.CreateFromJSON(jsonFromFile);
         int newIndex = _newIndex;
@@ -133,8 +136,19 @@ public class JournalList : MonoBehaviour {
     }
 
     public void ResetJournals(){
-        filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
+       // filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
+
         string jsonFromFile = File.ReadAllText(filename);
+        JournalDataList list = JournalDataList.CreateFromJSON(jsonFromFile);
+        countDammit = list.items.Count();
+         for (int i = 0; i < countDammit; i++){
+                if (i != 0){
+                    list.items[i].lockedAway = 0;
+                }
+            }
+        jsonData = JsonUtility.ToJson(list,true);
+        File.WriteAllText(filename, jsonData);
+     /*   string jsonFromFile = File.ReadAllText(filename);
         JournalDataList list = JournalDataList.CreateFromJSON(jsonFromFile);
         if (File.Exists(filename)){
             countDammit = list.items.Count();
@@ -145,11 +159,11 @@ public class JournalList : MonoBehaviour {
                 }
             }
         jsonData = JsonUtility.ToJson(list,true);
-            if (File.Exists(filename)){
+        /*    if (File.Exists(filename)){
               //  File.Delete(filename);
-            }
+            }*/
 
-            File.WriteAllText(filename, jsonData);
+         /*   File.WriteAllText(filename, jsonData);*/
     }        
     
 }
