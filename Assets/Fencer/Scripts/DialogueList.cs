@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,17 +33,20 @@ public class DialogueList : MonoBehaviour {
     }
     
     public void Save () {
+                    Debug.Log("I try to save");
         YarnSaveState yss = new YarnSaveState(variableStorage.Variables, dialogueRunner.dialogue.visitedNodeCount);
         //Save to JSON here
         File.WriteAllText(filename, Newtonsoft.Json.JsonConvert.SerializeObject(yss));
+                    Debug.Log("Saving");
     }
         
-    public void LoadFromJson () {   
+    public void LoadFromJson () {  
+                    Debug.Log("I try to load"); 
        // variableStorage = GameObject.FindObjectOfType<DialogueStorage>();
       //  filename = Path.Combine(Application.streamingAssetsPath, DIALOGUE_FILE);
         string jsonFromFile = File.ReadAllText(filename);
         YarnSaveState yss = Newtonsoft.Json.JsonConvert.DeserializeObject<YarnSaveState>(jsonFromFile);
-
+        
         foreach(var v in yss.values) {
             variableStorage.SetValue(v.Key, v.Value);
 

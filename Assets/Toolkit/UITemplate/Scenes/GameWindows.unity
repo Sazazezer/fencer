@@ -5023,6 +5023,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomMusic:
   - {fileID: 8300000, guid: cfd103960d5eb194aab4baa428e30713, type: 3}
+--- !u!114 &1606427120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606427112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca12e3acd3009c498e83bd003bdd61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1649292814 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114596333303114990, guid: 2303164e686ca1f4c872cfc13da1ec5b,

@@ -64,9 +64,9 @@ public class DoorLock : MonoBehaviour {
                 source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
                 FindObjectOfType<TextBoxManager>().UpdateTextBox("This key isn't for that lock.");
             }
-        } else if (other.tag == "Player" && Input.GetButtonUp("Up")){
+        } else if (other.tag == "Player" && Input.GetButtonUp("Up") && locked == true){
             source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
-            FindObjectOfType<TextBoxManager>().UpdateTextBox("Locked.");
+            FindObjectOfType<TextBoxManager>().UpdateTextBox("Locked1.");
         }
     }
 }

@@ -243,6 +243,11 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114316211659783600, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
   m_IsPrefabParent: 0
@@ -6397,7 +6402,7 @@ MonoBehaviour:
   isUnlockable: 0
   failedToUnlock: 0
   player: {fileID: 2028283576}
-  lockNumber: 1
+  lockNumber: 3
   doorName: 
   itemKill: {fileID: 0}
   linkedItem: {fileID: 1444062957}

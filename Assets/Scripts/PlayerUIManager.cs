@@ -30,13 +30,21 @@ public class PlayerUIManager : MonoBehaviour {
             Debug.Log("I loaded Game Data.");
             GameObject.FindObjectOfType<LocationList>().Save();
         }
+
+
     }
 
     private void Update()
     {
         if (loadDialogueData ==false){ //because things break?
             loadDialogueData = true;
-          //  GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
+            Scene currentScene = SceneManager.GetActiveScene ();
+            string sceneName = currentScene.name;
+            if (sceneName == "OpeningScene"){
+                GameObject.FindObjectOfType<DialogueList>().ResetDialogue();
+                GameObject.FindObjectOfType<DialogueList>().Save();
+            }
+            GameObject.FindObjectOfType<DialogueList>().LoadFromJson();
 
         }
 

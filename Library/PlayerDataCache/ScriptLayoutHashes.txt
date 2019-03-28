@@ -318,3 +318,4 @@ f830aa03d16a6b5a1117d842e3ae9326 Assembly-CSharp.dll:.LookForward
 2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.Stairs
 989ac604856280afdf998395ebf16cde Assembly-CSharp.dll:.Walk
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HideRoom
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TitleScreenShredder
