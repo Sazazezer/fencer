@@ -1,11 +1,11 @@
 {
     "items": [
         {
-            "itemName": "",
-            "itemDescription": "",
-            "KeyID": 0,
-            "itemIndestructible": false,
-            "prefabName": ""
+            "itemName": "House209LockedSideboardKey",
+            "itemDescription": "A small key. Looks like it would work in a cupboard. GASP, OR PERHAPS A SIDEBOARD!",
+            "KeyID": 4,
+            "itemIndestructible": true,
+            "prefabName": "House209DoorKeyButton"
         },
         {
             "itemName": "House207LockedSideboardKey",

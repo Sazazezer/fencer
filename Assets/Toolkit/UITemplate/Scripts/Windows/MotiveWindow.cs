@@ -63,12 +63,12 @@ if(delay > inputDelay){
 
 	var newMotive = motive;
 
-	var hDir = Input.GetAxis("Horizontal");
+	var hDir = Input.GetAxis("Vertical");
 
 	if(hDir > 0){
-		newMotive++;
-	} else if (hDir < 0) {
 		newMotive--;
+	} else if (hDir < 0) {
+		newMotive++;
 			}
 
 			if (newMotive != motive){
