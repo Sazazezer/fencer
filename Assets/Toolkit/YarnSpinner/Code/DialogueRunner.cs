@@ -243,25 +243,36 @@ namespace Yarn.Unity
 
         /// Start the dialogue
         public void StartDialogue () {
-            StartDialogue(startNode);
+            if (FindObjectOfType<PlayerUIManager>().inJournal == false && FindObjectOfType<PlayerUIManager>().inBag == false && FindObjectOfType<PlayerUIManager>().inPuzzle == false){
+                Debug.Log(FindObjectOfType<PlayerUIManager>().inJournal);
+                Debug.Log(FindObjectOfType<PlayerUIManager>().inBag);
+                Debug.Log(FindObjectOfType<PlayerUIManager>().inPuzzle);
+                StartDialogue(startNode);                
+            }
+
         }
 
         /// Start the dialogue from a given node
         public void StartDialogue (string startNode)
         {
+            if (FindObjectOfType<PlayerUIManager>().inJournal == false && FindObjectOfType<PlayerUIManager>().inBag == false && FindObjectOfType<PlayerUIManager>().inPuzzle == false){
+                Debug.Log(FindObjectOfType<PlayerUIManager>().inJournal);
+                Debug.Log(FindObjectOfType<PlayerUIManager>().inBag);
+                Debug.Log(FindObjectOfType<PlayerUIManager>().inPuzzle);
+                // Stop any processes that might be running already
+                StopAllCoroutines ();
+                dialogueUI.StopAllCoroutines ();
 
-            // Stop any processes that might be running already
-            StopAllCoroutines ();
-            dialogueUI.StopAllCoroutines ();
-
-            // Get it going
-            StartCoroutine (RunDialogue (startNode));
+                // Get it going
+                StartCoroutine (RunDialogue (startNode));
+            }
         }
 
         IEnumerator RunDialogue (string startNode = "Start")
         {
             // Mark that we're in conversation.
             isDialogueRunning = true;
+            FindObjectOfType<PlayerUIManager>().dialogueIsRunning = true;
             GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToTrue();
             // Signal that we're starting up.
             yield return StartCoroutine(this.dialogueUI.DialogueStarted());
@@ -314,6 +325,7 @@ namespace Yarn.Unity
             // to allow time for any animations that might run while transitioning
             // out of a conversation (ie letterboxing going away, etc)
             isDialogueRunning = false;
+            FindObjectOfType<PlayerUIManager>().dialogueIsRunning = false;
         }
 
         /// Clear the dialogue system
@@ -329,6 +341,7 @@ namespace Yarn.Unity
         /// Stop the dialogue
         public void Stop() {
             isDialogueRunning = false;
+            FindObjectOfType<PlayerUIManager>().dialogueIsRunning = false;
             dialogue.Stop();
         }
 

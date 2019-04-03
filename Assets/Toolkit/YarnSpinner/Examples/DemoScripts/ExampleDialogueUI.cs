@@ -115,7 +115,7 @@ namespace Yarn.Unity.Example {
                 continuePrompt.SetActive (true);
 
             // Wait for any user input
-            while (Input.anyKeyDown == false) {
+            while (/*Input.anyKeyDown*/Input.GetButtonDown("Fire1") == false) {
                 yield return null;
             }
 
@@ -202,7 +202,7 @@ namespace Yarn.Unity.Example {
         {
             Debug.Log ("Complete!");
             GameObject.FindObjectOfType<DialogueList>().Save();
-        GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
+            GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
 
             // Hide the dialogue interface.
             if (dialogueContainer != null)

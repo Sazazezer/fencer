@@ -23,7 +23,7 @@ public class PuzzleBackend : MonoBehaviour {
     void Start () {
         GetMaxDigits();
         source = GetComponent<AudioSource>();
-        puzzleVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);
+        puzzleVolume = (PlayerPrefs.GetFloat("GameSoundEffect",0.5f));
     }
     
     // Update is called once per frame
@@ -67,14 +67,17 @@ public class PuzzleBackend : MonoBehaviour {
 
     public void Success(){
         Debug.Log("Yay.Correct.");
-        source.PlayOneShot(successSound,puzzleVolume);
+        //source.PlayOneShot(successSound,puzzleVolume);     
+        GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().clip = successSound;
+        GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);         
+        GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().PlayOneShot(successSound,puzzleVolume);
         ClearGuess();
         linkedObject.GetComponent<PuzzleLock>().PuzzleUnlock();
     }
 
     public void Failure(){
         Debug.Log("Boo. Incorrect.");
-        source.PlayOneShot(failureSound,puzzleVolume);
+        source.PlayOneShot(failureSound,puzzleVolume+0.5f);
         ClearGuess();        
     }
 }

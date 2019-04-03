@@ -4277,6 +4277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioManagerPrefab: {fileID: 1769830754685894, guid: 2b0d8d7fd5a89ac41ac8ecee0c041b1a,
     type: 2}
+  effectsManagerPrefab: {fileID: 1769830754685894, guid: e8e4ea4205e3c7342910dd6c5ebdb026,
+    type: 2}
 --- !u!114 &1312321787
 MonoBehaviour:
   m_ObjectHideFlags: 0

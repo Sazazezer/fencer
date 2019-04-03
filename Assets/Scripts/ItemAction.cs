@@ -31,11 +31,15 @@ public class ItemAction : MonoBehaviour {
 	}
 
     public void TryKeyInLock(string _itemName, int _keyIndex, int _fromSlot){
+
+        if(player.GetComponent<UnlockDoor>().touchingDoor == true){
             Debug.Log(_itemName + "has been used"); 
             player.GetComponent<UnlockDoor>().canBeUnlocked= true ;
             player.GetComponent<UnlockDoor>().keyInHand = _keyIndex ;
             player.GetComponent<UnlockDoor>().itemSlotNumber = _fromSlot;
             player.GetComponent<UnlockDoor>().keyButton = gameObject; 
-            GameObject.FindObjectOfType<PlayerUIManager>().BackToGame();       
+            GameObject.FindObjectOfType<PlayerUIManager>().BackToGame();            
+        }
+       
     }
 }

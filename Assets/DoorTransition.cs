@@ -40,28 +40,21 @@ public class DoorTransition : MonoBehaviour {
      void OnTriggerStay2D(Collider2D other){
        if (Input.GetButtonUp("Up") && other.tag == "Player" ){
                 if (this.GetComponent<DoorLock>().locked == false){
-                    source.PlayOneShot(doorOpenSound,doorOpenVolume);
-                    StartCoroutine(WaitForDoorToOpen(doorOpenSound));
+                    GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().PlayOneShot(doorOpenSound,doorOpenVolume);
+
+                    room = new NextRoom() { 
+                        iLeadTo = leadsTo,
+                        roomTransition = true
+                    };
+                    json = JsonUtility.ToJson(room);
+                    filename = Path.Combine(Application.streamingAssetsPath, ROOM_MOVE);
+                    if (File.Exists(filename)){
+                        File.Delete(filename);
+                    }
+                    File.WriteAllText(filename, json);
+                    Application.LoadLevel(goToScene);
                 } 
             }
         }
-    public IEnumerator WaitForDoorToOpen(AudioClip Sound)
-    {
-       yield return new WaitUntil(() => source.isPlaying == false);
-       // or yield return new WaitWhile(() => audiosource.isPlaying == true);
-            //   target.transform.position = new Vector3(xPosition, yPosition, 0);
-            room = new NextRoom() { 
-            //Saved Variables go here. Don't forget to add them to SaveData.cs too
-            iLeadTo = leadsTo,
-            roomTransition = true
-            };
-            json = JsonUtility.ToJson(room);
-            filename = Path.Combine(Application.streamingAssetsPath, ROOM_MOVE);
-            if (File.Exists(filename)){
-                File.Delete(filename);
-            }
-            File.WriteAllText(filename, json);
-         //   Debug.Log("Is it me?");
-            Application.LoadLevel(goToScene);
-        }
+
 }

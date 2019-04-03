@@ -9,6 +9,7 @@ public class UnlockDoor : MonoBehaviour {
     public int keyInHand;
     public int itemSlotNumber;
     public GameObject keyButton;
+    public bool touchingDoor = false;
 
     // Use this for initialization
     void Start () {

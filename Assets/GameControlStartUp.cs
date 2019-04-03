@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameControlStartUp : MonoBehaviour {
 
     public GameObject audioManagerPrefab;
+    public GameObject effectsManagerPrefab;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +13,11 @@ public class GameControlStartUp : MonoBehaviour {
             var audioManager = Instantiate(audioManagerPrefab);
             audioManager.name = audioManagerPrefab.name;
             DontDestroyOnLoad(audioManager);
+        }
+        if (!GameObject.FindGameObjectWithTag("EffectsManager")){
+            var effectsManager = Instantiate(effectsManagerPrefab);
+            effectsManager.name = effectsManagerPrefab.name;
+            DontDestroyOnLoad(effectsManager);
         }
 	}
 	

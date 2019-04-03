@@ -29,7 +29,6 @@ public class DoorLock : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
         if (isUnlockable==true){
             linkedItem.SetActive(true);
             locked = false;
@@ -66,7 +65,18 @@ public class DoorLock : MonoBehaviour {
             }
         } else if (other.tag == "Player" && Input.GetButtonUp("Up") && locked == true){
             source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
-            FindObjectOfType<TextBoxManager>().UpdateTextBox("Locked1.");
+            FindObjectOfType<TextBoxManager>().UpdateTextBox("Locked.");
+        }
+    }
+
+     private void OnTriggerEnter2D(Collider2D other){
+        if(other.tag == "Player"){
+            player.GetComponent<UnlockDoor>().touchingDoor = true;
+        }
+    }
+     private void OnTriggerExit2D(Collider2D other){
+        if(other.tag == "Player"){
+            player.GetComponent<UnlockDoor>().touchingDoor = false;
         }
     }
 }

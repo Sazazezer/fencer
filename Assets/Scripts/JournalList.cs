@@ -39,9 +39,9 @@ public class JournalList : MonoBehaviour {
 
         if (journal != null){
 
-            for(var k = 0 ; k < buttons.Count(); k++){
-                Debug.Log("Button " + k + "is " + buttons[k]);
-            }
+            /*for(var k = 0 ; k < buttons.Count(); k++){
+              //  Debug.Log("Button " + k + "is " + buttons[k]);
+            }*/
 
             if(journal.GetComponent<JournalCanvas>().panelSelected == 0){
                 if (buttons[highlightSlot]!= null){ //buttons.Count() > 0

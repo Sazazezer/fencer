@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Yarn.Unity.Example;
+using Yarn.Unity;
 
 public class PlayerUIManager : MonoBehaviour {
 
@@ -17,6 +19,7 @@ public class PlayerUIManager : MonoBehaviour {
     public GameObject puzzle;
     public bool inPuzzle = false;
     public bool loadDialogueData = false;
+    public bool dialogueIsRunning = false;
 
 
     private void Start()
@@ -35,7 +38,7 @@ public class PlayerUIManager : MonoBehaviour {
     }
 
     private void Update()
-    {
+    {  Debug.Log(dialogueIsRunning);
         if (loadDialogueData ==false){ //because things break?
             loadDialogueData = true;
             Scene currentScene = SceneManager.GetActiveScene ();
@@ -53,25 +56,25 @@ public class PlayerUIManager : MonoBehaviour {
     }
 
     public void GoToJournal() {
-        if (inJournal == false){
-            BackToGame();
-            Destroy(GameObject.FindGameObjectWithTag("PuzzleScreen"));
-            GameObject.FindObjectOfType<JournalCanvas>().Activate();
-            Time.timeScale = 0f;
-        //    Debug.Log("Into journal");
-            inJournal = true;
-        } else {
-            BackToGame();
-            GameObject.FindObjectOfType<JournalCanvas>().Deactivate();
-            Time.timeScale = 1f;
-          //  Debug.Log("Leave journal");
-            inJournal = false;
-        }
 
+            if (inJournal == false && dialogueIsRunning == false){
+                BackToGame();
+                Destroy(GameObject.FindGameObjectWithTag("PuzzleScreen"));
+                GameObject.FindObjectOfType<JournalCanvas>().Activate();
+                Time.timeScale = 0f;
+            //    Debug.Log("Into journal");
+                inJournal = true;
+            } else {
+                BackToGame();
+                GameObject.FindObjectOfType<JournalCanvas>().Deactivate();
+                Time.timeScale = 1f;
+              //  Debug.Log("Leave journal");
+                inJournal = false;
+            }
     }
 
     public void GoToPuzzle() {
-        if (inPuzzle == false){
+        if (inPuzzle == false && dialogueIsRunning == false){
             BackToGame();
             inPuzzle = true;
         } else {
@@ -82,7 +85,7 @@ public class PlayerUIManager : MonoBehaviour {
     }
 
     public void GoToBag() {
-        if (inBag == false){
+        if (inBag == false && dialogueIsRunning == false){
             BackToGame();
             Destroy(GameObject.FindGameObjectWithTag("PuzzleScreen"));
             GameObject.FindObjectOfType<Bag>().Activate();
