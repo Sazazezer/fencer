@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Fade : MonoBehaviour {
 
+    public bool screenIsDark;
+
     public void FadeMe(){
         StartCoroutine (DoFade());
     }
@@ -13,6 +15,7 @@ public class Fade : MonoBehaviour {
             canvasGroup.alpha -= Time.deltaTime / 2;
             yield return null;
         }
+        screenIsDark = false;
         canvasGroup.interactable = false;
         yield return null;
     }
@@ -27,6 +30,7 @@ public class Fade : MonoBehaviour {
             canvasGroup.alpha += Time.deltaTime / 2;
             yield return null;
         }
+        screenIsDark = true;
         canvasGroup.interactable = false;
         yield return null;
     }

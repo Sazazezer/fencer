@@ -16,6 +16,8 @@ TagManager:
   - PlayerPos
   - AudioManager
   - EffectsManager
+  - Climbable
+  - Hider
   layers:
   - Default
   - TransparentFX
@@ -29,7 +31,7 @@ TagManager:
   - NPC
   - Player
   - Pivot
-  - 
+  - Climbable
   - 
   - 
   - 

@@ -5,10 +5,11 @@ using System.Collections;
 public class GameStartIntro : MonoBehaviour
 {
     public GameObject fadeCanvas;
+    public GameObject fadePanelKill;
     public AudioClip audio;
     private AudioSource audiosource;
     public int gameHasStarted = 0;
-    public GameObject fadePanelKill;
+
 
     void Start()
     {
@@ -21,10 +22,10 @@ public class GameStartIntro : MonoBehaviour
             StartCoroutine(WaitForSound(audio));
             PlayerPrefs.SetInt("GameHasStarted",1);
         } else {
-            Destroy(fadePanelKill);
+            if(fadeCanvas != null){
+                GameObject.FindObjectOfType<Fade>().FadeMe();   
+            }
         }
-
-
     }
 
     public IEnumerator WaitForSound(AudioClip Sound)

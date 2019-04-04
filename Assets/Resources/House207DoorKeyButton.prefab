@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  itemUseSound: {fileID: 8300000, guid: 1797e5c3a1687164d8887a177d989213, type: 3}
 --- !u!114 &114062558004102468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,6 +71,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 1320962406381760, guid: 06168afec4da0964ea6fd6f69f7c8b90,
     type: 2}
   slotNumber: 0
+  itemType: 0
   actionObject: {fileID: 1210040499704410}
 --- !u!114 &114474792728251284
 MonoBehaviour:

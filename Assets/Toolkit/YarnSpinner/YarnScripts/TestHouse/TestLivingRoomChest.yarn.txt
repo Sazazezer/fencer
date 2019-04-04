@@ -13,6 +13,7 @@ Let us read the book again, to commiserate.
 <<if $got_journal_5 is false>>
 A single book remains inside.
 Got Journal 5!
+<<playsoundeffect TestBin PickupJournal>>
 <<addnewjournal TestLivingRoomChest 5>>
 <<gointojournal TestLivingRoomChest 5>>
 <<set $got_journal_5 to true>>

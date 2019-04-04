@@ -6,14 +6,21 @@ using UnityEngine;
 public class ItemAction : MonoBehaviour {
 
     public GameObject player;
+    public AudioClip itemUseSound;
+    private float itemUseVolume = 0.5f;
+    private AudioSource source;
+
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find("Player");
+        source = GetComponent<AudioSource>();
+        itemUseVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);
 	}
 	
 	// Update is called once per frame
 	public void Use (string _item, int _unique, int _slotNumber, ItemType _itemType) {
+        GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().PlayOneShot(itemUseSound,itemUseVolume);
         if(_itemType == ItemType.Key){   
            TryKeyInLock(_item, _unique, _slotNumber);
         }

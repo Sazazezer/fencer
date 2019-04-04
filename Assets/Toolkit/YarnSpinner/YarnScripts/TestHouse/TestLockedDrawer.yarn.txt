@@ -13,6 +13,7 @@ Well, i got into the drawer.
 It's empty, but the feeling of accomplishment drives me to ever dizzying and greater heights.
 Instinctively i now know the contents of another journal.
 Don't ask questions. You won't get answers.
+<<playsoundeffect TestBin PickupJournal>>
 <<addnewjournal TestLockedDrawer 6>>
 <<gointojournal TestLockedDrawer 6>>
 <<set $207PuzzleLock to 2>>

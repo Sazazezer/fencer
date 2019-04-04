@@ -6,6 +6,9 @@ public class GameControlStartUp : MonoBehaviour {
 
     public GameObject audioManagerPrefab;
     public GameObject effectsManagerPrefab;
+    public int gameHasStarted = 0;
+    public GameObject fadeCanvas;
+    public GameObject fadePanelKill;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +22,13 @@ public class GameControlStartUp : MonoBehaviour {
             effectsManager.name = effectsManagerPrefab.name;
             DontDestroyOnLoad(effectsManager);
         }
-	}
+        gameHasStarted = (PlayerPrefs.GetInt("GameHasStarted",0));
+        if (gameHasStarted == 1){
+            if(fadeCanvas != null){
+                GameObject.FindObjectOfType<Fade>().FadeMe();   
+            }
+	    }
+    }
 	
 	// Update is called once per frame
 	void Update () {

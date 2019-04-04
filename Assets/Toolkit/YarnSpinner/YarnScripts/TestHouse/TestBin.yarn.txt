@@ -14,6 +14,7 @@ It should not have had ideas above its station.
 It's just a dustbin. 
 Nothing to get excited over.
 Inside is a golden box worth millions.
+<<playsoundeffect TestBin Pickup>>
 Tiona got the golden box.
 <<set $got_GoldenBox to true>>
 <<add_item("GoldenBox")>>

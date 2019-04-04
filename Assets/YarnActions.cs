@@ -196,4 +196,12 @@ public class YarnActions : MonoBehaviour {
     public void EnableUI() {
         GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
     }
+
+    [YarnCommand("playsoundeffect")]
+    public void YarnPlaySoundEffect(string playSoundEffect) {
+       // AudioClip yarnAudio = playSoundEffect;
+        var yarnAudio = Resources.Load<AudioClip>("Audio/" + playSoundEffect);
+        float yarnAudioVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);
+        GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().PlayOneShot(yarnAudio,yarnAudioVolume);
+    }
 }

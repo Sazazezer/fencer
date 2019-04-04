@@ -13,6 +13,7 @@ public class PlayerManager : MonoBehaviour {
     private StepThurst stepThurst;
     private Parry parry;
     private Parried parried;
+    private Climbables climbable;
 
 	void Awake(){
 		inputState = GetComponent<InputState>();
@@ -24,6 +25,7 @@ public class PlayerManager : MonoBehaviour {
         stepThurst = GetComponent<StepThurst>();
         parry = GetComponent<Parry>();
         parried = GetComponent<Parried>();
+        climbable = GetComponent<Climbables>();
 	}
 
 
@@ -70,6 +72,10 @@ public class PlayerManager : MonoBehaviour {
         if(parried.isParried){
             ChangeAnimationState(8);
         }
+
+        if(climbable.isClimbing){
+            ChangeAnimationState(9);
+        }       
 	}
 
 	void ChangeAnimationState(int value){

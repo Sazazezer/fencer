@@ -8,11 +8,11 @@
             "prefabName": ""
         },
         {
-            "itemName": "House207LockedSideboardKey",
-            "itemDescription": "A small key. There is an image of a sun engraved on the key.",
-            "KeyID": 3,
-            "itemIndestructible": true,
-            "prefabName": "House207DoorKeyButton"
+            "itemName": "",
+            "itemDescription": "",
+            "KeyID": 0,
+            "itemIndestructible": false,
+            "prefabName": ""
         },
         {
             "itemName": "",
