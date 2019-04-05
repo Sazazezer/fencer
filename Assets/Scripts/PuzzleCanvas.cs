@@ -10,9 +10,13 @@ public class PuzzleCanvas : MonoBehaviour {
     public GameObject firstSelected;
 	
     public void Activate(){
+        eventSystem.SetSelectedGameObject (firstSelected);
         Time.timeScale = 0f;
         puzzle.GetComponent<Canvas> ().enabled = true;  
 
+    }
+protected EventSystem eventSystem{
+        get { return GameObject.Find ("EventSystem").GetComponent<EventSystem> (); }
     }
 
     public void Deactivate(){

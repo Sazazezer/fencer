@@ -10,6 +10,10 @@ Oh hey, a clue.
 A vital one at that.
 Oh, and a key!
 <<add_item("House207DoorKey")>>
+<<playsoundeffect Test209LockedSideboard Pickup>>
+Picked up House Key.
+<<playsoundeffect Test209LockedSideboard PickupJournal>>
+Picked up vital Clue Journal One.
 <<addnewjournal Test209LockedSideboard 3>>
 <<gointojournal Test209LockedSideboard 3>>
 <<endif>>
@@ -18,7 +22,7 @@ Oh, and a key!
 <<if $PuzzleLock209Sideboard is false>>
 A locked sideboard.
 Oh wait, there's a combination lock.
-Who the hell puts a combination safe into a sideboard?
+Who the hell puts a combination safe *into* a sideboard?
 Man, no one would have blamed me if i had just smashed this thing up with an axe.
 Guess i gotta go find a code.
 Or an Axe.

@@ -16,7 +16,7 @@ public class DoorLock : MonoBehaviour {
     public AudioClip doorUnlockSound;
     private float doorUnlockVolume = 0.5f;
     public AudioClip doorStillLockedSound;
-    private Text textBoxManager;
+    //private Text textBoxManager;
 
     private AudioSource source;
 
@@ -54,6 +54,7 @@ public class DoorLock : MonoBehaviour {
                 itemKill = player.GetComponent<UnlockDoor>().keyButton;
                // Debug.Log("Destroying key");
                 if(itemKill != null){
+                    FindObjectOfType<TextBoxManager>().UpdateTextBox("Unlocked.");
                     itemKill.GetComponent<Item>().DestroyItem(player.GetComponent<UnlockDoor>().itemSlotNumber);                    
                 }
 

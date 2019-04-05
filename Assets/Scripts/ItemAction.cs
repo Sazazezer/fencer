@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemAction : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class ItemAction : MonoBehaviour {
     public AudioClip itemUseSound;
     private float itemUseVolume = 0.5f;
     private AudioSource source;
+    private Text textBoxManager;
 
 
 	// Use this for initialization
@@ -32,6 +34,7 @@ public class ItemAction : MonoBehaviour {
             instance2.transform.parent = null;
             instance2.transform.position = GameObject.Find("Player").transform.position;
             GameObject.FindObjectOfType<InventoryList>().SaveInventory();
+            FindObjectOfType<TextBoxManager>().UpdateTextBox("Some keys fall to the floor.");
             //this.GetComponent<Item>().DestroyItem(this.GetComponent<Item>().slotNumber);
         }
 		

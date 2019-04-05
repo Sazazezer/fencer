@@ -16,7 +16,8 @@ Let's see what's inside, shall we?
 ...
 Yes. Yes we shall.
 Oh Look. Another vital clue.
-<<playsoundeffect TestBin PickupJournal>>
+<<playsoundeffect TestLockedSideboard PickupJournal>>
+Picked up Puzzle Lock 2 Journal.
 <<addnewjournal TestLockedSideboard 7>>
 <<gointojournal TestLockedSideboard 7>>
 <<set $UnlockedSideboard to 2>>

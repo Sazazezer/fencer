@@ -24,11 +24,14 @@ public class Options : MonoBehaviour {
 
     void Update(){
         if(Input.GetButtonUp("Cancel")){
-            optionsMenu.gameObject.SetActive(false);
-            oldButtons.gameObject.SetActive(true);
-            eventSystem.SetSelectedGameObject (optionsButton); 
-
+            CancelOptionsScreen();
         }
+    }
+
+    public void CancelOptionsScreen(){
+        optionsMenu.gameObject.SetActive(false);
+        oldButtons.gameObject.SetActive(true);
+        eventSystem.SetSelectedGameObject (optionsButton);         
     }
 }
 

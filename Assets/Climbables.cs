@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Climbables : AbstractBehaviour {
+public class Climbables : MonoBehaviour {
 
     public float speed;
     private Rigidbody2D rb;

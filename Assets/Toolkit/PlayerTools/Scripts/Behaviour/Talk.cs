@@ -40,11 +40,9 @@ public class Talk : AbstractBehaviour {
 
             if (preventTalk <= 0){
                 if (FindObjectOfType<PlayerUIManager>().inJournal == false && FindObjectOfType<PlayerUIManager>().inBag == false && FindObjectOfType<PlayerUIManager>().inPuzzle == false){
-                Debug.Log(FindObjectOfType<PlayerUIManager>().inJournal);
-                Debug.Log(FindObjectOfType<PlayerUIManager>().inBag);
-                Debug.Log(FindObjectOfType<PlayerUIManager>().inPuzzle);
                 canTalk = inputState.GetButtonValue (inputButtons[0]);
                 preventTalk = 0;
+
                 }
             }
           //  stopMotion = FindObjectOfType<DialogueRunner>().isDialogueRunning;

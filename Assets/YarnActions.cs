@@ -154,7 +154,8 @@ public class YarnActions : MonoBehaviour {
                 GameObject.Find("JournalText").GetComponent<Text>().text = journalButton.GetComponent<ButtonClick>().journal;
             }
         }
-        GameObject.FindObjectOfType<PlayerUIManager>().GoToJournal();
+        GameObject.FindObjectOfType<PlayerUIManager>().InJournal();
+        Debug.Log("Into journal i go");
 
     }
 

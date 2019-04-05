@@ -12,8 +12,8 @@ Just a standard Door Drawer.
 All doors have one of these, right?
 It would be weird if every door in the universe didn't also come with a drawer.
 There's a key on top of it.
-Tiona got the Cupboard key.
+<<playsoundeffect Test209DoorDrawer Pickup>>
+Tiona got the Sideboard key.
 <<set $209DoorDrawer to true>>
-<<playsoundeffect TestBin Pickup>>
 <<add_item("House209LockedSideboardKey")>>
 <<endif>>

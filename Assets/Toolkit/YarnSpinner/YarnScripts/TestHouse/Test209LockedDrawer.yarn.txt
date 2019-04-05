@@ -16,7 +16,8 @@ Not of unlocking, that would be dumb.
 Man, i love references to other games.
 Hey, another journal.
 I wonder if it will be relevant.
-<<playsoundeffect TestBin PickupJournal>>
+<<playsoundeffect Test209LockedDrawer PickupJournal>>
+Picked up Puzzle Block One!
 <<addnewjournal Test209LockedDrawer 2>>
 <<gointojournal Test209LockedDrawer 2>>
 <<set $Unlocked209Drawer to 1>>

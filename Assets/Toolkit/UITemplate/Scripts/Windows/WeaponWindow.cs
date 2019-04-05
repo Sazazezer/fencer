@@ -76,7 +76,7 @@ if(delay > inputDelay){
 			delay = 0;
 }
 
-		if(Input.GetButtonDown("Submit")){
+		if(Input.GetButtonDown("Fire1")){
 			OnSelect();
 		}
 	}

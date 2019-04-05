@@ -15,7 +15,8 @@ I only need two positive examples to confirm my hypothesis, right?
 Oh, look. Another journal. 
 How repetitive.
 Kind of like this house.
-<<playsoundeffect TestBin PickupJournal>>
+<<playsoundeffect TestDoorDrawer PickupJournal>>
+Picked up Clue Jornal 2!
 <<addnewjournal TestDoorDrawer 4>>
 <<gointojournal TestDoorDrawer 4>>
 <<set $TestDoorDrawer to true>>

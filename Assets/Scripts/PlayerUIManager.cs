@@ -58,12 +58,7 @@ public class PlayerUIManager : MonoBehaviour {
     public void GoToJournal() {
 
             if (inJournal == false && dialogueIsRunning == false){
-                BackToGame();
-                Destroy(GameObject.FindGameObjectWithTag("PuzzleScreen"));
-                GameObject.FindObjectOfType<JournalCanvas>().Activate();
-                Time.timeScale = 0f;
-            //    Debug.Log("Into journal");
-                inJournal = true;
+                InJournal();
             } else {
                 BackToGame();
                 GameObject.FindObjectOfType<JournalCanvas>().Deactivate();
@@ -73,24 +68,32 @@ public class PlayerUIManager : MonoBehaviour {
             }
     }
 
+    public void InJournal(){
+                BackToGame();
+                Destroy(GameObject.FindGameObjectWithTag("PuzzleScreen"));
+                GameObject.FindObjectOfType<JournalCanvas>().Activate();
+                Time.timeScale = 0f;
+            //    Debug.Log("Into journal");
+                inJournal = true;   
+    }
+
     public void GoToPuzzle() {
         if (inPuzzle == false && dialogueIsRunning == false){
-            BackToGame();
-            inPuzzle = true;
+            InPuzzle();
         } else {
             BackToGame();
             inPuzzle = false;
         }
+    }
 
+    public void InPuzzle(){
+            BackToGame();
+            inPuzzle = true;        
     }
 
     public void GoToBag() {
         if (inBag == false && dialogueIsRunning == false){
-            BackToGame();
-            Destroy(GameObject.FindGameObjectWithTag("PuzzleScreen"));
-            GameObject.FindObjectOfType<Bag>().Activate();
-            Time.timeScale = 0f;
-            inBag = true;
+            InBag();
         } else {
             BackToGame();
             GameObject.FindObjectOfType<Bag>().Deactivate();
@@ -98,6 +101,14 @@ public class PlayerUIManager : MonoBehaviour {
             inBag = false;
         }
 
+    }
+
+    public void InBag(){
+            BackToGame();
+            Destroy(GameObject.FindGameObjectWithTag("PuzzleScreen"));
+            GameObject.FindObjectOfType<Bag>().Activate();
+            Time.timeScale = 0f;
+            inBag = true;        
     }
 
     public void BackToGame() {

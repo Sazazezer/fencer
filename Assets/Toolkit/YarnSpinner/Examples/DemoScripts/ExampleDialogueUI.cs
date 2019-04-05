@@ -114,9 +114,15 @@ namespace Yarn.Unity.Example {
             if (continuePrompt != null)
                 continuePrompt.SetActive (true);
 
-            // Wait for any user input
-            while (/*Input.anyKeyDown*/Input.GetButtonDown("Fire1") == false) {
-                yield return null;
+           // Wait for any user input
+            while (Input.anyKeyDown/*Input.GetButtonDown("Fire1")*/ == false) {
+                if(Input.GetButtonDown("Fire1")){
+                        Debug.Log("Nup");
+                    } else {
+                        Debug.Log("Woop");
+                        yield return null;                        
+                    }
+
             }
 
             // Hide the text and prompt
