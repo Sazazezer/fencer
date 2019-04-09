@@ -12,9 +12,10 @@ public class Talk : AbstractBehaviour {
         public bool canTalk = false;
         public MonoBehaviour[] stopScripts;
         public int preventTalk = 0;
-        public bool speedUpTalk = false;
+        public float speedUpTalk = 0;
         public bool choicesGiven = false;
         public GameObject gameControl;
+        public float speedTalkDelay = .15f;
     //    private bool stopMotion = false;
 
 
@@ -36,8 +37,6 @@ public class Talk : AbstractBehaviour {
         /// Update is called once per frame
         void Update () {
 
-            speedUpTalk = inputState.GetButtonValue (inputButtons[0]);
-
             if (preventTalk <= 0){
                 if (FindObjectOfType<PlayerUIManager>().inJournal == false && FindObjectOfType<PlayerUIManager>().inBag == false && FindObjectOfType<PlayerUIManager>().inPuzzle == false){
                 canTalk = inputState.GetButtonValue (inputButtons[0]);
@@ -49,18 +48,17 @@ public class Talk : AbstractBehaviour {
             // Remove all player control when we're in dialogue
             if (FindObjectOfType<DialogueRunner>().isDialogueRunning == true) {
                 isTalking = true;
+                speedUpTalk = inputState.GetButtonHoldTime(inputButtons [0]);
                 StopScripts (false);
 
             } else {
                 isTalking = false;
                 StopScripts (true);
             }
-
-            // Move the player, clamping them to within the boundaries 
-            // of the level.
-            
-            if (speedUpTalk){
+           
+            if (speedUpTalk > speedTalkDelay){
                 gameControl.GetComponent<ExampleDialogueUI>().textSpeed = 0f;
+                Debug.Log("Speed!");
             } else {
                 gameControl.GetComponent<ExampleDialogueUI>().textSpeed = 0.025f;
             }

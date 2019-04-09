@@ -16,10 +16,10 @@ public class PuzzleLock : MonoBehaviour {
     public bool locked = true;
 
     public void OnTriggerStay2D(Collider2D other){
-        if (Input.GetButtonUp("Jump") && other.tag == "Player"){
+     //   if (Input.GetButtonUp("Jump") && other.tag == "Player"){
 
-            UsePuzzleLock();
-        }
+       //     UsePuzzleLock();
+      //  }
     }
 
     public void UsePuzzleLock(){

@@ -17,7 +17,7 @@ public class ReadyStance : AbstractBehaviour {
     protected virtual void OnReady(bool value){
         ready = value;
 
-        ToggleScripts (!ready);
+      //  ToggleScripts (!ready); removed to fix ducking?
 
         var right = inputState.GetButtonValue(inputButtons[0]);
         var left = inputState.GetButtonValue(inputButtons[1]);

@@ -27,6 +27,7 @@ public class ItemAction : MonoBehaviour {
            TryKeyInLock(_item, _unique, _slotNumber);
         }
         if(_item == "GoldenBox"){
+            FindObjectOfType<TextBoxManager>().UpdateTextBox("A bunch of discarded keys.");
             GameObject instance = Instantiate(Resources.Load("House209DoorKey"), GameObject.Find("Player").transform) as GameObject;
             instance.transform.parent = null;
             instance.transform.position = GameObject.Find("Player").transform.position;
@@ -34,7 +35,8 @@ public class ItemAction : MonoBehaviour {
             instance2.transform.parent = null;
             instance2.transform.position = GameObject.Find("Player").transform.position;
             GameObject.FindObjectOfType<InventoryList>().SaveInventory();
-            FindObjectOfType<TextBoxManager>().UpdateTextBox("Some keys fall to the floor.");
+            GameObject.FindObjectOfType<PlayerUIManager>().BackToGame(); 
+          //  GameObject.FindObjectOfType<PlayerUIManager>().GoToBag(); 
             //this.GetComponent<Item>().DestroyItem(this.GetComponent<Item>().slotNumber);
         }
 		

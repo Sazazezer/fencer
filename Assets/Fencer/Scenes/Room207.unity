@@ -6654,8 +6654,9 @@ MonoBehaviour:
   itemKill: {fileID: 0}
   linkedItem: {fileID: 1444062957}
   locked: 1
-  doorUnlockSound: {fileID: 0}
-  doorStillLockedSound: {fileID: 0}
+  doorUnlockSound: {fileID: 8300000, guid: 16341ead3b293e54f9f5b6d9b39570e9, type: 3}
+  doorStillLockedSound: {fileID: 8300000, guid: 63ef3641ed9fb4e42939f12a14fd4993,
+    type: 3}
 --- !u!61 &1792821018
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7856,8 +7857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec48d48d3368b59428f4e4c643eae218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButtons: 
-  disableScripts: []
   speed: 30
   distance: 0
   whatIsLadder:

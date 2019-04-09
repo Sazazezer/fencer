@@ -13,7 +13,7 @@ public class Parried : AbstractBehaviour {
 }
 
      protected virtual void OnParried(bool value){
-        ToggleScripts (!isParried);
+       // ToggleScripts (!isParried); REMOVED TO FIX DUCKING
 
     }
 
