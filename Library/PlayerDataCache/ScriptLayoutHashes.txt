@@ -194,6 +194,7 @@ f5c9646cf5f92606c7ab61d3c98505e5 Assembly-CSharp.dll:.GameStartIntro
 e7d7781fd809f91898492d51ecda947b Assembly-CSharp.dll:.ParallaxLayer
 4e8b8d9a7429b3b91e26e0cde6f779df Assembly-CSharp.dll:.Parried
 7b18bcffabf02b1bbebda01eb636089d Assembly-CSharp.dll:.PlayerUIAccess
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OptionsBack
 305abf0317d38f91d9e00e998ba08895 Assembly-CSharp.dll:.ChoicesNo
 a5803f9447cd15da3878aa9e0a78eb58 Assembly-CSharp.dll:.FireProjectile
 b9ccb1844f949cc404419e8cb8d5ec35 Assembly-CSharp.dll:.AirMeter
@@ -250,7 +251,7 @@ eb761633fd75db2bc5fa9674836b4664 Assembly-CSharp.dll:.SwordAttack
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TitleScreenShredder
 27e672e7a1ad92c878b84a493b7a32ab Assembly-CSharp.dll:.Options
 8bd01f3c106f76949814ea681e74f343 Assembly-CSharp.dll:.HealthItem
-09579709e337655cd34d1341e38b2e97 Assembly-CSharp.dll:.Pause
+1a56247b521249f940c6df659f15a523 Assembly-CSharp.dll:.Pause
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 f02726adeff0a3ec5905565234b372da UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -272,7 +273,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 4ff8b63287de7e2a53c755c4aab9c03e Assembly-CSharp.dll:.EnemyParried
 9f09afe8d27cb65fda8f28a5731384bc Assembly-CSharp.dll:.WindowManager
 14b6ab2daabbbdd7a8c9add5613e9208 Assembly-CSharp.dll:.Slot
-dadbb6254459e62e998a74235e1f61b6 Assembly-CSharp.dll:.Talk
+e23edcad68ae4e43e0c92205a5a04ac6 Assembly-CSharp.dll:.Talk
 d42dfac2887fc090b657a529bee79397 Assembly-CSharp.dll:.PlayerUIManager
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
@@ -293,7 +294,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 c8b05412348b5eb84d2b6526d0bc217f Assembly-CSharp.dll:.BehaviourLocks
 8c82666b83892d9a2e19f14c4ba06de1 Assembly-CSharp.dll:.Item
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnlockManager
-949cfec3285326c606fc5e6388040c74 Assembly-CSharp.dll:.Climbables
+4ce2b33e48d580969e0d8bfbe5dcd57d Assembly-CSharp.dll:.Climbables
 305abf0317d38f91d9e00e998ba08895 Assembly-CSharp.dll:.AreYouSure
 1c36a7b797651d71bbc0dad9f050af9c Assembly-CSharp.dll:Yarn.Unity.Example.PlayerCharacter
 c058a97c714791c74dc0842df1b10828 Assembly-CSharp.dll:RotaryHeart.Lib.DataBaseExample
@@ -320,3 +321,4 @@ f830aa03d16a6b5a1117d842e3ae9326 Assembly-CSharp.dll:.LookForward
 2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.Stairs
 989ac604856280afdf998395ebf16cde Assembly-CSharp.dll:.Walk
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HideRoom
+4fb6547931b8c510ad505525c239f485 Assembly-CSharp.dll:.ControlsUI

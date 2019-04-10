@@ -12,7 +12,7 @@ public class Talk : AbstractBehaviour {
         public bool canTalk = false;
         public MonoBehaviour[] stopScripts;
         public int preventTalk = 0;
-        public float speedUpTalk = 0;
+        public bool speedUpTalk = false;
         public bool choicesGiven = false;
         public GameObject gameControl;
         public float speedTalkDelay = .15f;
@@ -48,7 +48,7 @@ public class Talk : AbstractBehaviour {
             // Remove all player control when we're in dialogue
             if (FindObjectOfType<DialogueRunner>().isDialogueRunning == true) {
                 isTalking = true;
-                speedUpTalk = inputState.GetButtonHoldTime(inputButtons [0]);
+                speedUpTalk = inputState.GetButtonValue(inputButtons [1]);
                 StopScripts (false);
 
             } else {
@@ -56,9 +56,8 @@ public class Talk : AbstractBehaviour {
                 StopScripts (true);
             }
            
-            if (speedUpTalk > speedTalkDelay){
+            if (speedUpTalk){
                 gameControl.GetComponent<ExampleDialogueUI>().textSpeed = 0f;
-                Debug.Log("Speed!");
             } else {
                 gameControl.GetComponent<ExampleDialogueUI>().textSpeed = 0.025f;
             }

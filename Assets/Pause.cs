@@ -10,7 +10,9 @@ public class Pause : MonoBehaviour {
 	public GameObject pauseMenuUI;
     public GameObject areYouSureUI;
     public GameObject resumeButton;
+    public GameObject controlsUI;
     public GameObject areYouSureUINoButton;
+    public GameObject controlsBackButton;
 
     void Start(){
         Resume();
@@ -23,14 +25,19 @@ public class Pause : MonoBehaviour {
 
 
 		if(Input.GetButtonDown("Cancel")){
-            if(GamePaused){
+            if(GamePaused && pauseMenuUI.activeSelf == true){
                 Resume();
+            } else if (GamePaused && pauseMenuUI.activeSelf == false){
+                areYouSureUI.SetActive(false);
+                controlsUI.SetActive(false);
+                Paused();
             } else{
                 Paused();
+            }
 
             }
         }
-	}
+	
 
     public void Resume(){
         pauseMenuUI.SetActive(false);
@@ -40,13 +47,20 @@ public class Pause : MonoBehaviour {
 
     public void Paused(){
         pauseMenuUI.SetActive(true);
+        eventSystem.SetSelectedGameObject (resumeButton);
         Time.timeScale = 0f;
         GamePaused = true;
-        eventSystem.SetSelectedGameObject (resumeButton);
+    }
+
+    public void Controls(){
+        controlsUI.SetActive(true);
+        eventSystem.SetSelectedGameObject (controlsBackButton); 
+        pauseMenuUI.SetActive(false);      
     }
 
     public void QuitGame(){
         areYouSureUI.SetActive(true);
         eventSystem.SetSelectedGameObject (areYouSureUINoButton);
+        pauseMenuUI.SetActive(false);
     }
 }
