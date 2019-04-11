@@ -22,11 +22,12 @@ public class ItemAction : MonoBehaviour {
 	
 	// Update is called once per frame
 	public void Use (string _item, int _unique, int _slotNumber, ItemType _itemType) {
-        GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().PlayOneShot(itemUseSound,itemUseVolume);
+        
         if(_itemType == ItemType.Key){   
            TryKeyInLock(_item, _unique, _slotNumber);
         }
         if(_item == "GoldenBox"){
+            GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().PlayOneShot(itemUseSound,itemUseVolume);
             FindObjectOfType<TextBoxManager>().UpdateTextBox("A bunch of discarded keys.");
             GameObject instance = Instantiate(Resources.Load("House209DoorKey"), GameObject.Find("Player").transform) as GameObject;
             instance.transform.parent = null;
@@ -36,8 +37,6 @@ public class ItemAction : MonoBehaviour {
             instance2.transform.position = GameObject.Find("Player").transform.position;
             GameObject.FindObjectOfType<InventoryList>().SaveInventory();
             GameObject.FindObjectOfType<PlayerUIManager>().BackToGame(); 
-          //  GameObject.FindObjectOfType<PlayerUIManager>().GoToBag(); 
-            //this.GetComponent<Item>().DestroyItem(this.GetComponent<Item>().slotNumber);
         }
 		
 	}

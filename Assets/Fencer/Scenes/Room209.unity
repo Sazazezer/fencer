@@ -1826,7 +1826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &588685514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,7 +1841,7 @@ MonoBehaviour:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Fire1
-  m_CancelButton: Fire2
+  m_CancelButton: Jump
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
@@ -3687,6 +3687,7 @@ GameObject:
   - component: {fileID: 1312321781}
   - component: {fileID: 1312321786}
   - component: {fileID: 1312321787}
+  - component: {fileID: 1312321788}
   m_Layer: 0
   m_Name: GameControls
   m_TagString: Untagged
@@ -3826,6 +3827,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomMusic:
   - {fileID: 8300000, guid: 3ae6a253a3d54874a800558bc547ccec, type: 3}
+--- !u!114 &1312321788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1312321778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507c13fa15e778648be11314bd802ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 1795894447}
+  timeToLive: 0
 --- !u!223 &1322611401 stripped
 Canvas:
   m_PrefabParentObject: {fileID: 223177468772297860, guid: adaba2e54b91a79439aeb6658a152988,
@@ -5700,6 +5714,7 @@ GameObject:
   - component: {fileID: 1792821017}
   - component: {fileID: 1792821018}
   - component: {fileID: 1792821019}
+  - component: {fileID: 1792821020}
   m_Layer: 0
   m_Name: Locked209Drawer
   m_TagString: Tree
@@ -5862,6 +5877,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1792821020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1792821015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 033d0ea0c3029b74ca13cab986db7d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1795894446
 Prefab:
   m_ObjectHideFlags: 0
@@ -5961,6 +5987,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 224333167578098046, guid: adaba2e54b91a79439aeb6658a152988,
         type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224333167578098046, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
@@ -5969,14 +6000,30 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224333167578098046, guid: adaba2e54b91a79439aeb6658a152988,
+    - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 2}
-      propertyPath: m_AnchorMin.y
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
+        type: 2}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1795894447 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114220322098186784, guid: adaba2e54b91a79439aeb6658a152988,
+    type: 2}
+  m_PrefabInternal: {fileID: 1795894446}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!4 &1796241759 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4032878194002742, guid: d8bf6753bc4ae62488f9edbe1f28e187,

@@ -327,6 +327,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adaba2e54b91a79439aeb6658a152988, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &34918200 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114220322098186784, guid: adaba2e54b91a79439aeb6658a152988,
+    type: 2}
+  m_PrefabInternal: {fileID: 34918199}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &51312512
 Prefab:
   m_ObjectHideFlags: 0
@@ -2285,7 +2291,7 @@ MonoBehaviour:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Fire1
-  m_CancelButton: Fire2
+  m_CancelButton: Jump
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
@@ -4371,6 +4377,7 @@ GameObject:
   - component: {fileID: 1312321781}
   - component: {fileID: 1312321786}
   - component: {fileID: 1312321787}
+  - component: {fileID: 1312321788}
   m_Layer: 0
   m_Name: GameControls
   m_TagString: Untagged
@@ -4510,6 +4517,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomMusic:
   - {fileID: 8300000, guid: 3ae6a253a3d54874a800558bc547ccec, type: 3}
+--- !u!114 &1312321788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1312321778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507c13fa15e778648be11314bd802ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 34918200}
+  timeToLive: 0
 --- !u!223 &1322611401 stripped
 Canvas:
   m_PrefabParentObject: {fileID: 223177468772297860, guid: adaba2e54b91a79439aeb6658a152988,
@@ -6034,6 +6054,11 @@ Prefab:
       propertyPath: inputButtons.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114559826332437734, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: inputButtons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4611230671897490, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
       propertyPath: m_LocalPosition.x
       value: 347
@@ -6364,6 +6389,11 @@ Prefab:
       propertyPath: inputButtons.Array.data[1]
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114559826332437734, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: inputButtons.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
   m_IsPrefabParent: 0
@@ -6630,6 +6660,7 @@ GameObject:
   - component: {fileID: 1792821016}
   - component: {fileID: 1792821017}
   - component: {fileID: 1792821018}
+  - component: {fileID: 1792821019}
   m_Layer: 0
   m_Name: LockedSideboard
   m_TagString: Tree
@@ -6665,7 +6696,7 @@ MonoBehaviour:
   failedToUnlock: 0
   player: {fileID: 2028283576}
   lockNumber: 3
-  doorName: 
+  doorName: House207LockedSideboardKey
   itemKill: {fileID: 0}
   linkedItem: {fileID: 1444062957}
   locked: 1
@@ -6697,6 +6728,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 31.005165, y: 17.237854}
   m_EdgeRadius: 0
+--- !u!114 &1792821019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1792821015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 033d0ea0c3029b74ca13cab986db7d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1796241759 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4032878194002742, guid: d8bf6753bc4ae62488f9edbe1f28e187,

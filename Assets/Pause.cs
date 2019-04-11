@@ -22,7 +22,10 @@ public class Pause : MonoBehaviour {
     }
 
 	void Update () {
-
+        Debug.Log(GamePaused);
+        if(GamePaused){
+            Time.timeScale = 0f;
+        }
 
 		if(Input.GetButtonDown("Cancel")){
             if(GamePaused && pauseMenuUI.activeSelf == true){
@@ -48,6 +51,7 @@ public class Pause : MonoBehaviour {
     public void Paused(){
         pauseMenuUI.SetActive(true);
         eventSystem.SetSelectedGameObject (resumeButton);
+        Debug.Log(Time.timeScale);
         Time.timeScale = 0f;
         GamePaused = true;
     }

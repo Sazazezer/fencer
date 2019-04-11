@@ -16,7 +16,7 @@ Oh, look. Another journal.
 How repetitive.
 Kind of like this house.
 <<playsoundeffect TestDoorDrawer PickupJournal>>
-Picked up Clue Jornal 2!
+Picked up Clue Journal 2!
 <<addnewjournal TestDoorDrawer 4>>
 <<gointojournal TestDoorDrawer 4>>
 <<set $TestDoorDrawer to true>>

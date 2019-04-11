@@ -218,6 +218,7 @@ e55b3dcc6e602faac83907fd8c18132b Assembly-CSharp.dll:.Pickup
 68c0ea248652975c852fa48486399c7d Assembly-CSharp.dll:.PuzzleCanvas
 16ca9ea4817e5ea64c4d98885a66bc90 Assembly-CSharp.dll:.InputState
 c7d89081f5f31c102f7974c33df38f4d Assembly-CSharp.dll:.LocationList
+4fb6547931b8c510ad505525c239f485 Assembly-CSharp.dll:.ControlsUI
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FloatEffect
 82dc64e408e0e8076bda561e4d2a44a8 Assembly-CSharp.dll:.UniqueRoomVariables
 e53f185a6d4af10a86ac45be336072ca Assembly-CSharp.dll:.WallJumpItem
@@ -321,4 +322,3 @@ f830aa03d16a6b5a1117d842e3ae9326 Assembly-CSharp.dll:.LookForward
 2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.Stairs
 989ac604856280afdf998395ebf16cde Assembly-CSharp.dll:.Walk
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HideRoom
-4fb6547931b8c510ad505525c239f485 Assembly-CSharp.dll:.ControlsUI

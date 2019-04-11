@@ -116,12 +116,13 @@ namespace Yarn.Unity.Example {
 
            // Wait for any user input
             while (Input.anyKeyDown/*Input.GetButtonDown("Fire1")*/ == false) {
-                if(Input.GetButtonDown("Fire1")){
+                yield return null;
+              /*  if(Input.GetButtonDown("Fire1")){
                         Debug.Log("Nup");
                     } else {
                         Debug.Log("Woop");
                         yield return null;                        
-                    }
+                    }*/
 
             }
 
@@ -171,7 +172,10 @@ namespace Yarn.Unity.Example {
 
             // Call the delegate to tell the dialogue system that we've
             // selected an option.
-            SetSelectedOption (selectedOption);
+            if (selectedOption != null){
+                SetSelectedOption (selectedOption);    
+            }
+            
 
             // Now remove the delegate so that the loop in RunOptions will exit
             SetSelectedOption = null; 
@@ -218,7 +222,7 @@ namespace Yarn.Unity.Example {
             if (gameControlsContainer != null) {
                 gameControlsContainer.gameObject.SetActive(true);
             }
-
+            yield return new WaitForSeconds (0.5f);
             yield break;
         }
 

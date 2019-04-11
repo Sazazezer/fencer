@@ -9,12 +9,10 @@ Without the book inside, the chest's existence has become meaningless.
 Let us read the book again, to commiserate.
 <<gointojournal TestLivingRoomChest 5>>
 <<endif>>
-
 <<if $got_journal_5 is false>>
 A single book remains inside.
-Got Journal 5!
 <<playsoundeffect TestLivingRoomChest PickupJournal>>
-Picked up Casual Jornal 2!
+Picked up Casual Journal 2!
 <<addnewjournal TestLivingRoomChest 5>>
 <<gointojournal TestLivingRoomChest 5>>
 <<set $got_journal_5 to true>>

@@ -441,8 +441,8 @@ MonoBehaviour:
   effectsManagerPrefab: {fileID: 1769830754685894, guid: e8e4ea4205e3c7342910dd6c5ebdb026,
     type: 2}
   gameHasStarted: 0
-  fadeCanvas: {fileID: 0}
-  fadePanelKill: {fileID: 0}
+  fadeCanvas: {fileID: 11773407}
+  fadePanelKill: {fileID: 766659365}
 --- !u!114 &180969963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3589,8 +3589,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
+  m_SubmitButton: Fire1
+  m_CancelButton: Jump
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0

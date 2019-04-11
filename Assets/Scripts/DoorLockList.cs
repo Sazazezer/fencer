@@ -44,7 +44,7 @@ public class DoorLockList : MonoBehaviour {
         DoorLockDataList list = DoorLockDataList.CreateFromJSON(jsonFromFile);
         int newIndex = _newIndex;
         list.items[newIndex].doorUnlocked = 1;
-        list.items[newIndex].doorName = this.GetComponent<DoorLock>().doorName;;
+       // list.items[newIndex].doorName = this.GetComponent<DoorLock>().doorName;;
         jsonData = JsonUtility.ToJson(list, true);
 
             if (File.Exists(filename)){

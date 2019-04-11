@@ -14,13 +14,13 @@
         },
         {
             "index": 2,
-            "lockedAway": 0,
+            "lockedAway": 1,
             "content": "Puzzle Lock One Answer",
             "journal": "I set the code as 1234. No one will ever suspect."
         },
         {
             "index": 3,
-            "lockedAway": 0,
+            "lockedAway": 1,
             "content": "Vital Clue Journal One",
             "journal": "We concluded that looking up the knife that was covered in blood that it was possibly the knife that was the murder weapon. Also, it was sticking out of her gut, and the doctor told us that it was the murder weapon, so this is definitely a factor in the grand scheme of the whole murder."
         },
@@ -40,11 +40,11 @@
             "index": 6,
             "lockedAway": 0,
             "content": "Vital Clue Journal Two",
-            "journal": "Egads. It turns out that the murder was actually Sue. What a twist. A cop out for certain, but also technically a twist."
+            "journal": "Egads. It turns out that the murderer was actually Sue. What a twist. A cop out for certain, but also technically a twist."
         },
         {
             "index": 7,
-            "lockedAway": 0,
+            "lockedAway": 1,
             "content": "Puzzle Lock Two Answer",
             "journal": "Ha, I am more devious than that other puzzle lock. My code is 4321. Suck on that, expectations!"
         }
