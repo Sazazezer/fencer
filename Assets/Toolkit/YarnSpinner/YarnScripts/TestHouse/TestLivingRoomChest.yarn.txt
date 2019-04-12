@@ -12,7 +12,7 @@ Let us read the book again, to commiserate.
 <<if $got_journal_5 is false>>
 A single book remains inside.
 <<playsoundeffect TestLivingRoomChest PickupJournal>>
-Picked up Casual Journal 2!
+Picked up Mary's Journal!
 <<addnewjournal TestLivingRoomChest 5>>
 <<gointojournal TestLivingRoomChest 5>>
 <<set $got_journal_5 to true>>

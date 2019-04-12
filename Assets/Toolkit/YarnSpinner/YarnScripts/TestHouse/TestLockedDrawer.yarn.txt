@@ -13,8 +13,14 @@ Well, i got into the drawer.
 It's empty, but the feeling of accomplishment drives me to ever dizzying and greater heights.
 Instinctively i now know the contents of another journal.
 Don't ask questions. You won't get answers.
+Wait a second.
+There's a fake panel here.
+Underneath it is a fully loaded semi automatic pistol.
+I'm not particularly knowledgable about guns.
+I think it may be a H&K VP70 with 19mm Parabellum rounds.
+But I have no clue about these things.
 <<playsoundeffect TestLockedDrawer PickupJournal>>
-Picked up Vital Clue Jornal 2!
+Picked up Mary's Journal (2)!
 <<addnewjournal TestLockedDrawer 6>>
 <<gointojournal TestLockedDrawer 6>>
 <<set $207PuzzleLock to 2>>

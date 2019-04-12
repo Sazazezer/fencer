@@ -18,10 +18,10 @@ public class ScrollMovement : MonoBehaviour {
 
     void Update() {
     if (journalCanvas.GetComponent<JournalCanvas>().panelSelected == 1){
-             if (Input.GetKeyDown(KeyCode.DownArrow)) {
-                 bar.value += 0.1f;
-             } else if (Input.GetKeyDown(KeyCode.UpArrow)) {
-                 bar.value -= 0.1f;
+             if (Input.GetButtonDown("Down")) {
+                 bar.value += 0.01f;
+             } else if (Input.GetButtonDown("Up")) {
+                 bar.value -= 0.01f;
              }
         }
     }

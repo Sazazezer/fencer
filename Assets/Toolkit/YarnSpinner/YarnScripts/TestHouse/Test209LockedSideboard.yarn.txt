@@ -13,7 +13,7 @@ Oh, and a key!
 <<playsoundeffect Test209LockedSideboard Pickup>>
 Picked up House Key.
 <<playsoundeffect Test209LockedSideboard PickupJournal>>
-Picked up vital Clue Journal One.
+Picked up EvilRod's Journal 2.
 <<addnewjournal Test209LockedSideboard 3>>
 <<gointojournal Test209LockedSideboard 3>>
 <<endif>>
