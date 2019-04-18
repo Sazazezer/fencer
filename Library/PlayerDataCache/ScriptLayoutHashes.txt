@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/itms2/Desktop/DormantMurdersXbone/DormantMurdersXbone.exe
+C:/Users/itms2/Desktop/DormantMurdersKeyboard/DormantMurdersKeyboard.exe
 SceneListBegin?
 Assets/Toolkit/UITemplate/Scenes/GameWindows.unity
 Assets/Fencer/Scenes/OpeningScene.unity

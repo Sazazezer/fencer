@@ -319,7 +319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1195775368250574
 GameObject:
   m_ObjectHideFlags: 1
@@ -2319,7 +2319,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114606529480492588}
   m_HandleRect: {fileID: 224333167578098046}
   m_Direction: 2
-  m_Value: 0.33083662
+  m_Value: 0
   m_Size: 0.058804307
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5413,18 +5413,20 @@ MonoBehaviour:
 
     Left, Right: Move Left and Right
 
-    Fire1 - Interact, Read Text, Use Item
+    Up: Open doors
 
-    Jump - Jump, Skip text
+    Z - Interact, Read Text, Use Item
 
-    Fire 2 - Journal Screen
+    X - Jump, Skip text
 
-    Fire 3 - Item Screen
+    A - Journal Screen
+
+    S - Item Screen
 
 
-    Cancel - Pause
+    Escape - Pause
 
-    Submit - Submit'
+    Return - Submit'
 --- !u!114 &114967104998216930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6924,7 +6926,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: -433}
+  m_AnchoredPosition: {x: -23, y: -433}
   m_SizeDelta: {x: 1178.3, y: 216.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224438993583424776
@@ -7671,7 +7673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.2749, y: 2557.962}
+  m_AnchoredPosition: {x: 9.2749, y: 7560.625}
   m_SizeDelta: {x: 769.25, y: 16066}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224825334930416656
