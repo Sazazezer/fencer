@@ -13,7 +13,7 @@ public class TextSpeed : MonoBehaviour {
         speedTextSelected.text = buttonSelected;
         SetTextSpeed(buttonSelected);
         Debug.Log(buttonSelected + "selected.");
-        Debug.Log(PlayerPrefs.GetFloat("TextSpeed", 0));
+        Debug.Log(PlayerPrefs.GetFloat("TextSpeed", 0.025f));
     }
 
     public void SetTextSpeed(string _speedGiven){

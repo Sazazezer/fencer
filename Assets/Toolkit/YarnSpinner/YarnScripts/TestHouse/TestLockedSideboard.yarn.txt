@@ -17,7 +17,7 @@ Let's see what's inside, shall we?
 Yes. Yes we shall.
 Oh Look. Another vital clue.
 <<playsoundeffect TestLockedSideboard PickupJournal>>
-Picked up Note to EvilRod.
+Picked up Note to Mary.
 <<addnewjournal TestLockedSideboard 7>>
 <<gointojournal TestLockedSideboard 7>>
 <<set $UnlockedSideboard to 2>>
@@ -35,7 +35,7 @@ Or something...
 <<if $UnlockedSideboard is 0>>
 Locked.
 There's an image of a sun by the lock.
-An intricatelly detailed image of a sun, carved perfectly into the wood.
+An intricately detailed image of a sun, carved perfectly into the wood.
 Someone went to great lengths to associate this lock with the image of a sun.
 It seems unnecessary for day to day life, yet i feel this extreme effort is of immense value to me personally.
 ...

@@ -3492,6 +3492,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114421853453868870, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: inputButtons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4611230671897490, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
       propertyPath: m_LocalPosition.x
       value: 347
@@ -3565,6 +3570,16 @@ Prefab:
         type: 2}
       propertyPath: m_Constraints
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114421853453868870, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: inputButtons.Array.data[1]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114421853453868870, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: inputButtons.Array.data[0]
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}
@@ -4436,6 +4451,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 172359208}
+  areYouSureUI: {fileID: 0}
+  resumeButton: {fileID: 0}
+  controlsUI: {fileID: 0}
+  areYouSureUINoButton: {fileID: 0}
+  controlsBackButton: {fileID: 0}
 --- !u!1 &2028283576 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1242233029094360, guid: 93071749b02ac404a87f52bd43cdc62c,

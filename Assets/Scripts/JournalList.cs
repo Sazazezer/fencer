@@ -24,7 +24,7 @@ public class JournalList : MonoBehaviour {
     public string filename;
     public List<Button> buttons = new List<Button>();
     private int countDammit = 0;
-    static readonly string JOURNAL_DATA = "JournalEntries.json";
+    static readonly string JOURNAL_DATA = "msoel.json";
     // Use this for initialization
     void Awake(){
         filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);

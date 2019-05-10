@@ -13,6 +13,7 @@ public class VolumeSlider : MonoBehaviour {
     {
         //Adds a listener to the main slider and invokes a method when the value changes.
         volumeSlider.onValueChanged.AddListener(delegate {ValueChangeCheck(); });
+        volumeSlider.value = PlayerPrefs.GetFloat("GameVolume", 0.5f);
     }
 
     // Invoked when the value of the slider changes.

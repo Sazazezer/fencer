@@ -17,7 +17,7 @@ Man, i love references to other games.
 Hey, another journal.
 I wonder if it will be relevant.
 <<playsoundeffect Test209LockedDrawer PickupJournal>>
-Picked up Note to Mary!
+Picked up Note to EvilRod!
 <<addnewjournal Test209LockedDrawer 2>>
 <<gointojournal Test209LockedDrawer 2>>
 <<set $Unlocked209Drawer to 1>>

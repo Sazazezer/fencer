@@ -27,4 +27,12 @@ public class AreYouSureExit : MonoBehaviour {
         Application.Quit();
     }
 
+    public void Update(){
+        if(Input.GetButtonUp("Jump") || Input.GetButtonUp("Cancel")){
+            areYouSureExit.gameObject.SetActive(false);
+            oldButtons.gameObject.SetActive(true);
+            eventSystem.SetSelectedGameObject (exitGame); 
+        }
+    }
+
 }

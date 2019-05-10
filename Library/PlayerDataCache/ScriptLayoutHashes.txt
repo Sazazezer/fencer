@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/itms2/Desktop/DormantMurdersKeyboard/DormantMurdersKeyboard.exe
+C:/Users/itms2/Desktop/DormantMurdersTesting/DormantMurdersTesting.exe
 SceneListBegin?
 Assets/Toolkit/UITemplate/Scenes/GameWindows.unity
 Assets/Fencer/Scenes/OpeningScene.unity
@@ -12,9 +12,10 @@ Assets/Fencer/Scenes/EndGameWindow.unity
 Assets/Fencer/Scenes/AfterChoicesScene.unity
 Assets/Fencer/Scenes/EndingScene.unity
 SceneListEnd?
+1a48e617280eb507a8d0f962f2d0d169 Assembly-CSharp.dll:.TutorialHelper
 bf139e15efb55ad66566d1976db17956 Assembly-CSharp.dll:.SwordHitbox
 22a735345e8abaccb46ab3788b8dbcaa Assembly-CSharp.dll:.GenericWindow
-7ffa11c35caac9dbec385f2c789b4d56 Assembly-CSharp.dll:.StartWindow
+ec5298cc70e19c6b76b5f512b8914389 Assembly-CSharp.dll:.StartWindow
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 13bdb7c23815c33a33b37b0ba8dd39be UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -184,6 +185,7 @@ e8110f86fc959b4fa4f78a10baca3e38 Assembly-CSharp.dll:.SimpleMovement
 44c4e78daaa6fb9c628f03063bf1e5e2 Assembly-CSharp.dll:.PickupJournal
 f5c9646cf5f92606c7ab61d3c98505e5 Assembly-CSharp.dll:.GameStartIntro
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlayerManager
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HighlightFix
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RestartButton
 4476a2ed974f749447404d5e42c8fde7 Assembly-CSharp.dll:.EnemyDeath
 912cabb13257d19a4e04467caf2b4add Assembly-CSharp.dll:.Unlock
@@ -250,7 +252,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 8bff31aec26ca25a459dd36b926e8dfd Assembly-CSharp.dll:.SoundEffectSlider
 eb761633fd75db2bc5fa9674836b4664 Assembly-CSharp.dll:.SwordAttack
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TitleScreenShredder
-27e672e7a1ad92c878b84a493b7a32ab Assembly-CSharp.dll:.Options
+52c404797a0097feca31d3210481224e Assembly-CSharp.dll:.Options
 8bd01f3c106f76949814ea681e74f343 Assembly-CSharp.dll:.HealthItem
 1a56247b521249f940c6df659f15a523 Assembly-CSharp.dll:.Pause
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback

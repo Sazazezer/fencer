@@ -4,20 +4,28 @@ using UnityEngine.UI;
 
 public class StartWindow : GenericWindow {
 
-	public Button continueButton;
+	public GameObject continueButton;
     public GameObject areYouSureExit;
+    public int canContinue = 0;
+
+    public void Start(){
+        canContinue = PlayerPrefs.GetInt("ContinueButton",0);
+        Debug.Log(canContinue);
+        if (canContinue == 1) {
+            continueButton.gameObject.SetActive (true);
+            firstSelected = continueButton.gameObject;
+            eventSystem.SetSelectedGameObject (firstSelected);
+        }
+    }
+
+    public void Update(){
+        if (Input.GetKeyDown("space")){
+            PlayerPrefs.SetInt("ContinueButton",0);
+        }
+    }
 
 	public override void Open ()
 	{
-		var canContinue = true; //hides the continue button on ui screen
-
-		continueButton.gameObject.SetActive (canContinue);
-
-		if (continueButton.gameObject.activeSelf) {
-			firstSelected = continueButton.gameObject;
-		}
-
-
 		base.Open ();
 	}
 

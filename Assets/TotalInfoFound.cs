@@ -16,11 +16,11 @@ public class TotalInfoFound : MonoBehaviour {
     private int countDammit = 0;
     private int countUpFoundJournals = 0;
     private int percentageOfItemsFound;
-    static readonly string JOURNAL_DATA = "JournalEntries.json";
+    static readonly string JOURNAL_DATA = "msoel.json";
     // Use this for initialization
     void Start () {
         filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
-        totalInfoText.text = "Total Evidence Found: " + JournalCountUp() + "%  Secrets found:...";
+        totalInfoText.text = "Total Evidence Found: " + JournalCountUp()+ "%";
      //   secretInfoText.text = "Secrets found...";
         //JournalCountUp();
     }

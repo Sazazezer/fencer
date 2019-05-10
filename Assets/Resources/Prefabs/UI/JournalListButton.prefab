@@ -119,19 +119,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_Font: {fileID: 12800000, guid: 15543d31d135143f1bde6df093eabfd2, type: 3}
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 46
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Puzzle Lock Two Answer Journal
+  m_Text: Benjamin's Journal
 --- !u!114 &114687359094712636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,10 +143,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a21f1213950c10428d7124340fc86c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 7
-  content: Puzzle Lock Two Answer Journal
-  journal: Ha, I am more devious than that other puzzle lock. My code is 4321. Suck
-    on that, expectations!
+  index: 8
+  content: Benjamin's Journal
+  journal: 'Day 1: Two new neighbors moved in next door today. Their names are Mary
+    and Sue. They seem nice, though we only had a few seconds to chat. Spoke to EvilRod.
+    He still refuses to pay his half of the gas bill. He says it is because he is
+    evil, but I am not so sure. Day 2: Got into a further argument with EvilRod today.
+    We shouted at each other for hours, which was most embarrassing. He is still refusing
+    to pay his half of the gas bill. He says it is on religious grounds, that of him
+    being an evil person. Afterwards I met up with Sue for a drink and told her about
+    what was happening. It was nice to speak to someone about my relationship with
+    Evilrod. She says that sometimes we just have to give up everything that makes
+    us happy to accommodate the other person in our lives. She is a very wise person.
+    I am glad to consider her a friend. Day 3: EvilRod has been quietly contemplating
+    something all day today. I am still quite upset with him, but I will leave him
+    alone no matter how much he stares menacingly at me. Mary came to the door today.
+    She said she wishes to speak to me later about something of no major importance.
+    She then left. I sure cannot wait to write in my journal again tomorrow.'
 --- !u!114 &114878429633204762
 MonoBehaviour:
   m_ObjectHideFlags: 1

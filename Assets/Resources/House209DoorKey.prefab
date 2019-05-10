@@ -113,7 +113,7 @@ MonoBehaviour:
   effect: {fileID: 1320962406381760, guid: 06168afec4da0964ea6fd6f69f7c8b90, type: 2}
   instance: {fileID: 0}
   quickDescription: House209DoorKey
-  description: The numbers 209 are on this key. THE MYSTERY CONTINUES!
+  description: The numbers 29 are on this key. THE MYSTERY CONTINUES!
   itemIndex: 2
   indestructable: 1
   prefabName: House209DoorKeyButton

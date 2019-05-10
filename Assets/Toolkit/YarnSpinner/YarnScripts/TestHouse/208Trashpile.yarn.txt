@@ -6,6 +6,7 @@ position: 540,260
 
 <<if $208Trashpile is 2>>
 Quit it!
+Go look through the bins if you want to rummage through garbage.
 <<endif>>
 
 <<if $208Trashpile is 1>>
@@ -17,5 +18,6 @@ I said i'm not looking!
 Eeewww.
 I guess the trash guys stopped coming round before the village admitted what was happening to it.
 This stuff is rancid. I'm not poking through there.
+I wonder if that means the bins are empty.
 <<set $208Trashpile to 1>>
 <<endif>>

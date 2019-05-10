@@ -27,7 +27,7 @@ public class Pause : MonoBehaviour {
             Time.timeScale = 0f;
         }
 
-		if(Input.GetButtonDown("Cancel")){
+		if(Input.GetButtonDown("Cancel") || Input.GetMouseButtonDown(0)){
             if(GamePaused && pauseMenuUI.activeSelf == true){
                 Resume();
             } else if (GamePaused && pauseMenuUI.activeSelf == false){
@@ -50,8 +50,9 @@ public class Pause : MonoBehaviour {
 
     public void Paused(){
         pauseMenuUI.SetActive(true);
+        Debug.Log("Beep");
         eventSystem.SetSelectedGameObject (resumeButton);
-        Debug.Log(Time.timeScale);
+        Debug.Log("Boop");
         Time.timeScale = 0f;
         GamePaused = true;
     }

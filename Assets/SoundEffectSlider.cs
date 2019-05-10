@@ -16,8 +16,14 @@ public class SoundEffectSlider : MonoBehaviour {
     public void Start()
     {
         //Adds a listener to the main slider and invokes a method when the value changes.
+        Debug.Log(testVolume);
+        Debug.Log(PlayerPrefs.GetFloat("GameSoundEffect",0.5f));
         soundEffectSlider.onValueChanged.AddListener(delegate {ValueChangeCheck(); });
         source = GetComponent<AudioSource>();
+        testVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);
+        soundEffectSlider.value = testVolume;
+        Debug.Log(testVolume);
+        Debug.Log(PlayerPrefs.GetFloat("GameSoundEffect",0.5f));
     }
 
     // Invoked when the value of the slider changes.
@@ -26,7 +32,10 @@ public class SoundEffectSlider : MonoBehaviour {
   //      soundEffectSliderSelected.text = soundEffectSlider.value.ToString();
         PlayerPrefs.SetFloat("GameSoundEffect", soundEffectSlider.value);
         testVolume = PlayerPrefs.GetFloat("GameSoundEffect");
-        source.PlayOneShot(testSound,testVolume);
+        if (!source.isPlaying){
+            source.PlayOneShot(testSound,testVolume);            
+        }
+
         Debug.Log(soundEffectSlider.value);
     }
 }

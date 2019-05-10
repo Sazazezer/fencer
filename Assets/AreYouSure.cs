@@ -27,10 +27,18 @@ public class AreYouSure : MonoBehaviour {
 
     public void Yes(){
        // jsonData = JsonUtility.ToJson(data);
-
+        PlayerPrefs.SetInt("ContinueButton",1);
         filename = Path.Combine(Application.streamingAssetsPath, SAVE_FILE);
         File.Delete(filename);
         SceneManager.LoadScene("OpeningScene");
+    }
+
+    public void Update(){
+        if(Input.GetButtonUp("Jump") || Input.GetButtonUp("Cancel")){
+            areYouSure.gameObject.SetActive(false);
+            oldButtons.gameObject.SetActive(true);
+            eventSystem.SetSelectedGameObject (newGame); 
+        }
     }
 
 }

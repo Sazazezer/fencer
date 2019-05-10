@@ -63,12 +63,12 @@ if(delay > inputDelay){
 
 	var newMurderer = murderer;
 
-	var hDir = Input.GetAxis("Horizontal");
+	var hDir = Input.GetAxis("Vertical");
 
 	if(hDir > 0){
-		newMurderer++;
-	} else if (hDir < 0) {
 		newMurderer--;
+	} else if (hDir < 0) {
+		newMurderer++;
 			}
 
 			if (newMurderer != murderer){

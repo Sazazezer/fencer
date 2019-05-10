@@ -61,12 +61,12 @@ if(delay > inputDelay){
 
 	var newWeapon = weapon;
 
-	var hDir = Input.GetAxis("Horizontal");
+	var hDir = Input.GetAxis("Vertical");
 
 	if(hDir > 0){
-		newWeapon++;
-	} else if (hDir < 0) {
 		newWeapon--;
+	} else if (hDir < 0) {
+		newWeapon++;
 			}
 
 			if (newWeapon != weapon){

@@ -18,9 +18,9 @@ public class ScrollMovement : MonoBehaviour {
 
     void Update() {
     if (journalCanvas.GetComponent<JournalCanvas>().panelSelected == 1){
-             if (Input.GetButtonDown("Down")) {
+             if (Input.GetButtonDown("Up")) {
                  bar.value += 0.01f;
-             } else if (Input.GetButtonDown("Up")) {
+             } else if (Input.GetButtonDown("Down")) {
                  bar.value -= 0.01f;
              }
         }

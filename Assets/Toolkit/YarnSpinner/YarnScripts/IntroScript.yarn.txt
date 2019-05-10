@@ -7,9 +7,10 @@ position: 540,260
 Hello there.
 Welcome to Dormant Murders (system demo build 0100).
 The game is a 2D Murder Mystery Simulator.
+There's little handholding, so you may want to grab a notepad to keep track of things.
 Basically, a person was killed, and it's up to you to find out who the killer was.
 Go to the town. Find out who the killer was. Leave the way you came when you think you know who did it.
-The town has been abandoned to a scheduled volcano eruption that will destroy everything.
+The town has been abandoned due to a scheduled volcano eruption that will destroy everything.
 So no one will get in your way.
 But there is no one to help you either.
 You must deduce everything yourself. Feel free to make notes.

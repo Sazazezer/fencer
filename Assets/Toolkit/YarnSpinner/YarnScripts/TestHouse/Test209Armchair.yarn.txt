@@ -13,7 +13,7 @@ Bleh. This is a terrible armchair.
 It's perfectly clean, but it's a terrible colour.
 There is a journal on it though.
 <<playsoundeffect Test209Armchair PickupJournal>>
-Picked up Benjamin's Journal!
+Picked up EvilRod's Journal!
 <<addnewjournal Test209Armchair 1>>
 <<gointojournal Test209Armchair 1>>
 <<set $Test209Armchair to 1>>
