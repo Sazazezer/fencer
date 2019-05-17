@@ -324,3 +324,7 @@ f830aa03d16a6b5a1117d842e3ae9326 Assembly-CSharp.dll:.LookForward
 2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.Stairs
 989ac604856280afdf998395ebf16cde Assembly-CSharp.dll:.Walk
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HideRoom
+be60ba5ee13c5c658e5b93df058ea6bb Assembly-CSharp.dll:.PuzzleTextManager
+800f6562157be9818919dbb2d93bd8c9 Assembly-CSharp.dll:.PuzzleTextBoxManager
+dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.PuzzleController
+30f831ee81cdfeb93984a419f5f8e09d Assembly-CSharp.dll:.PuzzleControllerAssistant

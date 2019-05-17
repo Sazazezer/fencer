@@ -27,7 +27,7 @@ public class Pause : MonoBehaviour {
             Time.timeScale = 0f;
         }
 
-		if(Input.GetButtonDown("Cancel") || Input.GetMouseButtonDown(0)){
+		if(Input.GetButtonDown("Cancel") /*|| Input.GetMouseButtonDown(0)*/){
             if(GamePaused && pauseMenuUI.activeSelf == true){
                 Resume();
             } else if (GamePaused && pauseMenuUI.activeSelf == false){
