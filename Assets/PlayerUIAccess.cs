@@ -19,6 +19,13 @@ public class PlayerUIAccess : MonoBehaviour {
             if (Input.GetButtonDown("Fire2")){
                     playerUIManager.GoToJournal();                    
             }
+        if (Input.GetKeyDown("space"))
+        {
+             if (Time.timeScale == 1.0f)
+                Time.timeScale = 0f;
+            else
+                Time.timeScale = 1.0f;
+        }
 
             if (Input.GetButtonDown("Fire3")){
                 if (playerUIManager.inPuzzle == true){

@@ -6,6 +6,7 @@ position: 540,260
 
 <<if $Test209LivingRoomChest is 1>>
 Just a bunch of boxes left now.
+<<gointojournal Test209LivingRoomChest 8>>
 <<endif>>
 
 <<if $Test209LivingRoomChest is 0>>

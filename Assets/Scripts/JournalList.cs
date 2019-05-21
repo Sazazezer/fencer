@@ -62,6 +62,7 @@ public class JournalList : MonoBehaviour {
 
                     if (Input.GetButtonDown("Right")){
                         journal.GetComponent<JournalCanvas>().panelSelected = 1;
+                        highlightIcon.GetComponent <Image> ().color += new Color (0, 0, 0, -60);
                        // Debug.Log("Text selected");
 
                     }
@@ -70,6 +71,7 @@ public class JournalList : MonoBehaviour {
 
                     if (Input.GetButtonDown("Left")){
                         journal.GetComponent<JournalCanvas>().panelSelected = 0;
+                        highlightIcon.GetComponent <Image> ().color += new Color (0, 0, 0, 60);
                       //  Debug.Log("List selected");
                     }
                 }
