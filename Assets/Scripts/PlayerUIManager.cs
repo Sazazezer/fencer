@@ -107,7 +107,7 @@ public class PlayerUIManager : MonoBehaviour {
             BackToGame();
             Destroy(GameObject.FindGameObjectWithTag("PuzzleScreen"));
             GameObject.FindObjectOfType<Bag>().Activate();
-            Time.timeScale = 0f;
+            Time.timeScale = 0.000001f;
             inBag = true;        
     }
 

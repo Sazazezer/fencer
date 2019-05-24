@@ -24,7 +24,7 @@ public class Pause : MonoBehaviour {
 	void Update () {
         Debug.Log(GamePaused);
         if(GamePaused){
-            Time.timeScale = 0f;
+            Time.timeScale = 0.000001f;
         }
 
 		if(Input.GetButtonDown("Cancel") /*|| Input.GetMouseButtonDown(0)*/){
@@ -53,7 +53,7 @@ public class Pause : MonoBehaviour {
         Debug.Log("Beep");
         eventSystem.SetSelectedGameObject (resumeButton);
         Debug.Log("Boop");
-        Time.timeScale = 0f;
+        Time.timeScale = 0.000001f;
         GamePaused = true;
     }
 

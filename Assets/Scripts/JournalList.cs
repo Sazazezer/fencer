@@ -35,7 +35,9 @@ public class JournalList : MonoBehaviour {
 
     }
 
-    void Update(){
+    void Update(){            
+
+
 
         if (journal != null){
 
@@ -105,6 +107,7 @@ public class JournalList : MonoBehaviour {
         string jsonFromFile = File.ReadAllText(filename);
         JournalDataList list = JournalDataList.CreateFromJSON(jsonFromFile);
         countDammit = list.items.Count();
+        Debug.Log("Count: " + countDammit);
         if (File.Exists(filename)){
 
             for (int i = 0; i < countDammit; i++){
@@ -166,6 +169,26 @@ public class JournalList : MonoBehaviour {
             }*/
 
          /*   File.WriteAllText(filename, jsonData);*/
-    }        
+    }   
+
+    public void HighlightSpecificSlot(int journalButton){
+
+     /*   if(Input.GetButtonDown("Fire3")){*/
+            int countButtons = 0;
+            foreach (Button button in buttons){
+                Debug.Log("Checking " + button.GetComponent<ButtonClick>().content + "and journal button" + journalButton + "and index is " + button.GetComponent<ButtonClick>().index);
+                    if(journalButton == button.GetComponent<ButtonClick>().index){
+                        GameObject.Find("JournalTextScrollbar").GetComponent<ScrollMovement>().ResetScrollbar();
+                        highlightSlot = countButtons;
+                        Debug.Log("Hightlighting button " + countButtons + " which should be " + button.GetComponent<ButtonClick>().content + " because i asked for " +  journalButton.);
+                    }
+                    countButtons++;
+                }
+        
+
+
+
+
+    }     
     
 }

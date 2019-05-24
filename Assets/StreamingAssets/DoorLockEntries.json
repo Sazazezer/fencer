@@ -13,7 +13,7 @@
         {
             "lockNumber": 2,
             "doorName": "House209",
-            "doorUnlocked": 0
+            "doorUnlocked": 1
         },
         {
             "lockNumber": 3,
@@ -23,7 +23,7 @@
         {
             "lockNumber": 4,
             "doorName": "Test209LockedDrawer",
-            "doorUnlocked": 0
+            "doorUnlocked": 1
         }
     ]
 }

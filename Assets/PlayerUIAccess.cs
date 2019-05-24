@@ -22,7 +22,7 @@ public class PlayerUIAccess : MonoBehaviour {
         if (Input.GetKeyDown("space"))
         {
              if (Time.timeScale == 1.0f)
-                Time.timeScale = 0f;
+                Time.timeScale = 0.000001f;
             else
                 Time.timeScale = 1.0f;
         }

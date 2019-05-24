@@ -41,7 +41,7 @@ public class SaveScreen : MonoBehaviour {
 
     void Paused(){
         saveMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0.000001f;
         SaveMenuUp = true;
 
     }

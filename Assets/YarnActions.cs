@@ -129,7 +129,7 @@ public class YarnActions : MonoBehaviour {
 
     [YarnCommand("stopmoving")]
     public void StopMovement(){
-        Time.timeScale = 0f;
+        Time.timeScale = 0.000001f;
     }
 
     [YarnCommand("startmoving")]
@@ -149,12 +149,25 @@ public class YarnActions : MonoBehaviour {
         int stringEntry = int.Parse(goToJournalEntry);
         GameObject[] journalButtons;
         journalButtons = GameObject.FindGameObjectsWithTag("JournalButton");
-        foreach (GameObject journalButton in journalButtons){
-            if (journalButton.GetComponent<ButtonClick>().index == stringEntry){
-                GameObject.Find("JournalText").GetComponent<Text>().text = journalButton.GetComponent<ButtonClick>().journal;
-            }
+        
+///counting
+                    Debug.Log("Count initial buttons");
+        for (var j = 0; j < journalButtons.Length; j++){
+            Debug.Log(j + ": " + journalButtons[j].GetComponent<ButtonClick>().content);
         }
-        GameObject.FindObjectOfType<PlayerUIManager>().InJournal();
+        Debug.Log("Stop Count. Total: " + journalButtons.Length);
+///counting
+        int countButtons = 1;
+        foreach (GameObject journalButton in journalButtons){
+            Debug.Log(countButtons + ": " + journalButton.GetComponent<ButtonClick>().content);
+            if (journalButton.GetComponent<ButtonClick>().index == stringEntry){
+                Debug.Log("Entry is " + journalButton.GetComponent<ButtonClick>().index + "And button is " + stringEntry + " and countbutton is " + countButtons);
+                GameObject.Find("JournalText").GetComponent<Text>().text = journalButton.GetComponent<ButtonClick>().journal;
+                GameObject.FindObjectOfType<PlayerUIManager>().InJournal();
+                GameObject.FindObjectOfType<JournalList>().HighlightSpecificSlot(stringEntry);
+            }
+            countButtons++;
+        }
         Debug.Log("Into journal i go");
 
     }
@@ -172,8 +185,6 @@ public class YarnActions : MonoBehaviour {
             });
                 Debug.Log(target);
             if (target != null) {
-
-                // Kick off the dialogue at this node.
                 target.GetComponent<PuzzleLock>().UsePuzzleLock();
             }
     }
