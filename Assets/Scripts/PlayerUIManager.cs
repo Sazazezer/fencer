@@ -59,12 +59,14 @@ public class PlayerUIManager : MonoBehaviour {
 
             if (inJournal == false && dialogueIsRunning == false){
                 InJournal();
+                FindObjectOfType<JournalList>().highlightIcon.SetActive(true);
             } else {
                 BackToGame();
                 GameObject.FindObjectOfType<JournalCanvas>().Deactivate();
                 Time.timeScale = 1f;
               //  Debug.Log("Leave journal");
                 inJournal = false;
+                FindObjectOfType<JournalList>().highlightIcon.SetActive(true);
             }
     }
 
@@ -122,6 +124,7 @@ public class PlayerUIManager : MonoBehaviour {
         inPuzzle = false;
         inBag = false;
         Time.timeScale = 1f; 
+        GameObject.Find("Highlight").SetActive(true); 
     }
 
     public void SaveGameData(){

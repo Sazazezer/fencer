@@ -17,7 +17,9 @@ public class PlayerUIAccess : MonoBehaviour {
 
         if (UIAccessRestricted==false){
             if (Input.GetButtonDown("Fire2")){
-                    playerUIManager.GoToJournal();                    
+                    FindObjectOfType<JournalList>().highlightIcon.SetActive(true);
+                    playerUIManager.GoToJournal();   
+
             }
         if (Input.GetKeyDown("space"))
         {

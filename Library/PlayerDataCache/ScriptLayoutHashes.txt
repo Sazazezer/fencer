@@ -163,6 +163,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 81e1f8523335b92d85e4b0c0ec5b339e Assembly-CSharp.dll:.CameraFollow
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.collidedammit
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 20e8a17445fb9616ae0f6f8583203876 Assembly-CSharp.dll:.oldPlayerController
 3834a56c646480b0fbefb8cae2364e37 Assembly-CSharp.dll:.TotalInfoFound
@@ -179,6 +180,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+800f6562157be9818919dbb2d93bd8c9 Assembly-CSharp.dll:.PuzzleTextBoxManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EnemyManager
 58dae197f6290d05f0d7b3d8494fae60 Assembly-CSharp.dll:.EnemyParry
 e8110f86fc959b4fa4f78a10baca3e38 Assembly-CSharp.dll:.SimpleMovement
@@ -194,6 +196,7 @@ f5c9646cf5f92606c7ab61d3c98505e5 Assembly-CSharp.dll:.GameStartIntro
 314d63fdfcc6074a176ab0fc951df165 Assembly-CSharp.dll:.DialogueList
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.YarnFunctions
 e7d7781fd809f91898492d51ecda947b Assembly-CSharp.dll:.ParallaxLayer
+be60ba5ee13c5c658e5b93df058ea6bb Assembly-CSharp.dll:.PuzzleTextManager
 4e8b8d9a7429b3b91e26e0cde6f779df Assembly-CSharp.dll:.Parried
 7b18bcffabf02b1bbebda01eb636089d Assembly-CSharp.dll:.PlayerUIAccess
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OptionsBack
@@ -217,7 +220,7 @@ e55b3dcc6e602faac83907fd8c18132b Assembly-CSharp.dll:.Pickup
 49037f28b9ee3069a3a2de49873ee546 Assembly-CSharp.dll:.Explode
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HappyToSeeYou
 95ecfaeaeca4d50bcdb8ccc6f7ac7491 Assembly-CSharp.dll:.WeaponWindow
-68c0ea248652975c852fa48486399c7d Assembly-CSharp.dll:.PuzzleCanvas
+948f2c9489ab712e8fdb59539093dd87 Assembly-CSharp.dll:.PuzzleCanvas
 16ca9ea4817e5ea64c4d98885a66bc90 Assembly-CSharp.dll:.InputState
 c7d89081f5f31c102f7974c33df38f4d Assembly-CSharp.dll:.LocationList
 4fb6547931b8c510ad505525c239f485 Assembly-CSharp.dll:.ControlsUI
@@ -250,6 +253,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 8bff31aec26ca25a459dd36b926e8dfd Assembly-CSharp.dll:.SoundEffectSlider
+1246a4b169656eb08496cd57797b41a6 Assembly-CSharp.dll:.PuzzleController
 eb761633fd75db2bc5fa9674836b4664 Assembly-CSharp.dll:.SwordAttack
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TitleScreenShredder
 52c404797a0097feca31d3210481224e Assembly-CSharp.dll:.Options
@@ -268,6 +272,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 33227001ac3cb2e0369b605ca6cae863 Assembly-CSharp.dll:.HealthBar
 7ac808e6bf2fc6efbaeee21c9b75a814 Assembly-CSharp.dll:.CharacterActivation
 8a61dc21003b1e1ce84de3b7ca767c38 Assembly-CSharp.dll:.EnemySearching
+30f831ee81cdfeb93984a419f5f8e09d Assembly-CSharp.dll:.PuzzleControllerAssistant
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PuzzleLockList
 9e0ef5bf862444b5dc48b5a99554ce7c UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
@@ -324,7 +329,3 @@ f830aa03d16a6b5a1117d842e3ae9326 Assembly-CSharp.dll:.LookForward
 2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.Stairs
 989ac604856280afdf998395ebf16cde Assembly-CSharp.dll:.Walk
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HideRoom
-be60ba5ee13c5c658e5b93df058ea6bb Assembly-CSharp.dll:.PuzzleTextManager
-800f6562157be9818919dbb2d93bd8c9 Assembly-CSharp.dll:.PuzzleTextBoxManager
-dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.PuzzleController
-30f831ee81cdfeb93984a419f5f8e09d Assembly-CSharp.dll:.PuzzleControllerAssistant

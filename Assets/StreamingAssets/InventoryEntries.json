@@ -1,11 +1,11 @@
 {
     "items": [
         {
-            "itemName": "House207DoorKey",
-            "itemDescription": "The number 27 is on this key. WHAT COULD IT MEAN?",
-            "KeyID": 1,
-            "itemIndestructible": true,
-            "prefabName": "House207DoorKeyButton"
+            "itemName": "",
+            "itemDescription": "",
+            "KeyID": 0,
+            "itemIndestructible": false,
+            "prefabName": ""
         },
         {
             "itemName": "",
@@ -15,11 +15,11 @@
             "prefabName": ""
         },
         {
-            "itemName": "House207LockedSideboardKey",
-            "itemDescription": "A small key. There is an image of a sun engraved on the key.",
-            "KeyID": 3,
-            "itemIndestructible": true,
-            "prefabName": "House207DoorKeyButton"
+            "itemName": "",
+            "itemDescription": "",
+            "KeyID": 0,
+            "itemIndestructible": false,
+            "prefabName": ""
         },
         {
             "itemName": "",

@@ -3554,6 +3554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puzzle: {fileID: 223555500144412690}
   firstSelected: {fileID: 1213734443645078}
+  player: {fileID: 0}
 --- !u!114 &114936499808112324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4406,8 +4407,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 740, y: 472}
-  m_SizeDelta: {x: 410, y: 511}
+  m_AnchoredPosition: {x: 752, y: 520}
+  m_SizeDelta: {x: 410, y: 510}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224684261605854034
 RectTransform:
