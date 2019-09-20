@@ -16,8 +16,6 @@ public enum DoorDir{
 public class DoorTransition : MonoBehaviour {
  
     public string goToScene;
-  //  public float nextDoorX;
-  //  public float nextDoorY;
     public int door;
     public int leadsTo;
     private NextRoom room;
@@ -34,6 +32,7 @@ public class DoorTransition : MonoBehaviour {
     public GameObject fadeCanvas;
     public GameObject fadePanelKill;
     private Fade fade;
+    public bool areaTransition = false;
 
     void Awake(){
         fadeCanvas = GameObject.Find("FadeCanvas");
@@ -46,7 +45,7 @@ public class DoorTransition : MonoBehaviour {
     }
  
     void OnTriggerStay2D(Collider2D other){
-       if (Input.GetButtonUp("Up") && other.tag == "Player" ){
+       if (areaTransition == false && Input.GetButtonUp("Up") && other.tag == "Player" ){
                 if (this.GetComponent<DoorLock>().locked == false){
                     if(fadeCanvas != null){
                         GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().PlayOneShot(doorOpenSound,doorOpenVolume);
@@ -55,8 +54,19 @@ public class DoorTransition : MonoBehaviour {
                     } 
                     
                 } 
+        } else if (areaTransition == true){
+            fadeCanvas.GetComponent<Fade>().MeFade();
+            if (doorSide == DoorSide.leftdown){
+                PlayerPrefs.SetInt("DoorSide",0);
+            } else if (doorSide == DoorSide.rightup){
+                PlayerPrefs.SetInt("DoorSide",1);
             }
+            
+            StartCoroutine(WaitForFadeIn());   
         }
+
+            }
+        
     public IEnumerator WaitForFadeIn()
         {
            yield return new WaitUntil(() => fadeCanvas.GetComponent<Fade>().screenIsDark == true);

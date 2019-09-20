@@ -21,20 +21,13 @@ public class PlayerUIAccess : MonoBehaviour {
                     playerUIManager.GoToJournal();   
 
             }
-        if (Input.GetKeyDown("space"))
-        {
-             if (Time.timeScale == 1.0f)
-                Time.timeScale = 0.000001f;
-            else
-                Time.timeScale = 1.0f;
-        }
 
             if (Input.GetButtonDown("Fire3")){
-                if (playerUIManager.inPuzzle == true){
-                    playerUIManager.BackToGame();
-                    } else {
+              //  if (playerUIManager.inPuzzle == true){
+                   /* playerUIManager.BackToGame();
+                    } else {*/
                     playerUIManager.GoToBag();     
-                    }
+                 //   }
                              
             }
             if (Input.GetButtonDown("Cancel")){
@@ -43,7 +36,7 @@ public class PlayerUIAccess : MonoBehaviour {
 
             //ultimate save,load,reset area
             //save
-            if (Input.GetKeyDown(KeyCode.F8)){
+       /*     if (Input.GetKeyDown(KeyCode.F8)){
                 playerUIManager.SaveDialogue();
             }
 
@@ -61,7 +54,7 @@ public class PlayerUIAccess : MonoBehaviour {
             //reset
             if (Input.GetKeyDown(KeyCode.F12)){
                 playerUIManager.ResetGameData();
-            }
+            }*/
                 }
         }
 

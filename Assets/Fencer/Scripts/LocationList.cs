@@ -108,7 +108,16 @@ public class LocationList : MonoBehaviour {
                     int doorID = newDoor.GetComponent<DoorTransition>().door;
                     if (doorID == roomData.iLeadTo){
                         Debug.Log(newDoor.GetComponent<DoorTransition>().doorSide);
+                        if(PlayerPrefs.GetInt("DoorSide")==0){
+                            player.transform.position = new Vector3(newDoor.transform.position.x + /*player.GetComponent<SpriteRenderer>().sprite.rect.x +*/ 25, newDoor.transform.position.y, 0);
+                            PlayerPrefs.SetInt("DoorSide",0);
+                        } else if (PlayerPrefs.GetInt("DoorSide")==1){
+                            player.transform.position = new Vector3(newDoor.transform.position.x - /*player.GetComponent<SpriteRenderer>().sprite.rect.x -*/ 25, newDoor.transform.position.y, 0);
+                          player.GetComponent<InputState>().direction = Directions.Left;
+                            PlayerPrefs.SetInt("DoorSide",0);
+                        } else {
                             player.transform.position = new Vector3(newDoor.transform.position.x, newDoor.transform.position.y, 0);
+                        }
                     }
                 }
                 File.Delete(roomFilename);

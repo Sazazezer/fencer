@@ -22,8 +22,7 @@ public class PlayerUIManager : MonoBehaviour {
     public bool dialogueIsRunning = false;
 
 
-    private void Start()
-    {
+    private void Start()    {
         bag.GetComponent<Canvas> ().enabled = false;
         journal.GetComponent<Canvas> ().enabled = false;
        // puzzle.GetComponent<Canvas> ().enabled = false;
@@ -37,8 +36,11 @@ public class PlayerUIManager : MonoBehaviour {
 
     }
 
-    private void Update()
-    {  Debug.Log(dialogueIsRunning);
+    private void Update()    {
+        Debug.Log("Dialogue is running = " + dialogueIsRunning);
+        Debug.Log("In Puzzle = " + inPuzzle);
+        Debug.Log("In Bag = " + inBag);
+        Debug.Log("In Journal = " + inJournal);
         if (loadDialogueData ==false){ //because things break?
             loadDialogueData = true;
             Scene currentScene = SceneManager.GetActiveScene ();
@@ -123,6 +125,7 @@ public class PlayerUIManager : MonoBehaviour {
 
         inPuzzle = false;
         inBag = false;
+        dialogueIsRunning = false;
         Time.timeScale = 1f; 
         GameObject.Find("Highlight").SetActive(true); 
     }

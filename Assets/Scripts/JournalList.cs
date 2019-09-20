@@ -42,26 +42,7 @@ public class JournalList : MonoBehaviour {
                     
     // Use this for initialization
     void Awake(){
-      /*  journalContents.Add("Fish0");
-        journalContents.Add("Fish1");
-        journalContents.Add("Fish2");
-        journalContents.Add("Fish3");
-        journalContents.Add("Fish4");
-        journalContents.Add("Fish5");
-        journalContents.Add("Fish6");
-        journalContents.Add("Fish7");
-        journalContents.Add("Fish8");
-        journalContents.Add("Fish9");
-        journalEntries.Add("Fish0");
-        journalEntries.Add("Fish1");
-        journalEntries.Add("Fish2");
-        journalEntries.Add("Fish3");
-        journalEntries.Add("Fish4");
-        journalEntries.Add("Fish5");
-        journalEntries.Add("Fish6");
-        journalEntries.Add("Fish7");
-        journalEntries.Add("Fish8");
-        journalEntries.Add("Fish9");*/
+
         filename = Path.Combine(Application.streamingAssetsPath, JOURNAL_DATA);
       //  if (SceneManager.GetActiveScene().buildIndex != 1){
             JournalCompile();
@@ -203,22 +184,6 @@ public class JournalList : MonoBehaviour {
             }
         jsonData = JsonUtility.ToJson(list,true);
         File.WriteAllText(filename, jsonData);
-     /*   string jsonFromFile = File.ReadAllText(filename);
-        JournalDataList list = JournalDataList.CreateFromJSON(jsonFromFile);
-        if (File.Exists(filename)){
-            countDammit = list.items.Count();
-            Debug.Log("Deleting Entires");
-            for (int i = 0; i < countDammit; i++){
-                list.items[i].lockedAway = 0;
-             //   Debug.Log("Deleted" + i + "Entires");
-                }
-            }
-        jsonData = JsonUtility.ToJson(list,true);
-        /*    if (File.Exists(filename)){
-              //  File.Delete(filename);
-            }*/
-
-         /*   File.WriteAllText(filename, jsonData);*/
     }   
 
     public void HighlightSpecificSlot(int journalButton){

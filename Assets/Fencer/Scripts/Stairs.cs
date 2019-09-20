@@ -10,6 +10,7 @@ public class Stairs : MonoBehaviour {
 
 	// Use this for initialization
     void Awake () {
+        player = GameObject.Find("Player");
         boxColl = gameObject.GetComponent<BoxCollider2D> ();
         inputState = player.GetComponent<InputState>();
         var renderer = player.GetComponent<Renderer>();

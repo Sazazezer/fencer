@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class FaceDirection : AbstractBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		var right = inputState.GetButtonValue(inputButtons[0]);

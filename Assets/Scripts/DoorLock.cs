@@ -78,6 +78,10 @@ public class DoorLock : MonoBehaviour {
      private void OnTriggerExit2D(Collider2D other){
         if(other.tag == "Player"){
             player.GetComponent<UnlockDoor>().touchingDoor = false;
+            player.GetComponent<UnlockDoor>().canBeUnlocked= false ;
+            player.GetComponent<UnlockDoor>().keyInHand = 0 ;
+            player.GetComponent<UnlockDoor>().itemSlotNumber = 0;
+            player.GetComponent<UnlockDoor>().keyButton = null;
         }
     }
 }
