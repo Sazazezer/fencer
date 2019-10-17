@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/GameRooms/OutsideRooms/townsign.unity
+- path: Assets/Fencer/Scenes/GameRooms/InsideRooms/MilitaryHut.unity
   isLoaded: 1
   isActive: 1
