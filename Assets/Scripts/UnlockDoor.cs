@@ -20,7 +20,7 @@ public class UnlockDoor : MonoBehaviour {
     void Update(){
         //if(canBeUnlocked > 0){
           //  canBeUnlocked--;
-            Debug.Log(touchingDoor);
+      //      Debug.Log(touchingDoor);
      //   }
     }
 

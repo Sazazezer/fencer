@@ -114,7 +114,7 @@ MonoBehaviour:
   instance: {fileID: 0}
   quickDescription: House207DoorKey
   description: The number 27 is on this key. WHAT COULD IT MEAN?
-  itemIndex: 1
+  itemIndex: 0
   indestructable: 1
   prefabName: House207DoorKeyButton
 --- !u!114 &114968340585468058

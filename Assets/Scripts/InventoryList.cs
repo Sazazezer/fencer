@@ -73,7 +73,8 @@ public class InventoryList : MonoBehaviour {
                 instance.GetComponent<Item>().slotNumber = j;
                 }               
             }
-        }    
+        } 
+        Debug.Log("Inventory just ran");   
     }
 
     public void ResetInventory(){

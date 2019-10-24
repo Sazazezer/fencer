@@ -22,7 +22,7 @@ public class Pause : MonoBehaviour {
     }
 
 	void Update () {
-        Debug.Log(GamePaused);
+    //    Debug.Log(GamePaused);
         if(GamePaused){
             Time.timeScale = 0.000001f;
         }

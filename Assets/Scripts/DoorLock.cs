@@ -25,6 +25,7 @@ public class DoorLock : MonoBehaviour {
 	void Start () {
 		source = GetComponent<AudioSource>();
         doorUnlockVolume = PlayerPrefs.GetFloat("GameSoundEffect",0.5f);
+        player = GameObject.Find("Player");
 	}
 	
 	// Update is called once per frame

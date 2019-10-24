@@ -198,6 +198,191 @@ Transform:
   m_PrefabParentObject: {fileID: 4611230671897490, guid: 93071749b02ac404a87f52bd43cdc62c,
     type: 2}
   m_PrefabInternal: {fileID: 1685540280}
+--- !u!1001 &152898555
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 620033518}
+    m_Modifications:
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -189.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -155.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 5.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114856991382726732, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2028283576}
+    - target: {fileID: 114667287401878196, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: fadeCanvas
+      value: 
+      objectReference: {fileID: 11773407}
+    - target: {fileID: 114667287401878196, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: fadePanelKill
+      value: 
+      objectReference: {fileID: 766659365}
+    - target: {fileID: 1263643576124434, guid: 0be08372a857d0a4a962201a9fca496b, type: 2}
+      propertyPath: m_Name
+      value: MilitaryGateDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 6.24999
+      objectReference: {fileID: 0}
+    - target: {fileID: 61690795008610744, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.026313186
+      objectReference: {fileID: 0}
+    - target: {fileID: 61690795008610744, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.2926264
+      objectReference: {fileID: 0}
+    - target: {fileID: 61690795008610744, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.4043466
+      objectReference: {fileID: 0}
+    - target: {fileID: 61690795008610744, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 5.5056505
+      objectReference: {fileID: 0}
+    - target: {fileID: 114667287401878196, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: goToScene
+      value: townsign
+      objectReference: {fileID: 0}
+    - target: {fileID: 114667287401878196, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: door
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114667287401878196, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: leadsTo
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114856991382726732, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: locked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114856991382726732, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: doorName
+      value: MilitaryGate
+      objectReference: {fileID: 0}
+    - target: {fileID: 114856991382726732, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: linkedItem
+      value: 
+      objectReference: {fileID: 1972283162918958, guid: 30b6e56671cb8b3459cf1791c701127d,
+        type: 2}
+    - target: {fileID: 114856991382726732, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: lockNumber
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0be08372a857d0a4a962201a9fca496b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &152898556 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
+    type: 2}
+  m_PrefabInternal: {fileID: 152898555}
 --- !u!1 &158759951
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +725,7 @@ Prefab:
     - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -359.6
+      value: -358.8
       objectReference: {fileID: 0}
     - target: {fileID: 224556021975990118, guid: 0be08372a857d0a4a962201a9fca496b,
         type: 2}
@@ -602,6 +787,25 @@ Prefab:
       propertyPath: fadePanelKill
       value: 
       objectReference: {fileID: 766659365}
+    - target: {fileID: 1263643576124434, guid: 0be08372a857d0a4a962201a9fca496b, type: 2}
+      propertyPath: m_Name
+      value: MilitaryHutDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 114667287401878196, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: goToScene
+      value: MilitaryHut
+      objectReference: {fileID: 0}
+    - target: {fileID: 114667287401878196, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: leadsTo
+      value: 2001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114667287401878196, guid: 0be08372a857d0a4a962201a9fca496b,
+        type: 2}
+      propertyPath: door
+      value: 1001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0be08372a857d0a4a962201a9fca496b, type: 2}
   m_IsPrefabParent: 0
@@ -1542,6 +1746,7 @@ Transform:
   - {fileID: 1527240556}
   - {fileID: 1140266830}
   - {fileID: 266964095}
+  - {fileID: 152898556}
   m_Father: {fileID: 832731414}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2009,7 +2214,7 @@ GameObject:
   - component: {fileID: 824217530}
   - component: {fileID: 824217529}
   m_Layer: 0
-  m_Name: Gate
+  m_Name: GateDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2118,7 +2323,7 @@ MonoBehaviour:
   isUnlockable: 0
   failedToUnlock: 0
   player: {fileID: 0}
-  lockNumber: 1
+  lockNumber: 0
   doorName: militarygatechaingate
   itemKill: {fileID: 0}
   linkedItem: {fileID: 0}
@@ -4027,6 +4232,11 @@ Prefab:
         type: 2}
       propertyPath: inputButtons.Array.data[1]
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224681713545168542, guid: 93071749b02ac404a87f52bd43cdc62c,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93071749b02ac404a87f52bd43cdc62c, type: 2}

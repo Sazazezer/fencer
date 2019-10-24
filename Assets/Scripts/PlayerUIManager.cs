@@ -37,10 +37,10 @@ public class PlayerUIManager : MonoBehaviour {
     }
 
     private void Update()    {
-        Debug.Log("Dialogue is running = " + dialogueIsRunning);
-        Debug.Log("In Puzzle = " + inPuzzle);
-        Debug.Log("In Bag = " + inBag);
-        Debug.Log("In Journal = " + inJournal);
+      //  Debug.Log("Dialogue is running = " + dialogueIsRunning);
+      //  Debug.Log("In Puzzle = " + inPuzzle);
+     //   Debug.Log("In Bag = " + inBag);
+    //    Debug.Log("In Journal = " + inJournal);
         if (loadDialogueData ==false){ //because things break?
             loadDialogueData = true;
             Scene currentScene = SceneManager.GetActiveScene ();
@@ -152,7 +152,9 @@ public class PlayerUIManager : MonoBehaviour {
                 Debug.Log("Items Data Loaded");
         GameObject.FindObjectOfType<JournalList>().JournalCompile();
                 Debug.Log("Journal Data Loaded");
-        GameObject.FindObjectOfType<PuzzleLockList>().PuzzleLockCompile();
+            if (GameObject.FindObjectOfType<PuzzleLockList>() != null){
+                GameObject.FindObjectOfType<PuzzleLockList>().PuzzleLockCompile();                
+            }
                 Debug.Log("Puzzle Data Loaded");
    //     GameObject.FindObjectOfType<UniqueVariablesList>().ResetUniqueVariables(); Need to make save and load things
                 Debug.Log("Unique Data Loaded");

@@ -1,0 +1,92 @@
+title: 202LockedDoor
+tags: DoorLock
+colorID: 0
+position: 540,260
+---
+
+<<if visited ("202LockedDoor") is false>>
+A Locked Door. I guess i'm stuck on this side for now.
+Like so many things in life.
+...
+<<set $202Door1 = 1>>
+<<stop>>
+<<endif>>
+
+<<if $dungeon_key is true>>
+You opened the door. Well done.
+<<explode 202LockedDoor>>
+<<stop>>
+<<endif>>
+
+<<if $202Door1 is 1>>
+The door continues to be locked.
+Restricted by the choices of others, you cannot continue this way.
+<<set $202Door1 = $202Door1 + 1 >>
+<<stop>>
+<<endif>>
+
+<<if $202Door1 is 2>>
+The door once again is locked.
+Maybe one day it won't be, but not this day.
+<<set $202Door1 = $202Door1 + 1 >>
+<<stop>>
+<<endif>>
+
+<<if $202Door1 is 3>>
+Yes. Still locked.
+Maybe things will change by themselves, even if you don't take action.
+It is unlikely in many things, but maybe this will be the exception.
+<<set $202Door1 = $202Door1 + 1 >>
+<<stop>>
+<<endif>>
+
+<<if $202Door1 is 4>>
+No. Still locked.
+I guess this wasn't the exception.
+<<set $202Door1 = $202Door1 + 1 >>
+<<stop>>
+<<endif>>
+
+<<if $202Door1 is 5>>
+The door springs open by itself, revealing the exit.
+That is not what happened, but maybe it is what you wanted.
+The door does not know what you want.
+<<set $202Door1 = $202Door1 + 1 >>
+<<stop>>
+<<endif>>
+
+<<if $202Door1 is 6>>
+...
+...
+<<set $202Door1 = $202Door1 + 1 >>
+<<stop>>
+<<endif>>
+
+<<if $202Door1 is 7>>
+...
+...
+Seriously, what are you expecting?
+<<set $202Door1 = $202Door1 + 1 >>
+<<stop>>
+<<endif>>
+
+<<if $202Door1 is 8>>
+The door remains unswayed by your actions.
+<<set $202Door1 = $202Door1 + 1 >>
+<<stop>>
+<<endif>>
+
+<<if $202Door1 is 12>>
+The door is impressed by your determination.
+It performs no action whatsoever in response to your efforts.
+<<set $202Door1 = $202Door1 + 1 >>
+<<stop>>
+<<endif>>
+
+
+
+
+
+
+
+

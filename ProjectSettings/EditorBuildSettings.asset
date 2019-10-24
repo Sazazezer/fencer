@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Fencer/Scenes/TitleRooms/OpeningScene.unity
     guid: 1f609fa6bc92a4445add66f0e120054f
   - enabled: 1
+    path: Assets/Fencer/Scenes/OldRooms/Room207.unity
+    guid: 707e5711efd131f40a594f861e48d20d
+  - enabled: 1
+    path: Assets/Fencer/Scenes/OldRooms/Room208.unity
+    guid: 806eca04e2fa2704ca9b24b70ae71189
+  - enabled: 1
+    path: Assets/Fencer/Scenes/OldRooms/Room209.unity
+    guid: e57cc5a6f14b6a34e9537b08eeea86fd
+  - enabled: 1
     path: Assets/Fencer/Scenes/GameRooms/OutsideRooms/militarybarrier.unity
     guid: b572799a5db819e4f9a4fddd2a183236
   - enabled: 1

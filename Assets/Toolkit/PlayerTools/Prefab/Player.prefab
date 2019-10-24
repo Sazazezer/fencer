@@ -55,6 +55,8 @@ GameObject:
   - component: {fileID: 114676255171080472}
   - component: {fileID: 114667614085427062}
   - component: {fileID: 114046137974090076}
+  - component: {fileID: 82540734183468960}
+  - component: {fileID: 114214458574797776}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -79,7 +81,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1565579637771668
 GameObject:
   m_ObjectHideFlags: 1
@@ -113,7 +115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1695630806044400
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,8 +213,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242233029094360}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 347, y: -673, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.30774, y: -36.795593, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224681713545168542}
@@ -276,6 +278,101 @@ CircleCollider2D:
   m_Offset: {x: -0.06, y: -4.5}
   serializedVersion: 2
   m_Radius: 6.5
+--- !u!82 &82540734183468960
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95986694452907848
 Animator:
   serializedVersion: 3
@@ -395,6 +492,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1242233029094360}
+--- !u!114 &114214458574797776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242233029094360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec48d48d3368b59428f4e4c643eae218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  distance: 0
+  whatIsLadder:
+    serializedVersion: 2
+    m_Bits: 4096
+  isClimbing: 0
 --- !u!114 &114235459282316290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -406,7 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 738f9aef89c4d5440ad55151333514e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButtons: 000000000100000004000000
+  inputButtons: 000000000100000005000000
   disableScripts: []
   speed: 50
   runMultiplier: 2
@@ -526,7 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baa75d9bea2d57440b899bb8b9dc0ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButtons: 02000000
+  inputButtons: 0400000005000000
   disableScripts: []
   interactionRadius: 20
   isTalking: 0
@@ -541,6 +655,7 @@ MonoBehaviour:
   speedUpTalk: 0
   choicesGiven: 0
   gameControl: {fileID: 0}
+  speedTalkDelay: 0.15
 --- !u!114 &114484210341370026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -590,17 +705,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0bd41f318d4d64ca7b3f459b69b01b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButtons: 04000000
+  inputButtons: 05000000
   disableScripts: []
   jumpSpeed: 100
   jumpDelay: 0.1
   jumpCount: 0
   dustEffectPrefab: {fileID: 1898540516239760, guid: 32246a7f2b4b0f64d9b076f5b7ff4658,
     type: 2}
+  isJumping: 0
   longJumpDelay: 0.15
   longJumpMultiplier: 2
   canLongJump: 0
   isLongJumping: 0
+  jumpSound: {fileID: 8300000, guid: 22ff518e4b21cc747af765e791b84fd8, type: 3}
 --- !u!114 &114550585519539730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -630,7 +747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460165482f04db14ca78c156c89e237d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputButtons: 
+  inputButtons: 03000000
   disableScripts:
   - {fileID: 114532869285327530}
   onWallDetected: 0
@@ -732,6 +849,7 @@ MonoBehaviour:
   itemHeld: {fileID: 0}
   itemItem: 
   itemUnique: 0
+  itemMoveSound: {fileID: 8300000, guid: bf070efe859339c42ac56dbe5a878031, type: 3}
 --- !u!114 &114668603259342602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -769,6 +887,8 @@ MonoBehaviour:
   inBag: 0
   puzzle: {fileID: 0}
   inPuzzle: 0
+  loadDialogueData: 0
+  dialogueIsRunning: 0
 --- !u!114 &114696565913740330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -820,7 +940,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242233029094360}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b38686106c83cb4b87c61b5172a6a71, type: 3}
   m_Name: 
@@ -978,6 +1098,7 @@ MonoBehaviour:
   keyInHand: 0
   itemSlotNumber: 0
   keyButton: {fileID: 0}
+  touchingDoor: 0
 --- !u!114 &114992883563453624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1116,8 +1237,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 864861709
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a638bdcb1c54a07468fc383b8dc3f32b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1302,7 +1423,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -2.4725037, y: -5.4799995}
   m_SizeDelta: {x: -4.945, y: 10.96}
   m_Pivot: {x: 0.5, y: 0.5}

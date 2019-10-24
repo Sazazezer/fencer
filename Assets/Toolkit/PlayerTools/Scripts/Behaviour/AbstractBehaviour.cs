@@ -19,7 +19,7 @@ public abstract class AbstractBehaviour : MonoBehaviour {
 protected virtual void ToggleScripts(bool value){
 	foreach(var script in disableScripts){
 		script.enabled = value;
-        Debug.Log(script.enabled);
+     //   Debug.Log(script.enabled);
 	}
 }
 }

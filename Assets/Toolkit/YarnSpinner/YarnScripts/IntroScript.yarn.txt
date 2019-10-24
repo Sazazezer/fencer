@@ -22,4 +22,4 @@ Though the demo murder is still solvable... I think.
 Search everything. Find things. Get access to places. Search those places.
 <<set $openingRan to 1>>
 <<forceSave>>
-This will never be appreciated, and it is your own fault for ever assuming otherwise. <<changesceneto IntroScript Room208>>
+This will never be appreciated, and it is your own fault for ever assuming otherwise. <<changesceneto IntroScript MilitaryBarrier>>
