@@ -2,17 +2,17 @@
     "items": [
         {
             "index": 0,
-            "itemName": "MilitaryGateKeyButton",
-            "itemPicked": 0
+            "itemName": "DefaultTestItem",
+            "itemPicked": 1
         },
         {
             "index": 1,
             "itemName": "MilitaryGateKeyButton",
-            "itemPicked": 1
+            "itemPicked": 0
         },
         {
             "index": 2,
-            "itemName": "House209DoorKeyButton",
+            "itemName": "DefaultTestItem",
             "itemPicked": 0
         },
         {

@@ -32,9 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Fencer/Scenes/GameRooms/OutsideRooms/lowervillagearea.unity
     guid: 039d79c0d4348ac419514d2474ebef55
-  - enabled: 1
-    path: Assets/Fencer/Scenes/GameRooms/OutsideRooms/burntdownhouse.unity
-    guid: 926745a562b450d4a83a72f21248dd26
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Fencer/Scenes/TitleRooms/FinalScene.unity
     guid: 2ef3242a817833c4eb75f2416cc91a1a
@@ -44,6 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Fencer/Scenes/TitleRooms/AfterChoicesScene.unity
     guid: 9410fca20e6787a41bf1a2b20d681dfd
+  - enabled: 1
+    path: Assets/Fencer/Scenes/TemplateRooms/InsideTemplate.unity
+    guid: 8af398f46d4ef414693d328f0acba380
+  - enabled: 1
+    path: Assets/Fencer/Scenes/TemplateRooms/OutsideTemplate.unity
+    guid: a4913835076d9f641b41feb0698e29d9
   - enabled: 1
     path: Assets/Fencer/Scenes/TitleRooms/EndingScene.unity
     guid: 3c59b579c13587449aded411dceff80c

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/GameRooms/OutsideRooms/militarybarrier.unity
+- path: Assets/Fencer/Scenes/TitleRooms/GameWindows.unity
   isLoaded: 1
   isActive: 1

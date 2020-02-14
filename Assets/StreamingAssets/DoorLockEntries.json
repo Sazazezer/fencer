@@ -2,13 +2,13 @@
     "items": [
         {
             "lockNumber": 0,
-            "doorName": "",
-            "doorUnlocked": 0
+            "doorName": "DefaultLockedItem",
+            "doorUnlocked": 1
         },
         {
             "lockNumber": 1,
             "doorName": "House207",
-            "doorUnlocked": 1
+            "doorUnlocked": 0
         },
         {
             "lockNumber": 2,

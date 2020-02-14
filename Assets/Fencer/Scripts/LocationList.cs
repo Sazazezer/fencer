@@ -27,6 +27,7 @@ public class LocationList : MonoBehaviour {
 
     public void Start(){
             //check for room transition and move player accordingly
+            player = GameObject.Find("Player");
             jsonRoom = JsonUtility.ToJson(room);
             roomFilename = Path.Combine(Application.streamingAssetsPath, ROOM_MOVE);
 
