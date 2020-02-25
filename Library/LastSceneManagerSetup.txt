@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/TitleRooms/GameWindows.unity
+- path: Assets/Fencer/Scenes/TemplateRooms/OutsideTemplate.unity
   isLoaded: 1
   isActive: 1
