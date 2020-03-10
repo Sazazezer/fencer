@@ -1,0 +1,21 @@
+title: OutsideTestExplorable
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $OutsideTestExplorable is 1>>
+This was the outside test
+<<endif>>
+
+<<if $OutsideTestExplorable is 0>>
+Outside Test
+Journal Entry
+<<playsoundeffect OutsideTestExplorable PickupJournal>>
+<<addnewjournal OutsideTestExplorable 1>>
+Key pickup
+<<add_item("OutsideTestItemPickup")>>
+<<add_item("OutsideTestItemPickup1")>>
+<<set $OutsideTestExplorable to 1>>
+<<endif>>
+

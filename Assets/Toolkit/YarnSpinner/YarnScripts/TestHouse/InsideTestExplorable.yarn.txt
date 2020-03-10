@@ -1,0 +1,20 @@
+title: InsideTestExplorable
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $InsideTestExplorable is 1>>
+This was the inside test
+<<endif>>
+
+<<if $InsideTestExplorable is 0>>
+inside Test
+Journal Entry
+<<playsoundeffect InsideTestExplorable PickupJournal>>
+<<addnewjournal InsideTestExplorable 1>>
+Key pickup
+<<add_item("InsideTestItemPickup")>>
+<<set $InsideTestExplorable to 1>>
+<<endif>>
+

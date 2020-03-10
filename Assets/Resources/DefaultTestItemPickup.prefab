@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114968340585468058}
   - component: {fileID: 61045713953956446}
   m_Layer: 0
-  m_Name: DefaultTestItem
+  m_Name: DefaultTestItemPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

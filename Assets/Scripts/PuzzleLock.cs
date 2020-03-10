@@ -10,7 +10,7 @@ public class PuzzleLock : MonoBehaviour {
     public int puzzleLockIndex;
     public GameObject player;
     public GameObject puzzlePrefab;
-    public GameObject puzzle;
+    public GameObject puzzle; //doesn't need filling in
     public GameObject canvas;
     public GameObject unlockedItem;
     public bool locked = true;
@@ -34,7 +34,10 @@ public class PuzzleLock : MonoBehaviour {
     public void PuzzleUnlock () {
         puzzle.GetComponent<PuzzleCanvas>().Deactivate();
         this.GetComponent<PuzzleLockList>().UnlockPuzzleSave(puzzleLockIndex);
-        unlockedItem.SetActive(true);
+
+        if (unlockedItem != null){
+            unlockedItem.SetActive(true);            
+        }
         locked = false;
     }
 }

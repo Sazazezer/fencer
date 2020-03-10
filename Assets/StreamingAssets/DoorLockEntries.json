@@ -3,21 +3,21 @@
         {
             "lockNumber": 0,
             "doorName": "DefaultLockedItem",
-            "doorUnlocked": 1
+            "doorUnlocked": 0
         },
         {
             "lockNumber": 1,
-            "doorName": "House207",
+            "doorName": "OutsideLockedItem",
             "doorUnlocked": 0
         },
         {
             "lockNumber": 2,
-            "doorName": "House209",
+            "doorName": "InsideLockedItem",
             "doorUnlocked": 0
         },
         {
             "lockNumber": 3,
-            "doorName": "House207LockedSideboardKey",
+            "doorName": "InsideLockedItem",
             "doorUnlocked": 0
         },
         {

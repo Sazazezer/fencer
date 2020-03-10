@@ -1,0 +1,14 @@
+title: OutsideTestLockedItem
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $OutsideTestLockedItem is 1>>
+Outside Door Test forever.
+<<endif>>
+
+<<if $OutsideTestLockedItem is 0>>
+OutsideDoorTest
+<<endif>>
+

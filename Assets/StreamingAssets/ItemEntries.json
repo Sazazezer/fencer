@@ -3,11 +3,11 @@
         {
             "index": 0,
             "itemName": "DefaultTestItem",
-            "itemPicked": 1
+            "itemPicked": 0
         },
         {
             "index": 1,
-            "itemName": "MilitaryGateKeyButton",
+            "itemName": "DefaultTestItem",
             "itemPicked": 0
         },
         {
@@ -17,7 +17,7 @@
         },
         {
             "index": 3,
-            "itemName": "House207DoorKeyButton",
+            "itemName": "InsideTestItem",
             "itemPicked": 0
         },
         {

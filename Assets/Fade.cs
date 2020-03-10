@@ -5,6 +5,10 @@ public class Fade : MonoBehaviour {
 
     public bool screenIsDark;
 
+    public void Start(){
+        StartCoroutine (DoFade());
+    }
+
     public void FadeMe(){
         StartCoroutine (DoFade());
     }

@@ -1,0 +1,29 @@
+title: InsideTestPuzzle
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $InsideTestPuzzle is 2>>
+Puzzle complete
+<<endif>>
+
+<<if check_puzzlelock("InsidePuzzle") is false>>
+<<if $InsideTestPuzzle is 1>>
+Puzzle Solved
+<<playsoundeffect InsideTestPuzzle PickupJournal>>
+Have a journal and item.
+<<add_item("OutsideTestPickUp2")>>
+<<addnewjournal InsideTestPuzzle 6>>
+<<gointojournal InsideTestPuzzle 6>>
+<<set $InsideTestPuzzle to 2>>
+<<endif>>
+<<endif>>
+
+<<if check_puzzlelock("InsidePuzzle") is true>>
+<<if $InsideTestPuzzle is 0>>
+Puzzle Test
+<<set $InsideTestPuzzle to 1>>
+<<endif>>
+Go into pozzule
+<<gointopuzzle InsidePuzzle>>
+<<endif>>

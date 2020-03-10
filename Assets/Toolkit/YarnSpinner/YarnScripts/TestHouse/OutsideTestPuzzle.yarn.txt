@@ -1,0 +1,29 @@
+title: OutsideTestPuzzle
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $OutsideTestPuzzle is 2>>
+Puzzle complete
+<<endif>>
+
+<<if check_puzzlelock("OutsideTestPuzzle") is false>>
+<<if $OutsideTestPuzzle is 1>>
+Puzzle Solved
+<<playsoundeffect OutsideTestPuzzle PickupJournal>>
+Have a journal and item.
+<<add_item("OutsideTestPickUp2")>>
+<<addnewjournal OutsideTestPuzzle 6>>
+<<gointojournal OutsideTestPuzzle 6>>
+<<set $OutsideTestPuzzle to 2>>
+<<endif>>
+<<endif>>
+
+<<if check_puzzlelock("OutsideTestPuzzle") is true>>
+<<if $OutsideTestPuzzle is 0>>
+Puzzle Test
+<<set $OutsideTestPuzzle to 1>>
+<<endif>>
+Go into pozzule
+<<gointopuzzle OutsideTestPuzzle>>
+<<endif>>

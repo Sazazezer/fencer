@@ -1,0 +1,14 @@
+title: InsideTestLockedItem1
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $InsideTestLockedItem1 is 1>>
+Inside Door Test1 forever.
+<<endif>>
+
+<<if $InsideTestLockedItem1 is 0>>
+InsideDoorTest1
+<<endif>>
+
