@@ -1,0 +1,45 @@
+title: EscapeCar
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $bodyNotBuried is 0>>
+It is not yet time to leave.
+<<endif>>
+
+<<if $bodyNotBuried is 1>>
+It is time to escape.
+Let us go.
+<<endif>>
+
+<<if $myCar is 2>>
+My phone charger is here.
+Plenty of battery so it shouldn't be an issue.
+But if it runs out i can always sneak back here.
+Spend a few hours bumming in the car.
+Got snacks too. I'm good in general.
+I like to be prepared.
+<<set $myCar to 3>>
+<<endif>>
+
+<<if $myCar is 1>>
+I can leave anytime, i suppose.
+Just need to head back here.
+There's always a weird feeling on these trips.
+That i have to end on some big, high note.
+The truth is i just leave because i start feeling self-conscious.
+Reality doesn't care either way.
+<<set $myCar to 2>>
+<<endif>>
+
+<<if $myCar is 0>>
+My Car. This is what i arrived in.
+I sure do love my car.
+I love it because it's so clunky and well worn, and that together we've had many adventures.
+I certainly like it better than the previous one.
+You know, the placeholder art.
+That lovely flashy green car.
+This one is sooooooo much better.
+<<set $myCar to 1>>
+<<endif>>

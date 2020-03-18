@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/TemplateRooms/OutsideTemplate.unity
+- path: Assets/Fencer/Scenes/MiniGame/OutsideHouses.unity
   isLoaded: 1
   isActive: 1
