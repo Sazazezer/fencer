@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/MiniGame/OutsideHouses.unity
+- path: Assets/Fencer/Scenes/MiniGame/DeadBody.unity
   isLoaded: 1
   isActive: 1
