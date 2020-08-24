@@ -3,15 +3,11 @@ tags: CutScene
 colorID: 0
 position: 540,260
 ---
-Ok then. I guess we're done.
+I have laid the dead to rest.
 
-Congratulations on wasting your time doing something no one cares about.
+I am free. My work is done.
 
-This finally puts you on the same level as everyone else.
+None of this will be appreciated, and it was my own fault for assuming otherwise.
 
-Your parents would be so proud, were they actually real.
-
-Anyway, time to attempt to make your mark on the world.
-
-Don't balls it up!
-<<changesceneto OutroScript EndGameWindow>>
+Press any key to quit.
+<<endgame OutroScript>>

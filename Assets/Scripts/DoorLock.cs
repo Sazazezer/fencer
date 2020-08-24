@@ -33,14 +33,18 @@ public class DoorLock : MonoBehaviour {
         if (isUnlockable==true){
             linkedItem.SetActive(true);
             locked = false;
-            source.PlayOneShot(doorUnlockSound,doorUnlockVolume);
+            if (!source.isPlaying){
+               source.PlayOneShot(doorUnlockSound,doorUnlockVolume);
+            }
             GameObject.FindObjectOfType<DoorLockList>().UnlockDoorSave(lockNumber);
             isUnlockable = false;
             player.GetComponent<UnlockDoor>().canBeUnlocked = false;
         }
 
         if(failedToUnlock==true){
-            source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
+            if (!source.isPlaying){
+                source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
+            }
             failedToUnlock = false;
             player.GetComponent<UnlockDoor>().canBeUnlocked = false;
         }
@@ -62,11 +66,15 @@ public class DoorLock : MonoBehaviour {
                 GameObject.FindObjectOfType<InventoryList>().SaveInventory();
             } else {
                 failedToUnlock = true;
-                source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
-                FindObjectOfType<TextBoxManager>().UpdateTextBox("This key isn't for that lock.");
+                if (!source.isPlaying){
+                    source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
+                }
+                FindObjectOfType<TextBoxManager>().UpdateTextBox("It didn't open the door.");
             }
-        } else if (other.tag == "Player" && Input.GetButtonUp("Up") && locked == true){
-            source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
+        } else if (other.tag == "Player" && Input.GetAxisRaw("Vertical") > 0 && locked == true){
+            if (!source.isPlaying){
+                source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
+            }
             FindObjectOfType<TextBoxManager>().UpdateTextBox("Locked.");
         }
     }

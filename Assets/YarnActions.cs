@@ -53,6 +53,7 @@ public class YarnActions : MonoBehaviour {
 
     [YarnCommand("explode")]
     public void Explode() {
+        Debug.Log("Boom");
          Destroy(gameObject);
         // Destroy object
     }
@@ -137,14 +138,21 @@ public class YarnActions : MonoBehaviour {
         Time.timeScale = 1f;
     }
 
+    [YarnCommand("endgame")]
+    public void EndGame(){
+        Application.Quit();
+    }
+
     [YarnCommand("addnewjournal")]
     public void YarnAddJournal(string newJournalIndex) {
+        Debug.Log("Adding");
         int stringIndex = int.Parse(newJournalIndex);
         GameObject.FindObjectOfType<JournalList>().AddNewJournal(stringIndex);
     }
 
     [YarnCommand("gointojournal")]
     public void GoToJournalEntry(string goToJournalEntry) {
+        Debug.Log("Accessing");
         GameObject.Find("Player").GetComponent<PlayerUIAccess>().switchRestrictionToFalse();
         int stringEntry = int.Parse(goToJournalEntry);
         GameObject[] journalButtons;

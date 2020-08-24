@@ -1,0 +1,35 @@
+title: VillageSign
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $VillageSign is 3>>
+Welp. In i go.
+<<endif>>
+
+<<if $VillageSign is 2>>
+Volcanic fumes are hazardous to your health and can be life threatening.
+Visitors with breathing and heart problems, pregnant women and young children should avoid this area. Do not watch the erupting volcano from this point.
+Well, i'm none of those things, so i should be good to enter.
+<<set $VillageSign to 3>>
+<<endif>>
+
+<<if $VillageSign is 1>>
+Restriction Notice:
+Sultni Mountain is now considered an active volcano, and is believed to be on the verge of eruption.
+By order of the Six Hills Judicary Service, the area surrounding the village of Askance and Sultni Mountain is considered resricted terriroty.
+It is an offence to trespass on these grounds beyond the gate. Tresspasser may be fined and subject to prosecution, including jail time.
+Requests for entry should be directed to the Six Hills Council Offices.
+...
+Looks lovely.
+<<set $VillageSign to 2>>
+<<endif>>
+
+<<if $VillageSign is 0>>
+Welcome to Askance.
+Home of the Thermal Spirits.
+Enjoy your stay.
+Looks lovely.
+<<set $VillageSign to 1>>
+<<endif>>

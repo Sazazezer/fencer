@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour {
     private Parry parry;
     private Parried parried;
     private Climbables climbable;
+    private Dig digging;
 
 	void Awake(){
 		inputState = GetComponent<InputState>();
@@ -26,6 +27,7 @@ public class PlayerManager : MonoBehaviour {
         parry = GetComponent<Parry>();
         parried = GetComponent<Parried>();
         climbable = GetComponent<Climbables>();
+        digging = GetComponent<Dig>();
 	}
 
 
@@ -75,7 +77,10 @@ public class PlayerManager : MonoBehaviour {
 
         if(climbable.isClimbing){
             ChangeAnimationState(9);
-        }       
+        }
+        if(digging.digging){
+            ChangeAnimationState(10);
+        }     
 	}
 
 	void ChangeAnimationState(int value){

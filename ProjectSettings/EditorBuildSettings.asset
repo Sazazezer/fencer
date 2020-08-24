@@ -15,26 +15,134 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Fencer/Scenes/MiniGame/DeadBody.unity
-    guid: 3e0c4508e89819b4080b6231a8732269
+    path: Assets/Fencer/Scenes/MainGameRooms/BedAndBreakfast.unity
+    guid: 07d44672476bd634385f3180ec113207
   - enabled: 1
-    path: Assets/Fencer/Scenes/MiniGame/ForestArea.unity
-    guid: ca9936dcab3f5314dbb7cc9b9a90a753
+    path: Assets/Fencer/Scenes/MainGameRooms/BoyfriendHouse.unity
+    guid: 6e225cac4f4e0ee4a8045d1bc8ae860a
   - enabled: 1
-    path: Assets/Fencer/Scenes/MiniGame/InsideFirstHouse.unity
-    guid: fa9b8c50b8befaa4fa70015a285e40be
+    path: Assets/Fencer/Scenes/MainGameRooms/DeadEnd.unity
+    guid: e78070aa9c17b6f4ba7845474473d93c
   - enabled: 1
-    path: Assets/Fencer/Scenes/MiniGame/InsideSecondHouse.unity
-    guid: df02cda8107171b40b590300ef9757d3
+    path: Assets/Fencer/Scenes/MainGameRooms/DeadZone.unity
+    guid: 1cdb934bd2a4cf44682e58a653b2cd25
   - enabled: 1
-    path: Assets/Fencer/Scenes/MiniGame/InsideThirdHouse.unity
-    guid: f2b83778d8b05a9478217a9375705216
+    path: Assets/Fencer/Scenes/MainGameRooms/DoctorsHouse.unity
+    guid: 50879cd4926a59345bbc176856ac9911
   - enabled: 1
-    path: Assets/Fencer/Scenes/MiniGame/OutsideHouses.unity
-    guid: 94d9400a66c3c074fb1d9e0345e09246
+    path: Assets/Fencer/Scenes/MainGameRooms/ForgerHouse.unity
+    guid: 28c2b661a2220ee43b347e7c095fc164
   - enabled: 1
-    path: Assets/Fencer/Scenes/MiniGame/OutsideShop.unity
-    guid: e3a42752234595741adcb864821da6a3
+    path: Assets/Fencer/Scenes/MainGameRooms/HistoriansHouse.unity
+    guid: 88c32a4951725bd4fbdd0a0e5273d172
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/HotelGroundFloor.unity
+    guid: bbef7ddaeab9a8a4ea70e0341618c1d2
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/LocalHistoryMuseum.unity
+    guid: 2d01dc0aa08675f4397c57efbd3f01eb
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/LocalTavern.unity
+    guid: 58e8f138ef1b3444d8f1c193cec2f330
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/LowerForest.unity
+    guid: 2eaa6150925af084d9428d7bcb7d4441
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/LowerVillageCentre.unity
+    guid: 4f88030f45fc5b44ab397af88fa36c40
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/LowerVillageEast.unity
+    guid: 6819eb14234e5ae41aec7a6500df23a9
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/LowerVillageEntranceWest.unity
+    guid: 9886890a0e8ec22498da07c9cb310171
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/LowerVillageWest.unity
+    guid: 4f715d75bed81aa41966e3b966f75406
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/MiddleVillageCentre.unity
+    guid: ff7c3d90cc00a6643a17ce502f3be7c6
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/MiddleVillageEast.unity
+    guid: cff8229833365684e91b423f0cb1f9d8
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/MiddleVillageWest.unity
+    guid: 65fdcaf44a9466149928ac724763b74a
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/MilitaryBarrier.unity
+    guid: 838b3aaa7cc544a49b3c3112519e70cf
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/MountainCave.unity
+    guid: 6fd343fa697f5bb468a0523d571d9a4e
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/MountainPath.unity
+    guid: 340f2204bf526a84288a280e28600d47
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/PoliceHut.unity
+    guid: 4af075f31c66fd748a8c021ba50c0123
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/MilitaryHut.unity
+    guid: 0ab6e263e72637f499d5147912b77f26
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/PoorGirlsHouse.unity
+    guid: a77d9a5f38645e6459ac576ec25f6c56
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/RangerHut.unity
+    guid: d4558c9eb0fd518458321c792fa24ba2
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/RichMansion.unity
+    guid: c302b6e3e2d67854ca6aca16c8f5cfbc
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/ShopKeeperHouse.unity
+    guid: a38d811cbc3e47647b4624aa684341cd
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/ShopKeepersHouse.unity
+    guid: d3010e86434ff1a44b9b09a95fbb346a
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/SkiSlopeBottom.unity
+    guid: 8a28b135d0ac1b64ca63b3033651b039
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/SkiSlopeInternal.unity
+    guid: 121aaaef46f12eb479dde89de9c58219
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/SkiSlopeTop.unity
+    guid: abd7bd22cb8693a41bc491b18ef9c3d6
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/SoldiersHouse.unity
+    guid: 124053aee9b210342a3bcff1665405a5
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/Summit.unity
+    guid: 34816755b7ceb354cb15c30bfbbbded5
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/TreasurersHouse.unity
+    guid: 8b78959489cea1343aeb6048469388db
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/UpperVillageCentre.unity
+    guid: c54da2f2eac0d9f4baafdc21c3dff343
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/UpperVillageEast.unity
+    guid: 0ec7513dcf79ca6439eb347a73934c88
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/UpperVillageWest.unity
+    guid: 13867785f8b2cdb4d9a383a97fad9f20
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/VictimsHouse.unity
+    guid: 3313561b23ab16649953ba0b869d4f73
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/VillageHall.unity
+    guid: bc1a4e77d0852684fbddb8ccef1c99d9
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/VillageShop.unity
+    guid: 481fa0421416d174396aa05f67f83bba
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/VolcanologistHut.unity
+    guid: 2da3be165141ad44a842f6903cd169f7
+  - enabled: 1
+    path: Assets/Fencer/Scenes/MainGameRooms/VolcanologistHutInside.unity
+    guid: 9643becc1a4ea544e8eefa04339a8254
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Fencer/Scenes/TitleRooms/FinalScene.unity
     guid: 2ef3242a817833c4eb75f2416cc91a1a

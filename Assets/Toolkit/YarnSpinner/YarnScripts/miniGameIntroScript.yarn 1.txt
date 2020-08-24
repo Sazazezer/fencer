@@ -1,0 +1,18 @@
+title: IntroScript
+tags: CutScene
+colorID: 0
+position: 540,260
+---
+<<set $openingRan to 1>>
+It couldn't have been that long, could it?
+Well, I get why you're upset, but surely-
+Hey. Come on now. There's no need for that.
+I think you're taking this a bit too far.
+Hey. No. Wait.
+Don't. Please. No.
+Stop.
+<<playsoundeffect IntroScript BoneBreak>>
+<<set $openingRan to 1>>
+<<forceSave>>
+This will never be appreciated, and it is your own fault for ever assuming otherwise. 
+<<changesceneto IntroScript DeadBody>>

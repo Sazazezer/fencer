@@ -8,6 +8,7 @@ public class Walk : AbstractBehaviour {
 	public float runMultiplier = 2f;
 	public bool running;
     public bool isSwinging;
+    public bool canWalk = true;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +24,7 @@ running = false;
 		var left = inputState.GetButtonValue (inputButtons [1]);
 		var run = inputState.GetButtonValue (inputButtons [2]);
 
-		if (right || left){
+		if (canWalk && (right || left)){
 
 			var tmpSpeed = speed;
 

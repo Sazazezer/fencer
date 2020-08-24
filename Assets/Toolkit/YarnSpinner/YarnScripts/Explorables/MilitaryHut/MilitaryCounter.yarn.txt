@@ -1,0 +1,16 @@
+title: MilitaryCounter
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $MilitaryCounter is 1>>
+Nothing here either.
+<<endif>>
+
+<<if $MilitaryCounter is 0>>
+I don't know what this is for.
+Did the Military guys feel a need for a reception desk or something.
+Maybe this outpost was partially for thevillagers to complain at them or something.
+<<set $MilitaryCounter to 1>>
+<<endif>>

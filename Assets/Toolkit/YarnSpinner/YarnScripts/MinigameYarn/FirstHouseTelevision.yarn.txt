@@ -1,0 +1,19 @@
+title: FirstHouseTelevision
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $FirstHouseTelevision is 1>>
+There are other things here for me to find.
+<<endif>>
+
+<<if $FirstHouseTelevision is 0>>
+A plasma screen television.
+Pretty good condition.
+I am not here to steal things.
+There's a note by the monitor.
+<<addnewjournal FirstHouseTelevision 2>>
+<<gointojournal FirstHouseTelevision 2>>
+<<set $FirstHouseTelevision to 1>>
+<<endif>>

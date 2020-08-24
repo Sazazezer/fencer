@@ -1,0 +1,19 @@
+title: SecondHouseSideboard
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $SecondHouseSideboard is 1>>
+It is time to go to the shops.
+<<endif>>
+
+<<if $SecondHouseSideboard is 0>>
+This one owned the shop.
+The shop will contain plenty of items.
+Those items will help put the dead to rest.
+Got Shop Key!
+<<set $got_ThirdHouseKey to true>>
+<<add_item("4ThirdHouseKeyPickup")>>
+<<set $SecondHouseSideboard to 1>>
+<<endif>>

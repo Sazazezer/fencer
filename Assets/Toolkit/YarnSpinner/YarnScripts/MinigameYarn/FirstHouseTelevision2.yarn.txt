@@ -1,0 +1,17 @@
+title: FirstHouseTelevision2
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $FirstHouseTelevision2 is 1>>
+This is no longer worth anything.
+<<endif>>
+
+<<if $FirstHouseTelevision2 is 0>>
+An old four channel television.
+Once, this would have been a centerpiece of the household.
+Then, it would have been junk, cast aside in favour of something new.
+Now, it is less than that.
+<<set $FirstHouseTelevision2 to 1>>
+<<endif>>

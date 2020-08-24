@@ -1,0 +1,21 @@
+title: ThirdHouseTarp
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ThirdHouseTarp is 1>>
+Something else is needed.
+A memory.
+<<endif>>
+
+<<if $ThirdHouseTarp is 0>>
+There are tarps here.
+It seems only fitting that they be covered up.
+To hide them from the bugs that eat.
+You took the Tarp.
+<<set $got_ThirdHouseTarp to true>>
+<<add_item("5ThirdHouseTarpPickup")>>
+<<increasePlayerPrefsvariable("AlItemsCollected")>>
+<<set $ThirdHouseTarp to 1>>
+<<endif>>

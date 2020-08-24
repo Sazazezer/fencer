@@ -22,7 +22,7 @@ public class Climbables : MonoBehaviour {
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, distance, whatIsLadder);
 
         if(hitInfo.collider != null){
-            if(Input.GetKeyDown(KeyCode.UpArrow)){
+            if(Input.GetAxisRaw("Vertical") > 0){
                 isClimbing = true;
             }
         } else {

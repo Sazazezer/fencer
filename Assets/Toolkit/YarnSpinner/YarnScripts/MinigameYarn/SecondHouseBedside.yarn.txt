@@ -1,0 +1,18 @@
+title: SecondHouseBedside
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $SecondHouseBedside is 1>>
+I can rest later.
+<<endif>>
+
+<<if $SecondHouseBedside is 0>>
+Another Bed.
+It's tempting, but I shouldn't rest in soaking wet clothes.
+There's a journal here.
+<<set $SecondHouseBedside to 1>>
+<<addnewjournal SecondHouseBedside 4>>
+<<gointojournal SecondHouseBedside 4>>
+<<endif>>

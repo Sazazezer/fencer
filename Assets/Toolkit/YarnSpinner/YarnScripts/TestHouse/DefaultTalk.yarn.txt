@@ -14,7 +14,5 @@ This is the default talk box.
 And the reminder that you've yet to give this box anything decent to say.
 You're so mean.
 Have some test items.
-<<set $got_DefaultTestItem to true>>
-<<add_item("DefaultTestItem")>>
 <<set $DefaultTalk to 1>>
 <<endif>>

@@ -1,0 +1,38 @@
+title: DefaultPuzzle
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $DefaultPuzzle is 2>>
+Hurray forever.
+<<endif>>
+
+<<if check_puzzlelock("DefaultPuzzle") is false>>
+<<if $DefaultPuzzle is 1>>
+Well, i got into the drawer.
+It's empty, but the feeling of accomplishment drives me to ever dizzying and greater heights.
+Instinctively i now know the contents of another journal.
+Don't ask questions. You won't get answers.
+Wait a second.
+There's a fake panel here.
+Underneath it is a fully loaded semi automatic pistol.
+I'm not particularly knowledgable about guns.
+I think it may be a H&K VP70 with 19mm Parabellum rounds.
+But I have no clue about these things.
+<<playsoundeffect DefaultPuzzle PickupJournal>>
+Picked up Mary's Journal (2)!
+<<addnewjournal DefaultPuzzle 6>>
+<<gointojournal DefaultPuzzle 6>>
+<<set $DefaultPuzzle to 2>>
+<<endif>>
+<<endif>>
+
+<<if check_puzzlelock("DefaultPuzzle") is true>>
+<<if $DefaultPuzzle is 0>>
+Yay, another code.
+This threatens to be a trend.
+<<set $DefaultPuzzle to 1>>
+<<endif>>
+Let's have a look.
+<<gointopuzzle DefaultPuzzle>>
+<<endif>>

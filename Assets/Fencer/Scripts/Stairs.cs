@@ -21,7 +21,7 @@ public class Stairs : MonoBehaviour {
 	void Update () {
 
         //if(this.transform.position.y <= player.transform.position.y +50/*+ (playerHeight/2f)*/) {//inputState.absVelY < 1) || Input.GetKey("down")){ //was zero originally, cures jumping bug
-        if (Input.GetKey("down")){
+        if (Input.GetAxis("Vertical") < 0){
            boxColl.isTrigger = true;
         } else {
             boxColl.isTrigger = false;            

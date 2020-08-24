@@ -1,0 +1,17 @@
+title: SecondHouseBox
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $SecondHouseBox is 1>>
+Nothing else of use here.
+<<endif>>
+
+<<if $SecondHouseBox is 0>>
+A storage box.
+It's empty, but there is a notepad on top of it.
+<<addnewjournal SecondHouseBox 3>>
+<<gointojournal SecondHouseBox 3>>
+<<set $SecondHouseBox to 1>>
+<<endif>>

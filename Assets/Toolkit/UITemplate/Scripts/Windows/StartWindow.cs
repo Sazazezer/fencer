@@ -19,9 +19,9 @@ public class StartWindow : GenericWindow {
     }
 
     public void Update(){
-        if (Input.GetKeyDown("space")){
+        /*if (Input.GetKeyDown("space")){
             PlayerPrefs.SetInt("ContinueButton",0);
-        }
+        }*/
     }
 
 	public override void Open ()

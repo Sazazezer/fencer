@@ -1,0 +1,18 @@
+title: MilitaryGate
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $MilitaryGate is 1>>
+Do people really put keys under doormats?
+Never actually seen anyone do so.
+Let see what I can find.
+<<endif>>
+
+<<if $MilitaryGate is 0>>
+Locked.
+Guess that was obvious.
+And no doormat with a key either.
+<<set $MilitaryGate to 1>>
+<<endif>>

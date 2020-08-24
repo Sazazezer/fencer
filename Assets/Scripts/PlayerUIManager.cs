@@ -23,6 +23,7 @@ public class PlayerUIManager : MonoBehaviour {
 
 
     private void Start()    {
+        Debug.Log(PlayerPrefs.GetInt("AlItemsCollected",0));
         bag.GetComponent<Canvas> ().enabled = false;
         journal.GetComponent<Canvas> ().enabled = false;
        // puzzle.GetComponent<Canvas> ().enabled = false;

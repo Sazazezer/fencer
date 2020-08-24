@@ -1,0 +1,34 @@
+title: PreciousBox
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $PreciousBox is 2>>
+The box is open.
+The precious item is removed.
+Nothing else is needed.
+<<endif>>
+
+<<if check_puzzlelock("PreciousBox") is false>>
+<<if $PreciousBox is 1>>
+The box is open.
+A memory is in there.
+I should leave this with them.
+As a reminder.
+<<add_item("3PreciousItemPickup")>>
+<<increasePlayerPrefsvariable("AlItemsCollected")>>
+<<increasePlayerPrefsvariable("DoorShadow")>>
+You got the Precious Item!
+<<set $PreciousBox to 2>>
+<<endif>>
+<<endif>>
+
+<<if check_puzzlelock("PreciousBox") is true>>
+<<if $PreciousBox is 0>>
+This is the box containing what should be left behind.
+It is hidden behind a puzzle.
+<<set $PreciousBox to 1>>
+<<endif>>
+Let's have a look.
+<<gointopuzzle PreciousBox>>
+<<endif>>

@@ -18,6 +18,7 @@ TagManager:
   - EffectsManager
   - Climbable
   - Hider
+  - NPC
   layers:
   - Default
   - TransparentFX

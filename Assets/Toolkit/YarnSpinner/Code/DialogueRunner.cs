@@ -126,6 +126,15 @@ namespace Yarn.Unity
                 instance.transform.parent = null;
                 instance.transform.position = GameObject.Find("Player").transform.position;
             });
+            
+            dialogue.library.RegisterFunction ("increasePlayerPrefsvariable", 1, delegate(Value[] parameters) {
+                Debug.Log("PlayerPrefs script ran");
+                Debug.Log(PlayerPrefs.GetInt((string)parameters[0].AsString, 0));
+                int PlayerPrefsVariable = PlayerPrefs.GetInt((string)parameters[0].AsString, 0);
+                PlayerPrefsVariable++;
+                PlayerPrefs.SetInt((string)parameters[0].AsString, PlayerPrefsVariable);
+                Debug.Log(PlayerPrefs.GetInt((string)parameters[0].AsString, 0));
+            });
 
             dialogue.library.RegisterFunction ("checkvariable", 1, delegate(Value[] parameters) {
                 Debug.Log("I ran");

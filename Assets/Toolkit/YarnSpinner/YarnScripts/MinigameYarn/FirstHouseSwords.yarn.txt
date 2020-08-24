@@ -1,0 +1,17 @@
+title: FirstHouseSwords
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $FirstHouseSwords is 1>>
+This item was precious to him.
+But something smaller would be more suitable.
+<<endif>>
+
+<<if $FirstHouseSwords is 0>>
+It is odd, the things that get left behind.
+These swords meant something to him.
+Now they mean nothing to no one.
+<<set $FirstHouseSwords to 1>>
+<<endif>>

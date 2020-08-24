@@ -1,0 +1,17 @@
+title: MilitaryEmptyCabinets
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $MilitaryEmptyCabinets is 1>>
+Still empty.
+Still useless to me.
+<<endif>>
+
+<<if $MilitaryEmptyCabinets is 0>>
+Empty Cabinets.
+That's not fair.
+This should be full of secrets.
+<<set $MilitaryEmptyCabinets to 1>>
+<<endif>>

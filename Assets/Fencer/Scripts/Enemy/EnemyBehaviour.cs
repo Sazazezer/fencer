@@ -43,7 +43,9 @@ public class EnemyBehaviour : MonoBehaviour {
     public GameObject weaponPrefab;
     public Tactics tactics;
     public EnemyRank enemyRank;
+    public bool isChasing;
     public GameObject player;
+
     
     [SerializeField]
     Transform lineOfSightEnd;
@@ -57,6 +59,7 @@ public class EnemyBehaviour : MonoBehaviour {
         moveForward = GetComponent<MoveForward>();
         enemyReady = GetComponent<EnemyReady>();
         playerInRange = false;
+        player = GameObject.Find("Player");
     }
 
     void FixedUpdate(){
@@ -78,6 +81,7 @@ public class EnemyBehaviour : MonoBehaviour {
 //if(states == States.Walk){
             moveForward.OnWalk();
             DetectPlayer();
+            FacePlayer();
      //   }
     }
 
@@ -178,19 +182,34 @@ public class EnemyBehaviour : MonoBehaviour {
 
     }
 
-    
+    void FacePlayer(){
+        if (player.transform.position.x < transform.position.x){
+            direction = Directions.Left;
+            transform.localScale = new Vector3 (transform.localScale.x == 1 ? -1 : 1, 1, 1);
+        } else {
+            direction = Directions.Right;
+            transform.localScale = new Vector3 (transform.localScale.x == 1 ? -1 : 1, 1, 1);
+        }
+
+        transform.localScale = new Vector3((float)direction, 1, 1);
+        //transform.localScale = new Vector3 (transform.localScale.x == 1 ? -1 : 1, 1, 1);
+    }
 
     void Update(){
-        switch(states) {
-            case States.Idle: EnemyIdle(); break;
-            case States.Walk: EnemyWalk(); break;
-            case States.Attack: EnemyAttack(); break;
-            case States.Ready: EnemyReady(); break;
-            case States.Searching: EnemySearching(); break;
-            case States.Dead: EnemyDead(); break;
-            case States.Fall: EnemyFall(); break;
-            case States.Fly: EnemyFly(); break;
+        //switch(states) {
+            //case States.Idle: EnemyIdle(); break;
+           /* case states =  States.Walk:*/ EnemyWalk();// break;
+          //  case States.Attack: EnemyAttack(); break;
+          //  case States.Ready: EnemyReady(); break;
+          //  case States.Searching: EnemySearching(); break;
+          //  case States.Dead: EnemyDead(); break;
+           // case States.Fall: EnemyFall(); break;
+          //  case States.Fly: EnemyFly(); break;
+       // }
+        if (isChasing){
+            FacePlayer();
         }
+
     }
 
  /*   protected virtual void ToggleScripts(bool value){

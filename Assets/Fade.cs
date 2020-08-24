@@ -38,4 +38,20 @@ public class Fade : MonoBehaviour {
         canvasGroup.interactable = false;
         yield return null;
     }
+
+    public void CutToBlack(){
+        StartCoroutine (BlackCut());
+    }
+
+    IEnumerator BlackCut (){
+        CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
+        while (canvasGroup.alpha<1){
+            canvasGroup.alpha = 1;
+            yield return null;
+        }
+        screenIsDark = true;
+        canvasGroup.interactable = false;
+        yield return null;
+    }
+
 }

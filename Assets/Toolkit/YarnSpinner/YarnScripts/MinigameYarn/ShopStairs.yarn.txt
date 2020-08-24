@@ -1,0 +1,15 @@
+title: ShopStairs
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ShopStairs is 1>>
+I'll have to find another way.
+<<endif>>
+
+<<if $ShopStairs is 0>>
+The stairs have been left unattended.
+The termites rule here now.
+<<set $ShopStairs to 1>>
+<<endif>>

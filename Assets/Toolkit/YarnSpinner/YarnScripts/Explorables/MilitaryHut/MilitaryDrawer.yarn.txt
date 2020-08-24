@@ -1,0 +1,24 @@
+title: MilitaryDrawer
+tags: Key
+colorID: 0
+position: 540,260
+---
+
+<<if visited ("MilitaryDrawer") is false>>
+Oooh. Fancy military secrets.
+Revealing all the things da man doesn't want us to know.
+That's what i'd be saying if these cabinets weren't stripped clean.
+What's this?
+A key.
+My key.
+<<playsoundeffect MilitaryDrawer Pickup>>
+Picked up Sturdy Key!
+<<add_item("7MilitaryGateKey")>>
+<<stop>>
+<<endif>>
+
+<<if visited ("MilitaryDrawer") is true>>
+Empty now.
+Only the military's top secret dirt project remains.
+<<stop>>
+<<endif>>

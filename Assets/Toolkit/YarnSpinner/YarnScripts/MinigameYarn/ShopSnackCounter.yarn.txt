@@ -1,0 +1,15 @@
+title: ShopSnackCounter
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ShopSnackCounter is 1>>
+I don't want to keep looking at it.
+<<endif>>
+
+<<if $ShopSnackCounter is 0>>
+...
+Food does not age well.
+<<set $ShopSnackCounter to 1>>
+<<endif>>

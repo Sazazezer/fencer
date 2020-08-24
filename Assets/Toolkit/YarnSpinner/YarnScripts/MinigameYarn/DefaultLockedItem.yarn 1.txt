@@ -1,0 +1,32 @@
+title: DefaultLockedItem
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $DefaultLockedItem is 2>>
+DefaultLockedItem Test is complete.
+<<endif>>
+
+<<if check_lock("DefaultLockedItem") is false>>
+<<if $DefaultLockedItem is 1>>
+DefaultLockedItem has been opened.
+Congrats.
+<<set $DefaultLockedItem to 2>>
+<<endif>>
+<<endif>>
+
+<<if check_lock("DefaultLockedItem") is true>>
+<<if $DefaultLockedItem is 1>>
+This is the default locked item.
+You need the key for it.
+The drawer to my left.
+<<endif>>
+<<endif>>
+
+<<if $DefaultLockedItem is 0>>
+This is the default locked item.
+You need the key for it.
+The drawer to my left.
+<<set $DefaultLockedItem to 1>>
+<<endif>>

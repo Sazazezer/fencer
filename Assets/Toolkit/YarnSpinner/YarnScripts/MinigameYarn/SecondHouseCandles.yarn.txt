@@ -1,0 +1,16 @@
+title: SecondHouseCandles
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $SecondHouseCandles is 1>>
+I have plenty of time, but i still shouldn't waste it.
+<<endif>>
+
+<<if $SecondHouseCandles is 0>>
+A candelabra.
+There's nothing special about it.
+Though i'm guessing the owner would disagree.
+<<set $SecondHouseCandles to 1>>
+<<endif>>

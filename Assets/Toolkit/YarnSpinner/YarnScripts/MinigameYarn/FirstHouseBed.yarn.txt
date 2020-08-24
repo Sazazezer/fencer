@@ -1,0 +1,21 @@
+title: FirstHouseBed
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $FirstHouseBed is 1>>
+...
+I should move on.
+There is more to do.
+<<endif>>
+
+<<if $FirstHouseBed is 0>>
+His bed.
+It looks like he got a new one after she left.
+It's a lot smaller than I would have liked.
+His journal is here.
+<<addnewjournal FirstHouseBed 1>>
+<<gointojournal FirstHouseBed 1>>
+<<set $FirstHouseBed to 1>>
+<<endif>>

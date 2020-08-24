@@ -1,0 +1,10 @@
+title: MilitaryHutSign
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $MilitaryHutSign is 0>>
+Personnel Notice:
+All Personnel (military, police and any other services) should be evacuated from this area as of 5th July 1300h. Fabrications to be left in place until after the primary eruption has occurred.
+<<endif>>

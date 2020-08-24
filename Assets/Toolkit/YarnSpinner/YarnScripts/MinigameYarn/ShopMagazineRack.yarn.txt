@@ -1,0 +1,17 @@
+title: ShopMagazineRack
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ShopMagazineRack is 1>>
+I can read it all later.
+<<endif>>
+
+<<if $ShopMagazineRack is 0>>
+Some old magazines.
+One of my old favourites is here.
+I'll take it with me.
+<<addnewjournal ShopMagazineRack 5>>
+<<gointojournal ShopMagazineRack 5>>
+<<endif>>

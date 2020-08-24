@@ -1,0 +1,20 @@
+title: FirstRoomSideboard
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $FirstRoomSideboard is 1>>
+There is no trust left in this box.
+<<endif>>
+
+<<if $FirstRoomSideboard is 0>>
+A key to another house.
+There must have been some trust here.
+To share access to another abode.
+This is now my trust.
+Got the key to the other house!
+<<set $got_SecondHouseKey to true>>
+<<add_item("1SecondHouseKeyPickup")>>
+<<set $FirstRoomSideboard to 1>>
+<<endif>>

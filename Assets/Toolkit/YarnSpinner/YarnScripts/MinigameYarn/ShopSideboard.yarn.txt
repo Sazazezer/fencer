@@ -1,0 +1,18 @@
+title: ShopSideboard
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ShopSideboard is 1>>
+This should get me the last thing I need.
+<<endif>>
+
+<<if $ShopSideboard is 0>>
+Some old notes are here.
+Mostly bookkeeping for the shops.
+One note stands out though.
+<<set $ShopSideboard to 1>>
+<<addnewjournal ShopSideboard 6>>
+<<gointojournal ShopSideboard 6>>
+<<endif>>

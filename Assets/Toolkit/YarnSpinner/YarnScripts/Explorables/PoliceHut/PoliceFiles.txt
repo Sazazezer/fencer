@@ -1,0 +1,18 @@
+title: PoliceFiles
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $PoliceFiles is 1>>
+Now this place is truly useless.
+<<endif>>
+
+<<if $PoliceFiles is 0>>
+I suppose it was too much to expect this place to be full of clues.
+At the very least, it would have been nice for them to provide me with a details summary.
+There is exactly one file left.
+<<addnewjournal PoliceFiles 2>>
+<<gointojournal PoliceFiles 2>>
+<<set $PoliceFiles to 1>>
+<<endif>>

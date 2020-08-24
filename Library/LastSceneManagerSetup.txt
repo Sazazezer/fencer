@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/MiniGame/DeadBody.unity
+- path: Assets/Fencer/Scenes/MainGameRooms/MilitaryHut.unity
   isLoaded: 1
   isActive: 1

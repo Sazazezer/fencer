@@ -28,13 +28,14 @@ public class DoorTransition : MonoBehaviour {
     public AudioClip doorOpenSound;
     private float doorOpenVolume = 0.5f;
     private AudioSource source;
-
+    public GameObject player;
     public GameObject fadeCanvas;
     public GameObject fadePanelKill;
     private Fade fade;
     public bool areaTransition = false;
 
     void Awake(){
+        player = GameObject.Find("Player");
         fadeCanvas = GameObject.Find("FadeCanvas");
         fadePanelKill = GameObject.Find("FadePanel");
     }
@@ -45,16 +46,21 @@ public class DoorTransition : MonoBehaviour {
     }
  
     void OnTriggerStay2D(Collider2D other){
-       if (areaTransition == false && Input.GetButtonUp("Up") && other.tag == "Player" ){
+       if (areaTransition == false && Input.GetAxis("Vertical") > 0 && other.tag == "Player" ){
                 if (this.GetComponent<DoorLock>().locked == false){
                     if(fadeCanvas != null){
-                        GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().PlayOneShot(doorOpenSound,doorOpenVolume);
-                        fadeCanvas.GetComponent<Fade>().MeFade();
-                        StartCoroutine(WaitForFadeIn());   
+                            if (!source.isPlaying){
+                                source.PlayOneShot(doorOpenSound,doorOpenVolume);
+                            }
+                            //GameObject.FindGameObjectWithTag("EffectsManager").GetComponent<AudioSource>().PlayOneShot(doorOpenSound,doorOpenVolume);
+                            player.GetComponent<Walk>().canWalk = false;
+                            fadeCanvas.GetComponent<Fade>().MeFade();
+                            StartCoroutine(WaitForFadeIn());   
+
                     } 
                     
                 } 
-        } else if (areaTransition == true){
+        } else if (areaTransition == true && other.tag == "Player"){
             fadeCanvas.GetComponent<Fade>().MeFade();
             if (doorSide == DoorSide.leftdown){
                 PlayerPrefs.SetInt("DoorSide",0);

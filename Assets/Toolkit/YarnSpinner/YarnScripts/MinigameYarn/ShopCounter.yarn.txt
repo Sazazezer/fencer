@@ -1,0 +1,16 @@
+title: ShopCounter
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ShopCounter is 1>>
+I should make sure I get my money's worth.
+<<endif>>
+
+<<if $ShopCounter is 0>>
+I'll leave some money here.
+I am taking things. I should pay.
+It's not like I'll be coming back here.
+<<set $ShopCounter to 1>>
+<<endif>>

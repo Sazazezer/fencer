@@ -24,6 +24,16 @@
             "lockNumber": 4,
             "doorName": "Test209LockedDrawer",
             "doorUnlocked": 0
+        },
+        {
+            "lockNumber": 5,
+            "doorName": "Test209LockedDrawer",
+            "doorUnlocked": 0
+        },
+        {
+            "lockNumber": 6,
+            "doorName": "Test209LockedDrawer",
+            "doorUnlocked": 0
         }
     ]
 }

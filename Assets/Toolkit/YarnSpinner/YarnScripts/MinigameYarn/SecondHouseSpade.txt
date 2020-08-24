@@ -1,0 +1,20 @@
+title: SecondHouseSpade
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $SecondHouseSpade is 1>>
+I am not quite done here.
+<<endif>>
+
+<<if $SecondHouseSpade is 0>>
+There was a collapsible spade in the drawer.
+Perfect for carrying.
+Perfect for hole digging.
+Got the Collapsible Spade!
+<<set $got_SecondHouseSpade to true>>
+<<add_item("2SecondHouseSpadePickup")>>
+<<increasePlayerPrefsvariable("AlItemsCollected")>>
+<<set $SecondHouseSpade to 1>>
+<<endif>>

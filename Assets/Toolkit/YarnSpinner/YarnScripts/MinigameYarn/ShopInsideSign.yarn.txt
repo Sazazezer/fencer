@@ -1,0 +1,17 @@
+title: ShopInsideSign
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ShopInsideSign is 1>>
+The other side is blank.
+<<endif>>
+
+<<if $ShopInsideSign is 0>>
+"Fire Wrecks House of Five."
+I heard about this.
+Everyone survived.
+That's good.
+<<set $ShopInsideSign to 1>>
+<<endif>>

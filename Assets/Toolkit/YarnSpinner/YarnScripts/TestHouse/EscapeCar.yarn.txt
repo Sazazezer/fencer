@@ -4,13 +4,8 @@ colorID: 0
 position: 540,260
 ---
 
-<<if $bodyNotBuried is 0>>
-It is not yet time to leave.
-<<endif>>
-
-<<if $bodyNotBuried is 1>>
-It is time to escape.
-Let us go.
+<<if $myCar is 3>>
+I suppose i best get to it.
 <<endif>>
 
 <<if $myCar is 2>>
@@ -35,11 +30,7 @@ Reality doesn't care either way.
 
 <<if $myCar is 0>>
 My Car. This is what i arrived in.
-I sure do love my car.
-I love it because it's so clunky and well worn, and that together we've had many adventures.
-I certainly like it better than the previous one.
-You know, the placeholder art.
-That lovely flashy green car.
-This one is sooooooo much better.
+It is what i will leave in.
+
 <<set $myCar to 1>>
 <<endif>>

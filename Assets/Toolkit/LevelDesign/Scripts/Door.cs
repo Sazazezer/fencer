@@ -6,7 +6,7 @@ public class Door : MonoBehaviour {
 	public float closeDelay = .5f;
 
 	Animator animator;
-	new BoxCollider2D collider2D;
+	BoxCollider2D collider2D;
 
 	// Use this for initialization
 	void Start () {

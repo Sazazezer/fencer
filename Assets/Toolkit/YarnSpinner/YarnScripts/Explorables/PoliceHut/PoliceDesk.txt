@@ -1,0 +1,23 @@
+title: PoliceDesk
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $PoliceDesk is 2>>
+*sigh*
+<<endif>>
+
+<<if $PoliceDesk is 1>>
+Drawers are empty too.
+This place is a bust.
+A police bust.
+He he.
+<<set $PoliceDesk to 2>>
+<<endif>>
+
+<<if $PoliceDesk is 0>>
+Covered in nothing but dust.
+This doesn't bode well.
+<<set $PoliceDesk to 1>>
+<<endif>>

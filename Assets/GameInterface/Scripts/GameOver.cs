@@ -27,8 +27,8 @@ public class GameOver : MonoBehaviour {
         	gameOverText.text = " Oh No. \n Death! \n Press R to Restart";
         	}
         }
-        if (Input.GetKeyDown("r")){
+       /* if (Input.GetKeyDown("r")){
             	SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
-         	}
+         	}*/
     	}
     }

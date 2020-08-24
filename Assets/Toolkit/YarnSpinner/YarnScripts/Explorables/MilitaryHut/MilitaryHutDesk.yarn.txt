@@ -1,0 +1,20 @@
+title: MilitaryHutDesk
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $MilitaryHutDesk is 1>>
+...
+It's not like i'm actually going to do it though.
+<<endif>>
+
+<<if $MilitaryHutDesk is 0>>
+Oh wow. This is old.
+Like 'What is Windows' old.
+I suppose it could go into my car at the end of all this.
+UrbEx rules usually state thou shalt not steal from the places we found abandoned.
+But technically this little hut isn't fully abandoned.
+So it's only actual stealing in this particular case.
+<<set $MilitaryHutDesk to 1>>
+<<endif>>

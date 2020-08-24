@@ -1,0 +1,16 @@
+title: MiniGameEscapeCar
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $MiniGameEscapeCar is 1>>
+My work here is not yet done.
+<<endif>>
+
+<<if $MiniGameEscapeCar is 0>>
+My car.
+I will come back to it when it is time to leave.
+It is not yet time.
+<<set $MiniGameEscapeCar to 1>>
+<<endif>>

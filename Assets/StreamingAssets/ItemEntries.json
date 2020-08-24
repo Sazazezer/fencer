@@ -7,28 +7,38 @@
         },
         {
             "index": 1,
-            "itemName": "DefaultTestItem",
+            "itemName": "MilitaryGateKeyButton",
             "itemPicked": 0
         },
         {
             "index": 2,
-            "itemName": "DefaultTestItem",
+            "itemName": "SecondHouseSpadeButton",
             "itemPicked": 0
         },
         {
             "index": 3,
-            "itemName": "InsideTestItem",
+            "itemName": "PreciousItemButton",
             "itemPicked": 0
         },
         {
             "index": 4,
-            "itemName": "House209DoorKeyButton",
+            "itemName": "ThirdHouseKeyButton",
             "itemPicked": 0
         },
         {
             "index": 5,
-            "itemName": "GoldenBoxButton",
+            "itemName": "ThirdHouseTarpButton",
             "itemPicked": 0
+        },
+        {
+            "index": 6,
+            "itemName": "DefaultTestItemButton",
+            "itemPicked": 0
+        },
+        {
+            "index": 7,
+            "itemName": "MilitaryGateKeyButton",
+            "itemPicked": 1
         }
     ]
 }

@@ -43,7 +43,10 @@ public class LongJump : Jump {
 		base.OnJump();
 		canLongJump = true;
         if(!source.isPlaying && this.GetComponent<PlayerUIManager>().inJournal == false && this.GetComponent<PlayerUIManager>().inBag == false && this.GetComponent<PlayerUIManager>().inPuzzle == false){
-            source.PlayOneShot(jumpSound,jumpVolume);            
+        	if(jumpSound!=null){
+            	source.PlayOneShot(jumpSound,jumpVolume);          		
+        	}
+          
         }
 
 	}

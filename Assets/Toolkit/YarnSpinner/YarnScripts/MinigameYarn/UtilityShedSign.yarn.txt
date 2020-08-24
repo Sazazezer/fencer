@@ -1,0 +1,16 @@
+title: UtilityShedSign
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $UtilityShedSign is 1>>
+I don't think I'll be finding anything of use here.
+<<endif>>
+
+<<if $UtilityShedSign is 0>>
+Looks like an old Utility shed.
+Must have been for the forest rangers or something.
+A peek through the window reveals it's been stripped clean of anything useful.
+<<set $UtilityShedSign to 1>>
+<<endif>>

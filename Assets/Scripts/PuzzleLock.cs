@@ -14,7 +14,13 @@ public class PuzzleLock : MonoBehaviour {
     public GameObject canvas;
     public GameObject unlockedItem;
     public bool locked = true;
+    public Sprite unlockedSprite;
 
+    void Start(){
+        if (locked == false){
+            SwitchUnlockSprite();
+        }
+    }
     public void OnTriggerStay2D(Collider2D other){
      //   if (Input.GetButtonUp("Jump") && other.tag == "Player"){
 
@@ -39,5 +45,12 @@ public class PuzzleLock : MonoBehaviour {
             unlockedItem.SetActive(true);            
         }
         locked = false;
+        SwitchUnlockSprite();
+    }
+
+    public void SwitchUnlockSprite(){
+        if (unlockedSprite!=null){
+            gameObject.GetComponent<SpriteRenderer>().sprite = unlockedSprite;
+        }     
     }
 }

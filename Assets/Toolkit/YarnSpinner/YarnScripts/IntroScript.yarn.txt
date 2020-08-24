@@ -4,8 +4,8 @@ colorID: 0
 position: 540,260
 ---
 <<set $openingRan to 1>>
-Hello there.
-Let's get started, shall we?
+Yadaa yada yada let's get started.
 <<set $openingRan to 1>>
 <<forceSave>>
-This will never be appreciated, and it is your own fault for ever assuming otherwise. <<changesceneto IntroScript DeadBody>>
+This will never be appreciated, and it is your own fault for ever assuming otherwise. 
+<<changesceneto IntroScript MilitaryBarrier>>

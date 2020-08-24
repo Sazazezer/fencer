@@ -1,0 +1,16 @@
+title: ShopTelevision
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ShopTelevision is 1>>
+I wonder if it's in black and white.
+It doesn't matter.
+<<endif>>
+
+<<if $ShopTelevision is 0>>
+Looks like someone still follows the old ways.
+I would if this still works all that well.
+<<set $ShopTelevision to 1>>
+<<endif>>

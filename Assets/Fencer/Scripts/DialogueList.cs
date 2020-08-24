@@ -21,13 +21,13 @@ public class DialogueList : MonoBehaviour {
     }
 
     void Update () {
-        if (Input.GetKeyDown(KeyCode.K)) {
+     /*   if (Input.GetKeyDown(KeyCode.K)) {
             Save();
         }
         if (Input.GetKeyDown(KeyCode.L)) {
             LoadFromJson();
             Debug.Log("woop");
-        }
+        }*/
 
       //  Debug.Log(variableStorage.Variables);
     }

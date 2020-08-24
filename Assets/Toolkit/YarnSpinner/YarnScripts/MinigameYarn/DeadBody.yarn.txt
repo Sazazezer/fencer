@@ -1,0 +1,19 @@
+title: DeadBody
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $DeadBody is 1>>
+Still dead.
+There are a few more things to get.
+<<endif>>
+
+<<if $DeadBody is 0>>
+They're dead... 
+No more to it than that.
+I should bury them.
+I'll need a spade and something to wrap them in.
+Maybe a grave marker.
+<<set $DeadBody to 1>>
+<<endif>>
