@@ -3386,6 +3386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2028283576}
   scale: 4
+  newY: 0
 --- !u!114 &667217527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3891,16 +3892,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.79
       objectReference: {fileID: 0}
-    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
-        type: 3}
-      propertyPath: characterName
-      value: FirstHouseBed
-      objectReference: {fileID: 0}
-    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
-        type: 3}
-      propertyPath: talkToNode
-      value: FirstHouseBed
-      objectReference: {fileID: 0}
     - target: {fileID: 212388736723132500, guid: 35d02812d1c99d247b43b314aa8d5413,
         type: 3}
       propertyPath: m_Enabled
@@ -3931,6 +3922,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.34901962
+      objectReference: {fileID: 0}
+    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
+        type: 3}
+      propertyPath: characterName
+      value: FirstHouseBed
+      objectReference: {fileID: 0}
+    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
+        type: 3}
+      propertyPath: talkToNode
+      value: FirstHouseBed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35d02812d1c99d247b43b314aa8d5413, type: 3}
@@ -6465,16 +6466,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.40249747
       objectReference: {fileID: 0}
-    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
-        type: 3}
-      propertyPath: characterName
-      value: FirstRoomSideboard
-      objectReference: {fileID: 0}
-    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
-        type: 3}
-      propertyPath: talkToNode
-      value: FirstRoomSideboard
-      objectReference: {fileID: 0}
     - target: {fileID: 212388736723132500, guid: 35d02812d1c99d247b43b314aa8d5413,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -6489,6 +6480,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
+        type: 3}
+      propertyPath: characterName
+      value: FirstRoomSideboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
+        type: 3}
+      propertyPath: talkToNode
+      value: FirstRoomSideboard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35d02812d1c99d247b43b314aa8d5413, type: 3}
@@ -9659,16 +9660,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.79
       objectReference: {fileID: 0}
-    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
-        type: 3}
-      propertyPath: characterName
-      value: FirstHouseTelevision
-      objectReference: {fileID: 0}
-    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
-        type: 3}
-      propertyPath: talkToNode
-      value: FirstHouseTelevision
-      objectReference: {fileID: 0}
     - target: {fileID: 212388736723132500, guid: 35d02812d1c99d247b43b314aa8d5413,
         type: 3}
       propertyPath: m_Enabled
@@ -9699,6 +9690,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.34901962
+      objectReference: {fileID: 0}
+    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
+        type: 3}
+      propertyPath: characterName
+      value: FirstHouseTelevision
+      objectReference: {fileID: 0}
+    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
+        type: 3}
+      propertyPath: talkToNode
+      value: FirstHouseTelevision
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35d02812d1c99d247b43b314aa8d5413, type: 3}

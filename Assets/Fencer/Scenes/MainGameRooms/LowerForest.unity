@@ -24263,6 +24263,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.83737975
       objectReference: {fileID: 0}
+    - target: {fileID: 212388736723132500, guid: 35d02812d1c99d247b43b314aa8d5413,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
         type: 3}
       propertyPath: characterName
@@ -24272,11 +24277,6 @@ PrefabInstance:
         type: 3}
       propertyPath: talkToNode
       value: UtilityShedSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 212388736723132500, guid: 35d02812d1c99d247b43b314aa8d5413,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35d02812d1c99d247b43b314aa8d5413, type: 3}

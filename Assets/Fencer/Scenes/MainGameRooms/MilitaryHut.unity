@@ -350,22 +350,22 @@ PrefabInstance:
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.90625
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
@@ -380,22 +380,22 @@ PrefabInstance:
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 241.92834
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 956.18274
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1600
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 899.356
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
@@ -420,27 +420,27 @@ PrefabInstance:
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.679375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.679375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.679375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224438836170403884, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
@@ -1616,6 +1616,7 @@ GameObject:
   - component: {fileID: 501378332}
   - component: {fileID: 501378334}
   - component: {fileID: 501378333}
+  - component: {fileID: 501378335}
   m_Layer: 0
   m_Name: MilitaryDrawer
   m_TagString: NPC
@@ -1702,6 +1703,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &501378335
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501378331}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 24, y: 24}
+    newSize: {x: 24, y: 24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 24, y: 24}
+  m_EdgeRadius: 0
 --- !u!114 &516760270 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114160380668982704, guid: adaba2e54b91a79439aeb6658a152988,
@@ -1873,6 +1900,7 @@ GameObject:
   - component: {fileID: 532524693}
   - component: {fileID: 532524695}
   - component: {fileID: 532524694}
+  - component: {fileID: 532524696}
   m_Layer: 0
   m_Name: MilitaryEmptyCabinets
   m_TagString: NPC
@@ -1958,6 +1986,32 @@ MonoBehaviour:
   autoPlay: 0
   talkToNode: MilitaryEmptyCabinets
   scriptToLoad: {fileID: 0}
+--- !u!61 &532524696
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532524692}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2993164, y: 0.5975647}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.3754883, y: 17.638367}
+  m_EdgeRadius: 0
 --- !u!1 &551221063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,6 +2023,7 @@ GameObject:
   - component: {fileID: 551221064}
   - component: {fileID: 551221066}
   - component: {fileID: 551221065}
+  - component: {fileID: 551221067}
   m_Layer: 0
   m_Name: MilitaryCounter
   m_TagString: NPC
@@ -1984,7 +2039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551221063}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.336945, y: -53.489014, z: 6.40625}
+  m_LocalPosition: {x: 37.336945, y: -52.9, z: 6.40625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787662850}
@@ -2054,6 +2109,32 @@ MonoBehaviour:
   autoPlay: 0
   talkToNode: MilitaryCounter
   scriptToLoad: {fileID: 0}
+--- !u!61 &551221067
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551221063}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 16.59877, y: 6.25852}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 57.1445, y: 12.517139}
+  m_EdgeRadius: 0
 --- !u!1 &584014847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +2293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2028283576}
   scale: 4
+  newY: 0
 --- !u!114 &667217527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3267,6 +3349,7 @@ GameObject:
   - component: {fileID: 1029937604}
   - component: {fileID: 1029937606}
   - component: {fileID: 1029937605}
+  - component: {fileID: 1029937607}
   m_Layer: 0
   m_Name: MilitaryHutDesk
   m_TagString: NPC
@@ -3352,6 +3435,32 @@ MonoBehaviour:
   autoPlay: 0
   talkToNode: MilitaryHutDesk
   scriptToLoad: {fileID: 0}
+--- !u!61 &1029937607
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029937603}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00064086914, y: -4.260229}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 16.73059, y: 9.71648}
+  m_EdgeRadius: 0
 --- !u!1001 &1058453153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4186,11 +4295,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4732812396727580, guid: 9a4530dc0438d8940b2874efe82097b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -114
+      value: -116.06
       objectReference: {fileID: 0}
     - target: {fileID: 4732812396727580, guid: 9a4530dc0438d8940b2874efe82097b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -35.03
+      value: -47.2
       objectReference: {fileID: 0}
     - target: {fileID: 4732812396727580, guid: 9a4530dc0438d8940b2874efe82097b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4218,7 +4327,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4732812396727580, guid: 9a4530dc0438d8940b2874efe82097b0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 9.176133
+      value: 12.082214
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732812396727580, guid: 9a4530dc0438d8940b2874efe82097b0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9156914
       objectReference: {fileID: 0}
     - target: {fileID: 212711977971938896, guid: 9a4530dc0438d8940b2874efe82097b0,
         type: 3}
@@ -4566,6 +4679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1378761098}
   - component: {fileID: 1378761099}
+  - component: {fileID: 1378761100}
   m_Layer: 0
   m_Name: desk1 (1)
   m_TagString: NPC
@@ -4635,6 +4749,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1378761100
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378761097}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 12, y: 24}
+    newSize: {x: 28, y: 14}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12, y: 24}
+  m_EdgeRadius: 0
 --- !u!1 &1385079570
 GameObject:
   m_ObjectHideFlags: 0
@@ -6136,7 +6276,7 @@ GameObject:
   - component: {fileID: 1851815809}
   m_Layer: 0
   m_Name: MilitaryBarrierDoor
-  m_TagString: NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7863,8 +8003,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485057480166943}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.4, y: -41.63, z: -1}
-  m_LocalScale: {x: 1.2374974, y: 1.1037183, z: 0.3}
+  m_LocalPosition: {x: -20.4, y: -38.596, z: -1}
+  m_LocalScale: {x: 1.2374974, y: 1.2725872, z: 0.3}
   m_Children:
   - {fileID: 1277380233}
   m_Father: {fileID: 716071821}

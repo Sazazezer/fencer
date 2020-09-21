@@ -1,0 +1,22 @@
+title: EntranceTreeSign
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $EntranceTreeSign is 2>>
+Now that i look at it closely, this plaque looks kind of new.
+<<endif>>
+
+<<if $EntranceTreeSign is 1>>
+It would have kind of sucked if the tree had died about a year in due to neglect.
+<<set $EntranceTreeSign to 2>>
+<<endif>>
+
+<<if $EntranceTreeSign is 0>>
+A placard dedicated to the planting of the tree at the founding of this village.
+It states that so long as the tree stands, so too shall the villagers of Askance in solidarity.
+"The village shall not be abandoned. Our hope will forever shine."
+Guess they didn't count on volcano explosion death.
+<<set $EntranceTreeSign to 1>>
+<<endif>>

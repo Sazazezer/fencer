@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0146BAE0-8039-E77A-FB35-02874F70BB1D}</ProjectGuid>
+    <ProjectGuid>{931133C7-5E8B-6F4A-4A22-ACA41C4A9ECE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,6 +58,7 @@
      <Compile Include="Assets\AreYouSure.cs" />
      <Compile Include="Assets\AreYouSureExit.cs" />
      <Compile Include="Assets\BossHealthBar.cs" />
+     <Compile Include="Assets\CameraZoom.cs" />
      <Compile Include="Assets\CharacterActivation.cs" />
      <Compile Include="Assets\ChoicesNo.cs" />
      <Compile Include="Assets\ChoicesYes.cs" />
@@ -310,6 +311,7 @@
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\SecondHouseSideboard.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\FirstRoomSideboard.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\InsideTestLockedItem1.yarn.txt" />
+     <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\JournalEntryTexts\MilitaryDrawer.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestBin.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\ShopMagazineRack.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\SecondHouseSpade.txt" />
@@ -348,6 +350,7 @@
      <None Include="Assets\Toolkit\YarnSpinner\README.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\208Door211.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\FirstHouseTelevision.yarn.txt" />
+     <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\LowerVillageEntranceWest\EntranceTreeSign.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestDoorDrawer.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestCarLeaving.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestLockedSideboard.yarn.txt" />
@@ -375,19 +378,19 @@
      <None Include="Assets\Toolkit\YarnSpinner\Examples\DemoAssets\Space\Bob.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\PreciousBox.yarn.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>G:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -591,25 +594,25 @@
  <HintPath>G:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Antlr4.Runtime.Standard">
- <HintPath>G:/dormant/fencer-master/Assets/Toolkit/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Assets/Toolkit/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
  </Reference>
  <Reference Include="CsvHelper">
- <HintPath>G:/dormant/fencer-master/Assets/Toolkit/YarnSpinner/Code/CsvHelper.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Assets/Toolkit/YarnSpinner/Code/CsvHelper.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>G:/dormant/fencer-master/Assets/Toolkit/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Assets/Toolkit/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="YarnSpinner">
- <HintPath>G:/dormant/fencer-master/Assets/Toolkit/YarnSpinner/Code/YarnSpinner.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Assets/Toolkit/YarnSpinner/Code/YarnSpinner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>G:/dormant/fencer-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>G:/dormant/fencer-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>G:/dormant/fencer-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>G:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

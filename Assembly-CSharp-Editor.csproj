@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7A8EA4D7-881A-DAC9-F782-DFBD7880E3B8}</ProjectGuid>
+    <ProjectGuid>{D613A271-9E4D-CE57-3518-05787F6ADA9C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -63,19 +63,19 @@
      <Compile Include="Assets\Toolkit\TileMapEditor\Editor\TilePickerWindow.cs" />
      <Compile Include="Assets\Toolkit\UITemplate\Editor\WindowManagerEditor.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>G:/dormant/fencer-master/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>G:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -318,31 +318,31 @@
  <HintPath>G:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Antlr4.Runtime.Standard">
- <HintPath>G:/dormant/fencer-master/Assets/Toolkit/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Assets/Toolkit/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
  </Reference>
  <Reference Include="CsvHelper">
- <HintPath>G:/dormant/fencer-master/Assets/Toolkit/YarnSpinner/Code/CsvHelper.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Assets/Toolkit/YarnSpinner/Code/CsvHelper.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>G:/dormant/fencer-master/Assets/Toolkit/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Assets/Toolkit/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="YarnSpinner">
- <HintPath>G:/dormant/fencer-master/Assets/Toolkit/YarnSpinner/Code/YarnSpinner.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Assets/Toolkit/YarnSpinner/Code/YarnSpinner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>G:/dormant/fencer-master/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>G:/dormant/fencer-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>G:/dormant/fencer-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>G:/dormant/fencer-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>G:/dormant/fencer-master/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>G:/dormantgit/fencer/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>G:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
@@ -374,7 +374,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{0146BAE0-8039-E77A-FB35-02874F70BB1D}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{931133C7-5E8B-6F4A-4A22-ACA41C4A9ECE}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
