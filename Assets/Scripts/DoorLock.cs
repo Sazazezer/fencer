@@ -13,6 +13,7 @@ public class DoorLock : MonoBehaviour {
     public GameObject itemKill;
     public GameObject linkedItem;
     public bool locked = true;
+    public bool fakeDoor = false;
     public AudioClip doorUnlockSound;
     private float doorUnlockVolume = 0.5f;
     public AudioClip doorStillLockedSound;
@@ -75,7 +76,11 @@ public class DoorLock : MonoBehaviour {
             if (!source.isPlaying){
                 source.PlayOneShot(doorStillLockedSound,doorUnlockVolume);
             }
-            FindObjectOfType<TextBoxManager>().UpdateTextBox("Locked.");
+            if (fakeDoor){
+            	FindObjectOfType<TextBoxManager>().UpdateTextBox("Jammed. Looks like the lock is broken.");
+            } else{
+            	FindObjectOfType<TextBoxManager>().UpdateTextBox("Locked.");
+            }
         }
     }
 
