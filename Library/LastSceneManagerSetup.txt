@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/MainGameRooms/LowerVillageWest.unity
+- path: Assets/Fencer/Scenes/MainGameRooms/PoorGirlsHouse.unity
   isLoaded: 1
   isActive: 1

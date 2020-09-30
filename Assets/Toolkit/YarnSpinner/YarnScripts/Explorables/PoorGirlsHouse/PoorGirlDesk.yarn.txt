@@ -1,0 +1,31 @@
+title: PoorGirlDesk
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $PoorGirlDesk is 3>>
+No. I won't loot.
+<<endif>>
+
+<<if $PoorGirlDesk is 2>>
+Though it's not like this place isn't destined to be molten lava in, like, less than seven minutes.
+I probably could get away with it.
+But on the off chance someone is coming back to this place...
+<<set $PoorGirlDesk to 3>>
+<<endif>>
+
+<<if $PoorGirlDesk is 1>>
+I mean, i'm sure other Urban Explorers are stealing stuff all the time.
+But we all say you shouldn't.
+Not to mention i'm pretty limited in car space.
+<<set $PoorGirlDesk to 2>>
+<<endif>>
+
+<<if $PoorGirlDesk is 0>>
+Ornamental swords.
+One looks pretty expensive.
+If i were the stealing type, i would so be stealing these.
+It would kind of piss off the whole community though.
+<<set $PoorGirlDesk to 1>>
+<<endif>>

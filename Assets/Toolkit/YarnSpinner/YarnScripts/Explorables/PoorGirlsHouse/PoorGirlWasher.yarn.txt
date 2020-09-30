@@ -1,0 +1,32 @@
+title: PoorGirlWasher
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $PoorGirlWasher is 3>>
+I'll need something to break the door.
+<<endif>>
+
+<<if $PoorGirlWasher is 2>>
+Yeah. There's something in here.
+But the door is jammed.
+<<set $PoorGirlWasher to 3>>
+<<endif>>
+
+<<if $PoorGirlWasher is 1>>
+Wow.
+...wait.
+<<set $PoorGirlWasher to 2>>
+<<endif>>
+
+<<if $PoorGirlWasher is 0>>
+Yup.
+This is indeed a washing machine.
+Amazing.
+<<set $PoorGirlWasher to 1>>
+<<endif>>
+
+<<if $PoorGirlWasher is 888>>
+puzzle and journal
+<<endif>>

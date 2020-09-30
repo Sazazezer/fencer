@@ -1,0 +1,21 @@
+title: PoorGirlBed
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $PoorGirlBed is 2>>
+Did they live alone here?
+<<endif>>
+
+<<if $PoorGirlBed is 1>>
+Kind of looks more like a teenager's bed thinking about it.
+Did they live alone here?
+<<set $PoorGirlBed to 2>>
+<<endif>>
+
+<<if $PoorGirlBed is 0>>
+A simple flat bed.
+Looks well used.
+<<set $PoorGirlBed to 1>>
+<<endif>>

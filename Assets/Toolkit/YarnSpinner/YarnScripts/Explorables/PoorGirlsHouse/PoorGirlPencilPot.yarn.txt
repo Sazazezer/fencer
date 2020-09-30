@@ -1,0 +1,17 @@
+title: PoorGirlPencilPot
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $PoorGirlPencilPot is 1>>
+If only there was a way to figure this out.
+<<endif>>
+
+<<if $PoorGirlPencilPot is 0>>
+A pencil pot.
+With a single pencil inside.
+And noOOOoooOOOOooo paper.
+The true mystery begins...
+<<set $PoorGirlPencilPot to 1>>
+<<endif>>

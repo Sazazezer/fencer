@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 950, y: 398}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 481, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 71
+  controlID: 47
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,10 +95,10 @@ MonoBehaviour:
     y: 0
     width: 831
     height: 947
-  m_MinSize: {x: 481, y: 348}
-  m_MaxSize: {x: 8006, y: 8048}
+  m_MinSize: {x: 481, y: 498}
+  m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 70
+  controlID: 46
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -118,14 +118,14 @@ MonoBehaviour:
     y: 503
     width: 831
     height: 444
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 232, y: 274}
+  m_MaxSize: {x: 10002, y: 10024}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,10 +147,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 683, y: 348}
-  m_MaxSize: {x: 12008, y: 8048}
+  m_MinSize: {x: 683, y: 498}
+  m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 12
+  controlID: 99
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,8 +170,8 @@ MonoBehaviour:
     y: 0
     width: 486
     height: 503
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -489,20 +489,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Fencer/Artwork/Objects
+    - Assets/Toolkit/YarnSpinner/YarnScripts/Explorables/PoorGirlsHouse
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Fencer/Artwork/Objects
+  - Assets/Toolkit/YarnSpinner/YarnScripts/Explorables/PoorGirlsHouse
   m_LastFoldersGridSize: 96
   m_LastProjectPath: G:\DormantMurdersMaster
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 223}
-    m_SelectedIDs: 0a2d0000
-    m_LastClickedID: 11530
-    m_ExpandedIDs: 00000000de280000442900002c2a00006e2a0000e42b0000cc2c00000a2d0000982e0000e22f0000bc300000e4300000ee300000963100009432000064330000e2350000e43500007a360000f4360000d03700001a380000383800006a3800005e3900007a390000763a00008a3b0000703c00007a3c0000883c0000a63c0000ca4a000000ca9a3b
+    scrollPos: {x: 0, y: 1517}
+    m_SelectedIDs: 24530000
+    m_LastClickedID: 21284
+    m_ExpandedIDs: 00000000dc280000422900002a2a00006c2a0000e22b0000ca2c0000082d0000962e0000e02f0000ba300000e2300000ec300000943100009232000062330000e0350000e235000078360000f2360000ce3700001838000036380000683800005c39000078390000763a00008a3b0000703c00007a3c0000883c0000a63c0000204b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -530,7 +530,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de280000442900002c2a00006e2a0000e42b0000cc2c00000a2d0000982e0000e22f0000bc300000e4300000ee300000963100009432000064330000e2350000e43500007a360000f4360000d03700001a380000383800006a3800005e3900007a390000763a00008a3b0000703c00007a3c0000883c0000a63c0000ca4a0000
+    m_ExpandedIDs: 00000000dc280000422900002a2a00006c2a0000e22b0000ca2c0000082d0000962e0000e02f0000ba300000e2300000ec300000943100009232000062330000e0350000e235000078360000f2360000ce3700001838000036380000683800005c39000078390000763a00008a3b0000703c00007a3c0000883c0000a63c0000204b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -555,10 +555,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f47effff
-    m_LastClickedInstanceID: -33036
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: ec210000eaf4fffff8230000caf6ffff9eeeffff4aeeffff70d9ffff30290000140b0000320b0000160b0000d65c0200b2090000200d0000460a0000c40900006c100000ac0e0000a20b00004c0f0000fe110000cc0f0000da0f0000160d0000b8100000e00a000000000000604e000094100000520f000024110000861000008e2d0000bc420000c04300006a2d00001a1300006e120000ae1600007a0e0000ca2d0000a2190000e2120000ac220100e610000094320000962b000076100000061a0000d03000003a2d000072340000e42c0000663c0000f03a0000463000000a340000f2300000
+    m_ExpandedInstanceIDs: ec210000eaf4fffff8230000caf6ffff9eeeffff4aeeffff70d9ffff30290000140b0000320b0000160b0000d65c0200b2090000200d0000460a0000c40900006c100000ac0e0000a20b00004c0f0000fe110000cc0f0000da0f0000160d0000b8100000e00a000000000000604e000094100000520f000024110000861000008e2d0000bc420000c04300006a2d00001a1300006e120000ae1600007a0e0000ca2d0000a2190000e2120000ac220100e610000094320000962b000076100000061a0000d03000003a2d000072340000e42c0000663c0000f03a0000463000000a340000f2300000e6310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -582,7 +582,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 879.5}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_DirectoriesAreaWidth: 206
 --- !u!114 &15
@@ -648,10 +648,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 286}
-      m_SelectedIDs: 1ae1feff
-      m_LastClickedID: -73446
-      m_ExpandedIDs: e6d3ffff50d4ffff34dbffffb0e2ffff58e9ffff0af0ffffb2f6ffffd4fbffff0e51000084510000a051000082520000e05a0000365b0000545b0000665b0000705b0000fc5b0000485c0000
+      scrollPos: {x: 0, y: 858}
+      m_SelectedIDs: 34efffff
+      m_LastClickedID: -4300
+      m_ExpandedIDs: c4f3ffffd4fbffffa44d0000d64d0000684e0000824e0000a24e00000a4f00003c4f00005e4f0000cc4f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -706,9 +706,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 157.52028, y: -622.03033, z: -5.625}
+    m_Target: {x: 369.325, y: -622.8322, z: -1.65625}
     speed: 2
-    m_Value: {x: 157.52028, y: -622.03033, z: -5.625}
+    m_Value: {x: 369.325, y: -622.8322, z: -1.65625}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -740,9 +740,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 635.8725
+    m_Target: 235.02605
     speed: 2
-    m_Value: 635.8725
+    m_Value: 235.02605
   m_Ortho:
     m_Target: 1
     speed: 2

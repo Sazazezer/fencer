@@ -1,0 +1,15 @@
+title: PoorGirlTV
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $PoorGirlTV is 1>>
+They cut the power a few weeks ago. This ain't turning on.
+<<endif>>
+
+<<if $PoorGirlTV is 0>>
+Flat screen TV.
+This is the cleanest thing in the house.
+<<set $PoorGirlTV to 1>>
+<<endif>>

@@ -1,0 +1,18 @@
+title: PoorGirlTelevision
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $PoorGirlTelevision is 1>>
+Gotta admit though...
+It has more personality than any tv i've seen before.
+<<endif>>
+
+<<if $PoorGirlTelevision is 0>>
+Wow. This is a very old television.
+It has individual knobs for channels.
+And it's built into the funiture.
+Just wow.
+<<set $PoorGirlTelevision to 1>>
+<<endif>>

@@ -1,0 +1,31 @@
+title: PoorGirlsTypewriter
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $PoorGirlsTypewriter is 2>>
+There's nothing else here.
+I'm guessing the remaining stuff was taken away.
+<<endif>>
+
+<<if $PoorGirlsTypewriter is 1>>
+There's pages here... 
+Typed with the typewriter.
+<<addnewjournal PoorGirlsTypewriter 3>>
+<<gointojournal PoorGirlsTypewriter 3>>
+<<set $PoorGirlsTypewriter to 2>>
+<<endif>>
+
+<<if $PoorGirlsTypewriter is 0>>
+An old typewriter.
+The dirtiest thing in the house.
+It has had a lot of use.
+<<set $PoorGirlsTypewriter to 1>>
+<<endif>>
+
+<<if $PoorGirlsTypewriter is 888>>
+Journal entry:
+
+
+<<endif>>
