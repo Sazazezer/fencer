@@ -112,12 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &11773407 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1923965368420580, guid: 4e33162bafe21f749bace56ec098201f,
-    type: 3}
-  m_PrefabInstance: {fileID: 320521999}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &50429743
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,39 +411,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 781521636}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &180969962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180969961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a33d3e87b71d3a4791a40fc51583652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioManagerPrefab: {fileID: 1769830754685894, guid: 2b0d8d7fd5a89ac41ac8ecee0c041b1a,
-    type: 3}
-  effectsManagerPrefab: {fileID: 1769830754685894, guid: e8e4ea4205e3c7342910dd6c5ebdb026,
-    type: 3}
-  gameHasStarted: 0
-  fadeCanvas: {fileID: 11773407}
-  fadePanelKill: {fileID: 766659365}
---- !u!114 &180969963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180969961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 267ab21ec46eeb74ea86377ebc84f339, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomMusic:
-  - {fileID: 8300000, guid: 9b50401dca9cb2a4ebd990334ee3670f, type: 3}
 --- !u!114 &180969969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1570,12 +1531,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &766659365 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1289113901786252, guid: 4e33162bafe21f749bace56ec098201f,
-    type: 3}
-  m_PrefabInstance: {fileID: 320521999}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &781521636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1583,6 +1538,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 383376765}
     m_Modifications:
+    - target: {fileID: 4390060283006212170, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 3}
+      propertyPath: roomMusic.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390060283006212170, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 3}
+      propertyPath: roomAmbience.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390060283006212170, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 3}
+      propertyPath: roomMusic.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b50401dca9cb2a4ebd990334ee3670f, type: 3}
+    - target: {fileID: 4390060283006212170, guid: aba84ffc04dfd4440a94549607c9c795,
+        type: 3}
+      propertyPath: roomAmbience.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b50401dca9cb2a4ebd990334ee3670f, type: 3}
     - target: {fileID: 224196893323316114, guid: aba84ffc04dfd4440a94549607c9c795,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1719,7 +1694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4817291644929062, guid: aba84ffc04dfd4440a94549607c9c795, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114640195660110462, guid: aba84ffc04dfd4440a94549607c9c795,
         type: 3}
@@ -5517,6 +5492,7 @@ MonoBehaviour:
   itemKill: {fileID: 0}
   linkedItem: {fileID: 1972283162918958, guid: 321108b54aff2f94e867c6c8bb1dfdac, type: 3}
   locked: 0
+  fakeDoor: 0
   doorUnlockSound: {fileID: 8300000, guid: 16341ead3b293e54f9f5b6d9b39570e9, type: 3}
   doorStillLockedSound: {fileID: 8300000, guid: 63ef3641ed9fb4e42939f12a14fd4993,
     type: 3}
@@ -5540,6 +5516,7 @@ MonoBehaviour:
   itemKill: {fileID: 0}
   linkedItem: {fileID: 1972283162918958, guid: 64229e928c18fa64b91cd2daea553669, type: 3}
   locked: 0
+  fakeDoor: 0
   doorUnlockSound: {fileID: 8300000, guid: 16341ead3b293e54f9f5b6d9b39570e9, type: 3}
   doorStillLockedSound: {fileID: 8300000, guid: 63ef3641ed9fb4e42939f12a14fd4993,
     type: 3}
@@ -5910,7 +5887,7 @@ SpriteRenderer:
   m_Size: {x: 38, y: 39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &7749122206627260370

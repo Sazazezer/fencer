@@ -11,11 +11,12 @@ public class GameControlStartUp : MonoBehaviour {
     public GameObject fadePanelKill;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		if (!GameObject.FindGameObjectWithTag("AudioManager")){
             var audioManager = Instantiate(audioManagerPrefab);
             audioManager.name = audioManagerPrefab.name;
             DontDestroyOnLoad(audioManager);
+            Debug.Log("I loaded Audio Manager");
         }
         if (!GameObject.FindGameObjectWithTag("EffectsManager")){
             var effectsManager = Instantiate(effectsManagerPrefab);

@@ -3386,6 +3386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2028283576}
   scale: 4
+  newY: 0
 --- !u!114 &667217527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6310,6 +6311,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomMusic:
+  - {fileID: 8300000, guid: cd1d7be141881684cbd1fbf90a4ebe09, type: 3}
+  - {fileID: 8300000, guid: f3144f3ea182c2d41b79fc95781671af, type: 3}
+  - {fileID: 8300000, guid: b6a158587ccacdf4eaba6fb21c2e8ae9, type: 3}
+  roomAmbience:
   - {fileID: 8300000, guid: 9b50401dca9cb2a4ebd990334ee3670f, type: 3}
 --- !u!114 &1312321788
 MonoBehaviour:
@@ -12001,6 +12006,7 @@ MonoBehaviour:
   itemKill: {fileID: 0}
   linkedItem: {fileID: 1972283162918958, guid: 321108b54aff2f94e867c6c8bb1dfdac, type: 3}
   locked: 0
+  fakeDoor: 0
   doorUnlockSound: {fileID: 8300000, guid: 16341ead3b293e54f9f5b6d9b39570e9, type: 3}
   doorStillLockedSound: {fileID: 8300000, guid: 63ef3641ed9fb4e42939f12a14fd4993,
     type: 3}

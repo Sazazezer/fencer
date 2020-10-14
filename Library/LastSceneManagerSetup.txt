@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fencer/Scenes/MainGameRooms/PoorGirlsHouse.unity
+- path: Assets/Fencer/Scenes/MainGameRooms/HistoriansHouse.unity
   isLoaded: 1
   isActive: 1
