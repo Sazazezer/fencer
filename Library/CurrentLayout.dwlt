@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 481, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 72
+  controlID: 99
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 345
     height: 503
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 481, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 71
+  controlID: 98
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -505,7 +505,7 @@ MonoBehaviour:
     height: 424
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: effects
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -516,34 +516,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Audio
+    - Assets/Toolkit/YarnSpinner/YarnScripts/Explorables/BdedAndBreakfast
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Resources/Audio
+  - Assets/Toolkit/YarnSpinner/YarnScripts/Explorables/BdedAndBreakfast
   m_LastFoldersGridSize: 96
   m_LastProjectPath: G:\DormantMurdersMaster
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 480.88983}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d02900003a2a00002e2b00007a2b0000042d0000f82d00003e2e0000e42f0000423100002c3200005632000060320000143300001c34000008350000c2370000c43700005e380000da380000c23900001a3a00003a3a0000763a00007a3b0000963b00009a3c0000c03d0000ae3e0000ba3e0000c83e0000ec3e0000f44c000000ca9a3b
+    scrollPos: {x: 0, y: 1533}
+    m_SelectedIDs: f24b0000
+    m_LastClickedID: 19442
+    m_ExpandedIDs: 00000000d02900003a2a00002e2b00007a2b0000062d0000fa2d0000402e0000e62f0000443100002e320000583200006232000016330000203400000c350000c8370000ca37000064380000e0380000c8390000203a0000403a00007c3a0000803b00009c3b0000a03c0000c83d0000b63e0000c23e0000d03e0000f43e0000c24b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: MiniGame
-      m_OriginalName: MiniGame
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 15698
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -557,7 +557,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d02900003a2a00002e2b00007a2b0000042d0000f82d00003e2e0000e42f0000423100002c3200005632000060320000143300001c34000008350000c2370000c43700005e380000da380000c23900001a3a00003a3a0000763a00007a3b0000963b00009a3c0000c03d0000ae3e0000ba3e0000c83e0000ec3e0000f44c0000
+    m_ExpandedIDs: 00000000d02900003a2a00002e2b00007a2b0000062d0000fa2d0000402e0000e62f0000443100002e320000583200006232000016330000203400000c350000c8370000ca37000064380000e0380000c8390000203a0000403a00007c3a0000803b00009c3b0000a03c0000c83d0000b63e0000c23e0000d03e0000f43e0000c24b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -675,10 +675,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      scrollPos: {x: 0, y: 766}
+      m_SelectedIDs: 10520000
       m_LastClickedID: 0
-      m_ExpandedIDs: ba75fffffc90ffff9697ffffc8b6ffff24c2ffffa6d1ffff5ae4fffffae9ffffd4fbfffff4ffffffbc410000d241000010430000f66100005c620000806600009466000042970000ca200100ca4c0100364f010096d801008e2f0200
+      m_ExpandedIDs: d4fbffff1a4200008e420000c442000002430000484300006c440000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -733,9 +733,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 209.97743, y: -674.8629, z: -5.75}
+    m_Target: {x: 302.71146, y: -444.23438, z: -1.4743117}
     speed: 2
-    m_Value: {x: 209.97743, y: -674.8629, z: -5.75}
+    m_Value: {x: 302.71146, y: -444.23438, z: -1.4743117}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -767,9 +767,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 639.0114
+    m_Target: 214.22691
     speed: 2
-    m_Value: 639.0114
+    m_Value: 214.22691
   m_Ortho:
     m_Target: 1
     speed: 2

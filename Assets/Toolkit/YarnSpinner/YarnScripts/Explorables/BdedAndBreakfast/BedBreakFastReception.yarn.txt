@@ -1,0 +1,33 @@
+title: BedBreakFastReception
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $BedBreakFastReception is 3>>
+*TING*
+I don't know what i'm expecting at this point.
+<<endif>>
+
+<<if $BedBreakFastReception is 2>>
+*TING*
+I won't deny it's fun to hit.
+But i know the village is empty. There's no one around for miles.
+<<set $BedBreakFastReception to 3>>
+<<endif>>
+
+<<if $BedBreakFastReception is 1>>
+*TING*
+Service Please!
+...
+Seriously, i know no one's here.
+<<set $BedBreakFastReception to 2>>
+<<endif>>
+
+<<if $BedBreakFastReception is 0>>
+*TING*
+Service Please!
+Ha ha ha
+No one's coming.
+<<set $BedBreakFastReception to 1>>
+<<endif>>

@@ -1,0 +1,19 @@
+title: BedBreakFastFence
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $BedBreakFastFence is 1>>
+I mean... did someone haul this all the way up the stairs?
+Only to just leave it here?
+Someone had their logic.
+I mean, it's not my logic, but still-
+<<endif>>
+
+<<if $BedBreakFastFence is 0>>
+This appears to be a fence.
+Like, a whole section of it.
+Just there.
+-the hell?
+<<set $BedBreakFastFence to 1>>
+<<endif>>

@@ -1,0 +1,39 @@
+title: BedBreakFastAlienToy
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $BedBreakFastAlienToy is 4>>
+I'm not taking you with me.
+Hate me if you must.
+<<endif>>
+
+<<if $BedBreakFastAlienToy is 3>>
+I mean, i know no one has to know.
+But it's the principle of it.
+You start off just taking one cuddly toy, and it snowballs.
+Everyone has to be responsible, right?
+<<set $BedBreakFastAlienToy to 4>>
+<<endif>>
+
+<<if $BedBreakFastAlienToy is 2>>
+I'm here to explore, not to loot.
+The community suffers when we're all dicks about it.
+You understand, right?
+<<set $BedBreakFastAlienToy to 3>>
+<<endif>>
+
+<<if $BedBreakFastAlienToy is 1>>
+Don't look at me like that.
+You think i want to leave you to burn.
+It's the rules of the game.
+<<set $BedBreakFastAlienToy to 2>>
+<<endif>>
+
+<<if $BedBreakFastAlienToy is 0>>
+Awww, this is kind of cute.
+Wish i could take it with me.
+But alas, to the fire with you.
+<<set $BedBreakFastAlienToy to 1>>
+<<endif>>

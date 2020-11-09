@@ -285,6 +285,7 @@
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\PoliceHut\PoliceFiles.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\208Ass.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\SecondHouseBedside.yarn.txt" />
+     <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\BdedAndBreakfast\BedBreakFastOven.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\UselessRock.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\SecondHouseBox.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestAmazingBin.yarn.txt" />
@@ -318,10 +319,13 @@
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\ShopMagazineRack.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\SecondHouseSpade.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Prisoner.yarn.txt" />
+     <None Include="Assets\Fencer\Scenes\MainGameRooms\dir.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\ShopSideboard.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestTelevision.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\OutroScript.yarn.txt" />
+     <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\BdedAndBreakfast\BedBreakFastWasher.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\DefaultTalk.yarn.txt" />
+     <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\BdedAndBreakfast\BedBreakFastAlienToy.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\MinigameYarn\DefaultPuzzle.yarn 1.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\MilitaryBarrier\MilitaryGate.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\PoorGirlsHouse\PoorGirlTelevision.yarn.txt" />
@@ -329,6 +333,7 @@
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\208Trashpile.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\OutsideTestLockedItem.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\LeavingPoint.yarn.txt" />
+     <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\BdedAndBreakfast\BedBreakFastFence.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\miniGameIntroScript.yarn 1.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\PoorGirlsHouse\PoorGirlWasher.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\Examples\DemoAssets\Space\Sally.yarn.txt" />
@@ -361,6 +366,7 @@
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\LowerVillageEntranceWest\EntranceTreeSign.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestDoorDrawer.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestCarLeaving.yarn.txt" />
+     <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\Explorables\BdedAndBreakfast\BedBreakFastReception.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestLockedSideboard.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\OutsideTestPuzzle.yarn.txt" />
      <None Include="Assets\Toolkit\YarnSpinner\YarnScripts\TestHouse\TestLivingRoomChest.yarn.txt" />

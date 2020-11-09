@@ -286,22 +286,22 @@ PrefabInstance:
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.90625
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
@@ -316,22 +316,22 @@ PrefabInstance:
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 241.92834
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 956.18274
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1600
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 899.356
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
@@ -356,27 +356,27 @@ PrefabInstance:
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.679375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.679375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224186129565924386, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.679375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224438836170403884, guid: adaba2e54b91a79439aeb6658a152988,
         type: 3}
@@ -3386,6 +3386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2028283576}
   scale: 4
+  newY: 0
 --- !u!114 &667217527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6311,6 +6312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomMusic:
   - {fileID: 8300000, guid: 9b50401dca9cb2a4ebd990334ee3670f, type: 3}
+  roomAmbience: []
 --- !u!114 &1312321788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12001,6 +12003,7 @@ MonoBehaviour:
   itemKill: {fileID: 0}
   linkedItem: {fileID: 1972283162918958, guid: 321108b54aff2f94e867c6c8bb1dfdac, type: 3}
   locked: 0
+  fakeDoor: 0
   doorUnlockSound: {fileID: 8300000, guid: 16341ead3b293e54f9f5b6d9b39570e9, type: 3}
   doorStillLockedSound: {fileID: 8300000, guid: 63ef3641ed9fb4e42939f12a14fd4993,
     type: 3}

@@ -1,0 +1,16 @@
+title: BedBreakFastWasher
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $BedBreakFastWasher is 1>>
+Wouldn't this affect the food?
+I have no idea.
+<<endif>>
+
+<<if $BedBreakFastWasher is 0>>
+A washing machine.
+Should it be concerning that this is right next to the oven?
+I mean, the patreons aren't exactly going to be washing their clothes here but...
+<<set $BedBreakFastWasher to 1>>
+<<endif>>

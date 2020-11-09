@@ -1,0 +1,16 @@
+title: BedBreakFastOven
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $BedBreakFastOven is 1>>
+I'm gonna have to see if there are any diners on the way back.
+<<endif>>
+
+<<if $BedBreakFastOven is 0>>
+Kitchen oven.
+Honestly, i kind of expected it to be bigger.
+I imagine some grandoise oven set to serve all the patrons.
+Maybe there was never a need.
+<<set $BedBreakFastOven to 1>>
+<<endif>>
