@@ -1,0 +1,17 @@
+title: BoyfriendHouseFancyChair
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $BoyfriendHouseFancyChair is 1>>
+Let's be honest.
+Even if there were books, and this was my apartment,
+I would never really quite get around to reading any.
+<<endif>>
+
+<<if $BoyfriendHouseFancyChair is 0>>
+This is quite fancy. I sure would love to sit here for hours reading books.
+Were there any on the shelves.
+<<set $BoyfriendHouseFancyChair to 1>>
+<<endif>>

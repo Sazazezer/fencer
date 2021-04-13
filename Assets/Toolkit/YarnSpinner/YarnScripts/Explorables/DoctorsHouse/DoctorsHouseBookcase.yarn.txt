@@ -1,0 +1,16 @@
+title: DoctorsHouseBookcase
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $DoctorsHouseBookcase is 1>>
+I have no plans of reading any of these.
+<<endif>>
+
+<<if $DoctorsHouseBookcase is 0>>
+Lot of books here. I'm seeing a medical focus.
+A few research books. Anatomy guides.
+Real dry stuff. not what you would usually see in a living room.
+<<set $DoctorsHouseBookcase to 1>>
+<<endif>>

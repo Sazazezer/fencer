@@ -1,0 +1,30 @@
+This is a tutorial showing you how to program anything in any programming language. Hopefully it's not too ambitious.
+
+If you're consantly finding yourself looking up tutorials for every aspect of your game, typing or pasting in lots of code, getting a feel of language but never of building your own concepts this is for you. I'll be showing you what steps you should be taking when designing something for your game, and i'll be usng noughts and crosses/tic tac toe as an exmaple.
+
+some ground rules. Number one. No coding is going to be in this video. you should be able to apply these rules to any component you wish to program. Saying that, i'm expecting you to at least have done some programming and maybe follow some game making tutiorials. You should know stuff like variables, if else, functions, foreach and so on. If you're not that far yet i'll leave some starter stuff in the description.
+
+Number two. don't fall into the trap of worrying about optimisation. I'm including that at the start because it can be a big demotivator. When you're trying to make something, you may find yourself wanting to know the best practise for making a character jump, or how you should layer your UI. Don't worry about that stuff for now. There's always a better way to do something. What's important here is getting an idea of how to build something by yourself with no real guide.
+
+Number three. You should be expecting to build everything within your project. It can be hard to visualise but every little feature within every piece of software was created or accounted for in some manner, even the stuff that happens automatically that you don't even consider. The way the first letter of a sentence will automatically capitlise had to be made. You should expect to be doing similar things when you make something as well. 
+
+Let's get started. Creating something is a matter of starting with your idea, conceptualising it, then breaking that concept down into component parts, breaking them down some more, filling in ay gaps you may have missed, and then basically repeating that over and over until you're done. Along the way you may reorganising things into a more cohesive shape and they'll be plenty of problem solving as to how you handle specific components of your game. We'll cover these as well. By the end of this, we'll end up with a blueprint that can be used to make noughts and crosses.
+
+When actually building a game you may find yourself jumping between this and the actual building of a game. This is fine. Creating a piece of software isn't exactly like building a house. you can course correct with software.
+
+Let's get started.
+
+The idea is just your usual 'how don't we include...' type idea. It can be the whole game or a single component within the system. for this i'm using a relatable example. Noughts and crosses.
+
+Next, you should be able to explain your idea as a concept. Noughts and crosses is a two player game where players take turns add their symbol onto a 3x3 board. The first one to make a line of three wins. the game is a draw if no further moves can be made.
+
+Next is the brainstorm stage. take a sheet of paper and do your best to include everything about your idea and what it would require. Anything that's part of the idea should be included, big or small.
+
+so for noughts and crosses this would be the grid, which is four lines laid one to form a 3x3 grid. Two symbols. An X and an O. Another linethat you use to the winner clear. There's also the rules. These are more abstract, but they're clear to define. 2player game. Each player takes turns places a symbol in one of the nine spaces If one player makes a horizxontal, vertical or diagnoal line of their symbols then they win. Also, rules of things you can't do. You cannot place a symbol on top of another symbol. You can't place more than one symbol during your turn. You can't skip your turn. try to think of anything that could lead to confusion in your game and make it clear now.
+
+There's also the turn order. Establishing this now will help ensure everything flows properly and ensures the ruls are being accounted for. Let's say X always goes first. They choose one one of the nine squares and place their mark. Then their turn ends. O goes next, and they choose from one of the remaining eight squares. It then switches back to X until someone win. Oh but we don't know when someone will win, so we need to check at the end of each person's turn to see if they've won. So we need to include this in the turn order, even at the stages when it's clear no one would have won.
+
+We also need to establish how the players will work. Is this a two player game or one player verses computer? Let's make it difficult for now and say both. So at the start you can choose to play with a friend, or against the computer.
+When playing against a friend, we'll need two separate ways of inputting commands into the game. When playing with the computer, we'll need one input method for the player and an AI of sorts for the computer to play against.
+
+So brainstorm is complete. Let's establish architecture. don't freak ut too much at that word. Just think of it as an organisation structure. 

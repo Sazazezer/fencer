@@ -1,0 +1,22 @@
+title: BoyfriendHouseMonitor
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $BoyfriendHouseMonitor is 2>>
+Even if i were to steal it, no way it would make it back to my car without shattering.
+<<endif>>
+
+<<if $BoyfriendHouseMonitor is 1>>
+They're really nice, but delicate. 
+Too much of a risk.
+<<set $BoyfriendHouseMonitor to 2>>
+<<endif>>
+
+<<if $BoyfriendHouseMonitor is 0>>
+Aw man, the monitor's pretty awesome too.
+It's one of those slick curved ones.
+They really pushed those to be the next big thing, but everyone was bitten by the whole faux 3d thing.
+<<set $BoyfriendHouseMonitor to 1>>
+<<endif>>

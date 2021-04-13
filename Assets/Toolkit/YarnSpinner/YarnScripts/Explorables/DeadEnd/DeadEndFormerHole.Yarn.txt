@@ -1,0 +1,27 @@
+title: DeadEndFormerHole
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $DeadEndFormerHole is 3>>
+There's nothing here.
+<<endif>>
+
+<<if $DeadEndFormerHole is 2>>
+Nothing.
+Let's be honest. A kid could have done this for a game months ago.
+There's nothing here.
+<<set $DeadEndFormerHole to 3>>
+<<endif>>
+
+<<if $DeadEndFormerHole is 1>>
+Maybe if i should root around for a bit.
+<<set $DeadEndFormerHole to 2>>
+<<endif>>
+
+<<if $DeadEndFormerHole is 0>>
+Huh. A branch stuck as a marker.
+Wonder what this is here for.
+<<set $DeadEndFormerHole to 1>>
+<<endif>>

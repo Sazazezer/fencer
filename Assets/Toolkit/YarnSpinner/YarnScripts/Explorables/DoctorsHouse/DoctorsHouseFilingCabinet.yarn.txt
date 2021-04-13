@@ -1,0 +1,23 @@
+title: DoctorsHouseFilingCabinet
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $DoctorsHouseFilingCabinet is 2>>
+Ah, here she is.
+<<endif>>
+
+<<if $DoctorsHouseFilingCabinet is 1>>
+Probably not.
+I wonder...
+<<set $DoctorsHouseFilingCabinet to 2>>
+<<endif>>
+
+<<if $DoctorsHouseFilingCabinet is 0>>
+Lots of confidential files.
+Quite a few are still here.
+If i were a doctor, and i was told lava was coming my way,
+would i stop to go grab my patient's files?
+<<set $DoctorsHouseFilingCabinet to 1>>
+<<endif>>

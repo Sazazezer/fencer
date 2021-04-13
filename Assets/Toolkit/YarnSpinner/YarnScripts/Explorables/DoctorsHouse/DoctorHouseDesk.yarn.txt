@@ -1,0 +1,22 @@
+title: DoctorHouseDesk
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $DoctorHouseDesk is 2>>
+Or she, i don't know.
+<<endif>>
+
+<<if $DoctorHouseDesk is 1>>
+Must of been a pain for some of his clients to walk up the stairs though.
+Maybe he didn't like *really* sick people.
+<<set $DoctorHouseDesk to 2>>
+<<endif>>
+
+<<if $DoctorHouseDesk is 0>>
+Dr. Middleton (MD)
+I guess this is where he held his appointments.
+Or she, i don't know.
+<<set $DoctorHouseDesk to 1>>
+<<endif>>

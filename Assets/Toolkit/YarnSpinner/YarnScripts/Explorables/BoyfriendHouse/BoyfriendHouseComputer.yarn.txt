@@ -1,0 +1,25 @@
+title: BoyfriendHouseComputer
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $BoyfriendHouseComputer is 2>>
+Just walk away.
+<<endif>>
+
+<<if $BoyfriendHouseComputer is 1>>
+No. No matter how potentially powerful the graphics card may be.
+No matter how many gigas of hertz it has.
+No matter how many rays it casts.
+I cannot break the humble code of the Urban Explorer.
+<<set $BoyfriendHouseComputer to 2>>
+<<endif>>
+
+<<if $BoyfriendHouseComputer is 0>>
+Okay, this is a pretty sweet model.
+The casing anyway.
+I can't exactly tell the specs without opening it up.
+And that would be pretty shitty of me to do.
+<<set $BoyfriendHouseComputer to 1>>
+<<endif>>

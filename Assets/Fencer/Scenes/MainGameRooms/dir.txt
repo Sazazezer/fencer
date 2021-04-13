@@ -1,6 +1,6 @@
 MilitaryBarrier 
 MilitaryHut 
-DeadZone 
+DeadZone - maybe need a prettier mountain, but otherwise done
 LowerVillageEntranceWest 
 
 LowerVillageWest 
@@ -12,22 +12,15 @@ VillageShop
 
 LowerVillageEast 
 HistoriansHouse 
-BedAndBreakfast 
+BedAndBreakfast - basics done - little slime monster ending
 
 LowerForest 
 RangerHut 
-DeadEnd 
+DeadEnd - basics done - add in digging sound effect and screen black
  
 
-
-
-
-
-BoyfriendHouse 
-DoctorsHouse 
-
-
-
+BoyfriendHouse - ashes in fireplace - basics done
+DoctorsHouse - basics done - need murdered girls medical record and boyfriend's medical record
 
 
 MiddleVillageCentre 
@@ -76,3 +69,6 @@ items to draw:
 fridges
 plant pots
 longsofa
+no sinks yet
+more wall items
+desk chairs

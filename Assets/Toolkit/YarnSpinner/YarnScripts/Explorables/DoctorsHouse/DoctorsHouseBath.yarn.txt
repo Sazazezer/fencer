@@ -1,0 +1,17 @@
+title: DoctorsHouseBath
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $DoctorsHouseBath is 1>>
+Hahaha.
+I should really start looking for a job again after this.
+<<endif>>
+
+<<if $DoctorsHouseBath is 0>>
+When i make my millions i'll have a fnacy en suite bathroom too.
+Until then it's mud puddles all the way for me.
+Wheee.
+<<set $DoctorsHouseBath to 1>>
+<<endif>>

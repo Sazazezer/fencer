@@ -1,11 +1,11 @@
 {
     "items": [
         {
-            "itemName": "",
-            "itemDescription": "",
-            "KeyID": 0,
-            "itemIndestructible": false,
-            "prefabName": ""
+            "itemName": "Car Key",
+            "itemDescription": "The key to my car.",
+            "KeyID": 6,
+            "itemIndestructible": true,
+            "prefabName": "DefaultTestItemButton"
         },
         {
             "itemName": "",

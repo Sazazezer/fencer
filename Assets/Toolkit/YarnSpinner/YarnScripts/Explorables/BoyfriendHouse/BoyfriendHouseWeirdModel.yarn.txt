@@ -1,0 +1,16 @@
+title: BoyfriendHouseWeirdModel
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $BoyfriendHouseWeirdModel is 1>>
+Whatever it is, they liked it enough to put it on display in the living room.
+<<endif>>
+
+<<if $BoyfriendHouseWeirdModel is 0>>
+I have no idea what that is.
+I think it's a model barn... or a model jukebox.
+Some kid's school project?
+<<set $BoyfriendHouseWeirdModel to 1>>
+<<endif>>

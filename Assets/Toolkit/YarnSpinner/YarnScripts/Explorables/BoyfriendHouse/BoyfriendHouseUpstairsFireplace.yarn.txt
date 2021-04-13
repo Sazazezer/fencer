@@ -1,0 +1,16 @@
+title: BoyfriendHouseUpstairsFireplace
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $BoyfriendHouseUpstairsFireplace is 1>>
+Come to think of it, i don't think i've come across a television in here.
+<<endif>>
+
+<<if $BoyfriendHouseUpstairsFireplace is 0>>
+A fireplace in the bedroom.
+Some ashes here. Looks like letters or something.
+Nothing retrievable though.
+<<set $BoyfriendHouseUpstairsFireplace to 1>>
+<<endif>>

@@ -1,0 +1,18 @@
+title: BoyfriendHouseToilet
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $BoyfriendHouseToilet is 1>>
+Maybe one of the parents had incontience issues...
+Maybe i don't actually want to know.
+<<endif>>
+
+<<if $BoyfriendHouseToilet is 0>>
+...
+...
+...
+I have questions...
+<<set $BoyfriendHouseToilet to 1>>
+<<endif>>

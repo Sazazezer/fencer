@@ -366,6 +366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomMusic:
   - {fileID: 8300000, guid: 9b50401dca9cb2a4ebd990334ee3670f, type: 3}
+  roomAmbience: []
 --- !u!114 &180969969
 MonoBehaviour:
   m_ObjectHideFlags: 0

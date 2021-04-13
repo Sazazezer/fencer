@@ -1,0 +1,16 @@
+title: BoyfriendHouseParentsBed
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $BoyfriendHouseParentsBed is 1>>
+This bedroom's as big as it is sparse.
+Kinda weird.
+<<endif>>
+
+<<if $BoyfriendHouseParentsBed is 0>>
+Neatly made, but with a layer of dust.
+Bouncing on this would kill my lungs.
+<<set $BoyfriendHouseParentsBed to 1>>
+<<endif>>

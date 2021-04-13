@@ -1,0 +1,14 @@
+title: DoctorsHouseShoebox2
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $DoctorsHouseShoebox2 is 1>>
+Yup.
+You still haven't set this talk box.
+<<endif>>
+
+<<if $DoctorsHouseShoebox2 is 0>>
+More shoes.
+<<endif>>

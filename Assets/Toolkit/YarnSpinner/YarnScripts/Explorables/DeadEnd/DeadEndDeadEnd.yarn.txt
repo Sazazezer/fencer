@@ -1,0 +1,17 @@
+title: DeadEndDeadEnd
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $DeadEndDeadEnd is 1>>
+I'm not wasting my time heading any further.
+I have a lot of walking to do today anyway.
+<<endif>>
+
+<<if $DeadEndDeadEnd is 0>>
+This leads out of town.
+There's nothing further this way except lots of open field.
+Last thing i want to do is get the attention of a farmer when i'm not supposed to be here.
+<<set $DeadEndDeadEnd to 1>>
+<<endif>>
