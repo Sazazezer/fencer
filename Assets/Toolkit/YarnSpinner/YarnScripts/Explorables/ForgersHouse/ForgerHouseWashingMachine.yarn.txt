@@ -1,0 +1,17 @@
+title: ForgerHouseWashingMachine
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ForgerHouseWashingMachine is 1>>
+It'll just melt, won't it?
+I don't know what else i could possibly be expecting.
+<<set $ForgerHouseWashingMachine to 2>>
+<<endif>>
+
+<<if $ForgerHouseWashingMachine is 0>>
+Washing machines live longer with lava!
+At least, we may end up finding out if they do.
+<<set $ForgerHouseWashingMachine to 1>>
+<<endif>>

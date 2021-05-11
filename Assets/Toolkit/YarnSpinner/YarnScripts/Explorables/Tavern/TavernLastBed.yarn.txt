@@ -1,0 +1,17 @@
+title: TavernLastBed
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $TavernLastBed is 1>>
+I guess the tavern was also a bed and breakfast of sorts.
+Or maybe they wanted it to be.
+<<set $TavernLastBed to 2>>
+<<endif>>
+
+<<if $TavernLastBed is 0>>
+Lots of rooms. Lots of beds.
+Lots of dust.
+<<set $TavernLastBed to 1>>
+<<endif>>

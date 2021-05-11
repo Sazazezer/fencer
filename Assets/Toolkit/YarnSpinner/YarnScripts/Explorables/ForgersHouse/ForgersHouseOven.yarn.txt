@@ -1,0 +1,22 @@
+title: ForgersHouseOven
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ForgersHouseOven is 2>>
+It's better than mine...
+<<endif>>
+
+<<if $ForgersHouseOven is 1>>
+I mean, i suppose my oven is about two meters away from my chair.
+But i live in an apartment and...
+Well, i guess they had their reasons.
+<<set $ForgersHouseOven to 2>>
+<<endif>>
+
+<<if $ForgersHouseOven is 0>>
+This appears to be an oven in a living room.
+Interesting.
+<<set $ForgersHouseOven to 1>>
+<<endif>>

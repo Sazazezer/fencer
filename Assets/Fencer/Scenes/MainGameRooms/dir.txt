@@ -1,20 +1,20 @@
-MilitaryBarrier 
-MilitaryHut 
+MilitaryBarrier - basics done
+MilitaryHut - basics done
 DeadZone - maybe need a prettier mountain, but otherwise done
-LowerVillageEntranceWest 
+LowerVillageEntranceWest - basics done - park bench and prettier tree
 
-LowerVillageWest 
-ForgerHouse 
-PoorGirlsHouse
+LowerVillageWest - basics done
+ForgerHouse - basics done - need waste paper bin - need puzzle for access - documents for typewriter
+PoorGirlsHouse - basics done
 
 LowerVillageCentre
-VillageShop 
+VillageShop - basics done
 
 LowerVillageEast 
-HistoriansHouse 
+HistoriansHouse - basics done, need fancy painting
 BedAndBreakfast - basics done - little slime monster ending
 
-LowerForest 
+LowerForest - basics done
 RangerHut 
 DeadEnd - basics done - add in digging sound effect and screen black
  
@@ -28,12 +28,10 @@ VillageHall
 
 MiddleVillageEast 
 LocalHistoryMuseum 
-LocalTavern 
+LocalTavern  - setup done - still needs bar stuff
 
 MiddleVillageWest 
-HotelGroundFloor 
-
-
+HotelGroundFloor - Hotel doors required, signs of explosion, jam all but the top drops to encourage jumping, fell down cut scene, waiting carts
 
 
 SkiSlopeBottom 
@@ -55,7 +53,6 @@ VolcanologistHutInside
 
 Summit 
 
-
 PoliceHut 
 RichMansion 
 SoldiersHouse 
@@ -72,3 +69,10 @@ longsofa
 no sinks yet
 more wall items
 desk chairs
+kitchen tops
+bathroom sink
+plant pots
+comfy desk chair
+dinner tables
+dinner chairs
+waiting carts for hotel

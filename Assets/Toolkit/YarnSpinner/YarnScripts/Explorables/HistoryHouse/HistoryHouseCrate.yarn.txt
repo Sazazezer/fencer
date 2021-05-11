@@ -1,0 +1,42 @@
+title: HistoryHouseCrate
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HistoryHouseCrate is 6>>
+Maybe one day there will be more crates in my life.
+What fun that will be.
+<<endif>>
+
+<<if $HistoryHouseCrate is 5>>
+No more crates.
+...
+That was fun.
+<<set $HistoryHouseCrate to 6>>
+<<endif>>
+
+<<if $HistoryHouseCrate is 4>>
+Crate crate crate crate crate.
+<<set $HistoryHouseCrate to 5>>
+<<endif>>
+
+<<if $HistoryHouseCrate is 3>>
+Crate crate crate crate.
+<<set $HistoryHouseCrate to 4>>
+<<endif>>
+
+<<if $HistoryHouseCrate is 2>>
+Crate crate crate.
+<<set $HistoryHouseCrate to 3>>
+<<endif>>
+
+<<if $HistoryHouseCrate is 1>>
+Crate crate.
+<<set $HistoryHouseCrate to 2>>
+<<endif>>
+
+<<if $HistoryHouseCrate is 0>>
+Crate.
+<<set $HistoryHouseCrate to 1>>
+<<endif>>

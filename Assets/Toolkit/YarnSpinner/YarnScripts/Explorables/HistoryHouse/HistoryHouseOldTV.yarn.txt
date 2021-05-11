@@ -1,0 +1,17 @@
+title: HistoryHouseOldTV
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HistoryHouseOldTV is 1>>
+I won't though.
+There isn't that much of a rush, but there is enough of a rush that i won't waste five hours snoozing.
+<<endif>>
+
+<<if $HistoryHouseOldTV is 0>>
+Nice TV. Very old looking.
+Old cosy room in general.
+I could easily doze off here.
+<<set $HistoryHouseOldTV to 1>>
+<<endif>>

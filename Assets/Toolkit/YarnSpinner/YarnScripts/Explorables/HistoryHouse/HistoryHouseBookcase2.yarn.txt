@@ -1,0 +1,27 @@
+title: HistoryHouseBookcase2
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HistoryHouseBookcase2 is 2>>
+Let's see what else is around here.
+<<endif>>
+
+<<if $HistoryHouseBookcase2 is 1>>
+That last one seems weird, but honestly, i have no idea what the full job of a historian would be.
+Write down history and keep it up to date sounds plausible.
+Maybe they just like to mix stuff up, as a joke.
+I know i would.
+<<set $HistoryHouseBookcase2 to 2>>
+<<endif>>
+
+<<if $HistoryHouseBookcase2 is 0>>
+Even more books.
+The Critical Essays of Edward Lawrence.
+Volumes of knowledge
+Witchcraft throughout the ages.
+Updated History of Askance vol 4-5...
+Huh, i guess history would need to be updated at times.
+<<set $HistoryHouseBookcase2 to 1>>
+<<endif>>

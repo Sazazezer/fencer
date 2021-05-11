@@ -1,0 +1,11 @@
+title: TavernStorage
+tags: 
+colorID: 0
+position: 540,260
+---
+
+
+<<if $TavernStorage is 0>>
+Storage of some kind.
+Nothing's in here.
+<<endif>>

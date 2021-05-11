@@ -1,0 +1,14 @@
+title: HistoryHouseToilet
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HistoryHouseToilet is 1>>
+Toilet toilet toilet toilet toilet.
+<<endif>>
+
+<<if $HistoryHouseToilet is 0>>
+Kind of feels like there should be multiple toilets here.
+<<set $HistoryHouseToilet to 1>>
+<<endif>>

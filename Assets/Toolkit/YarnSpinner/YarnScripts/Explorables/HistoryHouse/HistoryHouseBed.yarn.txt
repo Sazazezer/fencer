@@ -1,0 +1,15 @@
+title: HistoryHouseBed
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HistoryHouseBed is 1>>
+Cosy i guess. Maybe they didn't use it much.
+
+<<endif>>
+
+<<if $HistoryHouseBed is 0>>
+Kind of small bedroom, for the house as a whole.
+<<set $HistoryHouseBed to 1>>
+<<endif>>

@@ -1,0 +1,32 @@
+title: TavernToiletsSink
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $TavernToiletsSink is 2>>
+I guess i have to leave eventually.
+In a moment.
+<<endif>>
+
+<<if $TavernToiletsSink is 2>>
+Not that it lasts.
+I have to go back out there eventually.
+But for just a moment, the world is silent around me.
+Waiting for that inevitable flush.
+<<set $TavernToiletsSink to 3>>
+<<endif>>
+
+<<if $TavernToiletsSink is 1>>
+There's no real reason for it.
+Just in here i know i can be silent.
+No need to chat, converse, pretend i care.
+I can just be me.
+<<set $TavernToiletsSink to 2>>
+<<endif>>
+
+<<if $TavernToiletsSink is 0>>
+Just your standard tavern toilets.
+This is probably the only place i feel safe in a bar.
+<<set $TavernToiletsSink to 1>>
+<<endif>>

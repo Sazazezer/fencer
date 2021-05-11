@@ -1443,6 +1443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomMusic:
   - {fileID: 8300000, guid: 9b50401dca9cb2a4ebd990334ee3670f, type: 3}
+  roomAmbience: []
 --- !u!114 &180969969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10480,6 +10481,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4733058
       objectReference: {fileID: 0}
+    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
+        type: 3}
+      propertyPath: characterName
+      value: MiniGameEscapeCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
+        type: 3}
+      propertyPath: talkToNode
+      value: MiniGameEscapeCar
+      objectReference: {fileID: 0}
     - target: {fileID: 212388736723132500, guid: 35d02812d1c99d247b43b314aa8d5413,
         type: 3}
       propertyPath: m_Sprite
@@ -10505,16 +10516,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
-        type: 3}
-      propertyPath: characterName
-      value: MiniGameEscapeCar
-      objectReference: {fileID: 0}
-    - target: {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413,
-        type: 3}
-      propertyPath: talkToNode
-      value: MiniGameEscapeCar
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114713783553134462, guid: 35d02812d1c99d247b43b314aa8d5413, type: 3}

@@ -1,0 +1,22 @@
+title: ForgersHouseSideboard
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ForgersHouseSideboard is 2>>
+Hell if you're on a pension or something then paperwork may be the most expensive item in the house.
+Judging by mom's constant need to update it anyway.
+<<endif>>
+
+<<if $ForgersHouseSideboard is 1>>
+It's not too crazy to suppose some people would be quick to scoop up some documents on their way out.
+<<set $ForgersHouseSideboard to 2>>
+<<endif>>
+
+<<if $ForgersHouseSideboard is 0>>
+Empty.
+Though it looks like there was something here.
+There's an outline of dust. Around... some papers maybe?
+<<set $ForgersHouseSideboard to 1>>
+<<endif>>

@@ -441,6 +441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomMusic:
   - {fileID: 8300000, guid: 9b50401dca9cb2a4ebd990334ee3670f, type: 3}
+  roomAmbience: []
 --- !u!114 &180969969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9074,28 +9075,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4670686712506844309, guid: 49a473ba425f296428553c4bb48a517c,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: abbe44ea31cb40d4caa913bca0d02f47,
-        type: 3}
-    - target: {fileID: 4670686712506844309, guid: 49a473ba425f296428553c4bb48a517c,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1280627467
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670686712506844309, guid: 49a473ba425f296428553c4bb48a517c,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670686712893232859, guid: 49a473ba425f296428553c4bb48a517c,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 24264a7068c711f40bf35c7db9c722a8,
-        type: 3}
     - target: {fileID: 4670686712893232858, guid: 49a473ba425f296428553c4bb48a517c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -9156,5 +9135,27 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4670686712506844309, guid: 49a473ba425f296428553c4bb48a517c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: abbe44ea31cb40d4caa913bca0d02f47,
+        type: 3}
+    - target: {fileID: 4670686712506844309, guid: 49a473ba425f296428553c4bb48a517c,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1280627467
+      objectReference: {fileID: 0}
+    - target: {fileID: 4670686712506844309, guid: 49a473ba425f296428553c4bb48a517c,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4670686712893232859, guid: 49a473ba425f296428553c4bb48a517c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 24264a7068c711f40bf35c7db9c722a8,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49a473ba425f296428553c4bb48a517c, type: 3}

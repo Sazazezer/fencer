@@ -1,0 +1,25 @@
+title: HotelStorageArea
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HotelStorageArea is 2>>
+Ok, we're clear now.
+<<set $HotelStorageArea to 3>>
+<<endif>>
+
+
+<<if $HotelStorageArea is 1>>
+Probably nothing else.
+Oh, wait, something else.
+<<set $HotelStorageArea to 2>>
+<<endif>>
+
+<<if $HotelStorageArea is 0>>
+Storage area of some kind.
+Most of these are empty.
+Oh wait, no. there's something.
+Don't forget the something, Matt!
+<<set $HotelStorageArea to 1>>
+<<endif>>

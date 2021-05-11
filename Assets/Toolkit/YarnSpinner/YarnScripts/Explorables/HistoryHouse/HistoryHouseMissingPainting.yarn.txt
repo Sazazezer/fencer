@@ -1,0 +1,24 @@
+title: HistoryHouseMissingPainting
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HistoryHouseMissingPainting is 2>>
+Yup, this all definitely means nothing to me.
+Like some kind of shiny ball before my snout.
+<<endif>>
+
+<<if $HistoryHouseMissingPainting is 1>>
+Maybe it's by somebody famous.
+Like Porkcasso?
+He was definitely a painter.
+<<set $HistoryHouseMissingPainting to 2>>
+<<endif>>
+
+<<if $HistoryHouseMissingPainting is 0>>
+Welp. That's the missing painting. Mystery solved.
+is what i would be saying if this meant anything to me.
+Why was this hidden? It's just a landscape.
+<<set $HistoryHouseMissingPainting to 1>>
+<<endif>>

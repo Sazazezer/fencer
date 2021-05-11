@@ -1,0 +1,14 @@
+title: ForgerHousetoilet
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $ForgerHousetoilet is 1>>
+I don't even need to go...
+<<endif>>
+
+<<if $ForgerHousetoilet is 0>>
+Ah excellent.
+This was definitely worth all that.
+<<set $ForgerHousetoilet to 1>>
+<<endif>>

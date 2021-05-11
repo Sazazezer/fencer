@@ -1,0 +1,30 @@
+title: ForgerHouseTypewriter
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ForgerHouseTypewriter is 3>>
+I think i got everything.
+<<endif>>
+
+<<if $ForgerHouseTypewriter is 2>>
+Okay then.
+A different kind of writer i guess.
+Still quite creative though.
+I too would love to forge a religion.
+<<set $ForgerHouseTypewriter to 3>>
+<<endif>>
+
+<<if $ForgerHouseTypewriter is 1>>
+There's some documents here too.
+<<set $ForgerHouseTypewriter to 2>>
+<<endif>>
+
+<<if $ForgerHouseTypewriter is 0>>
+A well-used typewriter.
+Looks maintained too.
+The owner used this often.
+A writer i guess?
+<<set $ForgerHouseTypewriter to 1>>
+<<endif>>

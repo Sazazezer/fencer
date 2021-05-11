@@ -1,0 +1,29 @@
+title: ForgerHousePile
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ForgerHousePile is 3>>
+I may come back to this.
+<<endif>>
+
+<<if $ForgerHousePile is 2>>
+I am kind of limited on time.
+Murder investigation not withstanding, i don't want to waste an hour hauling this stuff about
+only to find it's not worth it.
+<<set $ForgerHousePile to 3>>
+<<endif>>
+
+<<if $ForgerHousePile is 1>>
+Hard to tell if this is all newly placed or not.
+These homes shouldn't be this abandoned.
+<<set $ForgerHousePile to 2>>
+<<endif>>
+
+<<if $ForgerHousePile is 0>>
+Interesting.
+It won't be easy to clear this up.
+Don't think i'll bother unless it becomes necessary.
+<<set $ForgerHousePile to 1>>
+<<endif>>

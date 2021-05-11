@@ -1,0 +1,28 @@
+title: HistoryHouseBookcase
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HistoryHouseBookcase is 2>>
+Bye books. Good luck.
+In the upcoming bookcalypse.
+<<endif>>
+
+<<if $HistoryHouseBookcase is 1>>
+Must be galling to have to abandon your books like this.
+Though this is the third floor. Maybe they'll survive.
+...the intense burning heat rising upwards...
+Yeah no.
+<<set $HistoryHouseBookcase to 2>>
+<<endif>>
+
+<<if $HistoryHouseBookcase is 0>>
+Lots of books.
+History of Askance vol 1-5
+Famous Volcanos in history
+Power Girl issues 56-72
+The importance of evidence: Studies in Archeology
+Nothing that sticks out.
+<<set $HistoryHouseBookcase to 1>>
+<<endif>>

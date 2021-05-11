@@ -1,0 +1,29 @@
+title: HotelKeyboard
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $HotelKeyboard is 3>>
+Definitely nothing here.
+<<endif>>
+
+<<if $HotelKeyboard is 2>>
+I supposed it i owned a hotel that was about to be lavinated
+I'd make sure no one could shack up in any of my rooms too.
+Worried want to get sued by all the charred bones.
+<<set $HotelKeyboard to 3>>
+<<endif>>
+
+<<if $HotelKeyboard is 1>>
+Either all the rooms are checked out.
+Or they took all these with them.
+For security, or something.
+<<set $HotelKeyboard to 2>>
+<<endif>>
+
+<<if $HotelKeyboard is 0>>
+A board of keys.
+A keyboard if you will.
+Or not, seeing as there are no keys here.
+<<set $HotelKeyboard to 1>>
+<<endif>>

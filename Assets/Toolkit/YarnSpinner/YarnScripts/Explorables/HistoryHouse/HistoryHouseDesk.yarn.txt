@@ -1,0 +1,15 @@
+title: HistoryHouseDesk
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HistoryHouseDesk is 1>>
+Nothing else i can see of use.
+<<endif>>
+
+<<if $HistoryHouseDesk is 0>>
+A desk. with some papers on it.
+Let's have us a look.
+<<set $HistoryHouseDesk to 1>>
+<<endif>>

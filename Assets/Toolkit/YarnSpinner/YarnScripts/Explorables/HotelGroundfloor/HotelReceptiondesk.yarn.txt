@@ -1,0 +1,30 @@
+title: HotelReceptiondesk
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $HotelReceptiondesk is 4>>
+No one's coming.
+What terrible service.
+<<endif>>
+
+<<if $HotelReceptiondesk is 3>>
+Ding. ding ding ding ding ding.
+<<set $HotelReceptiondesk to 4>>
+<<endif>>
+
+<<if $HotelReceptiondesk is 2>>
+Ding. Ding.
+<<set $HotelReceptiondesk to 3>>
+<<endif>>
+
+<<if $HotelReceptiondesk is 1>>
+Ding.
+<<set $HotelReceptiondesk to 2>>
+<<endif>>
+
+<<if $HotelReceptiondesk is 0>>
+The reception desk. There's a bell here.
+<<set $HotelReceptiondesk to 1>>
+<<endif>>

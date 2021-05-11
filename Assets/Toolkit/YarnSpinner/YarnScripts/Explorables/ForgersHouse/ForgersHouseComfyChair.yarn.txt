@@ -1,0 +1,21 @@
+title: ForgersHouseComfyChair
+tags: 
+colorID: 0
+position: 540,260
+---
+
+<<if $ForgersHouseComfyChair is 2>>
+Nope. Still doesn't sound appealing.
+<<endif>>
+
+<<if $ForgersHouseComfyChair is 1>>
+I don't dare stick my hands under the cushions to find stuff.
+<<set $ForgersHouseComfyChair to 2>>
+<<endif>>
+
+<<if $ForgersHouseComfyChair is 0>>
+A comfy chair.
+This was a sleepy town after the tourist trade died down.
+I suppose i shall be seeing plenty of these.
+<<set $ForgersHouseComfyChair to 1>>
+<<endif>>
